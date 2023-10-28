@@ -1,0 +1,44 @@
+INFO - 2023-09-09 16:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-09 16:00:50 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(372): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\Login.php(31): App\Models\M_tppk->getTokenSSO('4240CC7B-6E56-4...')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 16:00:50 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(372): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp_sso_checkToken :token:', [...])
+ 3 APPPATH\Controllers\Login.php(31): App\Models\M_tppk->getTokenSSO('4240CC7B-6E56-4048-AC04-F6D745015F0E')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-09 17:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-09 17:51:02 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(372): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\Login.php(31): App\Models\M_tppk->getTokenSSO('4240CC7B-6E56-4...')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 17:51:02 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(372): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp_sso_checkToken :token:', [...])
+ 3 APPPATH\Controllers\Login.php(31): App\Models\M_tppk->getTokenSSO('4240CC7B-6E56-4048-AC04-F6D745015F0E')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

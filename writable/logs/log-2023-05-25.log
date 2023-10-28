@@ -1,0 +1,311 @@
+ERROR - 2023-05-25 03:58:00 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 03:58:00 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 03:58:28 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 03:58:28 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 03:58:30 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 03:58:30 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:01:48 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:01:48 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:02:11 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:02:11 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:02:56 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:02:56 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 04:09:19 --> syntax error, unexpected ';', expecting ']'
+in APPPATH\Models\M_residu.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\M_residu.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_residu')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_residu')
+ 4 APPPATH\Controllers\PesertaDidik.php(10): spl_autoload_call('App\\Models\\M_residu')
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\PesertaDidik->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:10:12 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:10:12 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:12:38 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:12:38 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:12:52 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:12:52 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(33): App\Models\M_residu->getNamaPilihan('000000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 04:15:56 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\PesertaDidik.php(47): CodeIgniter\Model->__call('getTotalTutup', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:17:19 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * ...')
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:17:19 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * FROM Dataprocess.rpt.sekolah_tutup ')
+ 3 APPPATH\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:18:06 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * ...')
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:18:06 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * FROM Dataprocess.rpt.sekolah_tutup ')
+ 3 APPPATH\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:19:56 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * ...')
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:19:56 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * FROM Dataprocess.rpt.sekolah_tutup ')
+ 3 APPPATH\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 04:23:47 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * ...')
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-25 04:23:47 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * FROM Dataprocess.rpt.sekolah_tutup ')
+ 3 APPPATH\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 04:25:45 --> Invalid file: "layout/default.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/default.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_nasional_tutup', [], true)
+ 4 APPPATH\Controllers\PesertaDidik.php(49): view('pesertadidik/data_nasional_tutup', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

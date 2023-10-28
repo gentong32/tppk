@@ -1,0 +1,227 @@
+CRITICAL - 2023-06-12 09:54:10 --> Undefined variable $jenisptk
+in APPPATH\Views\pendidik\data_residu_ptk.php on line 137.
+ 1 APPPATH\Views\pendidik\data_residu_ptk.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisptk', 'APPPATH\\Views\\pendidik\\data_residu_ptk.php', 137)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_ptk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_ptk', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(107): view('pendidik/data_residu_ptk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 20:09:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name '.ref.mst_wilayah'.
+CRITICAL - 2023-06-12 20:09:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name '.ref.mst_wilayah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM .ref.mst_wilayah 
+                WHERE LEFT(s.kode_wilayah, :digit:)=:kode: ORDER BY s.nama', [...])
+ 2 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 20:11:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name '.ref.mst_wilayah'.
+CRITICAL - 2023-06-12 20:11:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name '.ref.mst_wilayah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM .ref.mst_wilayah 
+                WHERE LEFT(s.kode_wilayah, :digit:)=:kode: ORDER BY s.nama', [...])
+ 2 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 20:11:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "s.kode_wilayah" could not be bound.
+CRITICAL - 2023-06-12 20:11:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "s.kode_wilayah" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(s.kode_wilayah, :digit:)=:kode: ORDER BY s.nama', [...])
+ 2 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 20:12:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid length parameter passed to the left function.
+CRITICAL - 2023-06-12 20:12:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid length parameter passed to the left function.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(kode_wilayah, :digit:)=:kode: ORDER BY nama', [...])
+ 2 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 20:13:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid length parameter passed to the left function.
+CRITICAL - 2023-06-12 20:13:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid length parameter passed to the left function.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(29): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(kode_wilayah, :digit:)=:kode: AND level=:level: ORDER BY nama', [...])
+ 2 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 20:18:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid length parameter passed to the left function.
+CRITICAL - 2023-06-12 20:18:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid length parameter passed to the left function.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(kode_wilayah, :digit:)=:kode: AND level=:level: ORDER BY nama', [...])
+ 2 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', '00')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 20:19:17 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'level'.
+CRITICAL - 2023-06-12 20:19:17 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'level'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(kode_wilayah, :digit:)=:kode: AND level=:level: ORDER BY nama', [...])
+ 2 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-12 20:19:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'level'.
+CRITICAL - 2023-06-12 20:19:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'level'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(kode_wilayah, :digit:)=:kode: AND level=:levelnya: ORDER BY nama', [...])
+ 2 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 20:20:57 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result()
+in APPPATH\Controllers\InputData.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 20:27:20 --> Undefined variable $namaWilayah
+in APPPATH\Views\inputtppk.php on line 86.
+ 1 APPPATH\Views\inputtppk.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namaWilayah', 'APPPATH\\Views\\inputtppk.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputtppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputtppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(25): view('inputtppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 20:27:34 --> Attempt to read property "nama" on resource
+in APPPATH\Views\inputtppk.php on line 87.
+ 1 APPPATH\Views\inputtppk.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on resource', 'APPPATH\\Views\\inputtppk.php', 87)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputtppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputtppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(25): view('inputtppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 20:43:15 --> Undefined array key "namawilayah"
+in APPPATH\Controllers\InputData.php on line 24.
+ 1 APPPATH\Controllers\InputData.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namawilayah"', 'APPPATH\\Controllers\\InputData.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 20:43:27 --> Call to a member function getResult() on array
+in APPPATH\Controllers\InputData.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 20:43:56 --> Call to a member function getResult() on array
+in APPPATH\Controllers\InputData.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 20:44:23 --> Call to a member function getResult() on array
+in APPPATH\Controllers\InputData.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 20:44:57 --> Call to a member function getResult() on array
+in APPPATH\Controllers\InputData.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:11:50 --> Undefined variable $tingkat
+in APPPATH\Views\inputtppk.php on line 123.
+ 1 APPPATH\Views\inputtppk.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tingkat', 'APPPATH\\Views\\inputtppk.php', 123)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputtppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputtppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(25): view('inputtppk', [...])
+ 6 APPPATH\Controllers\InputData.php(17): App\Controllers\InputData->tppk()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:17:56 --> Undefined variable $namaKota
+in APPPATH\Views\inputtppk.php on line 98.
+ 1 APPPATH\Views\inputtppk.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namaKota', 'APPPATH\\Views\\inputtppk.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputtppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputtppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(25): view('inputtppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:24:34 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNamaWilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:24:36 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNamaWilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:24:48 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNamaWilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:24:50 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNamaWilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:25:12 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNamaWilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:26:05 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNamaWilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:26:09 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNamaWilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:32:09 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNamaWilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-12 21:32:12 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNamaWilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

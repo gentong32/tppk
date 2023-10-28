@@ -1,0 +1,551 @@
+INFO - 2023-07-21 06:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:08:15 --> CSRF token verified.
+INFO - 2023-07-21 06:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-21 09:51:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.sk_wilayah'.
+CRITICAL - 2023-07-21 09:51:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.sk_wilayah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(663): CodeIgniter\Database\BaseConnection->query('SELECT *
+                FROM TPPK.dbo.sk_wilayah')
+ 2 APPPATH\Controllers\Dashboard.php(35): App\Models\M_tppk->tesdb()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->tesdb()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 09:51:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.sk_instansi'.
+CRITICAL - 2023-07-21 09:51:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.sk_instansi'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(663): CodeIgniter\Database\BaseConnection->query('SELECT *
+                FROM TPPK.dbo.sk_instansi')
+ 2 APPPATH\Controllers\Dashboard.php(35): App\Models\M_tppk->tesdb()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->tesdb()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 09:52:11 --> Memory limit of 50240 KB exceeded for buffered query
+CRITICAL - 2023-07-21 09:52:12 --> Memory limit of 50240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(663): CodeIgniter\Database\BaseConnection->query('SELECT *
+                FROM TPPK.dbo.instansi')
+ 2 APPPATH\Controllers\Dashboard.php(35): App\Models\M_tppk->tesdb()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->tesdb()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 10:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:32:44 --> CSRF token verified.
+INFO - 2023-07-21 10:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:41:18 --> CSRF token verified.
+INFO - 2023-07-21 10:41:51 --> CSRF token verified.
+INFO - 2023-07-21 10:42:10 --> CSRF token verified.
+INFO - 2023-07-21 10:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:42:28 --> CSRF token verified.
+INFO - 2023-07-21 10:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 11:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 11:04:04 --> CSRF token verified.
+CRITICAL - 2023-07-21 11:05:54 --> Undefined array key "sk_id"
+in APPPATH\Models\M_tppk.php on line 251.
+ 1 APPPATH\Models\M_tppk.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sk_id"', 'APPPATH\\Models\\M_tppk.php', 251)
+ 2 APPPATH\Controllers\Dashboard.php(38): App\Models\M_tppk->insert_satgas_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->tesdb()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 11:07:08 --> CSRF token verified.
+ERROR - 2023-07-21 11:07:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+CRITICAL - 2023-07-21 11:07:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(253): CodeIgniter\Database\BaseConnection->query('INSERT INTO TPPK.dbo.satgas_wilayah (satgas_id, sk_id, jenis_instansi_id, nama, nik, sex, telepon, email, anggotake) values (\'21bf173c-a5bc-45d2-9761-6c15f0cd9383\',\'6047b14f-664e-4945-a67c-38a8dcf2d52a\',\'20\',\'\',\'Pak Ketua\',\'432898\',1,\'45346\',\'sakjk@sjkajs.kom\',0)')
+ 2 APPPATH\Controllers\InputData.php(356): App\Models\M_tppk->insert_satgas_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 11:07:33 --> CSRF token verified.
+INFO - 2023-07-21 12:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 13:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-21 15:23:42 --> Undefined variable $kepalasekolah
+in APPPATH\Views\tppk\daftaranggota.php on line 80.
+ 1 APPPATH\Views\tppk\daftaranggota.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kepalasekolah', 'APPPATH\\Views\\tppk\\daftaranggota.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(173): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20225717')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 15:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 15:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:05:31 --> CSRF token verified.
+ERROR - 2023-07-21 16:05:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'level_wilayah'.
+CRITICAL - 2023-07-21 16:05:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'level_wilayah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(241): CodeIgniter\Database\BaseConnection->query('INSERT INTO TPPK.dbo.sk_satgas_provinsi (sk_id, kode_wilayah, level_wilayah, nomor_sk, tanggal_sk) values (\'dd107521-9f1e-42bc-9a4f-26cbef738ff8\',\'030000  \',\'1\',\'SP-JT01/2023\',\'2023-07-21\')')
+ 2 APPPATH\Controllers\InputData.php(306): App\Models\M_tppk->insert_sk_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:07:38 --> CSRF token verified.
+ERROR - 2023-07-21 16:07:39 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to numeric.
+CRITICAL - 2023-07-21 16:07:39 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to numeric.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(241): CodeIgniter\Database\BaseConnection->query('INSERT INTO TPPK.dbo.sk_satgas_provinsi (sk_id, kode_wilayah, id_level_wilayah, nomor_sk, tanggal_sk) values (\'6ee53bb1-2688-4e75-be3c-0e9042449e52\',\'030000  \',\'\',\'SP-JT01/2023\',\'2023-07-21\')')
+ 2 APPPATH\Controllers\InputData.php(306): App\Models\M_tppk->insert_sk_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:09:01 --> CSRF token verified.
+ERROR - 2023-07-21 16:09:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','.
+CRITICAL - 2023-07-21 16:09:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(241): CodeIgniter\Database\BaseConnection->query('INSERT INTO TPPK.dbo.sk_satgas_provinsi (sk_id, kode_wilayah, id_level_wilayah, nomor_sk, tanggal_sk) values (\'9f8a09f3-eb4c-46dc-a4bf-c8c66cf729fb\',\'030000  \',,\'SP-JT01/2023\',\'2023-07-21\')')
+ 2 APPPATH\Controllers\InputData.php(306): App\Models\M_tppk->insert_sk_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:36:50 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:36:51 --> Could not move file "phpA2C9.tmp" to "D:\laragon\www\tppk\writable\/uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpA2C9.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(330): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_SP-JT01/2023_SPJT012023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:38:27 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:38:27 --> Could not move file "php1B31.tmp" to "D:\laragon\www\tppk\writable\\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php1B31.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(330): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_SP-JT01/2023_SPJT012023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:39:07 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:39:07 --> Could not move file "phpB7B1.tmp" to "D:\laragon\www\tppk\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpB7B1.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(330): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_SP-JT01/2023_SPJT012023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:40:00 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:40:00 --> Could not move file "php88DD.tmp" to "D:\laragon\www\tppk\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php88DD.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(331): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_SP-JT01/2023_SPJT012023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:40:31 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:40:31 --> Could not move file "php13A.tmp" to "D:\laragon\www\tppk\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php13A.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(331): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_SP-JT01/2023_SPJT01/2023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:41:05 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:41:05 --> Could not move file "php8679.tmp" to "D:\laragon\www\tppk\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php8679.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(331): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_SP-JT01/2023_SPJT01/2023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:41:35 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:41:35 --> Could not move file "phpF9A6.tmp" to "D:\laragon\www\tppk\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpF9A6.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(331): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_SP-JT01/2023_SPJT01/2023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:42:53 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:42:53 --> Could not move file "php29F9.tmp" to "D:\laragon\www\tppk\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php29F9.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(331): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_SP-JT01/2023_SP-JT01/2023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:44:33 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:44:33 --> Could not move file "phpB2CD.tmp" to "D:\laragon\www\tppk\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpB2CD.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(331): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_030000  _SP-JT01/2023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:44:59 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:44:59 --> preg_replace(): Unknown modifier '\'
+in APPPATH\Controllers\InputData.php on line 328.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_replace(): Unknown modifier \'\\\'', 'APPPATH\\Controllers\\InputData.php', 328)
+ 2 APPPATH\Controllers\InputData.php(328): preg_replace('/[^a-zA-Z0-9]/\\/', 'D:\\laragon\\www\\tppk', 'SP-JT01/2023')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:45:14 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:45:14 --> Could not move file "php53E1.tmp" to "D:\laragon\www\tppk\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php53E1.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(331): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_030000  _SP-JT01/2023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:46:25 --> CSRF token verified.
+CRITICAL - 2023-07-21 16:46:25 --> Could not move file "php66D9.tmp" to "D:\laragon\www\tppk\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php66D9.tmp', 'FCPATH\\writable\\uploads', 'D:\\laragon\\www\\tppk')
+ 2 APPPATH\Controllers\InputData.php(331): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads', 'sk_030000  _SPJT01/2023.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 16:46:40 --> CSRF token verified.
+INFO - 2023-07-21 16:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 16:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-21 17:03:05 --> Too few arguments to function App\Models\M_tppk::getNamaWilayah(), 1 passed in D:\laragon\www\tppk\app\Controllers\TPPK.php on line 180 and exactly 2 expected
+in APPPATH\Models\M_tppk.php on line 23.
+ 1 APPPATH\Controllers\TPPK.php(180): App\Models\M_tppk->getNamaWilayah('010100')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('010100')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:03:19 --> Undefined array key 0
+in APPPATH\Controllers\TPPK.php on line 181.
+ 1 APPPATH\Controllers\TPPK.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\TPPK.php', 181)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('010100')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:04:08 --> Undefined array key 0
+in APPPATH\Controllers\TPPK.php on line 181.
+ 1 APPPATH\Controllers\TPPK.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\TPPK.php', 181)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:04:40 --> Undefined array key 0
+in APPPATH\Controllers\TPPK.php on line 183.
+ 1 APPPATH\Controllers\TPPK.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\TPPK.php', 183)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:05:10 --> Undefined array key 0
+in APPPATH\Controllers\TPPK.php on line 183.
+ 1 APPPATH\Controllers\TPPK.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\TPPK.php', 183)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:07:36 --> Undefined property: CodeIgniter\Database\SQLSRV\Result::$nama
+in APPPATH\Controllers\TPPK.php on line 182.
+ 1 APPPATH\Controllers\TPPK.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\SQLSRV\\Result::$nama', 'APPPATH\\Controllers\\TPPK.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:08:51 --> Undefined property: CodeIgniter\Database\SQLSRV\Result::$nama
+in APPPATH\Controllers\TPPK.php on line 185.
+ 1 APPPATH\Controllers\TPPK.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\SQLSRV\\Result::$nama', 'APPPATH\\Controllers\\TPPK.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:09:14 --> Undefined property: CodeIgniter\Database\SQLSRV\Result::$nama
+in APPPATH\Controllers\TPPK.php on line 185.
+ 1 APPPATH\Controllers\TPPK.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\SQLSRV\\Result::$nama', 'APPPATH\\Controllers\\TPPK.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:09:33 --> Undefined variable $namasekolah
+in APPPATH\Views\tppk\daftaranggota2.php on line 57.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namasekolah', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(184): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:10:54 --> Undefined variable $kota
+in APPPATH\Views\tppk\daftaranggota2.php on line 55.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kota', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(184): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:11:40 --> Undefined variable $kepalasekolah
+in APPPATH\Views\tppk\daftaranggota2.php on line 65.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kepalasekolah', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(185): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:12:17 --> Undefined variable $jumlah_kab
+in APPPATH\Views\tppk\daftaranggota2.php on line 65.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah_kab', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(185): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:12:34 --> Undefined variable $jumlah_kab
+in APPPATH\Views\tppk\daftaranggota2.php on line 65.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah_kab', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(186): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:12:43 --> Undefined variable $daftaranggota
+in APPPATH\Views\tppk\daftaranggota2.php on line 84.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftaranggota', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(186): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 17:32:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'tgl_sk'.
+CRITICAL - 2023-07-21 17:32:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'tgl_sk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(387): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * 
+        FROM [TPPK].[dbo].[sk_satgas_provinsi]
+        WHERE kode_wilayah = :kodewilayah:
+        ORDER BY tgl_sk DESC', [...])
+ 2 APPPATH\Controllers\TPPK.php(186): App\Models\M_tppk->getSKProv('020000')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:32:33 --> Undefined array key "nm_ang"
+in APPPATH\Views\tppk\daftaranggota2.php on line 87.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nm_ang"', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 87)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(194): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 17:43:50 --> Undefined array key "jenis_ptk"
+in APPPATH\Views\tppk\daftaranggota2.php on line 89.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jenis_ptk"', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(194): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 18:38:34 --> Undefined variable $linknomorsk
+in APPPATH\Views\tppk\daftaranggota2.php on line 98.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $linknomorsk', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(194): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 18:39:37 --> Undefined array key "tmt_sk_tugas"
+in APPPATH\Views\tppk\daftaranggota2.php on line 103.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tmt_sk_tugas"', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(194): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 18:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-21 18:55:35 --> Undefined variable $daftaranggota
+in APPPATH\Views\tppk\daftaranggota2.php on line 83.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftaranggota', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(194): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('020500')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 18:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 18:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 19:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 19:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 19:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 19:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 19:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 19:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 19:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 19:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 19:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

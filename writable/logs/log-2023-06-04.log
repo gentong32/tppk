@@ -1,0 +1,588 @@
+CRITICAL - 2023-06-04 06:25:53 --> syntax error, unexpected token "}"
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 198.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 3 APPPATH\Controllers\PesertaDidik.php(97): view('pesertadidik/data_residu_pd', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 06:29:02 --> syntax error, unexpected token "}"
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 197.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 3 APPPATH\Controllers\PesertaDidik.php(97): view('pesertadidik/data_residu_pd', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 09:06:54 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 11:34:55 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 11:56:57 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+in APPPATH\Controllers\Pendidik.php on line 118.
+ 1 APPPATH\Controllers\Pendidik.php(118): in_array('Adi W P', '\'TK\',\'KB\',\'TPA\',\'SPS\',\'RA\',\'Taman Seminari\',\'SPK KB\',\'PAUDQ\',\'SPK PG\',\'SPK TK\',\'Pratama W P\',\'Nava Dhammasekha\'')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getJenjangKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 11:58:40 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+in APPPATH\Controllers\Pendidik.php on line 120.
+ 1 APPPATH\Controllers\Pendidik.php(120): in_array('Adi W P', '\'TK\',\'KB\',\'TPA\',\'SPS\',\'RA\',\'Taman Seminari\',\'SPK KB\',\'PAUDQ\',\'SPK PG\',\'SPK TK\',\'Pratama W P\',\'Nava Dhammasekha\'')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getJenjangKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 12:54:14 --> Undefined array key "kementerian"
+in APPPATH\Controllers\Pendidik.php on line 97.
+ 1 APPPATH\Controllers\Pendidik.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kementerian"', 'APPPATH\\Controllers\\Pendidik.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getJenjangKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 13:36:12 --> Undefined array key "kementerian"
+in APPPATH\Controllers\Pendidik.php on line 97.
+ 1 APPPATH\Controllers\Pendidik.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kementerian"', 'APPPATH\\Controllers\\Pendidik.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getJenjangKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 13:36:23 --> Undefined array key "kementerian"
+in APPPATH\Controllers\Pendidik.php on line 97.
+ 1 APPPATH\Controllers\Pendidik.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kementerian"', 'APPPATH\\Controllers\\Pendidik.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getJenjangKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 13:37:31 --> Undefined array key "kementerian"
+in APPPATH\Controllers\Pendidik.php on line 97.
+ 1 APPPATH\Controllers\Pendidik.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kementerian"', 'APPPATH\\Controllers\\Pendidik.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getJenjangKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 13:37:34 --> Undefined array key "kementerian"
+in APPPATH\Controllers\Pendidik.php on line 97.
+ 1 APPPATH\Controllers\Pendidik.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kementerian"', 'APPPATH\\Controllers\\Pendidik.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getJenjangKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 13:50:03 --> Undefined array key "kementerian"
+in APPPATH\Controllers\Pendidik.php on line 97.
+ 1 APPPATH\Controllers\Pendidik.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kementerian"', 'APPPATH\\Controllers\\Pendidik.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getJenjangKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 13:50:06 --> Undefined array key "kementerian"
+in APPPATH\Controllers\Pendidik.php on line 97.
+ 1 APPPATH\Controllers\Pendidik.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kementerian"', 'APPPATH\\Controllers\\Pendidik.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getJenjangKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 14:03:02 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 14:03:09 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 14:04:52 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 14:21:20 --> Cannot redeclare App\Controllers\Pendidik::getJenjangKementerian()
+in APPPATH\Controllers\Pendidik.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-04 14:21:23 --> Cannot redeclare App\Controllers\Pendidik::getJenjangKementerian()
+in APPPATH\Controllers\Pendidik.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-04 14:22:28 --> Cannot redeclare App\Controllers\Pendidik::getJenjangKementerian()
+in APPPATH\Controllers\Pendidik.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-04 15:44:10 --> syntax error, unexpected token ";"
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 153.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 3 APPPATH\Controllers\PesertaDidik.php(98): view('pesertadidik/data_residu_pd', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:44:26 --> Undefined array key 0
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 154.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 154)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(98): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:46:41 --> Undefined array key 0
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 154.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 154)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(99): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:47:35 --> Undefined array key 0
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 154.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 154)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(100): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:48:11 --> Undefined array key 0
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 154.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 154)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(100): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:48:34 --> Undefined array key 1
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 154.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 154)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(100): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:49:29 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:49:32 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:51:06 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:51:09 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 15:51:11 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 16:08:13 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 16:08:15 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 16:46:07 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\PesertaDidik.php on line 221.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('pesertadidik/wilayah')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('pesertadidik/wilayah')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('pesertadidik/wilayah')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 16:47:37 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 16:51:47 --> Call to a member function getResult() on string
+in APPPATH\Controllers\Pendidik.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->getBentukPendidikan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:13:13 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 309.
+ 1 APPPATH\Controllers\PesertaDidik.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 309)
+ 2 APPPATH\Controllers\PesertaDidik.php(90): App\Controllers\PesertaDidik->getBentukKementerian('D:\\laragon\\www\\res_pd', 'D:\\laragon\\www\\res_pd', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:13:44 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 308.
+ 1 APPPATH\Controllers\PesertaDidik.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 308)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->getBentukKementerian('all', 'Paud')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:13:48 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 308.
+ 1 APPPATH\Controllers\PesertaDidik.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 308)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->getBentukKementerian('all', 'Dikdas')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:14:39 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 308.
+ 1 APPPATH\Controllers\PesertaDidik.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 308)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->getBentukKementerian('all', 'Paud')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:15:28 --> Call to undefined function App\Controllers\toLowerCase()
+in APPPATH\Controllers\PesertaDidik.php on line 204.
+ 1 APPPATH\Controllers\PesertaDidik.php(90): App\Controllers\PesertaDidik->getBentukKementerian('D:\\laragon\\www\\res_pd', 'D:\\laragon\\www\\res_pd', 1)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:19:35 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 309.
+ 1 APPPATH\Controllers\PesertaDidik.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 309)
+ 2 APPPATH\Controllers\PesertaDidik.php(90): App\Controllers\PesertaDidik->getBentukKementerian('Kemenag', 'ra', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:21:50 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 310.
+ 1 APPPATH\Controllers\PesertaDidik.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 310)
+ 2 APPPATH\Controllers\PesertaDidik.php(91): App\Controllers\PesertaDidik->getBentukKementerian('Kemenag', 'ra', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:23:25 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 312.
+ 1 APPPATH\Controllers\PesertaDidik.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 312)
+ 2 APPPATH\Controllers\PesertaDidik.php(92): App\Controllers\PesertaDidik->getBentukKementerian('Kemenag', 'ra', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:28:24 --> Attempt to read property "bentuk_pendidikan" on string
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 166.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "bentuk_pendidikan" on string', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(103): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:37:54 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 310.
+ 1 APPPATH\Controllers\PesertaDidik.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 310)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->getBentukKementerian('all', 'all')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:37:58 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 310.
+ 1 APPPATH\Controllers\PesertaDidik.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 310)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->getBentukKementerian('all', 'all')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:38:08 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 310.
+ 1 APPPATH\Controllers\PesertaDidik.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 310)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->getBentukKementerian('all', 'all')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:38:10 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 310.
+ 1 APPPATH\Controllers\PesertaDidik.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 310)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->getBentukKementerian('all', 'all')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:38:29 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 310.
+ 1 APPPATH\Controllers\PesertaDidik.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 310)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->getBentukKementerian('all', 'all')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:39:00 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 310.
+ 1 APPPATH\Controllers\PesertaDidik.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 310)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->getBentukKementerian('all', 'all')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:40:51 --> Array to string conversion
+in APPPATH\Views\pendidik\data_residu_pd.php on line 26.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(75): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:53:06 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\PesertaDidik.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 17:53:42 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\PesertaDidik.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:14:23 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\PesertaDidik.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:14:53 --> Call to a member function format() on int
+in APPPATH\Controllers\PesertaDidik.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:17:02 --> Undefined variable $tglskr
+in APPPATH\Controllers\PesertaDidik.php on line 41.
+ 1 APPPATH\Controllers\PesertaDidik.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tglskr', 'APPPATH\\Controllers\\PesertaDidik.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:17:12 --> Undefined array key 77
+in APPPATH\Helpers\tanggalan_helper.php on line 8.
+ 1 APPPATH\Helpers\tanggalan_helper.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 77', 'APPPATH\\Helpers\\tanggalan_helper.php', 8)
+ 2 APPPATH\Controllers\PesertaDidik.php(41): namabulan_panjang(1685877432)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:27:44 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 312.
+ 1 APPPATH\Controllers\PesertaDidik.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 312)
+ 2 APPPATH\Controllers\PesertaDidik.php(93): App\Controllers\PesertaDidik->getBentukKementerian('Kemenag', 'D:\\laragon\\www\\res_pd', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:29:59 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 312.
+ 1 APPPATH\Controllers\PesertaDidik.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 312)
+ 2 APPPATH\Controllers\PesertaDidik.php(93): App\Controllers\PesertaDidik->getBentukKementerian('Kemenag', 'D:\\laragon\\www\\res_pd', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:30:18 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 312.
+ 1 APPPATH\Controllers\PesertaDidik.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 312)
+ 2 APPPATH\Controllers\PesertaDidik.php(93): App\Controllers\PesertaDidik->getBentukKementerian('Kemenag', 'D:\\laragon\\www\\res_pd', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:30:40 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 312.
+ 1 APPPATH\Controllers\PesertaDidik.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 312)
+ 2 APPPATH\Controllers\PesertaDidik.php(93): App\Controllers\PesertaDidik->getBentukKementerian('Kemdikbudristek', 'D:\\laragon\\www\\res_pd', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:31:03 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 312.
+ 1 APPPATH\Controllers\PesertaDidik.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 312)
+ 2 APPPATH\Controllers\PesertaDidik.php(93): App\Controllers\PesertaDidik->getBentukKementerian('Kemdikbudristek', 'D:\\laragon\\www\\res_pd', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:31:19 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 312.
+ 1 APPPATH\Controllers\PesertaDidik.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 312)
+ 2 APPPATH\Controllers\PesertaDidik.php(93): App\Controllers\PesertaDidik->getBentukKementerian('Kemdikbudristek', 'D:\\laragon\\www\\res_pd', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:41:01 --> Undefined variable $daftarbentukkementerian
+in APPPATH\Controllers\PesertaDidik.php on line 315.
+ 1 APPPATH\Controllers\PesertaDidik.php(315): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daftarbentukkementerian', 'APPPATH\\Controllers\\PesertaDidik.php', 315)
+ 2 APPPATH\Controllers\PesertaDidik.php(96): App\Controllers\PesertaDidik->getBentukKementerian('Kemenag', 'D:\\laragon\\www\\res_pd', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:58:59 --> Array to string conversion
+in APPPATH\Views\pendidik\data_residu_pd.php on line 26.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(75): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 19:01:47 --> Undefined array key "total_ptk"
+in APPPATH\Views\pendidik\data_residu_pd.php on line 240.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_ptk"', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 240)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(107): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 21:02:11 --> Cannot redeclare App\Models\M_residu::getTotalResidu()
+in APPPATH\Models\M_residu.php on line 186.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-06-04 21:04:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_nisn'.
+CRITICAL - 2023-06-04 21:04:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_nisn'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_residu.php(319): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah],[wilayah],[id_level_wilayah],[mst_kode_wilayah],[kementerian]
+                ,sum ([total_ptk]) as jml_total_ptk
+                ,sum ([residu_nisn]) as jml_residu_nisn
+                ,sum ([residu_nisn_ganda]) as jml_residu_nisn_ganda
+                ,sum ([residu_nisn_kosong]) as jml_residu_nisn_kosong
+                ,sum ([residu_nama]) as jml_residu_nama
+                ,sum ([residu_tempat_lahir]) as jml_residu_tempat_lahir
+                ,sum ([residu_tanggal_lahir]) as jml_residu_tanggal_lahir
+                ,sum ([residu_nama_Ibu_kandung]) as jml_residu_nama_Ibu_kandung
+                ,sum ([residu_jenis_kelamin]) as jml_residu_jenis_kelamin
+                ,sum ([residu_nik]) as jml_residu_nik
+                ,sum ([residu_wilayah]) as jml_residu_wilayah
+                FROM [Arsip].[ptk].[rekap_residu] 
+                where id_level_wilayah = :levelnya: and mst_kode_wilayah=:kodebaru: AND kementerian = :kementrian:  
+                group by kode_wilayah, wilayah,id_level_wilayah, mst_kode_wilayah,kementerian 
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\Pendidik.php(104): App\Models\M_residu->getTotalResiduPendidik('000000', 1, 'semua', 'D:\\laragon\\www\\res_pd')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-04 21:05:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_nuptk_ganda'.
+CRITICAL - 2023-06-04 21:05:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_nuptk_ganda'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_residu.php(319): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah],[wilayah],[id_level_wilayah],[mst_kode_wilayah],[kementerian]
+                ,sum ([total_ptk]) as jml_total_ptk
+                ,sum ([residu_nuptk]) as jml_residu_nuptk
+                ,sum ([residu_nuptk_ganda]) as jml_residu_nuptk_ganda
+                ,sum ([residu_nuptk_kosong]) as jml_residu_nuptk_kosong
+                ,sum ([residu_nama]) as jml_residu_nama
+                ,sum ([residu_tempat_lahir]) as jml_residu_tempat_lahir
+                ,sum ([residu_tanggal_lahir]) as jml_residu_tanggal_lahir
+                ,sum ([residu_nama_Ibu_kandung]) as jml_residu_nama_Ibu_kandung
+                ,sum ([residu_jenis_kelamin]) as jml_residu_jenis_kelamin
+                ,sum ([residu_nik]) as jml_residu_nik
+                ,sum ([residu_wilayah]) as jml_residu_wilayah
+                FROM [Arsip].[ptk].[rekap_residu] 
+                where id_level_wilayah = :levelnya: and mst_kode_wilayah=:kodebaru: AND kementerian = :kementrian:  
+                group by kode_wilayah, wilayah,id_level_wilayah, mst_kode_wilayah,kementerian 
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\Pendidik.php(104): App\Models\M_residu->getTotalResiduPendidik('000000', 1, 'semua', 'D:\\laragon\\www\\res_pd')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-04 21:08:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'bentuk_pendidikan'.
+CRITICAL - 2023-06-04 21:08:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'bentuk_pendidikan'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_residu.php(329): CodeIgniter\Database\BaseConnection->query('SELECT kode_wilayah,wilayah,total_ptk as jml_total_ptk, residu_nuptk as jml_residu_nuptk, residu_nik as jml_residu_nik, residu_wilayah as jml_residu_wilayah, 
+        residu_nuptk_ganda as jml_residu_nuptk_ganda, residu_nuptk_kosong as jml_residu_nuptk_kosong,
+        residu_nama as jml_residu_nama, residu_tempat_lahir as jml_residu_tempat_lahir,
+        residu_tanggal_lahir as jml_residu_tanggal_lahir, residu_nama_Ibu_kandung as jml_residu_nama_Ibu_kandung, residu_jenis_kelamin as jml_residu_jenis_kelamin,
+        residu_nik as jml_residu_nik 
+                FROM Arsip.ptk.rekap_residu 
+                WHERE mst_kode_wilayah=:kodebaru: 
+                AND id_level_wilayah=:levelnya: 
+                AND bentuk_pendidikan=:bentuk: 
+                AND kementerian = \'semua\' ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\Pendidik.php(104): App\Models\M_residu->getTotalResiduPendidik('000000', 1, 'semua', 'D:\\laragon\\www\\res_pd')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-04 21:11:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_wilayah'.
+CRITICAL - 2023-06-04 21:11:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_wilayah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_residu.php(328): CodeIgniter\Database\BaseConnection->query('SELECT kode_wilayah,wilayah,total_ptk as jml_total_ptk, residu_nuptk as jml_residu_nuptk, residu_nik as jml_residu_nik, residu_wilayah as jml_residu_wilayah, 
+        residu_nuptk_ganda as jml_residu_nuptk_ganda, residu_nuptk_kosong as jml_residu_nuptk_kosong,
+        residu_nama as jml_residu_nama, residu_tempat_lahir as jml_residu_tempat_lahir,
+        residu_tanggal_lahir as jml_residu_tanggal_lahir, residu_nama_Ibu_kandung as jml_residu_nama_Ibu_kandung, residu_jenis_kelamin as jml_residu_jenis_kelamin,
+        residu_nik as jml_residu_nik 
+                FROM Arsip.ptk.rekap_residu 
+                WHERE mst_kode_wilayah=:kodebaru: 
+                AND id_level_wilayah=:levelnya: 
+                -- AND bentuk_pendidikan=:bentuk: 
+                AND kementerian = \'semua\' ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\Pendidik.php(104): App\Models\M_residu->getTotalResiduPendidik('000000', 1, 'semua', 'D:\\laragon\\www\\res_pd')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-04 21:13:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-04 21:13:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_residu.php(336): CodeIgniter\Database\BaseConnection->query('SELECT kode_wilayah,wilayah,total_ptk as jml_total_ptk, residu_nuptk as jml_residu_nuptk, residu_nik as jml_residu_nik
+                FROM Arsip.ptk.rekap_residu 
+                WHERE mst_kode_wilayah=:kodebaru: 
+                AND id_level_wilayah=:levelnya: 
+                AND bentuk_pendidikan=:bentuk: 
+                AND kementerian = \'semua\' ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\Pendidik.php(104): App\Models\M_residu->getTotalResiduPendidik('000000', 1, 'semua', 'D:\\laragon\\www\\res_pd')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

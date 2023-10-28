@@ -1,0 +1,86 @@
+CRITICAL - 2023-06-05 09:33:39 --> syntax error, unexpected token "echo"
+in APPPATH\Views\stat_linechart.php on line 138.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stat_linechart', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(21): view('stat_linechart', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:17:44 --> Undefined array key "jml_total_pd"
+in APPPATH\Views\pendidik\data_residu_pd.php on line 279.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_total_pd"', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 279)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(107): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:18:33 --> Undefined array key "jml_total_pd"
+in APPPATH\Views\pendidik\data_residu_pd.php on line 279.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_total_pd"', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 279)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(107): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:19:05 --> Undefined array key "jml_residu_nisn"
+in APPPATH\Views\pendidik\data_residu_pd.php on line 293.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_residu_nisn"', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 293)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(107): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:19:22 --> Undefined array key "jml_residu_wilayah"
+in APPPATH\Views\pendidik\data_residu_pd.php on line 295.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_residu_wilayah"', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 295)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(107): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:24:34 --> Undefined array key "jml_residu_nuptk_kosong"
+in APPPATH\Views\pendidik\data_residu_pd.php on line 280.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_residu_nuptk_kosong"', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 280)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(107): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:24:49 --> Undefined array key "jml_residu_nama"
+in APPPATH\Views\pendidik\data_residu_pd.php on line 284.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_residu_nama"', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 284)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(107): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:26:12 --> Undefined array key "jml_residu_nuptk_kosong"
+in APPPATH\Views\pendidik\data_residu_pd.php on line 280.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_residu_nuptk_kosong"', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 280)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(107): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

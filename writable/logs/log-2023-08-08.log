@@ -1,0 +1,59 @@
+INFO - 2023-08-08 09:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 09:14:04 --> Attempt to read property "total_jml_tppk" on null
+in APPPATH\Controllers\Dashboard.php on line 32.
+ 1 APPPATH\Controllers\Dashboard.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "total_jml_tppk" on null', 'APPPATH\\Controllers\\Dashboard.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-08 09:16:06 --> Attempt to read property "total_jml_tppk" on null
+in APPPATH\Controllers\Dashboard.php on line 32.
+ 1 APPPATH\Controllers\Dashboard.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "total_jml_tppk" on null', 'APPPATH\\Controllers\\Dashboard.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-08 09:16:31 --> Attempt to read property "total_jml_tppk" on null
+in APPPATH\Controllers\Dashboard.php on line 32.
+ 1 APPPATH\Controllers\Dashboard.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "total_jml_tppk" on null', 'APPPATH\\Controllers\\Dashboard.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-08 09:16:53 --> Attempt to read property "total_jml_tppk" on null
+in APPPATH\Controllers\Dashboard.php on line 32.
+ 1 APPPATH\Controllers\Dashboard.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "total_jml_tppk" on null', 'APPPATH\\Controllers\\Dashboard.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-08 09:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 09:29:39 --> File not found: "D:\laragon\www\tppk\writable\uploads/panduan.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('FCPATH\\writable\\uploads/panduan.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('FCPATH\\writable\\uploads/panduan.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('FCPATH\\writable\\uploads/panduan.pdf')
+ 4 APPPATH\Controllers\InputData.php(680): CodeIgniter\HTTP\Response->download('panduan.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->download_panduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-08 09:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 09:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

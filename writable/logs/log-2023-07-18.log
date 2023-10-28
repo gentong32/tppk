@@ -1,0 +1,248 @@
+ERROR - 2023-07-18 11:06:48 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(530): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(80): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-18 11:06:48 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(530): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(80): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 11:12:17 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(310): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\Login.php(31): App\Models\M_tppk->getTokenSSO('857F7924-D0DE-4...')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-18 11:12:17 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(310): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp_sso_checkToken :token:', [...])
+ 3 APPPATH\Controllers\Login.php(31): App\Models\M_tppk->getTokenSSO('857F7924-D0DE-4EA3-9291-1B78503CC326')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 12:27:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'instansi_id', table 'TPPK.dbo.instansi_pengguna'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-07-18 12:27:33 --> sqlsrv_rows_affected(): Argument #1 ($stmt) must be of type resource, bool given
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 433.
+ 1 SYSTEMPATH\Database\SQLSRV\Connection.php(433): sqlsrv_rows_affected(false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1802): CodeIgniter\Database\SQLSRV\Connection->affectedRows()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 4 APPPATH\Models\M_tppk.php(201): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 5 APPPATH\Controllers\InputData.php(354): App\Models\M_tppk->insert_batch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 12:28:02 --> CSRF token verified.
+ERROR - 2023-07-18 12:28:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'instansi_id', table 'TPPK.dbo.instansi_pengguna'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-07-18 12:28:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'instansi_id', table 'TPPK.dbo.instansi_pengguna'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "TPPK"."dbo"."instansi_pengguna" ("instansi_id", "instansi_pengguna_id", "jabatan_id", "pengguna_id", "penugasan", "sk", "tanggal_sk")
+VALUES (NULL,\'EEF115A5-6419-433B-80F4-F481FBDF09EC\',NULL,NULL,\'2\',\'kisspng-padlock-computer-icons-key-5b39a468a26a28.4111865615305042966653.png\',\'07/18/2023\'), (NULL,\'E2B6D952-9D5D-4134-AC27-6AE6E872E9BA\',NULL,NULL,\'2\',\'kisspng-padlock-computer-icons-key-5b39a468a26a28.4111865615305042966653.png\',\'07/18/2023\'), (NULL,\'57A30C74-D4EC-418B-BB73-85A887062283\',NULL,NULL,\'2\',\'kisspng-padlock-computer-icons-key-5b39a468a26a28.4111865615305042966653.png\',\'07/18/2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(201): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(354): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 12:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 14:16:22 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(300): CodeIgniter\Database\BaseConnection->query('SELECT instansi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(408): App\Models\M_tppk->getSekolah('20106343')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->npsn('20106343')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-18 14:16:22 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(300): CodeIgniter\Database\BaseConnection->query('SELECT instansi_id,kode_instansi,i.nama,s.npsn,i.kode_wilayah
+                FROM [TPPK].[dbo].[instansi] i
+                LEFT JOIN [arsip].[dbo].[sekolah] s ON s.sekolah_id = i.instansi_id 
+                WHERE npsn = :npsn:', [...])
+ 3 APPPATH\Controllers\InputData.php(408): App\Models\M_tppk->getSekolah('20106343')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->npsn('20106343')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 15:10:45 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(300): CodeIgniter\Database\BaseConnection->query('SELECT instansi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(408): App\Models\M_tppk->getSekolah('20104571')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->npsn('20104571')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-18 15:10:45 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(300): CodeIgniter\Database\BaseConnection->query('SELECT instansi_id,kode_instansi,i.nama,s.npsn,i.kode_wilayah
+                FROM [TPPK].[dbo].[instansi] i
+                LEFT JOIN [arsip].[dbo].[sekolah] s ON s.sekolah_id = i.instansi_id 
+                WHERE npsn = :npsn:', [...])
+ 3 APPPATH\Controllers\InputData.php(408): App\Models\M_tppk->getSekolah('20104571')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->npsn('20104571')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 16:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 16:21:01 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(310): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\Login.php(31): App\Models\M_tppk->getTokenSSO('D1704B9C-F183-4...')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-18 16:21:01 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(310): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp_sso_checkToken :token:', [...])
+ 3 APPPATH\Controllers\Login.php(31): App\Models\M_tppk->getTokenSSO('D1704B9C-F183-4C05-8DFC-897B69F38680')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 16:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 16:44:40 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM R...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(76): App\Models\M_tppk->getNamaWilayah('000000', 1)
+#4 D:\laragon\www\tppk\app\Controllers\InputData.php(30): App\Controllers\InputData->satgasprov()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->index()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-18 16:44:40 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(mst_kode_wilayah, :digit:)=LEFT(:kode:, :digit:) AND id_level_wilayah=:level: ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\InputData.php(76): App\Models\M_tppk->getNamaWilayah('000000', 1)
+ 4 APPPATH\Controllers\InputData.php(30): App\Controllers\InputData->satgasprov()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 16:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 16:44:57 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM R...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(76): App\Models\M_tppk->getNamaWilayah('000000', 1)
+#4 D:\laragon\www\tppk\app\Controllers\InputData.php(30): App\Controllers\InputData->satgasprov()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->index()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-18 16:44:57 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(34): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(mst_kode_wilayah, :digit:)=LEFT(:kode:, :digit:) AND id_level_wilayah=:level: ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\InputData.php(76): App\Models\M_tppk->getNamaWilayah('000000', 1)
+ 4 APPPATH\Controllers\InputData.php(30): App\Controllers\InputData->satgasprov()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 16:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:46:19 --> CSRF token verified.
+CRITICAL - 2023-07-18 16:46:19 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #2 ($escape) must be of type ?bool, array given, called in D:\laragon\www\tppk\app\Models\M_tppk.php on line 241
+in SYSTEMPATH\Database\BaseBuilder.php on line 2285.
+ 1 APPPATH\Models\M_tppk.php(241): CodeIgniter\Database\BaseBuilder->insert('tb_soal', [...])
+ 2 APPPATH\Controllers\InputData.php(304): App\Models\M_tppk->insert_sk_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 16:51:27 --> CSRF token verified.
+CRITICAL - 2023-07-18 16:51:27 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #2 ($escape) must be of type ?bool, array given, called in D:\laragon\www\tppk\app\Models\M_tppk.php on line 241
+in SYSTEMPATH\Database\BaseBuilder.php on line 2285.
+ 1 APPPATH\Models\M_tppk.php(241): CodeIgniter\Database\BaseBuilder->insert('tb_soal', [...], true)
+ 2 APPPATH\Controllers\InputData.php(304): App\Models\M_tppk->insert_sk_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 16:58:42 --> CSRF token verified.
+CRITICAL - 2023-07-18 16:58:42 --> Attempt to read property "sk_id" on array
+in APPPATH\Models\M_tppk.php on line 239.
+ 1 APPPATH\Models\M_tppk.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "sk_id" on array', 'APPPATH\\Models\\M_tppk.php', 239)
+ 2 APPPATH\Controllers\InputData.php(304): App\Models\M_tppk->insert_sk_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 16:59:37 --> CSRF token verified.
+ERROR - 2023-07-18 16:59:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+CRITICAL - 2023-07-18 16:59:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(241): CodeIgniter\Database\BaseConnection->query('INSERT INTO TPPK.dbo.sk_satgas_provinsi (sk_id, kode_wilayah, level_wilayah, nomor_sk, tanggal_sk) values (\'25f36d91-d545-4b9e-9d46-25ce1b798341\',\'010000  \'\'1\'\'\'\'\')')
+ 2 APPPATH\Controllers\InputData.php(304): App\Models\M_tppk->insert_sk_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpansatgas()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-18 17:00:33 --> CSRF token verified.
+INFO - 2023-07-18 17:02:10 --> CSRF token verified.
+INFO - 2023-07-18 17:03:34 --> CSRF token verified.
+INFO - 2023-07-18 17:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:08:30 --> CSRF token verified.
+INFO - 2023-07-18 17:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

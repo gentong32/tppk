@@ -1,0 +1,99 @@
+ERROR - 2023-07-05 10:57:55 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(530): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(80): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-05 10:57:55 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(530): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(80): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-05 10:57:58 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(530): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(80): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-05 10:57:58 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(530): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(80): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-05 10:58:18 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(530): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(80): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-05 10:58:18 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(530): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(80): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

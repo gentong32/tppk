@@ -1,0 +1,1371 @@
+INFO - 2023-06-19 09:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-19 09:43:32 --> Undefined variable $lembaga
+in APPPATH\Controllers\TPPK.php on line 71.
+ 1 APPPATH\Controllers\TPPK.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lembaga', 'APPPATH\\Controllers\\TPPK.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 09:45:36 --> Undefined variable $bentuk
+in APPPATH\Views\tppk\data_tppk.php on line 88.
+ 1 APPPATH\Views\tppk\data_tppk.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bentuk', 'APPPATH\\Views\\tppk\\data_tppk.php', 88)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(65): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 10:09:03 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(17): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\Satgas.php(40): App\Models\M_tppk->getNamaPilihan('010000')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Satgas->wilayah('010000', '1')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satgas))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-19 10:09:03 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(17): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\Satgas.php(40): App\Models\M_tppk->getNamaPilihan('010000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Satgas->wilayah('010000', '1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satgas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 10:09:04 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(17): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\Satgas.php(40): App\Models\M_tppk->getNamaPilihan('010000')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Satgas->wilayah('010000', '1')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satgas))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-19 10:09:04 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(17): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\Satgas.php(40): App\Models\M_tppk->getNamaPilihan('010000')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Satgas->wilayah('010000', '1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satgas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 10:22:10 --> Undefined variable $namasekolah
+in APPPATH\Views\satgas\daftaranggota_satgas.php on line 49.
+ 1 APPPATH\Views\satgas\daftaranggota_satgas.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namasekolah', 'APPPATH\\Views\\satgas\\daftaranggota_satgas.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\satgas\\daftaranggota_satgas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('satgas/daftaranggota_satgas', [], true)
+ 5 APPPATH\Controllers\Satgas.php(72): view('satgas/daftaranggota_satgas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Satgas->wilayah('016100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Satgas))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 10:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 10:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 11:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 13:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 13:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 13:53:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'satuan_pendidikan'.
+CRITICAL - 2023-06-19 13:53:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'satuan_pendidikan'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(301): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[satuan_pendidikan]
+                ,[jml_tppk]
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 13:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 13:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 14:20:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 14:20:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(305): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah=:kodebaru: 
+                and id_level_wilayah=1:levelnya: 
+				and jenjang_sekolah = :jenjang: 
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'paud', 'D:\\laragon\\www\\tppk', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 14:20:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 14:20:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(305): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah=:kodebaru: 
+                and id_level_wilayah=1:levelnya: 
+				and jenjang_sekolah = :jenjang: 
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 14:20:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 14:20:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(305): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah=:kodebaru: 
+                and id_level_wilayah=1:levelnya: 
+				and jenjang_sekolah = :jenjang: 
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 14:20:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 14:20:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(305): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah = :kodebaru: 
+                and id_level_wilayah = :levelnya: 
+				and jenjang_sekolah = :jenjang: 
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 14:20:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 14:20:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(305): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah = :kodebaru: 
+                and id_level_wilayah = :levelnya: 
+				and jenjang_sekolah = :jenjang: 
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 14:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-19 14:22:17 --> Undefined array key "jml_satuan_pendidikan"
+in APPPATH\Views\tppk\data_tppk.php on line 146.
+ 1 APPPATH\Views\tppk\data_tppk.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_satuan_pendidikan"', 'APPPATH\\Views\\tppk\\data_tppk.php', 146)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(63): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:22:58 --> Undefined array key "jml_satuan_pendidikan"
+in APPPATH\Views\tppk\data_tppk.php on line 146.
+ 1 APPPATH\Views\tppk\data_tppk.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_satuan_pendidikan"', 'APPPATH\\Views\\tppk\\data_tppk.php', 146)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(63): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:23:24 --> Undefined array key "tot_jml_satuan_pendidikan"
+in APPPATH\Views\tppk\data_tppk.php on line 146.
+ 1 APPPATH\Views\tppk\data_tppk.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tot_jml_satuan_pendidikan"', 'APPPATH\\Views\\tppk\\data_tppk.php', 146)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(63): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:23:47 --> Undefined array key "tot_jml_satuan_pendidikan"
+in APPPATH\Views\tppk\data_tppk.php on line 146.
+ 1 APPPATH\Views\tppk\data_tppk.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tot_jml_satuan_pendidikan"', 'APPPATH\\Views\\tppk\\data_tppk.php', 146)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(63): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:24:27 --> Undefined array key "tot_jml_satuan_pendidikan"
+in APPPATH\Views\tppk\data_tppk.php on line 146.
+ 1 APPPATH\Views\tppk\data_tppk.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tot_jml_satuan_pendidikan"', 'APPPATH\\Views\\tppk\\data_tppk.php', 146)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(63): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:26:56 --> Undefined array key "jml_tppk"
+in APPPATH\Views\tppk\data_tppk.php on line 147.
+ 1 APPPATH\Views\tppk\data_tppk.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_tppk"', 'APPPATH\\Views\\tppk\\data_tppk.php', 147)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(63): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 14:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-19 14:50:36 --> syntax error, unexpected variable "$sql4"
+in APPPATH\Models\M_tppk.php on line 308.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\M_tppk.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_tppk')
+ 3 APPPATH\Controllers\TPPK.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_tppk')
+ 4 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TPPK->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 14:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 14:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 15:45:17 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(391): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'negeri')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-19 15:45:17 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(391): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+				,[jenjang_sekolah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and jenjang_sekolah = :jenjang:
+				and status_sekolah = :statusnya:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+				,[jenjang_sekolah]
+				,status_sekolah', [...])
+ 3 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'negeri')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 15:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 15:50:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:50:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(397): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'TK', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 15:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 15:51:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:51:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(397): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'SD', 'semua')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 15:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 15:51:30 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:51:30 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(397): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'TK', 'semua')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 15:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 15:55:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:55:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(418): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+				and jenjang_sekolah = :jenjang:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'TK', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 15:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 15:55:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:55:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(409): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+				and jenjang_sekolah = :jenjang:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'paud', 'semua', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 15:56:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:56:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(410): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+				and jenjang_sekolah = :jenjang:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'paud', 'semua', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 15:56:30 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:56:30 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(410): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+				and jenjang_sekolah = :jenjang:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'paud', 'semua', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 15:56:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:56:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(410): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+				and jenjang_sekolah = :jenjang:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'paud', 'semua', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 15:57:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:57:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(410): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+				and jenjang_sekolah = :jenjang:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'paud', 'semua', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 15:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 15:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 15:59:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:59:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(419): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+				and jenjang_sekolah = :jenjang:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'paud', 'TK', 'semua')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 15:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 15:59:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 15:59:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(419): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ,sum ([jml_satuan_pendidikan] ) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah= :kodebaru: 
+                and id_level_wilayah= :levelnya: 
+				and status_sekolah = :statusnya:
+				and jenjang_sekolah = :jenjang:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jenjang_sekolah]
+				,status_sekolah
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'dikdas', 'SMP', 'semua')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 16:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 16:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 16:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 20:44:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 20:44:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(420): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                -- ,[bentuk_pendidikan]
+                ,sum ([jml_satuan_pendidikan]) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah = :kodebaru: 
+                and id_level_wilayah = :levelnya: 
+				and bentuk_pendidikan = :bentuk: 
+                and status_sekolah = :statusnya: 
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                -- ,[bentuk_pendidikan]
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'SMP', 'semua')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 20:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 20:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 21:08:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.rekap_tppk.jml_satuan_pendidikan' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2023-06-19 21:08:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.rekap_tppk.jml_satuan_pendidikan' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(413): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah=:kodebaru: 
+                and id_level_wilayah=:levelnya:
+                and status_sekolah=:statusnya:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 21:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-19 21:17:52 --> Undefined variable $sql5
+in APPPATH\Models\M_tppk.php on line 483.
+ 1 APPPATH\Models\M_tppk.php(483): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sql5', 'APPPATH\\Models\\M_tppk.php', 483)
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'SD', 'semua')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 21:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 21:18:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 21:18:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(449): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,sum ([jml_satuan_pendidikan]) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah = :kodebaru: 
+                and id_level_wilayah = :levelnya: 
+				and jenjang_sekolah = :jenjang:
+                and status_sekolah = :statusnya:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'paud', 'semua', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 21:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 21:22:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2023-06-19 21:22:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(420): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,sum ([jml_satuan_pendidikan]) as tot_jml_satuan_pendidikan
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                FROM [TPPK].[dbo].[rekap_tppk]
+                where mst_kode_wilayah = :kodebaru: 
+                and id_level_wilayah = :levelnya: 
+				and jenjang_sekolah = :jenjang:
+                and bentuk_pendidikan = :bentuk:
+                group by [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'paud', 'TK', 'semua')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 21:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-19 21:37:37 --> Undefined variable $query
+in APPPATH\Models\M_tppk.php on line 415.
+ 1 APPPATH\Models\M_tppk.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\M_tppk.php', 415)
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'SPS', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 21:40:09 --> Undefined variable $query
+in APPPATH\Models\M_tppk.php on line 415.
+ 1 APPPATH\Models\M_tppk.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\M_tppk.php', 415)
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'SPS', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 21:40:11 --> Undefined variable $query
+in APPPATH\Models\M_tppk.php on line 415.
+ 1 APPPATH\Models\M_tppk.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\M_tppk.php', 415)
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'SPS', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 21:40:42 --> Undefined variable $query
+in APPPATH\Models\M_tppk.php on line 415.
+ 1 APPPATH\Models\M_tppk.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\M_tppk.php', 415)
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'SPS', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 21:41:25 --> Undefined variable $query
+in APPPATH\Models\M_tppk.php on line 415.
+ 1 APPPATH\Models\M_tppk.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\M_tppk.php', 415)
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'SPS', 'negeri')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 21:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-19 21:42:54 --> Undefined variable $query
+in APPPATH\Models\M_tppk.php on line 415.
+ 1 APPPATH\Models\M_tppk.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\M_tppk.php', 415)
+ 2 APPPATH\Controllers\TPPK.php(61): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'KB', 'semua')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 21:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 21:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-19 22:00:11 --> Undefined variable $filter
+in APPPATH\Views\tppk\data_tppk.php on line 8.
+ 1 APPPATH\Views\tppk\data_tppk.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filter', 'APPPATH\\Views\\tppk\\data_tppk.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(63): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 22:00:41 --> Undefined variable $filter
+in APPPATH\Views\tppk\data_tppk.php on line 8.
+ 1 APPPATH\Views\tppk\data_tppk.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filter', 'APPPATH\\Views\\tppk\\data_tppk.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(63): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 22:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-19 22:07:47 --> Undefined variable $selectj
+in APPPATH\Views\tppk\daftarsekolah_tppk.php on line 69.
+ 1 APPPATH\Views\tppk\daftarsekolah_tppk.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectj', 'APPPATH\\Views\\tppk\\daftarsekolah_tppk.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftarsekolah_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftarsekolah_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(67): view('tppk/daftarsekolah_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah('016001', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 22:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 22:10:48 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(17): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(40): App\Models\M_tppk->getNamaPilihan('016001')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah('016001', '3')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-19 22:10:48 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(17): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\TPPK.php(40): App\Models\M_tppk->getNamaPilihan('016001')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah('016001', '3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 22:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 22:11:12 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(17): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(40): App\Models\M_tppk->getNamaPilihan('016001')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah('016001', '3')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-19 22:11:12 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(17): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\TPPK.php(40): App\Models\M_tppk->getNamaPilihan('016001')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah('016001', '3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 22:11:21 --> Undefined array key 0
+in APPPATH\Controllers\TPPK.php on line 42.
+ 1 APPPATH\Controllers\TPPK.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\TPPK.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah('20110450', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 22:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-19 22:16:28 --> Undefined array key "instansi_id"
+in APPPATH\Views\tppk\data_tppk.php on line 175.
+ 1 APPPATH\Views\tppk\data_tppk.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "instansi_id"', 'APPPATH\\Views\\tppk\\data_tppk.php', 175)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppk', [], true)
+ 5 APPPATH\Controllers\TPPK.php(63): view('tppk/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah('016001', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 22:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 22:19:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-19 22:19:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(216): CodeIgniter\Database\BaseConnection->query('SELECT instansi_id,kode_instansi,nama FROM [TPPK].[dbo].[instansi] 
+        WHERE instansi_id = :instansi:', [...])
+ 2 APPPATH\Controllers\TPPK.php(73): App\Models\M_tppk->getSekolah('69949368')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('69949368')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 22:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-19 22:23:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-19 22:23:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(216): CodeIgniter\Database\BaseConnection->query('SELECT instansi_id,kode_instansi,nama FROM [TPPK].[dbo].[instansi] 
+        WHERE instansi_id = :instansi:', [...])
+ 2 APPPATH\Controllers\TPPK.php(73): App\Models\M_tppk->getSekolah('20110450')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20110450')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 22:26:06 --> Cannot use object of type CodeIgniter\Database\SQLSRV\Result as array
+in APPPATH\Controllers\TPPK.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20110450')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 22:26:39 --> Undefined property: CodeIgniter\Database\SQLSRV\Result::$instansi_id
+in APPPATH\Controllers\TPPK.php on line 75.
+ 1 APPPATH\Controllers\TPPK.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\SQLSRV\\Result::$instansi_id', 'APPPATH\\Controllers\\TPPK.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20110450')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 22:27:20 --> Undefined property: CodeIgniter\Database\SQLSRV\Result::$instansi_id
+in APPPATH\Controllers\TPPK.php on line 79.
+ 1 APPPATH\Controllers\TPPK.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\SQLSRV\\Result::$instansi_id', 'APPPATH\\Controllers\\TPPK.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20110450')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 22:27:47 --> Cannot use object of type CodeIgniter\Database\SQLSRV\Result as array
+in APPPATH\Controllers\TPPK.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20110450')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 22:28:40 --> Cannot use object of type CodeIgniter\Database\SQLSRV\Result as array
+in APPPATH\Controllers\TPPK.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20110450')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 22:31:05 --> Cannot use object of type CodeIgniter\Database\SQLSRV\Result as array
+in APPPATH\Controllers\TPPK.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20110450')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-19 22:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-19 22:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

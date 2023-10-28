@@ -1,0 +1,320 @@
+ERROR - 2023-05-29 08:52:09 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * ...')
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-29 08:52:09 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * FROM Dataprocess.rpt.sekolah_tutup ')
+ 3 APPPATH\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 08:52:37 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * ...')
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-29 08:52:37 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(28): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * FROM Dataprocess.rpt.sekolah_tutup ')
+ 3 APPPATH\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 09:54:56 --> Undefined array key "nama"
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 84.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(49): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 09:57:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'ORDER'.
+CRITICAL - 2023-05-29 09:57:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'ORDER'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_residu.php(29): CodeIgniter\Database\BaseConnection->query('SELECT kode_wilayah,wilayah,total_pd, residu_nisn, residu_nik, residu_wilayah   
+                FROM Arsip.pd.rekap_residu 
+                WHERE mst_kode_wilayah=:kodebaru: AND id_level_wilayah=
+                ORDER BY kode_wilayah', [...])
+ 2 APPPATH\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 09:58:33 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(30): CodeIgniter\Database\BaseConnection->query('SELECT kode_wil...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 1)
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-29 09:58:33 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(30): CodeIgniter\Database\BaseConnection->query('SELECT kode_wilayah,wilayah,total_pd, residu_nisn, residu_nik, residu_wilayah   
+                FROM Arsip.pd.rekap_residu 
+                WHERE mst_kode_wilayah=:kodebaru: AND id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(47): App\Models\M_residu->getTotalResidu('000000', 1)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 10:05:27 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(31): App\Models\M_residu->getNamaPilihan('020502')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('020502', '3')
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-29 10:05:27 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(31): App\Models\M_residu->getNamaPilihan('020502')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('020502', '3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 10:06:41 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [121].  SQLSTATE: 08001, code: 121
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 121 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(31): App\Models\M_residu->getNamaPilihan('020502')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('020502', '3')
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-29 10:06:41 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [121].  SQLSTATE: 08001, code: 121
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 121
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(31): App\Models\M_residu->getNamaPilihan('020502')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('020502', '3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:06:45 --> Undefined variable $breadcrump3
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 60.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $breadcrump3', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(52): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('020502', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:09:36 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result()
+in APPPATH\Controllers\PesertaDidik.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016006', '3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:10:23 --> Object of class CodeIgniter\Database\SQLSRV\Result could not be converted to string
+in APPPATH\Models\M_residu.php on line 33.
+ 1 APPPATH\Controllers\PesertaDidik.php(51): App\Models\M_residu->getTotalResidu('016006', 4)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016006', '3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 10:17:02 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(31): App\Models\M_residu->getNamaPilihan('016201')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016201', '3')
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-05-29 10:17:02 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(31): App\Models\M_residu->getNamaPilihan('016200')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016200', '2')
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-29 10:17:02 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(31): App\Models\M_residu->getNamaPilihan('016201')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016201', '3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:17:02 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\PesertaDidik.php(31): App\Models\M_residu->getNamaPilihan('016200')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016200', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:36:36 --> Undefined variable $bentuk
+in APPPATH\Controllers\PesertaDidik.php on line 49.
+ 1 APPPATH\Controllers\PesertaDidik.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bentuk', 'APPPATH\\Controllers\\PesertaDidik.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016006', '3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:36:57 --> Undefined variable $jalur
+in APPPATH\Controllers\PesertaDidik.php on line 58.
+ 1 APPPATH\Controllers\PesertaDidik.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jalur', 'APPPATH\\Controllers\\PesertaDidik.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016006', '3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:38:18 --> Undefined variable $bentuk
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 88.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bentuk', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 88)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(68): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016006', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:38:51 --> Undefined variable $bentuk
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 88.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bentuk', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 88)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(68): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah('016006', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:23:43 --> Undefined array key "nama"
+in APPPATH\Views\satuanpendidikan\data_residu_pd.php on line 84.
+ 1 APPPATH\Views\satuanpendidikan\data_residu_pd.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'APPPATH\\Views\\satuanpendidikan\\data_residu_pd.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\satuanpendidikan\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('satuanpendidikan/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\SatuanPendidikan.php(49): view('satuanpendidikan/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SatuanPendidikan->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SatuanPendidikan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 14:38:13 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\Pendidik.php(32): App\Models\M_residu->getNamaPilihan('016006')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah('016006', '3')
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-05-29 14:38:13 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FRO...', Array)
+#3 D:\laragon\www\res_pd\app\Controllers\Pendidik.php(32): App\Models\M_residu->getNamaPilihan('016006')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah('016006', '3')
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-29 14:38:13 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\Pendidik.php(32): App\Models\M_residu->getNamaPilihan('016006')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah('016006', '3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 14:38:13 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(14): CodeIgniter\Database\BaseConnection->query('SELECT nama FROM Referensi.ref.mst_wilayah w  
+                WHERE kode_wilayah=:kodewilayah:', [...])
+ 3 APPPATH\Controllers\Pendidik.php(32): App\Models\M_residu->getNamaPilihan('016006')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah('016006', '3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

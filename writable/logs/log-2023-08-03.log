@@ -1,0 +1,532 @@
+CRITICAL - 2023-08-03 09:33:39 --> Undefined variable $jenisinstansiid
+in APPPATH\Views\layout\default_grafik.php on line 29.
+ 1 APPPATH\Views\layout\default_grafik.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisinstansiid', 'APPPATH\\Views\\layout\\default_grafik.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\default_grafik.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default_grafik', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stat_linechart', [], true)
+ 6 APPPATH\Controllers\Dashboard.php(29): view('stat_linechart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-03 09:33:42 --> Undefined variable $jenisinstansiid
+in APPPATH\Views\layout\default_grafik.php on line 29.
+ 1 APPPATH\Views\layout\default_grafik.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisinstansiid', 'APPPATH\\Views\\layout\\default_grafik.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\default_grafik.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default_grafik', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stat_linechart', [], true)
+ 6 APPPATH\Controllers\Dashboard.php(29): view('stat_linechart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-03 09:33:47 --> Undefined variable $jenisinstansiid
+in APPPATH\Views\layout\default_grafik.php on line 29.
+ 1 APPPATH\Views\layout\default_grafik.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisinstansiid', 'APPPATH\\Views\\layout\\default_grafik.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\default_grafik.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default_grafik', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stat_linechart', [], true)
+ 6 APPPATH\Controllers\Dashboard.php(29): view('stat_linechart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 09:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 09:34:01 --> Undefined variable $jenisinstansiid
+in APPPATH\Views\layout\default_grafik.php on line 29.
+ 1 APPPATH\Views\layout\default_grafik.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisinstansiid', 'APPPATH\\Views\\layout\\default_grafik.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\default_grafik.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/default_grafik', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stat_linechart', [], true)
+ 6 APPPATH\Controllers\Dashboard.php(29): view('stat_linechart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 09:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 09:52:07 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\InputData.php on line 82.
+ 1 APPPATH\Controllers\InputData.php(82): substr(null, 0, 2)
+ 2 APPPATH\Controllers\InputData.php(29): App\Controllers\InputData->satgasprov()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 09:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 09:53:38 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\InputData.php on line 83.
+ 1 APPPATH\Controllers\InputData.php(83): substr(null, 0, 2)
+ 2 APPPATH\Controllers\InputData.php(30): App\Controllers\InputData->satgasprov()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 09:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 09:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 10:06:31 --> Undefined variable $namaKota
+in APPPATH\Views\inputsatgaskabkot.php on line 85.
+ 1 APPPATH\Views\inputsatgaskabkot.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namaKota', 'APPPATH\\Views\\inputsatgaskabkot.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(116): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(30): App\Controllers\InputData->satgaskota()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 10:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 10:58:04 --> Undefined array key "modified_time"
+in APPPATH\Views\tppk\daftaranggota2.php on line 113.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "modified_time"', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 113)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(303): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('016000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 10:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 10:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 11:11:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\tppk\daftaranggota2.php on line 121.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(121): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(304): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('031000')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 11:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 11:28:10 --> Attempt to read property "nomor_sk" on array
+in APPPATH\Views\inputsatgaskabkot.php on line 99.
+ 1 APPPATH\Views\inputsatgaskabkot.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nomor_sk" on array', 'APPPATH\\Views\\inputsatgaskabkot.php', 99)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(152): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 11:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 11:31:51 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\inputsatgaskabkot.php on line 103.
+ 1 APPPATH\Views\inputsatgaskabkot.php(103): date('d-m-Y', '2023-07-23')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(152): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 11:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 11:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 13:55:04 --> Attempt to read property "jenis_instansi_id" on array
+in APPPATH\Views\inputsatgaskabkot.php on line 64.
+ 1 APPPATH\Views\inputsatgaskabkot.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jenis_instansi_id" on array', 'APPPATH\\Views\\inputsatgaskabkot.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 13:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 13:55:29 --> Attempt to read property "namaanggota" on array
+in APPPATH\Views\inputsatgaskabkot.php on line 65.
+ 1 APPPATH\Views\inputsatgaskabkot.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "namaanggota" on array', 'APPPATH\\Views\\inputsatgaskabkot.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 13:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 13:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 14:24:51 --> Undefined array key "tanggal_lahir"
+in APPPATH\Views\inputsatgaskabkot.php on line 164.
+ 1 APPPATH\Views\inputsatgaskabkot.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_lahir"', 'APPPATH\\Views\\inputsatgaskabkot.php', 164)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 14:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 14:29:18 --> Undefined array key "tanggal_lahir"
+in APPPATH\Views\inputsatgaskabkot.php on line 164.
+ 1 APPPATH\Views\inputsatgaskabkot.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_lahir"', 'APPPATH\\Views\\inputsatgaskabkot.php', 164)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:31:32 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 166.
+ 1 APPPATH\Views\inputsatgaskabkot.php(166): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:32:20 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 166.
+ 1 APPPATH\Views\inputsatgaskabkot.php(166): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:32:59 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 166.
+ 1 APPPATH\Views\inputsatgaskabkot.php(166): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:38:10 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 173.
+ 1 APPPATH\Views\inputsatgaskabkot.php(173): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:39:29 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 173.
+ 1 APPPATH\Views\inputsatgaskabkot.php(173): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:40:19 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 173.
+ 1 APPPATH\Views\inputsatgaskabkot.php(173): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 14:44:07 --> Undefined array key 21
+in APPPATH\Views\inputsatgaskabkot.php on line 150.
+ 1 APPPATH\Views\inputsatgaskabkot.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 21', 'APPPATH\\Views\\inputsatgaskabkot.php', 150)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:48:35 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 167.
+ 1 APPPATH\Views\inputsatgaskabkot.php(167): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:49:40 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 167.
+ 1 APPPATH\Views\inputsatgaskabkot.php(167): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:50:08 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 167.
+ 1 APPPATH\Views\inputsatgaskabkot.php(167): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 14:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 14:50:19 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 167.
+ 1 APPPATH\Views\inputsatgaskabkot.php(167): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 15:00:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-03 15:00:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 167.
+ 1 APPPATH\Views\inputsatgaskabkot.php(167): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-08-03 15:00:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 204.
+ 1 APPPATH\Views\inputsatgaskabkot.php(204): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-08-03 15:00:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 240.
+ 1 APPPATH\Views\inputsatgaskabkot.php(240): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-08-03 15:00:24 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\inputsatgaskabkot.php on line 276.
+ 1 APPPATH\Views\inputsatgaskabkot.php(276): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-03 15:00:24 --> Undefined array key 4
+in APPPATH\Views\inputsatgaskabkot.php on line 336.
+ 1 APPPATH\Views\inputsatgaskabkot.php(336): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Views\\inputsatgaskabkot.php', 336)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 15:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 15:02:45 --> Undefined array key 0
+in APPPATH\Views\inputsatgaskabkot.php on line 171.
+ 1 APPPATH\Views\inputsatgaskabkot.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\inputsatgaskabkot.php', 171)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 15:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 15:06:46 --> Undefined variable $tgllahiranggota
+in APPPATH\Views\inputsatgaskabkot.php on line 171.
+ 1 APPPATH\Views\inputsatgaskabkot.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tgllahiranggota', 'APPPATH\\Views\\inputsatgaskabkot.php', 171)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgaskabkot.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgaskabkot', [], true)
+ 5 APPPATH\Controllers\InputData.php(157): view('inputsatgaskabkot', [...])
+ 6 APPPATH\Controllers\InputData.php(56): App\Controllers\InputData->satgaskota('edit')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 15:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 15:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 16:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 16:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

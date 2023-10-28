@@ -1,0 +1,448 @@
+CRITICAL - 2023-06-13 07:03:17 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getVar
+in APPPATH\Controllers\InputData.php on line 40.
+ 1 APPPATH\Controllers\InputData.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getVar', 'APPPATH\\Controllers\\InputData.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_autocomplete()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 07:04:14 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Controllers\InputData.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-13 07:04:34 --> Undefined property: App\Controllers\InputData::$M_tppk
+in APPPATH\Controllers\InputData.php on line 43.
+ 1 APPPATH\Controllers\InputData.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\InputData::$M_tppk', 'APPPATH\\Controllers\\InputData.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_autocomplete()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 07:05:01 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getVar
+in APPPATH\Controllers\InputData.php on line 41.
+ 1 APPPATH\Controllers\InputData.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getVar', 'APPPATH\\Controllers\\InputData.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_autocomplete()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 07:05:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'as'.
+CRITICAL - 2023-06-13 07:05:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'as'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(43): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Arsip.dbo.sekolah 
+                WHERE nama like \'%:namasekolah:%\'', [...])
+ 2 APPPATH\Controllers\InputData.php(42): App\Models\M_tppk->search_sekolah('as')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_autocomplete()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 07:07:25 --> Memory limit of 50240 KB exceeded for buffered query
+CRITICAL - 2023-06-13 07:07:25 --> Memory limit of 50240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(43): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Arsip.dbo.sekolah 
+                WHERE nama like \'%as%\'', [...])
+ 2 APPPATH\Controllers\InputData.php(42): App\Models\M_tppk->search_sekolah('as')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_autocomplete()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 07:09:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'LIMIT'.
+CRITICAL - 2023-06-13 07:09:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'LIMIT'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(43): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Arsip.dbo.sekolah 
+                WHERE nama LIKE \'%as%\' LIMIT 10', [...])
+ 2 APPPATH\Controllers\InputData.php(42): App\Models\M_tppk->search_sekolah('as')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_autocomplete()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 07:10:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'as'.
+CRITICAL - 2023-06-13 07:10:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'as'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(43): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM Arsip.dbo.sekolah 
+                WHERE nama LIKE \'%:namasekolah:%\'', [...])
+ 2 APPPATH\Controllers\InputData.php(42): App\Models\M_tppk->search_sekolah('as')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_autocomplete()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 07:11:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'as'.
+CRITICAL - 2023-06-13 07:11:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'as'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(43): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM Arsip.dbo.sekolah 
+                WHERE nama LIKE \'% :namasekolah: %\'', [...])
+ 2 APPPATH\Controllers\InputData.php(42): App\Models\M_tppk->search_sekolah('as')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_autocomplete()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 07:33:12 --> Unmatched '}'
+in APPPATH\Controllers\InputData.php on line 60.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('inputdata/get_autocomplete')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('inputdata/get_autocomplete')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('inputdata/get_autocomplete')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 09:41:11 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM R...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 1)
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-13 09:41:11 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(mst_kode_wilayah, :digit:)=LEFT(:kode:, :digit:) AND id_level_wilayah=:level: ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 1)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 09:41:41 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM R...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 1)
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-13 09:41:41 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(mst_kode_wilayah, :digit:)=LEFT(:kode:, :digit:) AND id_level_wilayah=:level: ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 1)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 09:41:44 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM R...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 1)
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-13 09:41:44 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(31): CodeIgniter\Database\BaseConnection->query('SELECT * FROM Referensi.ref.mst_wilayah 
+                WHERE LEFT(mst_kode_wilayah, :digit:)=LEFT(:kode:, :digit:) AND id_level_wilayah=:level: ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\InputData.php(23): App\Models\M_tppk->getNamaWilayah('000000', 1)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tppk()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 10:48:24 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(43): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20)...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(80): App\Models\M_tppk->search_sekolah('as')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-13 10:48:24 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(43): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM Arsip.dbo.sekolah 
+                WHERE nama LIKE :namasekolah:', [...])
+ 3 APPPATH\Controllers\InputData.php(80): App\Models\M_tppk->search_sekolah('as')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 10:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 12:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 12:45:07 --> Undefined array key "search"
+in APPPATH\Controllers\InputData.php on line 55.
+ 1 APPPATH\Controllers\InputData.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "search"', 'APPPATH\\Controllers\\InputData.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 12:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 12:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 16:33:56 --> Undefined property: stdClass::$sekolahid
+in APPPATH\Controllers\InputData.php on line 69.
+ 1 APPPATH\Controllers\InputData.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sekolahid', 'APPPATH\\Controllers\\InputData.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:33:57 --> Undefined property: stdClass::$sekolahid
+in APPPATH\Controllers\InputData.php on line 69.
+ 1 APPPATH\Controllers\InputData.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sekolahid', 'APPPATH\\Controllers\\InputData.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:33:59 --> Undefined property: stdClass::$sekolahid
+in APPPATH\Controllers\InputData.php on line 69.
+ 1 APPPATH\Controllers\InputData.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sekolahid', 'APPPATH\\Controllers\\InputData.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:33:59 --> Undefined property: stdClass::$sekolahid
+in APPPATH\Controllers\InputData.php on line 69.
+ 1 APPPATH\Controllers\InputData.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sekolahid', 'APPPATH\\Controllers\\InputData.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:34:09 --> Undefined property: stdClass::$sekolahid
+in APPPATH\Controllers\InputData.php on line 69.
+ 1 APPPATH\Controllers\InputData.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sekolahid', 'APPPATH\\Controllers\\InputData.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:34:10 --> Undefined property: stdClass::$sekolahid
+in APPPATH\Controllers\InputData.php on line 69.
+ 1 APPPATH\Controllers\InputData.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sekolahid', 'APPPATH\\Controllers\\InputData.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:34:10 --> Undefined property: stdClass::$sekolahid
+in APPPATH\Controllers\InputData.php on line 69.
+ 1 APPPATH\Controllers\InputData.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sekolahid', 'APPPATH\\Controllers\\InputData.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:34:12 --> Undefined property: stdClass::$sekolahid
+in APPPATH\Controllers\InputData.php on line 69.
+ 1 APPPATH\Controllers\InputData.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sekolahid', 'APPPATH\\Controllers\\InputData.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 16:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 16:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 16:52:45 --> Undefined variable $kodepropinsi
+in APPPATH\Controllers\InputData.php on line 46.
+ 1 APPPATH\Controllers\InputData.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kodepropinsi', 'APPPATH\\Controllers\\InputData.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 17:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 17:06:02 --> Undefined property: stdClass::$npsn
+in APPPATH\Controllers\InputData.php on line 71.
+ 1 APPPATH\Controllers\InputData.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$npsn', 'APPPATH\\Controllers\\InputData.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 17:06:02 --> Undefined property: stdClass::$npsn
+in APPPATH\Controllers\InputData.php on line 71.
+ 1 APPPATH\Controllers\InputData.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$npsn', 'APPPATH\\Controllers\\InputData.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 17:06:04 --> Undefined property: stdClass::$npsn
+in APPPATH\Controllers\InputData.php on line 71.
+ 1 APPPATH\Controllers\InputData.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$npsn', 'APPPATH\\Controllers\\InputData.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 17:06:05 --> Undefined property: stdClass::$npsn
+in APPPATH\Controllers\InputData.php on line 71.
+ 1 APPPATH\Controllers\InputData.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$npsn', 'APPPATH\\Controllers\\InputData.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 17:06:20 --> Undefined property: stdClass::$npsn
+in APPPATH\Controllers\InputData.php on line 71.
+ 1 APPPATH\Controllers\InputData.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$npsn', 'APPPATH\\Controllers\\InputData.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 17:06:22 --> Undefined property: stdClass::$npsn
+in APPPATH\Controllers\InputData.php on line 71.
+ 1 APPPATH\Controllers\InputData.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$npsn', 'APPPATH\\Controllers\\InputData.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 17:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 17:27:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+CRITICAL - 2023-06-13 17:27:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(67): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM Arsip.dbo.ptk 
+                WHERE jenis_instansi_id = 5 AND sekolah_id = :sekolahid: AND soft_delete = 0 AND nama LIKE :namaptk: ', [...])
+ 2 APPPATH\Controllers\InputData.php(93): App\Models\M_tppk->search_ptk('a', '10473F40-8EFE-E111-B8E3-23C2C940D2B0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 17:27:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+CRITICAL - 2023-06-13 17:27:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(67): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM Arsip.dbo.ptk 
+                WHERE jenis_instansi_id = 5 AND sekolah_id = :sekolahid: AND soft_delete = 0 AND nama LIKE :namaptk: ', [...])
+ 2 APPPATH\Controllers\InputData.php(93): App\Models\M_tppk->search_ptk('s', '10473F40-8EFE-E111-B8E3-23C2C940D2B0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 17:27:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+CRITICAL - 2023-06-13 17:27:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(67): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM Arsip.dbo.ptk 
+                WHERE jenis_instansi_id = 5 AND sekolah_id = :sekolahid: AND soft_delete = 0 AND nama LIKE :namaptk: ', [...])
+ 2 APPPATH\Controllers\InputData.php(93): App\Models\M_tppk->search_ptk('a', '10473F40-8EFE-E111-B8E3-23C2C940D2B0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 17:29:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+CRITICAL - 2023-06-13 17:29:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(67): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM Arsip.dbo.ptk 
+                WHERE jenis_instansi_id = 5 AND sekolah_id = :sekolahid: AND soft_delete = 0 AND nama LIKE :namaptk: ', [...])
+ 2 APPPATH\Controllers\InputData.php(93): App\Models\M_tppk->search_ptk('a', '10473F40-8EFE-E111-B8E3-23C2C940D2B0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 17:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 17:29:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+CRITICAL - 2023-06-13 17:29:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'jenis_instansi_id'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(67): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM Arsip.dbo.ptk 
+                WHERE jenis_instansi_id = 5 AND sekolah_id = :sekolahid: AND soft_delete = 0 AND nama LIKE :namaptk: ', [...])
+ 2 APPPATH\Controllers\InputData.php(93): App\Models\M_tppk->search_ptk('a', '103A0035-30F5-E011-B6D4-23C2A056A50F')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 17:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

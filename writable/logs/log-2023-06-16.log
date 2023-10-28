@@ -1,0 +1,238 @@
+INFO - 2023-06-16 08:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 08:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 08:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 08:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 08:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 08:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 08:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 08:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 08:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 08:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 09:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 10:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 10:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 11:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 11:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-16 11:04:54 --> Undefined variable $breadcrump4
+in APPPATH\Views\tabel\daftarsekolah_tppk.php on line 71.
+ 1 APPPATH\Views\tabel\daftarsekolah_tppk.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $breadcrump4', 'APPPATH\\Views\\tabel\\daftarsekolah_tppk.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\daftarsekolah_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/daftarsekolah_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(81): view('tabel/daftarsekolah_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('030104', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:17:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+CRITICAL - 2023-06-16 11:17:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(217): CodeIgniter\Database\BaseConnection->query('SELECT instansi_id,kode_instansi,nama FROM [TPPK].[dbo].[instansi] 
+        JOIN 
+        WHERE instansi_id = :instansi:', [...])
+ 2 APPPATH\Controllers\Tabel.php(87): App\Models\M_tppk->getSekolah('70BB3C55-2DF5-E011-B004-2DC4419CED14')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->anggota('70BB3C55-2DF5-E011-B004-2DC4419CED14')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:17:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+CRITICAL - 2023-06-16 11:17:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(217): CodeIgniter\Database\BaseConnection->query('SELECT instansi_id,kode_instansi,nama FROM [TPPK].[dbo].[instansi] 
+        JOIN 
+        WHERE instansi_id = :instansi:', [...])
+ 2 APPPATH\Controllers\Tabel.php(87): App\Models\M_tppk->getSekolah('70BB3C55-2DF5-E011-B004-2DC4419CED14')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->anggota('70BB3C55-2DF5-E011-B004-2DC4419CED14')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-16 11:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-16 11:18:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:18:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.instansi WHERE instansi_id=:kode:', [...])
+ 2 APPPATH\Controllers\InputData.php(56): App\Models\M_tppk->getNPSN('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNPSN()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:18:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:18:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(72): CodeIgniter\Database\BaseConnection->query('SELECT ptk_id,nama FROM Arsip.dbo.ptk 
+                WHERE sekolah_id = :sekolahid: AND soft_delete = 0', [...])
+ 2 APPPATH\Controllers\InputData.php(64): App\Models\M_tppk->getPTK('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:18:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:18:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.instansi WHERE instansi_id=:kode:', [...])
+ 2 APPPATH\Controllers\InputData.php(56): App\Models\M_tppk->getNPSN('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNPSN()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:18:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:18:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(72): CodeIgniter\Database\BaseConnection->query('SELECT ptk_id,nama FROM Arsip.dbo.ptk 
+                WHERE sekolah_id = :sekolahid: AND soft_delete = 0', [...])
+ 2 APPPATH\Controllers\InputData.php(64): App\Models\M_tppk->getPTK('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:18:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:18:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(72): CodeIgniter\Database\BaseConnection->query('SELECT ptk_id,nama FROM Arsip.dbo.ptk 
+                WHERE sekolah_id = :sekolahid: AND soft_delete = 0', [...])
+ 2 APPPATH\Controllers\InputData.php(64): App\Models\M_tppk->getPTK('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:18:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:18:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.instansi WHERE instansi_id=:kode:', [...])
+ 2 APPPATH\Controllers\InputData.php(56): App\Models\M_tppk->getNPSN('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNPSN()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:19:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+ERROR - 2023-06-16 11:19:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:19:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.instansi WHERE instansi_id=:kode:', [...])
+ 2 APPPATH\Controllers\InputData.php(56): App\Models\M_tppk->getNPSN('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNPSN()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:19:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(72): CodeIgniter\Database\BaseConnection->query('SELECT ptk_id,nama FROM Arsip.dbo.ptk 
+                WHERE sekolah_id = :sekolahid: AND soft_delete = 0', [...])
+ 2 APPPATH\Controllers\InputData.php(64): App\Models\M_tppk->getPTK('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:19:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+ERROR - 2023-06-16 11:19:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:19:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.instansi WHERE instansi_id=:kode:', [...])
+ 2 APPPATH\Controllers\InputData.php(56): App\Models\M_tppk->getNPSN('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNPSN()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:19:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(72): CodeIgniter\Database\BaseConnection->query('SELECT ptk_id,nama FROM Arsip.dbo.ptk 
+                WHERE sekolah_id = :sekolahid: AND soft_delete = 0', [...])
+ 2 APPPATH\Controllers\InputData.php(64): App\Models\M_tppk->getPTK('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:19:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:19:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(72): CodeIgniter\Database\BaseConnection->query('SELECT ptk_id,nama FROM Arsip.dbo.ptk 
+                WHERE sekolah_id = :sekolahid: AND soft_delete = 0', [...])
+ 2 APPPATH\Controllers\InputData.php(64): App\Models\M_tppk->getPTK('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:19:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:19:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(72): CodeIgniter\Database\BaseConnection->query('SELECT ptk_id,nama FROM Arsip.dbo.ptk 
+                WHERE sekolah_id = :sekolahid: AND soft_delete = 0', [...])
+ 2 APPPATH\Controllers\InputData.php(64): App\Models\M_tppk->getPTK('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:19:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:19:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.instansi WHERE instansi_id=:kode:', [...])
+ 2 APPPATH\Controllers\InputData.php(56): App\Models\M_tppk->getNPSN('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNPSN()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:19:59 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:19:59 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(72): CodeIgniter\Database\BaseConnection->query('SELECT ptk_id,nama FROM Arsip.dbo.ptk 
+                WHERE sekolah_id = :sekolahid: AND soft_delete = 0', [...])
+ 2 APPPATH\Controllers\InputData.php(64): App\Models\M_tppk->getPTK('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:19:59 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:19:59 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.instansi WHERE instansi_id=:kode:', [...])
+ 2 APPPATH\Controllers\InputData.php(56): App\Models\M_tppk->getNPSN('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNPSN()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:20:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+ERROR - 2023-06-16 11:20:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-16 11:20:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(72): CodeIgniter\Database\BaseConnection->query('SELECT ptk_id,nama FROM Arsip.dbo.ptk 
+                WHERE sekolah_id = :sekolahid: AND soft_delete = 0', [...])
+ 2 APPPATH\Controllers\InputData.php(64): App\Models\M_tppk->getPTK('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:20:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.instansi WHERE instansi_id=:kode:', [...])
+ 2 APPPATH\Controllers\InputData.php(56): App\Models\M_tppk->getNPSN('null')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getNPSN()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-16 11:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 11:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 11:26:13 --> CSRF token verified.
+INFO - 2023-06-16 15:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-16 16:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

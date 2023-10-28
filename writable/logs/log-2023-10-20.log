@@ -1,0 +1,808 @@
+ERROR - 2023-10-20 07:57:44 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(371): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(110): App\Models\M_tppk->getSekolah('50100313')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->anggota('50100313')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-20 07:57:44 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(371): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_id as instansi_id,\'\' as kode_instansi,nama,npsn,kode_wilayah
+                FROM [arsip].[dbo].[sekolah]
+                WHERE npsn = :npsn:', [...])
+ 3 APPPATH\Controllers\TPPK.php(110): App\Models\M_tppk->getSekolah('50100313')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('50100313')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 08:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 08:45:12 --> Undefined variable $file_path
+in APPPATH\Views\pdf_viewer.php on line 11.
+ 1 APPPATH\Views\pdf_viewer.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_path', 'APPPATH\\Views\\pdf_viewer.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf_viewer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_viewer', [], true)
+ 5 APPPATH\Controllers\TPPK.php(504): view('pdf_viewer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->lihat_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:51:45 --> Undefined variable $file_path
+in APPPATH\Views\pdf_viewer.php on line 11.
+ 1 APPPATH\Views\pdf_viewer.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_path', 'APPPATH\\Views\\pdf_viewer.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf_viewer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_viewer', [], true)
+ 5 APPPATH\Controllers\TPPK.php(504): view('pdf_viewer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->lihat_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:52:48 --> Undefined variable $file_path
+in APPPATH\Views\pdf_viewer.php on line 11.
+ 1 APPPATH\Views\pdf_viewer.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_path', 'APPPATH\\Views\\pdf_viewer.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf_viewer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_viewer', [], true)
+ 5 APPPATH\Controllers\TPPK.php(504): view('pdf_viewer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->lihat_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 08:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 08:55:57 --> Undefined variable $pdfPath
+in APPPATH\Views\tppk\daftaranggota.php on line 205.
+ 1 APPPATH\Views\tppk\daftaranggota.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pdfPath', 'APPPATH\\Views\\tppk\\daftaranggota.php', 205)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(254): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20201585')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 08:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 08:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 09:28:43 --> Undefined constant "App\Controllers\PUBLICPATH"
+in APPPATH\Controllers\TPPK.php on line 514.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->moveFile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 09:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 09:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 10:09:50 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 8, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20100140')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:09:50 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 5, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20100140')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:09:50 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 0, 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20100140')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 10:09:50 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\periksadaftaranggota.php on line 177.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\periksadaftaranggota.php', 177)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20100140')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 10:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 10:39:19 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 8, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('70015801')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:39:19 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 5, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('70015801')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:39:19 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 0, 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('70015801')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 10:39:19 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\periksadaftaranggota.php on line 177.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\periksadaftaranggota.php', 177)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('70015801')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 10:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 10:39:34 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 8, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403399')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:39:34 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 5, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403399')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:39:34 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 0, 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403399')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 10:39:34 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\periksadaftaranggota.php on line 177.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\periksadaftaranggota.php', 177)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403399')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 10:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 10:39:53 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 8, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403399')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:39:53 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 5, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403399')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:39:53 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 0, 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403399')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 10:39:53 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\periksadaftaranggota.php on line 177.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\periksadaftaranggota.php', 177)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403399')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 10:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 10:40:21 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\periksadaftaranggota.php on line 177.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\periksadaftaranggota.php', 177)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(923): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403516')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 10:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 10:55:01 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 8, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:55:01 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 5, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:55:01 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 0, 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 10:55:01 --> Undefined variable $getsk
+in APPPATH\Views\tppk\periksadaftaranggota.php on line 177.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getsk', 'APPPATH\\Views\\tppk\\periksadaftaranggota.php', 177)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 10:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 10:55:29 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 8, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:55:29 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 5, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 10:55:29 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 0, 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 10:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 10:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 11:03:42 --> Undefined variable $txtstatus
+in APPPATH\Views\tppk\daftaranggota.php on line 259.
+ 1 APPPATH\Views\tppk\daftaranggota.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $txtstatus', 'APPPATH\\Views\\tppk\\daftaranggota.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(256): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 11:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 11:06:46 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 8, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 11:06:46 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 5, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 11:06:46 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 0, 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 11:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 11:22:57 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 8, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403342')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 11:22:57 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 5, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403342')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 11:22:57 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 0, 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20403342')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 11:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 11:30:16 --> Unmatched '}'
+in APPPATH\Views\tppk\daftaranggota.php on line 239.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 3 APPPATH\Controllers\TPPK.php(256): view('tppk/daftaranggota', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20403248', 'validasi')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 11:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 11:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 12:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 13:05:08 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 8, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 13:05:08 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 5, 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-20 13:05:08 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\tppk\periksadaftaranggota.php on line 171.
+ 1 APPPATH\Views\tppk\periksadaftaranggota.php(171): substr(null, 0, 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\periksadaftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/periksadaftaranggota', [], true)
+ 5 APPPATH\Controllers\InputData.php(925): view('tppk/periksadaftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->lihatanggota('20409179')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 13:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 13:33:57 --> File not found: "http://localhost/tppk/uploads/sk_20403248_14KEPIII4AU206M2023.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://localhost/tppk/uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('http://localhost/tppk/uploads/sk_20403248_14KEPIII4AU206M2023.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('http://localhost/tppk/uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 4 APPPATH\Controllers\InputData.php(714): CodeIgniter\HTTP\Response->download('sk_20403248_14KEPIII4AU206M2023.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->download_sk('sk_20403248_14KEPIII4AU206M2023.pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 13:35:01 --> File not found: "./uploads/sk_20403248_14KEPIII4AU206M2023.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('./uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('./uploads/sk_20403248_14KEPIII4AU206M2023.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('./uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 4 APPPATH\Controllers\InputData.php(714): CodeIgniter\HTTP\Response->download('sk_20403248_14KEPIII4AU206M2023.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->download_sk('sk_20403248_14KEPIII4AU206M2023.pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 13:35:21 --> File not found: "uploads/sk_20403248_14KEPIII4AU206M2023.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('uploads/sk_20403248_14KEPIII4AU206M2023.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 4 APPPATH\Controllers\InputData.php(714): CodeIgniter\HTTP\Response->download('sk_20403248_14KEPIII4AU206M2023.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->download_sk('sk_20403248_14KEPIII4AU206M2023.pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 13:35:26 --> File not found: "/uploads/sk_20403248_14KEPIII4AU206M2023.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('/uploads/sk_20403248_14KEPIII4AU206M2023.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('/uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 4 APPPATH\Controllers\InputData.php(714): CodeIgniter\HTTP\Response->download('sk_20403248_14KEPIII4AU206M2023.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->download_sk('sk_20403248_14KEPIII4AU206M2023.pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 13:35:35 --> File not found: "../uploads/sk_20403248_14KEPIII4AU206M2023.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('../uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('../uploads/sk_20403248_14KEPIII4AU206M2023.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('../uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 4 APPPATH\Controllers\InputData.php(714): CodeIgniter\HTTP\Response->download('sk_20403248_14KEPIII4AU206M2023.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->download_sk('sk_20403248_14KEPIII4AU206M2023.pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 13:35:59 --> File not found: "./uploads/sk_20403248_14KEPIII4AU206M2023.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('./uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('./uploads/sk_20403248_14KEPIII4AU206M2023.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('./uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 4 APPPATH\Controllers\InputData.php(714): CodeIgniter\HTTP\Response->download('sk_20403248_14KEPIII4AU206M2023.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->download_sk('sk_20403248_14KEPIII4AU206M2023.pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 13:36:48 --> File not found: ".public/uploads/sk_20403248_14KEPIII4AU206M2023.pdf"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('.public/uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('.public/uploads/sk_20403248_14KEPIII4AU206M2023.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('.public/uploads/sk_20403248_14KEPIII4AU206M2023.pdf')
+ 4 APPPATH\Controllers\InputData.php(714): CodeIgniter\HTTP\Response->download('sk_20403248_14KEPIII4AU206M2023.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->download_sk('sk_20403248_14KEPIII4AU206M2023.pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 13:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 13:42:08 --> Trying to access array offset on value of type null
+in APPPATH\Views\tppk\daftaranggota.php on line 170.
+ 1 APPPATH\Views\tppk\daftaranggota.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\tppk\\daftaranggota.php', 170)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(263): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20613768')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 13:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 13:55:31 --> Array callback must have exactly two elements
+in APPPATH\Views\tppk\daftaranggota.php on line 217.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 4 APPPATH\Controllers\TPPK.php(266): view('tppk/daftaranggota', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('10101724')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 13:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 13:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:02:41 --> CSRF token verified.
+INFO - 2023-10-20 14:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 14:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-20 16:12:17 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(371): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(110): App\Models\M_tppk->getSekolah('10101724')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->anggota('10101724', 'validasi')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-20 16:12:17 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(371): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_id as instansi_id,\'\' as kode_instansi,nama,npsn,kode_wilayah
+                FROM [arsip].[dbo].[sekolah]
+                WHERE npsn = :npsn:', [...])
+ 3 APPPATH\Controllers\TPPK.php(110): App\Models\M_tppk->getSekolah('10101724')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('10101724', 'validasi')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 16:13:02 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(371): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(110): App\Models\M_tppk->getSekolah('10101724')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->anggota('10101724', 'validasi')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-20 16:13:02 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(371): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_id as instansi_id,\'\' as kode_instansi,nama,npsn,kode_wilayah
+                FROM [arsip].[dbo].[sekolah]
+                WHERE npsn = :npsn:', [...])
+ 3 APPPATH\Controllers\TPPK.php(110): App\Models\M_tppk->getSekolah('10101724')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('10101724', 'validasi')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 16:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 18:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 18:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 18:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 18:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 18:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 18:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 19:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-20 21:04:52 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(371): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(598): App\Models\M_tppk->getSekolah('10101724')
+#4 D:\laragon\www\tppk\app\Controllers\InputData.php(43): App\Controllers\InputData->npsn('10101724')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->index()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 21:04:53 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(371): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_id as instansi_id,\'\' as kode_instansi,nama,npsn,kode_wilayah
+                FROM [arsip].[dbo].[sekolah]
+                WHERE npsn = :npsn:', [...])
+ 3 APPPATH\Controllers\InputData.php(598): App\Models\M_tppk->getSekolah('10101724')
+ 4 APPPATH\Controllers\InputData.php(43): App\Controllers\InputData->npsn('10101724')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 21:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 21:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

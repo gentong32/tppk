@@ -1,0 +1,252 @@
+INFO - 2023-10-27 09:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-27 09:05:16 --> Undefined property: App\Controllers\Tools::$m_tools
+in APPPATH\Controllers\Tools.php on line 11.
+ 1 APPPATH\Controllers\Tools.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Tools::$m_tools', 'APPPATH\\Controllers\\Tools.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->rekaptppk('10601756')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:05:38 --> Undefined property: App\Controllers\Tools::$M_tools
+in APPPATH\Controllers\Tools.php on line 11.
+ 1 APPPATH\Controllers\Tools.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Tools::$M_tools', 'APPPATH\\Controllers\\Tools.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->rekaptppk('10601756')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:06:03 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\Database\SQLSRV\Result given, called in D:\laragon\www\tppk\app\Controllers\Tools.php on line 17
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Tools.php(17): view('t_tampilan', Object(CodeIgniter\Database\SQLSRV\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->rekaptppk('10601756')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:06:57 --> Invalid file: "t_tampilan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('t_tampilan.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('t_tampilan', [], true)
+ 3 APPPATH\Controllers\Tools.php(17): view('t_tampilan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->rekaptppk('10601756')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:10:45 --> Too few arguments to function App\Controllers\Tools::rekaptppk(), 0 passed in D:\laragon\www\tppk\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Tools.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->rekaptppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:11:26 --> Too few arguments to function App\Controllers\Tools::rekaptppk(), 0 passed in D:\laragon\www\tppk\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Tools.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->rekaptppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-27 09:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 09:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 09:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 09:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-27 09:28:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'kode_wilayah'.
+CRITICAL - 2023-10-27 09:28:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'kode_wilayah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tools.php(25): CodeIgniter\Database\BaseConnection->query('SELECT TOP (1000) * FROM [TPPK].[dbo].[sk_tppk]
+                where kode_wilayah =:kodewilayah:', [...])
+ 2 APPPATH\Controllers\Tools.php(18): App\Models\M_tools->get_sk_tppk('20237371')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->rekaptppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 10:39:47 --> preg_match(): Argument #2 ($subject) must be of type string, array given
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Cell\DefaultValueBinder.php on line 63.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Cell\DefaultValueBinder.php(63): preg_match('/^[\\+\\-]?(\\d+\\.?\\d*|\\d*\\.?\\d+)([Ee][\\-\\+]?[0-2]?\\d{1,3})?$/', [...])
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Cell\DefaultValueBinder.php(35): PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder::dataTypeForValue([...])
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Cell\Cell.php(237): PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder->bindValue(Object(PhpOffice\PhpSpreadsheet\Cell\Cell), [...])
+ 4 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1201): PhpOffice\PhpSpreadsheet\Cell\Cell->setValue([...], Object(PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder))
+ 5 APPPATH\Controllers\Tools.php(86): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->setCellValueByColumnAndRow(1, 1, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->make_excel()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 11:03:02 --> fopen(D:\laragon\www\tppk\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\laragon\\www\\tppk\\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\public\\rekap\\rekap_tppk.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 4 APPPATH\Controllers\Tools.php(137): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 11:07:17 --> PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::setCellValue(): Argument #3 ($binder) must be of type ?PhpOffice\PhpSpreadsheet\Cell\IValueBinder, int given, called in D:\laragon\www\tppk\app\Controllers\Tools.php on line 131
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php on line 1176.
+ 1 APPPATH\Controllers\Tools.php(131): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->setCellValue('J2', 0, 1)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 11:08:54 --> fopen(D:\laragon\www\tppk\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\laragon\\www\\tppk\\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\public\\rekap\\rekap_tppk.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 4 APPPATH\Controllers\Tools.php(140): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 11:12:12 --> Invalid character found in sheet title
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php on line 488.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(915): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::checkSheetTitle('Rekap 27/10/2023')
+ 2 APPPATH\Controllers\Tools.php(117): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->setTitle('Rekap 27/10/2023')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 11:15:22 --> Call to undefined method PhpOffice\PhpSpreadsheet\Style\Style::setAutoFilter()
+in APPPATH\Controllers\Tools.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-27 13:20:45 --> Memory limit of 50240 KB exceeded for buffered query
+CRITICAL - 2023-10-27 13:20:45 --> Memory limit of 50240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tools.php(61): CodeIgniter\Database\BaseConnection->query('SELECT r1.nama as propinsi, r2.nama as kota_kab
+                    ,[wilayah] as kecamatan
+                    ,[bentuk_pendidikan]
+                    ,[status_sekolah]
+                    ,[jenjang_sekolah]
+                    ,[jml_satuan_pendidikan]
+                    ,[jml_tppk]
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (rt.mst_kode_wilayah, 2) 
+                AND r1.id_level_wilayah=1 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=3
+                ORDER BY r1.kode_wilayah, r2.kode_wilayah')
+ 2 APPPATH\Controllers\Tools.php(78): App\Models\M_tools->get_tppk_wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-27 13:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-27 13:41:55 --> Memory limit of 50240 KB exceeded for buffered query
+CRITICAL - 2023-10-27 13:41:55 --> Memory limit of 50240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tools.php(61): CodeIgniter\Database\BaseConnection->query('SELECT r1.nama as propinsi, r2.nama as kota_kab
+                    ,[wilayah] as kecamatan
+                    ,[bentuk_pendidikan]
+                    ,[status_sekolah]
+                    ,[jenjang_sekolah]
+                    ,[jml_satuan_pendidikan]
+                    ,[jml_tppk]
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (rt.mst_kode_wilayah, 2) 
+                AND r1.id_level_wilayah=1 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=3
+                ORDER BY r1.kode_wilayah, r2.kode_wilayah')
+ 2 APPPATH\Controllers\Tools.php(78): App\Models\M_tools->get_tppk_wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 14:13:19 --> Undefined array key 0
+in APPPATH\Controllers\Tools.php on line 43.
+ 1 APPPATH\Controllers\Tools.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Tools.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->rekaptppk()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 14:13:59 --> Undefined array key 0
+in APPPATH\Controllers\Tools.php on line 43.
+ 1 APPPATH\Controllers\Tools.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Tools.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->rekaptppk()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 14:20:45 --> fopen(D:\laragon\www\tppk\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\laragon\\www\\tppk\\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\public\\rekap\\rekap_tppk.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 4 APPPATH\Controllers\Tools.php(144): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 14:22:58 --> fopen(D:\laragon\www\tppk\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\laragon\\www\\tppk\\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\public\\rekap\\rekap_tppk.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 4 APPPATH\Controllers\Tools.php(144): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 14:25:42 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 4194312 bytes)
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Collection\Cells.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 14:30:24 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777248 bytes)
+in FCPATH\vendor\maennchen\zipstream-php\src\File.php on line 332.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 14:35:31 --> fopen(D:\laragon\www\tppk\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\laragon\\www\\tppk\\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\public\\rekap\\rekap_tppk.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 4 APPPATH\Controllers\Tools.php(142): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 14:38:47 --> fopen(D:\laragon\www\tppk\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\laragon\\www\\tppk\\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\public\\rekap\\rekap_tppk.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 4 APPPATH\Controllers\Tools.php(142): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 14:43:24 --> fopen(D:\laragon\www\tppk\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\laragon\\www\\tppk\\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\public\\rekap\\rekap_tppk.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 4 APPPATH\Controllers\Tools.php(142): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 14:43:48 --> fopen(D:\laragon\www\tppk\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\laragon\\www\\tppk\\public/rekap/rekap_tppk.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\public\\rekap\\rekap_tppk.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 4 APPPATH\Controllers\Tools.php(142): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\public\\rekap\\rekap_tppk.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tools->eksporData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 15:01:25 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes)
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Collection\Cells.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 15:01:51 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes)
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Collection\Cells.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-10-27 15:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 15:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-27 16:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

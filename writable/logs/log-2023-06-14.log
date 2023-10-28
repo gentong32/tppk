@@ -1,0 +1,1243 @@
+INFO - 2023-06-14 06:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 06:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:07:37 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:07:53 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:08:03 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:11:04 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:11:29 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:11:47 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:16:48 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:17:47 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:17:49 --> Undefined variable $search
+in APPPATH\Controllers\InputData.php on line 107.
+ 1 APPPATH\Controllers\InputData.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $search', 'APPPATH\\Controllers\\InputData.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:20:29 --> Undefined variable $sekolah_id
+in APPPATH\Controllers\InputData.php on line 76.
+ 1 APPPATH\Controllers\InputData.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sekolah_id', 'APPPATH\\Controllers\\InputData.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:20:32 --> Undefined variable $search
+in APPPATH\Controllers\InputData.php on line 76.
+ 1 APPPATH\Controllers\InputData.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $search', 'APPPATH\\Controllers\\InputData.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:21:52 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:21:55 --> Undefined variable $search
+in APPPATH\Controllers\InputData.php on line 107.
+ 1 APPPATH\Controllers\InputData.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $search', 'APPPATH\\Controllers\\InputData.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:22:14 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:22:24 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:23:47 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:23:49 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:25:23 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:27:58 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:28:06 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:28:09 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:28:13 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:28:15 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:28:19 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:28:47 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:29:04 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:29:06 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:29:38 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:29:40 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:29:41 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:29:42 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:29:43 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:31:53 --> Undefined property: stdClass::$pengguna_id
+in APPPATH\Controllers\InputData.php on line 100.
+ 1 APPPATH\Controllers\InputData.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pengguna_id', 'APPPATH\\Controllers\\InputData.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:31:55 --> Undefined property: stdClass::$pengguna_id
+in APPPATH\Controllers\InputData.php on line 100.
+ 1 APPPATH\Controllers\InputData.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pengguna_id', 'APPPATH\\Controllers\\InputData.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:35:09 --> Undefined property: stdClass::$pengguna_id
+in APPPATH\Controllers\InputData.php on line 100.
+ 1 APPPATH\Controllers\InputData.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pengguna_id', 'APPPATH\\Controllers\\InputData.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:35:14 --> Undefined property: stdClass::$pengguna_id
+in APPPATH\Controllers\InputData.php on line 100.
+ 1 APPPATH\Controllers\InputData.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pengguna_id', 'APPPATH\\Controllers\\InputData.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:35:24 --> Undefined property: stdClass::$pengguna_id
+in APPPATH\Controllers\InputData.php on line 100.
+ 1 APPPATH\Controllers\InputData.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pengguna_id', 'APPPATH\\Controllers\\InputData.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:35:27 --> Undefined property: stdClass::$pengguna_id
+in APPPATH\Controllers\InputData.php on line 100.
+ 1 APPPATH\Controllers\InputData.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pengguna_id', 'APPPATH\\Controllers\\InputData.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:35:56 --> Undefined property: stdClass::$pengguna_id
+in APPPATH\Controllers\InputData.php on line 100.
+ 1 APPPATH\Controllers\InputData.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pengguna_id', 'APPPATH\\Controllers\\InputData.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 07:35:57 --> Undefined property: stdClass::$pengguna_id
+in APPPATH\Controllers\InputData.php on line 100.
+ 1 APPPATH\Controllers\InputData.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pengguna_id', 'APPPATH\\Controllers\\InputData.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 07:38:58 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 07:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 07:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 08:39:43 --> Call to a member function getVar() on array
+in APPPATH\Controllers\InputData.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 08:41:26 --> Undefined array key "jmlpetugas"
+in APPPATH\Controllers\InputData.php on line 114.
+ 1 APPPATH\Controllers\InputData.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jmlpetugas"', 'APPPATH\\Controllers\\InputData.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 08:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 08:41:49 --> Undefined array key "jmlpetugas"
+in APPPATH\Controllers\InputData.php on line 114.
+ 1 APPPATH\Controllers\InputData.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jmlpetugas"', 'APPPATH\\Controllers\\InputData.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 08:44:07 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 08:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 08:45:28 --> Undefined array key "jmlpetugas"
+in APPPATH\Controllers\InputData.php on line 114.
+ 1 APPPATH\Controllers\InputData.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jmlpetugas"', 'APPPATH\\Controllers\\InputData.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 08:46:13 --> Undefined array key "jmlpetugas"
+in APPPATH\Controllers\InputData.php on line 114.
+ 1 APPPATH\Controllers\InputData.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jmlpetugas"', 'APPPATH\\Controllers\\InputData.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 08:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 08:46:19 --> Undefined array key "jmlpetugas"
+in APPPATH\Controllers\InputData.php on line 114.
+ 1 APPPATH\Controllers\InputData.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jmlpetugas"', 'APPPATH\\Controllers\\InputData.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 08:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 08:46:54 --> Array callback must have exactly two elements
+in APPPATH\Controllers\InputData.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 08:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 08:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 08:56:48 --> Undefined variable $namaPropinsi
+in APPPATH\Views\f_inputan.php on line 47.
+ 1 APPPATH\Views\f_inputan.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namaPropinsi', 'APPPATH\\Views\\f_inputan.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\f_inputan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('f_inputan', [], true)
+ 5 APPPATH\Controllers\InputData.php(144): view('f_inputan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->jajalinput()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 09:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 09:41:50 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 123.
+ 1 APPPATH\Controllers\InputData.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 09:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 09:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 09:49:51 --> Array to string conversion
+in SYSTEMPATH\Database\BaseBuilder.php on line 2160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Database\\BaseBuilder.php', 2160)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2160): implode(',', [...])
+ 3 [internal function]: CodeIgniter\Database\BaseBuilder::CodeIgniter\Database\{closure}([...])
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2160): array_map(Object(Closure), [...])
+ 5 SYSTEMPATH\Database\SQLSRV\Builder.php(196): CodeIgniter\Database\BaseBuilder->formatValues([...])
+ 6 SYSTEMPATH\Database\BaseBuilder.php(1792): CodeIgniter\Database\SQLSRV\Builder->_insertBatch('"TPPK"."dbo"."instansi_pengguna"', [...], [...])
+ 7 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 8 APPPATH\Models\M_tppk.php(76): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 9 APPPATH\Controllers\InputData.php(131): App\Models\M_tppk->insert_batch([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 09:51:24 --> Cannot use [] for reading
+in APPPATH\Controllers\InputData.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 09:56:49 --> Array to string conversion
+in SYSTEMPATH\Database\BaseBuilder.php on line 2160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Database\\BaseBuilder.php', 2160)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2160): implode(',', [...])
+ 3 [internal function]: CodeIgniter\Database\BaseBuilder::CodeIgniter\Database\{closure}([...])
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2160): array_map(Object(Closure), [...])
+ 5 SYSTEMPATH\Database\SQLSRV\Builder.php(196): CodeIgniter\Database\BaseBuilder->formatValues([...])
+ 6 SYSTEMPATH\Database\BaseBuilder.php(1792): CodeIgniter\Database\SQLSRV\Builder->_insertBatch('"TPPK"."dbo"."instansi_pengguna"', [...], [...])
+ 7 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 8 APPPATH\Models\M_tppk.php(76): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 9 APPPATH\Controllers\InputData.php(153): App\Models\M_tppk->insert_batch([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 09:59:34 --> Array to string conversion
+in SYSTEMPATH\Database\BaseBuilder.php on line 2160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Database\\BaseBuilder.php', 2160)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2160): implode(',', [...])
+ 3 [internal function]: CodeIgniter\Database\BaseBuilder::CodeIgniter\Database\{closure}([...])
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2160): array_map(Object(Closure), [...])
+ 5 SYSTEMPATH\Database\SQLSRV\Builder.php(196): CodeIgniter\Database\BaseBuilder->formatValues([...])
+ 6 SYSTEMPATH\Database\BaseBuilder.php(1792): CodeIgniter\Database\SQLSRV\Builder->_insertBatch('"TPPK"."dbo"."instansi_pengguna"', [...], [...])
+ 7 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 8 APPPATH\Models\M_tppk.php(76): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 9 APPPATH\Controllers\InputData.php(153): App\Models\M_tppk->insert_batch([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:12:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'Arsip.dbo.TPPK.dbo.instansi_pengguna'.
+CRITICAL - 2023-06-14 10:12:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'Arsip.dbo.TPPK.dbo.instansi_pengguna'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Arsip"."dbo"."TPPK.dbo.instansi_pengguna" ("instansi_id", "jabatan_id", "pengguna_id", "sk", "tanggal_sk")
+VALUES (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'6014CD5D-2EF5-E011-9B95-05FC0163AE62\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'C47253C8-A689-11E4-8E08-03498CD73DEF\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'00\',\'00C8595E-2EF5-E011-BF08-4B235623B61B\',\'Masukan.docx\',\'14-06-2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(76): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(162): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:22:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'Arsip.dbo.TPPK.dbo.instansi_pengguna'.
+CRITICAL - 2023-06-14 10:22:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'Arsip.dbo.TPPK.dbo.instansi_pengguna'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "Arsip"."dbo"."TPPK.dbo.instansi_pengguna" ("instansi_id", "jabatan_id", "pengguna_id", "sk", "tanggal_sk")
+VALUES (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'6014CD5D-2EF5-E011-9B95-05FC0163AE62\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'C47253C8-A689-11E4-8E08-03498CD73DEF\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'00\',\'00C8595E-2EF5-E011-BF08-4B235623B61B\',\'Masukan.docx\',\'14-06-2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(78): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(162): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:24:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.dbo.instansi_pengguna'.
+CRITICAL - 2023-06-14 10:24:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.dbo.instansi_pengguna'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "TPPK"."dbo"."TPPK.dbo.instansi_pengguna" ("instansi_id", "jabatan_id", "pengguna_id", "sk", "tanggal_sk")
+VALUES (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'6014CD5D-2EF5-E011-9B95-05FC0163AE62\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'C47253C8-A689-11E4-8E08-03498CD73DEF\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'00\',\'00C8595E-2EF5-E011-BF08-4B235623B61B\',\'Masukan.docx\',\'14-06-2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(78): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(162): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:25:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting date and/or time from character string.
+CRITICAL - 2023-06-14 10:25:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting date and/or time from character string.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "TPPK"."dbo"."instansi_pengguna" ("instansi_id", "jabatan_id", "pengguna_id", "sk", "tanggal_sk")
+VALUES (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'6014CD5D-2EF5-E011-9B95-05FC0163AE62\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'C47253C8-A689-11E4-8E08-03498CD73DEF\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'00\',\'00C8595E-2EF5-E011-BF08-4B235623B61B\',\'Masukan.docx\',\'14-06-2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(78): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(162): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:26:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting date and/or time from character string.
+CRITICAL - 2023-06-14 10:26:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting date and/or time from character string.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "TPPK"."dbo"."instansi_pengguna" ("instansi_id", "jabatan_id", "pengguna_id", "sk", "tanggal_sk")
+VALUES (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'6014CD5D-2EF5-E011-9B95-05FC0163AE62\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'02\',\'C47253C8-A689-11E4-8E08-03498CD73DEF\',\'Masukan.docx\',\'14-06-2023\'), (\'4008D95C-2EF5-E011-9D13-9B2DE71FCEC0\',\'00\',\'00C8595E-2EF5-E011-BF08-4B235623B61B\',\'Masukan.docx\',\'14-06-2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(78): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(162): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 10:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-14 10:36:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'instansi_pengguna_id', table 'TPPK.dbo.instansi_pengguna'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-06-14 10:36:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'instansi_pengguna_id', table 'TPPK.dbo.instansi_pengguna'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "TPPK"."dbo"."instansi_pengguna" ("instansi_id", "jabatan_id", "pengguna_id", "sk", "tanggal_sk")
+VALUES (\'8C57BE23-E673-4FC3-A8E0-18A6D68F43EF\',\'02\',\'2FD77D6F-B3B9-4C2D-A467-05F00D8C09CE\',\'Masukan.docx\',\'06/14/2023\'), (\'8C57BE23-E673-4FC3-A8E0-18A6D68F43EF\',\'02\',\'66A13CC7-9074-429B-844F-0376E6F46DBD\',\'Masukan.docx\',\'06/14/2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(78): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(168): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 10:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-14 10:37:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-06-14 10:37:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(54): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM TPPK.dbo.instansi 
+                WHERE jenis_instansi_id = 5 AND nama LIKE :namasekolah: AND LEFT(kode_wilayah,6) = ', [...])
+ 2 APPPATH\Controllers\InputData.php(60): App\Models\M_tppk->search_sekolah('sd', '010000  ', 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:37:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-06-14 10:37:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(54): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM TPPK.dbo.instansi 
+                WHERE jenis_instansi_id = 5 AND nama LIKE :namasekolah: AND LEFT(kode_wilayah,6) = ', [...])
+ 2 APPPATH\Controllers\InputData.php(60): App\Models\M_tppk->search_sekolah('s', '010000  ', 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:37:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-06-14 10:37:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(54): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM TPPK.dbo.instansi 
+                WHERE jenis_instansi_id = 5 AND nama LIKE :namasekolah: AND LEFT(kode_wilayah,6) = ', [...])
+ 2 APPPATH\Controllers\InputData.php(60): App\Models\M_tppk->search_sekolah('sd', '010000  ', 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:37:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'instansi_pengguna_id', table 'TPPK.dbo.instansi_pengguna'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-06-14 10:37:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'instansi_pengguna_id', table 'TPPK.dbo.instansi_pengguna'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "TPPK"."dbo"."instansi_pengguna" ("instansi_id", "jabatan_id", "pengguna_id", "sk", "tanggal_sk")
+VALUES (\'00BF4D0F-2CF5-E011-98EC-AF3DCEB9F2EE\',\'02\',\'BA2BF031-771A-E211-B7E9-13F423455FFA\',\'Masukan.docx\',\'06/14/2023\'), (\'00BF4D0F-2CF5-E011-98EC-AF3DCEB9F2EE\',\'02\',\'60B71718-2CF5-E011-9679-735013DCA58F\',\'Masukan.docx\',\'06/14/2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(78): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(168): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 10:44:48 --> syntax error, unexpected token "=>", expecting "]"
+in APPPATH\Controllers\InputData.php on line 126.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('inputdata/guidv4')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('inputdata/guidv4')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('inputdata/guidv4')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 10:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-14 10:46:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-06-14 10:46:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(54): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM TPPK.dbo.instansi 
+                WHERE jenis_instansi_id = 5 AND nama LIKE :namasekolah: AND LEFT(kode_wilayah,6) = ', [...])
+ 2 APPPATH\Controllers\InputData.php(60): App\Models\M_tppk->search_sekolah('s', '020000  ', 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:46:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-06-14 10:46:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(54): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM TPPK.dbo.instansi 
+                WHERE jenis_instansi_id = 5 AND nama LIKE :namasekolah: AND LEFT(kode_wilayah,6) = ', [...])
+ 2 APPPATH\Controllers\InputData.php(60): App\Models\M_tppk->search_sekolah('sm', '020000  ', 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 10:46:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-06-14 10:46:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(54): CodeIgniter\Database\BaseConnection->query('SELECT TOP (20) * FROM TPPK.dbo.instansi 
+                WHERE jenis_instansi_id = 5 AND nama LIKE :namasekolah: AND LEFT(kode_wilayah,6) = ', [...])
+ 2 APPPATH\Controllers\InputData.php(60): App\Models\M_tppk->search_sekolah('sma', '020000  ', 'D:\\laragon\\www\\tppk', 'D:\\laragon\\www\\tppk')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAuto()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 10:58:37 --> Undefined property: App\Controllers\Tabel::$model_residu
+in APPPATH\Controllers\Tabel.php on line 74.
+ 1 APPPATH\Controllers\Tabel.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Tabel::$model_residu', 'APPPATH\\Controllers\\Tabel.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 10:59:16 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Tabel.php(74): CodeIgniter\Model->__call('getTotalResidu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:00:39 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Tabel.php(74): CodeIgniter\Model->__call('getTotalResidu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:01:47 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Tabel.php(74): CodeIgniter\Model->__call('getTotalResidu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:02:14 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Tabel.php(75): CodeIgniter\Model->__call('getTotalResidu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:02:28 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Tabel.php(75): CodeIgniter\Model->__call('getTotalResidu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:26:25 --> Undefined array key 0
+in APPPATH\Controllers\Tabel.php on line 55.
+ 1 APPPATH\Controllers\Tabel.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Tabel.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010200', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:27:44 --> Undefined array key 0
+in APPPATH\Controllers\Tabel.php on line 55.
+ 1 APPPATH\Controllers\Tabel.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Tabel.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010200', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:28:26 --> Undefined array key 0
+in APPPATH\Controllers\Tabel.php on line 55.
+ 1 APPPATH\Controllers\Tabel.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Tabel.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010300', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:29:10 --> Undefined array key 0
+in APPPATH\Controllers\Tabel.php on line 55.
+ 1 APPPATH\Controllers\Tabel.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Tabel.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010200', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:30:15 --> Undefined variable $lembaga
+in APPPATH\Views\tabel\data_tppk.php on line 16.
+ 1 APPPATH\Views\tabel\data_tppk.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lembaga', 'APPPATH\\Views\\tabel\\data_tppk.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(80): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:46:16 --> Undefined variable $jenjang
+in APPPATH\Views\tabel\data_tppk.php on line 62.
+ 1 APPPATH\Views\tabel\data_tppk.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenjang', 'APPPATH\\Views\\tabel\\data_tppk.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(80): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:47:44 --> Undefined variable $tglsekarang
+in APPPATH\Views\tabel\data_tppk.php on line 83.
+ 1 APPPATH\Views\tabel\data_tppk.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tglsekarang', 'APPPATH\\Views\\tabel\\data_tppk.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(80): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:48:26 --> Undefined variable $kementerian
+in APPPATH\Views\tabel\data_tppk.php on line 89.
+ 1 APPPATH\Views\tabel\data_tppk.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kementerian', 'APPPATH\\Views\\tabel\\data_tppk.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(80): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:48:47 --> Undefined variable $residu
+in APPPATH\Views\tabel\data_tppk.php on line 86.
+ 1 APPPATH\Views\tabel\data_tppk.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residu', 'APPPATH\\Views\\tabel\\data_tppk.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(80): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:49:16 --> Undefined array key "wilayah"
+in APPPATH\Views\tabel\data_tppk.php on line 108.
+ 1 APPPATH\Views\tabel\data_tppk.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "wilayah"', 'APPPATH\\Views\\tabel\\data_tppk.php', 108)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(80): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 11:52:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'kode_wilayah'.
+CRITICAL - 2023-06-14 11:52:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'kode_wilayah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT TOP (1000) [instansi_pengguna_id] ,[jabatan_id],[penugasan],[pengguna_id]
+                ,ipg.[instansi_id],[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],
+                ipg.[soft_delete],kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ipg.kode_wilayah
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id WHERE LEFT(kode_wilayah,:jmlkode:) = :kodenya:', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalResidu('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 11:53:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "ins.kode_wilayah" could not be bound.
+CRITICAL - 2023-06-14 11:53:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "ins.kode_wilayah" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT TOP (1000) [instansi_pengguna_id] ,[jabatan_id],[penugasan],[pengguna_id]
+                ,ipg.[instansi_id],[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],
+                ipg.[soft_delete],kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ins.kode_wilayah
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id WHERE LEFT(kode_wilayah,:jmlkode:) = :kodenya:', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalResidu('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 11:54:21 --> Unclosed '{' on line 85
+in APPPATH\Models\M_tppk.php on line 116.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\M_tppk.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_tppk')
+ 3 APPPATH\Controllers\Tabel.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_tppk')
+ 4 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Tabel->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 11:54:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'JOIN'.
+CRITICAL - 2023-06-14 11:54:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'JOIN'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT TOP (1000) [instansi_pengguna_id] ,[jabatan_id],[penugasan],[pengguna_id]
+                ,ipg.[instansi_id],[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],
+                ipg.[soft_delete],kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id WHERE LEFT(kode_wilayah,:jmlkode:) = :kodenya:
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ins.kode_wilayah', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalResidu('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 11:55:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'JOIN'.
+CRITICAL - 2023-06-14 11:55:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'JOIN'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT TOP (1000) [instansi_pengguna_id] ,[jabatan_id],[penugasan],[pengguna_id]
+                ,ipg.[instansi_id],[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],
+                ipg.[soft_delete],kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id WHERE LEFT(kode_wilayah,:jmlkode:) = :kodenya: JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ins.kode_wilayah', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalResidu('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 11:57:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'kode_wilayah'.
+CRITICAL - 2023-06-14 11:57:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'kode_wilayah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT TOP (1000) [instansi_pengguna_id] ,[jabatan_id],[penugasan],[pengguna_id]
+                ,ipg.[instansi_id],[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],
+                ipg.[soft_delete],kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg 
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id 
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ins.kode_wilayah WHERE LEFT(kode_wilayah,:jmlkode:) = :kodenya:', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalResidu('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 12:54:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'kode_wilayah'.
+CRITICAL - 2023-06-14 12:54:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'kode_wilayah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT [instansi_pengguna_id] ,[jabatan_id],[penugasan],[pengguna_id]
+                ,ipg.[instansi_id],[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],
+                ipg.[soft_delete],ins.kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg 
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id 
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ins.kode_wilayah WHERE LEFT(kode_wilayah,:jmlkode:) = :kodenya:', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalResidu('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 12:55:09 --> Undefined array key "jml_total_pd"
+in APPPATH\Views\tabel\data_tppk.php on line 125.
+ 1 APPPATH\Views\tabel\data_tppk.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_total_pd"', 'APPPATH\\Views\\tabel\\data_tppk.php', 125)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(80): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 13:11:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'instansi_id'.
+CRITICAL - 2023-06-14 13:11:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'instansi_id'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT count(ipg.[instansi_id]) as total_anggota,[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],ins.kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg 
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id 
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ins.kode_wilayah 
+                WHERE ipg.[soft_delete] = 0 AND LEFT(ins.kode_wilayah,:jmlkode:) = :kodenya: GROUP BY [instansi_id], sk ,[tanggal_sk],[flag],[create_date],[last_update],ins.kode_wilayah,rf.nama', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalTPPK('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 13:11:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'create_date'.
+CRITICAL - 2023-06-14 13:11:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'create_date'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT count(ipg.[instansi_id]) as total_anggota,[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],ins.kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg 
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id 
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ins.kode_wilayah 
+                WHERE ipg.[soft_delete] = 0 AND LEFT(ins.kode_wilayah,:jmlkode:) = :kodenya: GROUP BY ipg.[instansi_id], sk ,[tanggal_sk],[flag],[create_date],[last_update],ins.kode_wilayah,rf.nama', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalTPPK('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 13:12:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ipg'.
+CRITICAL - 2023-06-14 13:12:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ipg'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT count(ipg.[instansi_id]) as total_anggota,[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],ins.kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg 
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id 
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ins.kode_wilayah 
+                WHERE ipg.[soft_delete] = 0 AND LEFT(ins.kode_wilayah,:jmlkode:) = :kodenya: GROUP BY ipg.[instansi_id], sk ,[tanggal_sk],[flag],ipg.ipg.[create_date],[last_update],ins.kode_wilayah,rf.nama', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalTPPK('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 13:12:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'last_update'.
+CRITICAL - 2023-06-14 13:12:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'last_update'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(105): CodeIgniter\Database\BaseConnection->query('SELECT count(ipg.[instansi_id]) as total_anggota,[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],ins.kode_wilayah,rf.nama as wilayah
+                FROM [TPPK].[dbo].[instansi_pengguna] ipg 
+                JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id 
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = ins.kode_wilayah 
+                WHERE ipg.[soft_delete] = 0 AND LEFT(ins.kode_wilayah,:jmlkode:) = :kodenya: GROUP BY ipg.[instansi_id], sk ,[tanggal_sk],[flag],ipg.[create_date],[last_update],ins.kode_wilayah,rf.nama', [...])
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalTPPK('010100', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 13:12:35 --> Undefined array key "jml_total_pd"
+in APPPATH\Views\tabel\data_tppk.php on line 125.
+ 1 APPPATH\Views\tabel\data_tppk.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jml_total_pd"', 'APPPATH\\Views\\tabel\\data_tppk.php', 125)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(78): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 13:13:21 --> Undefined variable $residu
+in APPPATH\Views\tabel\data_tppk.php on line 174.
+ 1 APPPATH\Views\tabel\data_tppk.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residu', 'APPPATH\\Views\\tabel\\data_tppk.php', 174)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(78): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 13:14:33 --> Undefined variable $residu
+in APPPATH\Views\tabel\data_tppk.php on line 188.
+ 1 APPPATH\Views\tabel\data_tppk.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residu', 'APPPATH\\Views\\tabel\\data_tppk.php', 188)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(78): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 13:14:55 --> Undefined variable $residu
+in APPPATH\Views\tabel\data_tppk.php on line 210.
+ 1 APPPATH\Views\tabel\data_tppk.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residu', 'APPPATH\\Views\\tabel\\data_tppk.php', 210)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(78): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 13:15:19 --> Undefined variable $residu
+in APPPATH\Views\tabel\data_tppk.php on line 243.
+ 1 APPPATH\Views\tabel\data_tppk.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $residu', 'APPPATH\\Views\\tabel\\data_tppk.php', 243)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\data_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/data_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(78): view('tabel/data_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 13:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 14:02:30 --> Undefined variable $wherewilayah
+in APPPATH\Models\M_tppk.php on line 109.
+ 1 APPPATH\Models\M_tppk.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $wherewilayah', 'APPPATH\\Models\\M_tppk.php', 109)
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalTPPK('000000', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:09:21 --> Undefined variable $lef2
+in APPPATH\Models\M_tppk.php on line 98.
+ 1 APPPATH\Models\M_tppk.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lef2', 'APPPATH\\Models\\M_tppk.php', 98)
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalTPPK('010000', 3)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010000', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:14:01 --> Undefined variable $lef2
+in APPPATH\Models\M_tppk.php on line 96.
+ 1 APPPATH\Models\M_tppk.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lef2', 'APPPATH\\Models\\M_tppk.php', 96)
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalTPPK('010000', 3)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010000', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:14:15 --> Undefined variable $lef2
+in APPPATH\Models\M_tppk.php on line 96.
+ 1 APPPATH\Models\M_tppk.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lef2', 'APPPATH\\Models\\M_tppk.php', 96)
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalTPPK('010100', 3)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010100', '2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:14:44 --> Undefined variable $lef2
+in APPPATH\Models\M_tppk.php on line 99.
+ 1 APPPATH\Models\M_tppk.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lef2', 'APPPATH\\Models\\M_tppk.php', 99)
+ 2 APPPATH\Controllers\Tabel.php(75): App\Models\M_tppk->getTotalTPPK('010101', 4)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010101', '3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 15:06:02 --> Undefined array key 0
+in APPPATH\Controllers\Tabel.php on line 55.
+ 1 APPPATH\Controllers\Tabel.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Tabel.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('SD NEGERI PULAU PARI 01 PG', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 15:06:42 --> Undefined array key 0
+in APPPATH\Controllers\Tabel.php on line 55.
+ 1 APPPATH\Controllers\Tabel.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Tabel.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('SD NEGERI PULAU PARI 01 PG', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 15:06:49 --> Undefined array key 0
+in APPPATH\Controllers\Tabel.php on line 55.
+ 1 APPPATH\Controllers\Tabel.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Tabel.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('SD NEGERI PULAU PARI 01 PG', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 15:11:25 --> Undefined variable $010101
+in APPPATH\Models\M_tppk.php on line 135.
+ 1 APPPATH\Models\M_tppk.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $010101', 'APPPATH\\Models\\M_tppk.php', 135)
+ 2 APPPATH\Controllers\Tabel.php(79): App\Models\M_tppk->getDaftarTPPK('010101', '3')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010101', '3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 15:11:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "rf.kode_wilayah" could not be bound.
+CRITICAL - 2023-06-14 15:11:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "rf.kode_wilayah" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(135): CodeIgniter\Database\BaseConnection->query('SELECT count(ipg.[instansi_id]) as total_anggota,[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],rf.kode_wilayah,rf.nama as wilayah,ins.nama as namasekolah
+FROM [TPPK].[dbo].[instansi_pengguna] ipg 
+JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id 
+WHERE ipg.[soft_delete] = 0 AND LEFT(ins.kode_wilayah,6) = :kodebaru: 
+GROUP BY ipg.[instansi_id], sk ,[tanggal_sk],[flag],ipg.[create_date],ins.nama,
+ipg.[last_update],rf.kode_wilayah,rf.nama', [...])
+ 2 APPPATH\Controllers\Tabel.php(79): App\Models\M_tppk->getDaftarTPPK('010101', '3')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010101', '3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 15:11:55 --> Undefined array key "wilayah"
+in APPPATH\Views\tabel\daftarsekolah_tppk.php on line 104.
+ 1 APPPATH\Views\tabel\daftarsekolah_tppk.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "wilayah"', 'APPPATH\\Views\\tabel\\daftarsekolah_tppk.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\daftarsekolah_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/daftarsekolah_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(81): view('tabel/daftarsekolah_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010101', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 15:12:25 --> Undefined array key "kode_wilayah"
+in APPPATH\Views\tabel\daftarsekolah_tppk.php on line 109.
+ 1 APPPATH\Views\tabel\daftarsekolah_tppk.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_wilayah"', 'APPPATH\\Views\\tabel\\daftarsekolah_tppk.php', 109)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\daftarsekolah_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/daftarsekolah_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(81): view('tabel/daftarsekolah_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010101', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 15:15:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.instansi.kode_instansi' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2023-06-14 15:15:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.instansi.kode_instansi' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(135): CodeIgniter\Database\BaseConnection->query('SELECT count(ipg.[instansi_id]) as total_anggota,[sk],[tanggal_sk],[flag],ipg.[create_date],ipg.[last_update],ins.nama as namasekolah, kode_instansi
+FROM [TPPK].[dbo].[instansi_pengguna] ipg 
+JOIN TPPK.dbo.instansi ins ON ins.instansi_id = ipg.instansi_id 
+WHERE ipg.[soft_delete] = 0 AND LEFT(ins.kode_wilayah,6) = :kodebaru: 
+GROUP BY ipg.[instansi_id], sk ,[tanggal_sk],[flag],ipg.[create_date],ins.nama,
+ipg.[last_update]', [...])
+ 2 APPPATH\Controllers\Tabel.php(79): App\Models\M_tppk->getDaftarTPPK('010101', '3')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010101', '3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 15:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 17:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 18:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 18:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 19:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 20:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 20:36:40 --> Undefined array key "instansi_id"
+in APPPATH\Views\tabel\daftarsekolah_tppk.php on line 89.
+ 1 APPPATH\Views\tabel\daftarsekolah_tppk.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "instansi_id"', 'APPPATH\\Views\\tabel\\daftarsekolah_tppk.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\daftarsekolah_tppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/daftarsekolah_tppk', [], true)
+ 5 APPPATH\Controllers\Tabel.php(81): view('tabel/daftarsekolah_tppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->wilayah('010101', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 21:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-14 21:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 21:02:33 --> Undefined variable $namasekolah
+in APPPATH\Views\tabel\daftaranggota.php on line 10.
+ 1 APPPATH\Views\tabel\daftaranggota.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namasekolah', 'APPPATH\\Views\\tabel\\daftaranggota.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/daftaranggota', [], true)
+ 5 APPPATH\Controllers\Tabel.php(87): view('tabel/daftaranggota')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->anggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 21:22:50 --> Undefined variable $namasekolah
+in APPPATH\Views\tabel\daftaranggota.php on line 10.
+ 1 APPPATH\Views\tabel\daftaranggota.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namasekolah', 'APPPATH\\Views\\tabel\\daftaranggota.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/daftaranggota', [], true)
+ 5 APPPATH\Controllers\Tabel.php(89): view('tabel/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->anggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 21:25:44 --> Attempt to read property "nama" on array
+in APPPATH\Views\tabel\daftaranggota.php on line 10.
+ 1 APPPATH\Views\tabel\daftaranggota.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'APPPATH\\Views\\tabel\\daftaranggota.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/daftaranggota', [], true)
+ 5 APPPATH\Controllers\Tabel.php(92): view('tabel/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->anggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 22:07:30 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'pengguna_id'.
+CRITICAL - 2023-06-14 22:07:30 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'pengguna_id'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(162): CodeIgniter\Database\BaseConnection->query('SELECT * FROM [TPPK].[dbo].[instansi_pengguna] ipg
+        JOIN Arsip.dbo.ptk ptk ON ipg.pengguna_id = ptk.pengguna_id 
+        WHERE instansi_id = :instansi:', [...])
+ 2 APPPATH\Controllers\Tabel.php(90): App\Models\M_tppk->getDaftarAnggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->anggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 22:08:17 --> Attempt to read property "jabatan_id" on array
+in APPPATH\Views\tabel\daftaranggota.php on line 30.
+ 1 APPPATH\Views\tabel\daftaranggota.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jabatan_id" on array', 'APPPATH\\Views\\tabel\\daftaranggota.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tabel\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tabel/daftaranggota', [], true)
+ 5 APPPATH\Controllers\Tabel.php(92): view('tabel/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tabel->anggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 22:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-14 22:40:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-14 22:40:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "TPPK"."dbo"."instansi_pengguna" ("instansi_id", "instansi_pengguna_id", "jabatan_id", "pengguna_id", "penugasan", "sk", "tanggal_sk")
+VALUES (\'D0D86F5A-2DF5-E011-B253-C34989A42A6C\',\'B8C3C020-CAAF-490A-BD30-15C71F0BF232\',\'01\',\'C7F721ED-1E28-4A54-88B3-73CF8B76CE35\',\'1\',\'\',\'06/14/2023\'), (\'D0D86F5A-2DF5-E011-B253-C34989A42A6C\',\'2E98F12E-C613-4769-8A47-84A4A4B26622\',\'02\',\'7625F2D9-4EF8-4F33-8850-035BF5B48680\',\'2\',\'\',\'06/14/2023\'), (\'D0D86F5A-2DF5-E011-B253-C34989A42A6C\',\'15388E23-542D-4B51-ABBE-C597E23FA0BF\',\'03\',\'004BB8A8-2B09-44C2-9CC5-7E88841039A9\',\'2\',\'\',\'06/14/2023\'), (\'D0D86F5A-2DF5-E011-B253-C34989A42A6C\',\'873052FE-1488-4B56-B123-557F3AF40A1E\',\'00\',\'\',\'2\',\'\',\'06/14/2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(81): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(182): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-14 22:43:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2023-06-14 22:43:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO "TPPK"."dbo"."instansi_pengguna" ("instansi_id", "instansi_pengguna_id", "jabatan_id", "pengguna_id", "penugasan", "sk", "tanggal_sk")
+VALUES (\'D0D86F5A-2DF5-E011-B253-C34989A42A6C\',\'C835C694-E569-4403-89B6-CF0D45DB682A\',\'01\',\'C7F721ED-1E28-4A54-88B3-73CF8B76CE35\',\'1\',\'\',\'06/14/2023\'), (\'D0D86F5A-2DF5-E011-B253-C34989A42A6C\',\'E426FB65-DF1D-45B2-8B37-CC7CC12BBC7E\',\'02\',\'7625F2D9-4EF8-4F33-8850-035BF5B48680\',\'2\',\'\',\'06/14/2023\'), (\'D0D86F5A-2DF5-E011-B253-C34989A42A6C\',\'A85DD15F-22CC-4883-8E86-A6773DB7B87B\',\'03\',\'004BB8A8-2B09-44C2-9CC5-7E88841039A9\',\'2\',\'\',\'06/14/2023\'), (\'D0D86F5A-2DF5-E011-B253-C34989A42A6C\',\'C4AFF966-5AE4-4143-8B91-44FE4754A941\',\'00\',\'\',\'2\',\'\',\'06/14/2023\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\M_tppk.php(81): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\InputData.php(182): App\Models\M_tppk->insert_batch([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 22:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-14 22:44:46 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 22:44:48 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 91.
+ 1 APPPATH\Controllers\InputData.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->getAutoPTK()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-14 22:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

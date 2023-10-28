@@ -1,0 +1,704 @@
+INFO - 2023-10-17 07:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-17 07:57:08 --> Trying to access array offset on value of type null
+in APPPATH\Views\tppk\daftaranggota2.php on line 123.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 123)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(318): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('010100')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 07:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 07:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-17 07:58:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\tppk\daftaranggota2.php on line 123.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 123)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(318): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('016300')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 07:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-17 07:59:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\tppk\daftaranggota2.php on line 123.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 123)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(318): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('016300')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 07:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-17 07:59:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\tppk\daftaranggota2.php on line 123.
+ 1 APPPATH\Views\tppk\daftaranggota2.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\tppk\\daftaranggota2.php', 123)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota2', [], true)
+ 5 APPPATH\Controllers\TPPK.php(318): view('tppk/daftaranggota2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('016300')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 08:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-17 08:35:35 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(154): CodeIgniter\Database\BaseConnection->query('SELECT p.nama a...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(617): App\Models\M_tppk->getOperator('C08CEAF0-8B18-E...')
+#4 D:\laragon\www\tppk\app\Controllers\InputData.php(43): App\Controllers\InputData->npsn('20503150')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->index()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-17 08:35:35 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(154): CodeIgniter\Database\BaseConnection->query('SELECT p.nama as nama_operator, * 
+                FROM sdm.dbo.pengguna p
+                LEFT JOIN sdm.dbo.instansi_pengguna i ON p.pengguna_id = i.pengguna_id 
+                WHERE i.instansi_id = :instansiid: AND jabatan_id=\'106\' AND p.soft_delete = 0', [...])
+ 3 APPPATH\Controllers\InputData.php(617): App\Models\M_tppk->getOperator('C08CEAF0-8B18-E111-8141-1BD31BDAB648')
+ 4 APPPATH\Controllers\InputData.php(43): App\Controllers\InputData->npsn('20503150')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 08:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 08:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:23:19 --> CSRF token verified.
+INFO - 2023-10-17 09:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:34:25 --> CSRF token verified.
+INFO - 2023-10-17 09:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:35:03 --> CSRF token verified.
+INFO - 2023-10-17 09:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:36:40 --> CSRF token verified.
+INFO - 2023-10-17 09:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:37:15 --> CSRF token verified.
+INFO - 2023-10-17 09:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:42:55 --> CSRF token verified.
+INFO - 2023-10-17 09:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:44:04 --> CSRF token verified.
+INFO - 2023-10-17 09:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:45:20 --> CSRF token verified.
+INFO - 2023-10-17 09:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:46:06 --> CSRF token verified.
+INFO - 2023-10-17 09:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:56:48 --> CSRF token verified.
+INFO - 2023-10-17 09:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 09:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:11:53 --> CSRF token verified.
+INFO - 2023-10-17 10:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:13:29 --> CSRF token verified.
+INFO - 2023-10-17 10:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:16:42 --> CSRF token verified.
+INFO - 2023-10-17 10:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:19:47 --> CSRF token verified.
+INFO - 2023-10-17 10:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:30:36 --> CSRF token verified.
+INFO - 2023-10-17 10:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-17 10:30:36 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 534.
+ 1 APPPATH\Controllers\InputData.php(534): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 534)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->upload_sk()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 10:31:17 --> CSRF token verified.
+INFO - 2023-10-17 10:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:31:55 --> CSRF token verified.
+INFO - 2023-10-17 10:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:32:37 --> CSRF token verified.
+INFO - 2023-10-17 10:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-17 10:32:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'sekolah_id', table 'TPPK.dbo.sk_tppk'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-17 10:32:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'sekolah_id', table 'TPPK.dbo.sk_tppk'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(277): CodeIgniter\Database\BaseConnection->query('INSERT INTO TPPK.dbo.sk_tppk (npsn, nomor_sk, tanggal_sk, nama_operator) values (\'30311432\',\'421.3/183/SMPN4TBN/IX/2023\',\'12-09-2023\',\'Hardianto,M.Kom\')')
+ 2 APPPATH\Controllers\InputData.php(545): App\Models\M_tppk->insert_sk_tppk_baru([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->upload_sk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 10:34:12 --> CSRF token verified.
+INFO - 2023-10-17 10:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:38:17 --> CSRF token verified.
+INFO - 2023-10-17 10:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:48:12 --> CSRF token verified.
+INFO - 2023-10-17 10:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 10:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-17 11:14:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+CRITICAL - 2023-10-17 11:14:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."TPPK.rpt.rekap_tppk" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(528): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:15:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:15:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(528): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:20:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:20:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(530): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:20:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:20:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(530): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:23:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+CRITICAL - 2023-10-17 11:23:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."TPPK.rpt.rekap_tppk" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(533): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:24:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+CRITICAL - 2023-10-17 11:24:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."TPPK.rpt.rekap_tppk" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(533): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:24:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+CRITICAL - 2023-10-17 11:24:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."TPPK.rpt.rekap_tppk" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(533): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:25:23 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. SQLSTATE: 28000, code: 18456
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TPPK.rpt" requested by the login. The login failed. SQLSTATE: 42000, code: 4060 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(522): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1023): App\Models\M_tppk->getResiduSekolah('10202639')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-10-17 11:25:23 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. SQLSTATE: 28000, code: 18456
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TPPK.rpt" requested by the login. The login failed. SQLSTATE: 42000, code: 4060
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(522): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu]
+                ,[residu_kepsek]
+                ,[residu_guru]
+                ,[residu_komite]
+                ,[residu_upload_sk]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where kode_wilayah=:npsn:', [...])
+ 3 APPPATH\Controllers\InputData.php(1023): App\Models\M_tppk->getResiduSekolah('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:26:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+CRITICAL - 2023-10-17 11:26:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."TPPK.rpt.rekap_tppk" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(533): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:26:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+CRITICAL - 2023-10-17 11:26:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."TPPK.rpt.rekap_tppk" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(533): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:26:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+CRITICAL - 2023-10-17 11:26:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.TPPK.rpt.rekap_tppk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."TPPK.rpt.rekap_tppk" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(533): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:27:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.rekap_tppk'.
+CRITICAL - 2023-10-17 11:27:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.rekap_tppk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."rekap_tppk" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(533): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 11:31:34 --> Call to undefined method CodeIgniter\Database\SQLSRV\Connection::schema()
+in APPPATH\Models\M_tppk.php on line 531.
+ 1 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:33:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+CRITICAL - 2023-10-17 11:33:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 478.
+ 1 SYSTEMPATH\Database\SQLSRV\Connection.php(451): CodeIgniter\Database\SQLSRV\Connection->execute('USE TPPK.rpt')
+ 2 APPPATH\Models\M_tppk.php(531): CodeIgniter\Database\SQLSRV\Connection->setDatabase('TPPK.rpt')
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:33:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.rekap_tppk'.
+CRITICAL - 2023-10-17 11:33:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.rekap_tppk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."rekap_tppk" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(534): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:35:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:35:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(533): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:40:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:40:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(537): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:40:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:40:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(537): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:40:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:40:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(537): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:43:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:43:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(537): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:44:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:44:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(537): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:44:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:44:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(536): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 11:44:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+CRITICAL - 2023-10-17 11:44:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.[TPPK].[rpt].[rekap_tppk]'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "TPPK"."dbo"."[TPPK].[rpt].[rekap_tppk]" SET "residu_upload_sk" = :residu_upload_sk:
+WHERE "kode_wilayah" = :kode_wilayah:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(536): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 11:45:14 --> Cannot access protected property CodeIgniter\Database\SQLSRV\Connection::$DBPrefix
+in APPPATH\Models\M_tppk.php on line 534.
+ 1 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 12:26:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+CRITICAL - 2023-10-17 12:26:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(540): CodeIgniter\Database\BaseConnection->query('UPDATE [TPPK].[rpt].[rekap_tppk] SET                  
+                WHERE id_level_wilayah=4 AND kode_wilayah = :npsn:', [...])
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 12:30:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+CRITICAL - 2023-10-17 12:30:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(540): CodeIgniter\Database\BaseConnection->query('UPDATE [TPPK].[rpt].[rekap_tppk] SET                  
+                WHERE id_level_wilayah=\'4\' AND kode_wilayah = :npsn:', [...])
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 12:30:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'INTO'.
+CRITICAL - 2023-10-17 12:30:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'INTO'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(539): CodeIgniter\Database\BaseConnection->query('UPDATE INTO [TPPK].[rpt].[rekap_tppk] SET  WHERE kode_wilayah = :npsn:', [...])
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 12:31:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+CRITICAL - 2023-10-17 12:31:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(539): CodeIgniter\Database\BaseConnection->query('UPDATE [TPPK].[rpt].[rekap_tppk] SET  WHERE kode_wilayah = :npsn:', [...])
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 12:32:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+CRITICAL - 2023-10-17 12:32:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(539): CodeIgniter\Database\BaseConnection->query('UPDATE [TPPK].[rpt].[rekap_tppk] SET  WHERE id_level_wilayah = 4 AND npsn = :npsn:', [...])
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 12:33:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+CRITICAL - 2023-10-17 12:33:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(541): CodeIgniter\Database\BaseConnection->query('UPDATE [TPPK].[rpt].[rekap_tppk] SET  WHERE id_level_wilayah = 4 AND npsn = :npsn:', [...])
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 12:33:59 --> Attempt to read property "residu_upload_sk" on array
+in APPPATH\Models\M_tppk.php on line 534.
+ 1 APPPATH\Models\M_tppk.php(534): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "residu_upload_sk" on array', 'APPPATH\\Models\\M_tppk.php', 534)
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 12:34:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+CRITICAL - 2023-10-17 12:34:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'WHERE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(541): CodeIgniter\Database\BaseConnection->query('UPDATE [TPPK].[rpt].[rekap_tppk] SET  WHERE id_level_wilayah = 4 AND npsn = :npsn:', [...])
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 12:35:12 --> Undefined array key 0
+in APPPATH\Models\M_tppk.php on line 534.
+ 1 APPPATH\Models\M_tppk.php(534): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\M_tppk.php', 534)
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 12:35:21 --> Trying to access array offset on value of type int
+in APPPATH\Models\M_tppk.php on line 534.
+ 1 APPPATH\Models\M_tppk.php(534): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Models\\M_tppk.php', 534)
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 12:35:41 --> Trying to access array offset on value of type int
+in APPPATH\Models\M_tppk.php on line 535.
+ 1 APPPATH\Models\M_tppk.php(535): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Models\\M_tppk.php', 535)
+ 2 APPPATH\Controllers\InputData.php(1028): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cek_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 12:48:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'npsn'.
+CRITICAL - 2023-10-17 12:48:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'npsn'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(543): CodeIgniter\Database\BaseConnection->query('UPDATE [TPPK].[rpt].[rekap_tppk] SET residu_upload_sk = \'0\', residu = \'0\' WHERE id_level_wilayah = 4 AND npsn = :npsn:', [...])
+ 2 APPPATH\Controllers\InputData.php(1038): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->clear_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 12:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 12:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 12:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 12:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 12:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 12:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 12:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 12:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-17 12:53:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'npsn'.
+CRITICAL - 2023-10-17 12:53:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'npsn'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(543): CodeIgniter\Database\BaseConnection->query('UPDATE [TPPK].[rpt].[rekap_tppk] SET residu_upload_sk = \'0\', residu = \'0\' WHERE id_level_wilayah = 4 AND npsn = :npsn:', [...])
+ 2 APPPATH\Controllers\InputData.php(1038): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->clear_residu_upload_sk('10202639')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-17 12:54:26 --> Call to a member function getRowArray() on bool
+in APPPATH\Models\M_tppk.php on line 546.
+ 1 APPPATH\Controllers\InputData.php(1038): App\Models\M_tppk->UpdateResiduSekolah([...], '10202639')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->clear_residu_upload_sk('10202639')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 12:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 13:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 13:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 14:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 15:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

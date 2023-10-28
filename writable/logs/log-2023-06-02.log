@@ -1,0 +1,250 @@
+CRITICAL - 2023-06-02 07:10:52 --> Attempt to read property "tot_residu_nuptk" on array
+in APPPATH\Views\stat_linechart.php on line 84.
+ 1 APPPATH\Views\stat_linechart.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "tot_residu_nuptk" on array', 'APPPATH\\Views\\stat_linechart.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stat_linechart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stat_linechart', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(20): view('stat_linechart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 07:11:32 --> Undefined property: stdClass::$tot_residu_nikk
+in APPPATH\Views\stat_linechart.php on line 86.
+ 1 APPPATH\Views\stat_linechart.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tot_residu_nikk', 'APPPATH\\Views\\stat_linechart.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\stat_linechart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stat_linechart', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(20): view('stat_linechart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 09:28:56 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(46): CodeIgniter\Database\BaseConnection->query('SELECT sum([tot...')
+#3 D:\laragon\www\res_pd\app\Controllers\Dashboard.php(15): App\Models\M_residu->getTotalJendralResidu()
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-02 09:28:56 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(46): CodeIgniter\Database\BaseConnection->query('SELECT sum([total_pd]) as tot_pd, sum([residu_nisn]) as tot_residu_nisn, 
+        sum([residu_nik]) as tot_residu_nik, sum([residu_wilayah]) as tot_residu_wilayah 
+        FROM [Arsip].[pd].[rekap_residu] where id_level_wilayah = 1')
+ 3 APPPATH\Controllers\Dashboard.php(15): App\Models\M_residu->getTotalJendralResidu()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 13:24:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'Dataprocess.dbo.lembaga_non_sekolah'.
+CRITICAL - 2023-06-02 13:24:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'Dataprocess.dbo.lembaga_non_sekolah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_residu.php(124): CodeIgniter\Database\BaseConnection->query('SELECT lembaga_id, nama, singkatan
+                FROM [Dataprocess].[dbo].[lembaga_non_sekolah]')
+ 2 APPPATH\Controllers\Pendidik.php(60): App\Models\M_residu->getKementerian()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:34:03 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 76.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 3 APPPATH\Controllers\PesertaDidik.php(71): view('pesertadidik/data_residu_pd', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:34:12 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 75.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 4 APPPATH\Controllers\PesertaDidik.php(71): view('pesertadidik/data_residu_pd', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 14:21:32 --> Undefined array key "jenjang"
+in APPPATH\Controllers\PesertaDidik.php on line 20.
+ 1 APPPATH\Controllers\PesertaDidik.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jenjang"', 'APPPATH\\Controllers\\PesertaDidik.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 14:21:44 --> Undefined variable $where
+in APPPATH\Models\M_residu.php on line 144.
+ 1 APPPATH\Models\M_residu.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $where', 'APPPATH\\Models\\M_residu.php', 144)
+ 2 APPPATH\Controllers\PesertaDidik.php(54): App\Models\M_residu->getDaftarBentuk('"paud"')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 14:22:56 --> Undefined variable $where
+in APPPATH\Models\M_residu.php on line 144.
+ 1 APPPATH\Models\M_residu.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $where', 'APPPATH\\Models\\M_residu.php', 144)
+ 2 APPPATH\Controllers\PesertaDidik.php(54): App\Models\M_residu->getDaftarBentuk('paudd')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 14:23:56 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\PesertaDidik.php on line 23.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('pesertadidik/wilayah')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('pesertadidik/wilayah')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('pesertadidik/wilayah')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 14:24:02 --> Undefined variable $where
+in APPPATH\Models\M_residu.php on line 144.
+ 1 APPPATH\Models\M_residu.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $where', 'APPPATH\\Models\\M_residu.php', 144)
+ 2 APPPATH\Controllers\PesertaDidik.php(61): App\Models\M_residu->getDaftarBentuk('paudd')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 14:30:09 --> Call to a member function getResult() on string
+in APPPATH\Controllers\PesertaDidik.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 14:40:09 --> Too few arguments to function App\Models\M_residu::getDaftarBentuk(), 0 passed in D:\laragon\www\res_pd\app\Controllers\Pendidik.php on line 59 and exactly 1 expected
+in APPPATH\Models\M_residu.php on line 136.
+ 1 APPPATH\Controllers\Pendidik.php(59): App\Models\M_residu->getDaftarBentuk()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 18:32:21 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(156): CodeIgniter\Database\BaseConnection->query('SELECT bentuk_p...')
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(57): App\Models\M_residu->getDaftarBentuk('paud')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-02 18:32:21 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(156): CodeIgniter\Database\BaseConnection->query('SELECT bentuk_pendidikan_id, nama 
+            FROM [Referensi].[ref].[bentuk_pendidikan] where bentuk_pendidikan_id in (1,2,3,4,34,41,43,45,51,52,57,61) ORDER BY [bentuk_pendidikan_id]')
+ 3 APPPATH\Controllers\PesertaDidik.php(57): App\Models\M_residu->getDaftarBentuk('paud')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 22:18:14 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\res_pd\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\res_pd\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\res_pd\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\res_pd\app\Models\M_residu.php(156): CodeIgniter\Database\BaseConnection->query('SELECT bentuk_p...')
+#3 D:\laragon\www\res_pd\app\Controllers\PesertaDidik.php(62): App\Models\M_residu->getDaftarBentuk('dikdas')
+#4 D:\laragon\www\res_pd\system\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+#5 D:\laragon\www\res_pd\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+#6 D:\laragon\www\res_pd\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\res_pd\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-02 22:18:14 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_residu.php(156): CodeIgniter\Database\BaseConnection->query('SELECT bentuk_pendidikan_id, nama 
+            FROM [Referensi].[ref].[bentuk_pendidikan] where bentuk_pendidikan_id in (5,6,9,10,36,38,53,54,58,59,62,63) ORDER BY [bentuk_pendidikan_id]')
+ 3 APPPATH\Controllers\PesertaDidik.php(62): App\Models\M_residu->getDaftarBentuk('dikdas')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 22:18:15 --> Undefined variable $selected
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 87.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selected', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 87)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(75): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 22:18:19 --> Undefined variable $selected
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 87.
+ 1 APPPATH\Views\pesertadidik\data_residu_pd.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selected', 'APPPATH\\Views\\pesertadidik\\data_residu_pd.php', 87)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pesertadidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\PesertaDidik.php(75): view('pesertadidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 22:23:08 --> Undefined constant "a"
+in APPPATH\Views\pesertadidik\data_residu_pd.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pesertadidik/data_residu_pd', [], true)
+ 4 APPPATH\Controllers\PesertaDidik.php(75): view('pesertadidik/data_residu_pd', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesertaDidik->wilayah()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaDidik))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 22:30:13 --> Too few arguments to function App\Models\M_residu::getDaftarBentuk(), 0 passed in D:\laragon\www\res_pd\app\Controllers\Pendidik.php on line 59 and exactly 1 expected
+in APPPATH\Models\M_residu.php on line 136.
+ 1 APPPATH\Controllers\Pendidik.php(59): App\Models\M_residu->getDaftarBentuk()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 22:31:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Pendidik.php(63): CodeIgniter\Model->__call('getBentukPendidikan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 22:32:10 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Pendidik.php(63): CodeIgniter\Model->__call('getBentukPendidikan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 22:34:00 --> Undefined variable $selected
+in APPPATH\Views\pendidik\data_residu_pd.php on line 87.
+ 1 APPPATH\Views\pendidik\data_residu_pd.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selected', 'APPPATH\\Views\\pendidik\\data_residu_pd.php', 87)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pendidik\\data_residu_pd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pendidik/data_residu_pd', [], true)
+ 5 APPPATH\Controllers\Pendidik.php(74): view('pendidik/data_residu_pd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pendidik->wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendidik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
