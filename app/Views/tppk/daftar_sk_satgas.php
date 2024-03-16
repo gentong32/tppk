@@ -68,8 +68,11 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
     <div style="float:right"><button onclick="return kembali();">Kembali</button>
     </div>
     <div class="judulkiri">
-        <b>Daftar SK Satuan Tugas (Satgas)</b>
+        <b>Daftar SK Satuan Tugas (Satgas) Provinsi</b>
     </div>
+
+    <button onclick="satgasprov()">Satgas Provinsi</button>
+    <button onclick="satgaskota()">Satgas Kab/Kota</button>
 
     <table class="table table-striped my-custom-table" id="example">
         <thead>
@@ -114,11 +117,19 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
 
     $('#example').DataTable({
         scrollX: teru,
-        searching: false,
-        paging: false,
-        info: false,
+        searching: true,
+        paging: true,
+        info: true,
         processing: true,
     });
+
+    function satgasprov() {
+        window.open("<?= base_url() ?>inputdata/daftar_skbaru", "_self");
+    }
+
+    function satgaskota() {
+        window.open("<?= base_url() ?>inputdata/daftar_skbaru/kota", "_self");
+    }
 
     function editanggota() {
         window.open("<?= base_url() ?>inputdata/edit", "_self");

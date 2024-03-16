@@ -1,0 +1,855 @@
+INFO - 2024-02-05 10:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-05 10:21:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-05 10:21:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2220): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1935): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('SMA', '022100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 10:21:20 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2220): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1935): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('SMA', '022100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-05 10:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-05 10:21:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-05 10:21:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2220): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1935): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('SMA', '022100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 10:21:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2220): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1935): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('SMA', '022100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-05 11:20:55 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+in APPPATH\Controllers\InputData.php on line 2099.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 11:22:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-05 11:22:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2220): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(2070): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 11:23:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-05 11:23:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2220): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(2070): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 11:24:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-05 11:24:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2220): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(2072): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 11:26:10 --> Array to string conversion
+in APPPATH\Controllers\InputData.php on line 2068.
+ 1 APPPATH\Controllers\InputData.php(2068): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\InputData.php', 2068)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-05 11:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 11:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 11:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 11:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 11:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 11:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 11:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 11:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-05 12:47:36 --> Undefined property: App\Filters\AuthFilter::$request
+in APPPATH\Filters\AuthFilter.php on line 15.
+ 1 APPPATH\Filters\AuthFilter.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Filters\\AuthFilter::$request', 'APPPATH\\Filters\\AuthFilter.php', 15)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 12:48:49 --> Undefined property: App\Filters\AuthFilter::$request
+in APPPATH\Filters\AuthFilter.php on line 16.
+ 1 APPPATH\Filters\AuthFilter.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Filters\\AuthFilter::$request', 'APPPATH\\Filters\\AuthFilter.php', 16)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 12:49:32 --> Undefined property: App\Filters\AuthFilter::$response
+in SYSTEMPATH\API\ResponseTrait.php on line 332.
+ 1 SYSTEMPATH\API\ResponseTrait.php(332): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Filters\\AuthFilter::$response', 'SYSTEMPATH\\API\\ResponseTrait.php', 332)
+ 2 SYSTEMPATH\API\ResponseTrait.php(99): App\Filters\AuthFilter->format([...])
+ 3 SYSTEMPATH\API\ResponseTrait.php(136): App\Filters\AuthFilter->respond([...], 401, 'D:\\laragon\\www\\tppk')
+ 4 SYSTEMPATH\API\ResponseTrait.php(199): App\Filters\AuthFilter->fail([...], 401, null, 'D:\\laragon\\www\\tppk')
+ 5 APPPATH\Filters\AuthFilter.php(19): App\Filters\AuthFilter->failUnauthorized('Unauthorized')
+ 6 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:01:45 --> Undefined property: App\Filters\AuthFilter::$response
+in APPPATH\Filters\AuthFilter.php on line 18.
+ 1 APPPATH\Filters\AuthFilter.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Filters\\AuthFilter::$response', 'APPPATH\\Filters\\AuthFilter.php', 18)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:06:27 --> Class "App\Filters\Response" not found
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:07:14 --> Undefined property: App\Filters\AuthFilter::$response
+in APPPATH\Filters\AuthFilter.php on line 19.
+ 1 APPPATH\Filters\AuthFilter.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Filters\\AuthFilter::$response', 'APPPATH\\Filters\\AuthFilter.php', 19)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:09:03 --> Undefined property: App\Filters\AuthFilter::$response
+in APPPATH\Filters\AuthFilter.php on line 18.
+ 1 APPPATH\Filters\AuthFilter.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Filters\\AuthFilter::$response', 'APPPATH\\Filters\\AuthFilter.php', 18)
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:10:23 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\laragon\www\tppk\app\Filters\AuthFilter.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Filters\AuthFilter.php(28): Firebase\JWT\JWT::decode(null, 'api_key_khusus_untuk_TPPK')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:11:55 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\laragon\www\tppk\app\Filters\AuthFilter.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Filters\AuthFilter.php(28): Firebase\JWT\JWT::decode(null, 'api_key_khusus_untuk_TPPK')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:41:09 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\laragon\www\tppk\app\Filters\AuthFilter.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Filters\AuthFilter.php(28): Firebase\JWT\JWT::decode(null, 'api_key_khusus_untuk_TPPK')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:42:11 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\laragon\www\tppk\app\Filters\AuthFilter.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Filters\AuthFilter.php(28): Firebase\JWT\JWT::decode(null, 'api_key_khusus_untuk_TPPK')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/auth/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:50:34 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\laragon\www\tppk\app\Filters\AuthFilter.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Filters\AuthFilter.php(28): Firebase\JWT\JWT::decode(null, 'api_key_khusus_untuk_TPPK')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/Auth/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 13:56:45 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\laragon\www\tppk\app\Filters\AuthFilter.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Filters\AuthFilter.php(28): Firebase\JWT\JWT::decode(null, 'api_key_khusus_untuk_TPPK')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/Auth/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 14:06:20 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\laragon\www\tppk\app\Filters\AuthFilter.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Filters\AuthFilter.php(28): Firebase\JWT\JWT::decode(null, 'api_key_khusus_untuk_TPPK')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('api/Auth/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-05 14:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 14:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 14:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-05 14:37:47 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\laragon\www\tppk\app\Filters\AuthFilter.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Filters\AuthFilter.php(28): Firebase\JWT\JWT::decode(null, 'api_key_khusus_untuk_TPPK')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-05 14:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-05 14:38:38 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\laragon\www\tppk\app\Filters\AuthFilter.php on line 28
+in FCPATH\vendor\firebase\php-jwt\src\JWT.php on line 96.
+ 1 APPPATH\Filters\AuthFilter.php(28): Firebase\JWT\JWT::decode(null, 'api_key_khusus_untuk_TPPK')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-05 14:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 15:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 15:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 15:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 15:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 15:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-05 15:58:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'GROUP'.
+CRITICAL - 2024-02-05 15:58:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'GROUP'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1398): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.sekolah_id,
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT [kode_wilayah], [wilayah], [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM [TPPK].[rpt].[rekap_tppk] 
+                        WHERE jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT [npsn], MAX([sk_tugas]) as [sk_tugas], 
+                        MAX([tmt_sk_tugas]) as [tmt_sk_tugas],
+                        MAX([tst_sk_tugas]) as [tst_sk_tugas],k.sekolah_id
+                        FROM [TPPK].[dbo].[kepanitiaan] k
+                        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                        where soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                        ORDER BY tmt_sk_tugas DESC 
+                        GROUP BY [npsn], k.sekolah_id
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    q2.npsn = :npsn:', [...])
+ 2 APPPATH\Controllers\TPPK.php(565): App\Models\M_tppk->cek_sk_npsn_satuan('69965452')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn_satuan('69965452')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 15:59:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+CRITICAL - 2024-02-05 15:59:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1398): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.sekolah_id,
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT [kode_wilayah], [wilayah], [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM [TPPK].[rpt].[rekap_tppk] 
+                        WHERE jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT [npsn], MAX([sk_tugas]) as [sk_tugas], 
+                        MAX([tmt_sk_tugas]) as [tmt_sk_tugas],
+                        MAX([tst_sk_tugas]) as [tst_sk_tugas],k.sekolah_id
+                        FROM [TPPK].[dbo].[kepanitiaan] k
+                        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                        where soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                        GROUP BY [npsn], k.sekolah_id
+                        ORDER BY tmt_sk_tugas DESC 
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    q2.npsn = :npsn:', [...])
+ 2 APPPATH\Controllers\TPPK.php(565): App\Models\M_tppk->cek_sk_npsn_satuan('69965452')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn_satuan('69965452')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 16:06:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2024-02-05 16:06:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 
+            q1.[kode_wilayah],
+            q1.[wilayah],
+            q1.[jml_tppk],
+            q2.[sekolah_id],
+            q2.[npsn],
+            q2.[sk_tugas],
+            q2.[tmt_sk_tugas],
+            q2.[tst_sk_tugas]
+        FROM 
+            (
+                SELECT 
+                    [kode_wilayah], 
+                    [wilayah], 
+                    [jml_tppk],
+                    ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                FROM 
+                    [TPPK].[rpt].[rekap_tppk] 
+                WHERE 
+                    jml_tppk > 0 AND id_level_wilayah = 4
+            ) q1
+        JOIN 
+            (
+                SELECT 
+                    [npsn], 
+                    MAX([sk_tugas]) as [sk_tugas], 
+                    MAX([tmt_sk_tugas]) as [tmt_sk_tugas],
+                    MAX([tst_sk_tugas]) as [tst_sk_tugas],
+                    k.sekolah_id
+                FROM 
+                    [TPPK].[dbo].[kepanitiaan] k
+                LEFT JOIN 
+                    Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                WHERE 
+                    soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                GROUP BY 
+                    [npsn], k.sekolah_id
+            ) q2
+        ON 
+            q1.RowNum = q2.sekolah_id
+        WHERE
+            q2.npsn = :npsn
+        ORDER BY
+            q2.[tmt_sk_tugas] DESC', [...])
+ 2 APPPATH\Controllers\TPPK.php(565): App\Models\M_tppk->cek_sk_npsn_satuan('69965452')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn_satuan('69965452')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 16:06:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: uniqueidentifier is incompatible with bigint
+CRITICAL - 2024-02-05 16:06:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: uniqueidentifier is incompatible with bigint
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 
+            q1.[kode_wilayah],
+            q1.[wilayah],
+            q1.[jml_tppk],
+            q2.[sekolah_id],
+            q2.[npsn],
+            q2.[sk_tugas],
+            q2.[tmt_sk_tugas],
+            q2.[tst_sk_tugas]
+        FROM 
+            (
+                SELECT 
+                    [kode_wilayah], 
+                    [wilayah], 
+                    [jml_tppk],
+                    ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                FROM 
+                    [TPPK].[rpt].[rekap_tppk] 
+                WHERE 
+                    jml_tppk > 0 AND id_level_wilayah = 4
+            ) q1
+        JOIN 
+            (
+                SELECT 
+                    [npsn], 
+                    MAX([sk_tugas]) as [sk_tugas], 
+                    MAX([tmt_sk_tugas]) as [tmt_sk_tugas],
+                    MAX([tst_sk_tugas]) as [tst_sk_tugas],
+                    k.sekolah_id
+                FROM 
+                    [TPPK].[dbo].[kepanitiaan] k
+                LEFT JOIN 
+                    Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                WHERE 
+                    soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                GROUP BY 
+                    [npsn], k.sekolah_id
+            ) q2
+        ON 
+            q1.RowNum = q2.sekolah_id
+        WHERE
+            q2.npsn = :npsn:
+        ORDER BY
+            q2.[tmt_sk_tugas] DESC', [...])
+ 2 APPPATH\Controllers\TPPK.php(565): App\Models\M_tppk->cek_sk_npsn_satuan('69965452')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn_satuan('69965452')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 16:07:36 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to bigint.
+CRITICAL - 2024-02-05 16:07:36 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to bigint.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT 
+                            [kode_wilayah], 
+                            [wilayah], 
+                            [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] 
+                        WHERE 
+                            jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT 
+                            [npsn], 
+                            MAX([sk_tugas]) as [sk_tugas], 
+                            MAX([tmt_sk_tugas]) as [tmt_sk_tugas],
+                            MAX([tst_sk_tugas]) as [tst_sk_tugas],
+                            CAST(k.sekolah_id AS VARCHAR(36)) as [sekolah_id] -- Cast ke VARCHAR jika sekolah_id bertipe uniqueidentifier
+                        FROM 
+                            [TPPK].[dbo].[kepanitiaan] k
+                        LEFT JOIN 
+                            Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                        WHERE 
+                            soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                        GROUP BY 
+                            [npsn], k.sekolah_id
+                    ) q2
+                ON 
+                    q1.RowNum = q2.sekolah_id
+                WHERE
+                    q2.npsn = :npsn:
+                ORDER BY
+                    q2.[tmt_sk_tugas] DESC', [...])
+ 2 APPPATH\Controllers\TPPK.php(565): App\Models\M_tppk->cek_sk_npsn_satuan('69965452')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn_satuan('69965452')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 16:07:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to bigint.
+CRITICAL - 2024-02-05 16:07:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to bigint.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT 
+                            [kode_wilayah], 
+                            [wilayah], 
+                            [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] 
+                        WHERE 
+                            jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT 
+                            [npsn], 
+                            MAX([sk_tugas]) as [sk_tugas], 
+                            MAX([tmt_sk_tugas]) as [tmt_sk_tugas],
+                            MAX([tst_sk_tugas]) as [tst_sk_tugas],
+                            CAST(k.sekolah_id AS VARCHAR(36)) as [sekolah_id] -- Cast ke VARCHAR jika sekolah_id bertipe uniqueidentifier
+                        FROM 
+                            [TPPK].[dbo].[kepanitiaan] k
+                        LEFT JOIN 
+                            Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                        WHERE 
+                            soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                        GROUP BY 
+                            [npsn], k.sekolah_id
+                    ) q2
+                ON 
+                    q1.RowNum = q2.sekolah_id
+                WHERE
+                    q2.npsn = :npsn:
+                ORDER BY
+                    q2.[tmt_sk_tugas] DESC', [...])
+ 2 APPPATH\Controllers\TPPK.php(565): App\Models\M_tppk->cek_sk_npsn_satuan('69965452')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn_satuan('69965452')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 16:11:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2024-02-05 16:11:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1452): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT 
+                            [kode_wilayah], 
+                            [wilayah], 
+                            [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] 
+                        WHERE 
+                            jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT 
+                            [npsn], 
+                            [sk_tugas],
+                            [tmt_sk_tugas],
+                            [tst_sk_tugas],
+                            k.sekolah_id
+                        FROM 
+                            (
+                                SELECT 
+                                    [npsn], 
+                                    [sk_tugas],
+                                    [tmt_sk_tugas],
+                                    [tst_sk_tugas],
+                                    k.sekolah_id,
+                                    ROW_NUMBER() OVER (PARTITION BY [npsn], k.sekolah_id ORDER BY [tmt_sk_tugas] DESC) AS RowNum
+                                FROM 
+                                    [TPPK].[dbo].[kepanitiaan] k
+                                LEFT JOIN 
+                                    Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                                WHERE 
+                                    soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                            ) kWithRowNum
+                        WHERE 
+                            kWithRowNum.RowNum = 1
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    q2.npsn = :npsn
+                ORDER BY
+                    q2.[tmt_sk_tugas] DESC', [...])
+ 2 APPPATH\Controllers\TPPK.php(565): App\Models\M_tppk->cek_sk_npsn_satuan('69965452')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn_satuan('69965452')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 16:11:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "k.sekolah_id" could not be bound.
+CRITICAL - 2024-02-05 16:11:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "k.sekolah_id" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1452): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT 
+                            [kode_wilayah], 
+                            [wilayah], 
+                            [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] 
+                        WHERE 
+                            jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT 
+                            [npsn], 
+                            [sk_tugas],
+                            [tmt_sk_tugas],
+                            [tst_sk_tugas],
+                            k.sekolah_id
+                        FROM 
+                            (
+                                SELECT 
+                                    [npsn], 
+                                    [sk_tugas],
+                                    [tmt_sk_tugas],
+                                    [tst_sk_tugas],
+                                    k.sekolah_id,
+                                    ROW_NUMBER() OVER (PARTITION BY [npsn], k.sekolah_id ORDER BY [tmt_sk_tugas] DESC) AS RowNum
+                                FROM 
+                                    [TPPK].[dbo].[kepanitiaan] k
+                                LEFT JOIN 
+                                    Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                                WHERE 
+                                    soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                            ) kWithRowNum
+                        WHERE 
+                            kWithRowNum.RowNum = 1
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    q2.npsn = :npsn:
+                ORDER BY
+                    q2.[tmt_sk_tugas] DESC', [...])
+ 2 APPPATH\Controllers\TPPK.php(565): App\Models\M_tppk->cek_sk_npsn_satuan('69965452')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn_satuan('69965452')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 16:12:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'RowNum'.
+CRITICAL - 2024-02-05 16:12:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'RowNum'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1451): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT 
+                            [kode_wilayah], 
+                            [wilayah], 
+                            [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] 
+                        WHERE 
+                            jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT 
+                            [npsn], 
+                            [sk_tugas],
+                            [tmt_sk_tugas],
+                            [tst_sk_tugas],
+                            [sekolah_id]  -- Memperbaiki alias disini
+                        FROM 
+                            (
+                                SELECT 
+                                    [npsn], 
+                                    [sk_tugas],
+                                    [tmt_sk_tugas],
+                                    [tst_sk_tugas],
+                                    [k].[sekolah_id]  -- Menggunakan alias k di sini
+                                FROM 
+                                    [TPPK].[dbo].[kepanitiaan] k
+                                LEFT JOIN 
+                                    Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                                WHERE 
+                                    soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                            ) kWithRowNum
+                        WHERE 
+                            kWithRowNum.RowNum = 1
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    q2.npsn = :npsn:
+                ORDER BY
+                    q2.[tmt_sk_tugas] DESC', [...])
+ 2 APPPATH\Controllers\TPPK.php(565): App\Models\M_tppk->cek_sk_npsn_satuan('69965452')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn_satuan('69965452')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 16:26:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'ORDER'.
+CRITICAL - 2024-02-05 16:26:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'ORDER'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1417): CodeIgniter\Database\BaseConnection->query('DECLARE @Halaman INT = 1
+               DECLARE @JumlahPerHalaman INT = 25000
+
+                SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT 
+                            [kode_wilayah], 
+                            [wilayah], 
+                            [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] 
+                        WHERE 
+                            jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT 
+                            [npsn], 
+                            [sk_tugas],
+                            [tmt_sk_tugas],
+                            [tst_sk_tugas],
+                            [sekolah_id]
+                        FROM 
+                            (
+                                SELECT 
+                                    [npsn], 
+                                    [sk_tugas],
+                                    [tmt_sk_tugas],
+                                    [tst_sk_tugas],
+                                    k.sekolah_id,
+                                    ROW_NUMBER() OVER (PARTITION BY [npsn] ORDER BY [tmt_sk_tugas] DESC) AS RowNum
+                                FROM 
+                                    [TPPK].[dbo].[kepanitiaan] k
+                                LEFT JOIN 
+                                    Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                                WHERE 
+                                    soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                            ) kWithRowNum
+                        WHERE 
+                            kWithRowNum.RowNum = 1
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    RowNum > (@Halaman - 1) * @JumlahPerHalaman AND RowNum <= @Halaman * @JumlahPerHalaman;
+                ORDER BY
+                    q2.[tmt_sk_tugas] DESC')
+ 2 APPPATH\Controllers\TPPK.php(535): App\Models\M_tppk->cek_sk_npsn('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-05 16:26:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'ORDER'.
+CRITICAL - 2024-02-05 16:26:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'ORDER'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1417): CodeIgniter\Database\BaseConnection->query('DECLARE @Halaman INT = 1
+               DECLARE @JumlahPerHalaman INT = 25000
+
+                SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT 
+                            [kode_wilayah], 
+                            [wilayah], 
+                            [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] 
+                        WHERE 
+                            jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT 
+                            [npsn], 
+                            [sk_tugas],
+                            [tmt_sk_tugas],
+                            [tst_sk_tugas],
+                            [sekolah_id]
+                        FROM 
+                            (
+                                SELECT 
+                                    [npsn], 
+                                    [sk_tugas],
+                                    [tmt_sk_tugas],
+                                    [tst_sk_tugas],
+                                    k.sekolah_id,
+                                    ROW_NUMBER() OVER (PARTITION BY [npsn] ORDER BY [tmt_sk_tugas] DESC) AS RowNum
+                                FROM 
+                                    [TPPK].[dbo].[kepanitiaan] k
+                                LEFT JOIN 
+                                    Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                                WHERE 
+                                    soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                            ) kWithRowNum
+                        WHERE 
+                            kWithRowNum.RowNum = 1
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    RowNum > (@Halaman - 1) * @JumlahPerHalaman AND RowNum <= @Halaman * @JumlahPerHalaman;
+                ORDER BY
+                    q2.[tmt_sk_tugas] DESC')
+ 2 APPPATH\Controllers\TPPK.php(535): App\Models\M_tppk->cek_sk_npsn('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_npsn('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

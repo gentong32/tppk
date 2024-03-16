@@ -130,9 +130,10 @@ $npsnuser = session()->get('npsn_user');
 
 <?= $this->section('konten') ?>
 <div class="content-wrap">
-
-    <div style="float:right"><button onclick="history.back()">Kembali</button>
-    </div>
+    <?php if ($tombolback == 1) { ?>
+        <div style="float:right"><button onclick="history.back()">Kembali</button>
+        </div>
+    <?php } ?>
     <div class="judulkiri">
         <b>Tim Pencegahan dan Penanganan Kekerasan (TPPK)</b>
         <h3><?= $namasekolah['nama'] ?></h3>
@@ -192,94 +193,110 @@ $npsnuser = session()->get('npsn_user');
     <?php } ?>
 
 
-    <?php if ($daftaranggota && ($daftar_residu['residu'] == 1 || $kadaluwarsa || $lebih2tahun)) { ?>
+    <?php if ($daftaranggota && ($daftar_residu['residu'] == 1)) { ?>
         <br>
         <div style='color: red'>
-            <h3>Tidak valid:</h3>
-            <table class="tabelinfo">
-                <?php if ($daftar_residu['residu_kepsek'] == 1) { ?>
-                    <tr>
-                        <td>- Kepala Sekolah sebagai anggota</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <?php } ?>
-                <?php if ($daftar_residu['residu_guru'] == 1) { ?>
-                    <tr>
-                        <td>- Tidak ada anggota dari Guru</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <?php } ?>
-                <?php if ($daftar_residu['residu_komite'] == 1) { ?>
-                    <tr>
-                        <td>- Tidak ada anggota dari Komite</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <?php } ?>
-                <?php if ($daftar_residu['residu_siswa'] == 1) { ?>
-                    <tr>
-                        <td>- Siswa sebagai anggota</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <?php } ?>
-                <?php if ($daftar_residu['residu_ganjil'] == 1) { ?>
-                    <tr>
-                        <td>- Jumlah anggota tidak ganjil</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <?php } ?>
-                <?php if ($daftar_residu['residu_upload_sk'] == 1) { ?>
-                    <tr>
-                        <td>- Belum unggah SK Kepanitiaan</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <?php } ?>
-                <?php if ($kadaluwarsa) { ?>
-                    <tr>
-                        <td>- SK sudah kadaluwarsa</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <?php } ?>
-                <?php if ($lebih2tahun) { ?>
-                    <tr>
-                        <td>- SK lebih dari 2 tahun</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <?php } ?>
-                <?php if (intval($datask['status_sk']) == 0 && $daftar_residu['residu_upload_sk'] == 0) { ?>
-                    <!-- <tr>
+            <div style="border: #d0535f solid; border-radius: 5px; padding: 5px;max-width:480px;">
+                <h3>Tidak valid:</h3>
+                <table class="tabelinfo">
+                    <?php if ($daftar_residu['residu_kepsek'] == 1) { ?>
+                        <tr>
+                            <td>- Kepala Sekolah sebagai anggota</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                    <?php if ($daftar_residu['residu_ketua_non_ptk'] == 1) { ?>
+                        <tr>
+                            <td>"Ketua" atau "Koordinator" TPPK tidak mengisi kolom "Guru Bila Guru" di Aplikasi Dapodik </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                    <?php if ($daftar_residu['residu_guru'] == 1) { ?>
+                        <tr>
+                            <td>- Tidak ada anggota dari Guru</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                    <?php if ($daftar_residu['residu_komite'] == 1) { ?>
+                        <tr>
+                            <td>- Tidak ada anggota dari Komite</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                    <?php if ($daftar_residu['residu_siswa'] == 1) { ?>
+                        <tr>
+                            <td>- Siswa sebagai anggota</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                    <?php if ($daftar_residu['residu_ganjil'] == 1) { ?>
+                        <tr>
+                            <td>- Jumlah anggota tidak ganjil</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                    <?php if ($daftar_residu['residu_upload_sk'] == 1) { ?>
+                        <tr>
+                            <td>- Belum unggah SK Kepanitiaan</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                    <?php if ($daftar_residu['residu_sk_kadaluarsa'] == 1) { ?>
+                        <tr>
+                            <td>- SK sudah kadaluwarsa</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                    <?php if ($daftar_residu['residu_sk_lebih_dari_2_tahun'] == 1) { ?>
+                        <tr>
+                            <td>- SK lebih dari 2 tahun</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                    <?php if (intval($datask['status_sk']) == 0 && $daftar_residu['residu_upload_sk'] == 0) { ?>
+                        <!-- <tr>
                         <td>- SK dalam proses persetujuan</td>
                         <td></td>
                         <td></td>
                     </tr> -->
-                <?php } ?>
-                <?php if (intval($datask['status_sk']) == 1 && $daftar_residu['residu_upload_sk'] == 0) { ?>
-                    <tr>
-                        <td>- SK belum sesuai</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                <?php } ?>
-            </table>
+                    <?php } ?>
+                    <?php if (intval($datask['status_sk']) == 1 && $daftar_residu['residu_upload_sk'] == 0) { ?>
+                        <tr>
+                            <td>- SK belum sesuai</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <?php } ?>
+                </table>
+            </div>
+            <div style="margin-left:20px;margin-top:5px;max-width:480px;">
+                <ul>
+                    <li><i>Jika sudah melakukan pemutakhiran pada Dapodik, mohon ditunggu 1x24 jam untuk melihat perubahan pada halaman ini.</i></li>
+                </ul>
+            </div>
         </div>
     <?php } else if (!$daftaranggota) { ?>
         <br>
         <div style='color: red'>
-            <h3>Tidak valid:</h3>
-            <table class="tabelinfo">
-                <tr>
-                    <td>Silakan input data anggota kepanitiaan TPPK terlebih dahulu melalui aplikasi Dapodik. <br>Setelah itu silakan unggah SK disini.</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <div style="border: #d0535f solid; border-radius: 5px; padding: 5px;max-width:650px;">
+                <h3>Tidak valid:</h3>
+                <table class="tabelinfo">
+                    <tr>
+                        <td>Silakan input data anggota kepanitiaan TPPK terlebih dahulu melalui aplikasi Dapodik. <br>Setelah itu silakan unggah SK disini.</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
     <?php } else if ($daftaranggota && $daftar_residu['residu'] == 0 && intval($datask['status_sk']) == 2) { ?>
@@ -302,6 +319,9 @@ $npsnuser = session()->get('npsn_user');
             <th>Status Keanggotaan</th>
             <th>Unsur Keanggotaan</th>
             <th>Asal Lembaga</th>
+            <?php if ($jenisinstansiid == 1) : ?>
+                <th>Telp</th>
+            <?php endif ?>
         </thead>
 
         <tbody>
@@ -314,6 +334,9 @@ $npsnuser = session()->get('npsn_user');
                     <td><?= $row['peran_ang'] ?></td>
                     <td><?= ($row['jenis_ptk'] == NULL) ? $row['nama_unsur2'] : $row['jenis_ptk'] ?></td>
                     <td><?= $row['nama_sekolah'] ?></td>
+                    <?php if ($jenisinstansiid == 1) : ?>
+                        <td><?= $row['no_kontak'] ?></td>
+                    <?php endif ?>
                 </tr>
             <?php endforeach; ?>
         </tbody>
@@ -396,7 +419,11 @@ $npsnuser = session()->get('npsn_user');
         <tr>
             <td>Operator Sekolah</td>
             <td>:</td>
-            <td><a target="_blank" href="https://sdm.data.kemdikbud.go.id/instansi/view?id=<?= $instansiid ?>"><?= $operator[0]->nama_operator ?></a></td>
+            <td><a target="_blank" href="https://sdm.data.kemdikbud.go.id/instansi/view?id=<?= $instansiid ?>"><?php
+                                                                                                                if ($operator[0]->nama_operator == "Hardianto,M.Kom")
+                                                                                                                    echo $operator[1]->nama_operator;
+                                                                                                                else
+                                                                                                                    echo $operator[0]->nama_operator ?></a></td>
         </tr>
     </table>
 
@@ -452,7 +479,10 @@ $npsnuser = session()->get('npsn_user');
     function tampilkan_inputan() {
         document.getElementById("f_input_sk").style.display = "block"
         document.getElementById("tb_update").style.display = "none";
-        document.getElementById("gagalunggah").style.display = "none";
+        <?php
+        if (session('error')) { ?>
+            document.getElementById("gagalunggah").style.display = "none";
+        <?php } ?>
     }
 
     <?php if ($approver) { ?>

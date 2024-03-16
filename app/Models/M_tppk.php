@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use PDOException;
+use PhpOffice\PhpSpreadsheet\Calculation\TextData\Replace;
 
 class M_tppk extends Model
 {
@@ -42,6 +44,40 @@ class M_tppk extends Model
         return $query->getResult();
     }
 
+    public function getJudulProp($instansiid, $kode_wilayah)
+    {
+        if ($instansiid == 1) {
+            $cekdigit34 = substr($kode_wilayah, 2, 2);
+            if ($cekdigit34 == "00") {
+                $jmlkode = 2;
+                $levelwil = 1;
+            } else {
+                $jmlkode = 4;
+                $levelwil = 2;
+            }
+        } else if ($instansiid == 2 || $instansiid == 4 || $instansiid == 18) {
+            $jmlkode = 2;
+            $levelwil = 1;
+        } else if ($instansiid == 3) {
+            $jmlkode = 4;
+            $levelwil = 2;
+        }
+
+        // echo $instansiid;
+        // die();
+
+        $padded_string = str_pad(substr($kode_wilayah, 0, $jmlkode), 6, "0");
+
+        $sql = 'SELECT nama FROM Referensi.ref.mst_wilayah  
+                WHERE kode_wilayah=:kodewilayah: AND id_level_wilayah = :levelwil:';
+        $query = $this->db->query($sql, [
+            'kodewilayah'  => $padded_string,
+            'levelwil'  => $levelwil
+        ]);
+
+        return $query->getRowArray();
+    }
+
     public function getDataWilayah($kodwil)
     {
         $sql = "select w1.nama as kelurahan,w2.nama as kecamatan, w3.nama as kota, w4.nama as propinsi, w1.id_level_wilayah, w1.mst_kode_wilayah, w1.kode_wilayah 
@@ -72,6 +108,18 @@ class M_tppk extends Model
         return $query->getResult();
     }
 
+    public function getInfoSekolah($npsn)
+    {
+        $sql = "SELECT nama, kode_wilayah, sekolah_id FROM Arsip.dbo.sekolah
+                WHERE npsn=:npsn:";
+
+        $query = $this->db->query($sql, [
+            'npsn'  => $npsn,
+        ]);
+
+        return $query->getRowArray();
+    }
+
     public function getNamaSekolah($kodewilayah)
     {
         $sql = "SELECT sekolah_id as instansi_id, nama, npsn as kode_instansi FROM Arsip.dbo.sekolah
@@ -96,12 +144,33 @@ class M_tppk extends Model
         return $query->getRow();
     }
 
+    public function getNPSNSekolah($sekolah_id)
+    {
+        $sql = "SELECT * FROM Arsip.dbo.sekolah WHERE sekolah_id=:kode:";
+
+        $query = $this->db->query($sql, [
+            'kode'  => $sekolah_id
+        ]);
+
+        return $query->getRow();
+    }
+
     public function getPTK($kodeinstansi)
     {
         $sql = "SELECT ptk_id,nama,jenis_ptk,a.jenis_ptk_id 
                 FROM Arsip.dbo.ptk a
                 JOIN [Referensi].[ref].[jenis_ptk] r ON a.jenis_ptk_id=r.jenis_ptk_id
                 WHERE sekolah_id = :sekolahid: AND aktif=1 AND soft_delete = 0";
+
+        $sql = "SELECT * 
+                FROM [arsip].[dbo].[ptk_terdaftar] ptk1
+                LEFT JOIN arsip.dbo.ptk ptk ON ptk.ptk_id=ptk1.ptk_id 
+                where ptk.aktif=1 AND ptk1.jenis_ptk_id=20 AND ptk1.sekolah_id=:sekolahid: 
+                AND tahun_ajaran_id = (SELECT MAX(tahun_ajaran_id) FROM Referensi.ref.tahun_ajaran WHERE expired_date IS NULL) AND ptk1.Soft_delete=0 AND ptk1.jenis_keluar_id IS NULL
+                ORDER BY 
+                ptk1.ptk_induk DESC, 
+                CASE WHEN ptk1.ptk_induk = 1 THEN 0 ELSE 1 END,
+                tanggal_surat_tugas DESC";
 
         $query = $this->db->query($sql, [
             'sekolahid'  => $kodeinstansi
@@ -348,6 +417,16 @@ class M_tppk extends Model
         return $query;
     }
 
+    public function getSekolahuId($sekolah_id)
+    {
+        $sql = "SELECT nama, npsn FROM [arsip].[dbo].[sekolah] where sekolah_id=:sekolah_id:";
+        $query = $this->db->query($sql, [
+            'sekolah_id' => $sekolah_id,
+        ]);
+
+        return $query->getRowArray();
+    }
+
     public function getSekolah($npsn)
     {
 
@@ -357,14 +436,12 @@ class M_tppk extends Model
                 -- LEFT JOIN [arsip].[dbo].[sekolah] s ON s.sekolah_id = i.instansi_id 
                 WHERE kode_instansi = :npsn:";
         } else {
-            // $sql = "SELECT instansi_id,kode_instansi,i.nama,s.npsn,i.kode_wilayah
-            //     FROM [TPPK].[dbo].[instansi] i
-            //     LEFT JOIN [arsip].[dbo].[sekolah] s ON s.sekolah_id = i.instansi_id 
-            //     WHERE npsn = :npsn:";
-
-            $sql = "SELECT sekolah_id as instansi_id,'' as kode_instansi,nama,npsn,kode_wilayah
-                FROM [arsip].[dbo].[sekolah]
-                WHERE npsn = :npsn:";
+            $sql = "SELECT sekolah_id as instansi_id,'' as kode_instansi, s.nama as nama_sekolah, s.nama as nama, npsn, s.kode_wilayah as kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+            FROM [arsip].[dbo].[sekolah] s
+            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+            WHERE npsn = :npsn:";
         }
 
 
@@ -410,7 +487,7 @@ class M_tppk extends Model
     public function getDaftarAnggota_old($idinstansi)
     {
 
-        $sql = "SELECT * FROM [TPPK].[dbo].[instansi_pengguna] ipg
+        $sql = "SELECT * FROM Arsip.[dbo].[instansi_pengguna] ipg
         LEFT JOIN Arsip.dbo.ptk ptk ON ipg.pengguna_id = ptk.ptk_id 
 		LEFT JOIN Referensi.ref.jenis_ptk rj ON rj.jenis_ptk_id = ptk.jenis_ptk_id  
         WHERE ipg.soft_delete = 0 
@@ -428,7 +505,8 @@ class M_tppk extends Model
 
         $sql = "SELECT TOP 1 * 
         FROM [TPPK].[dbo].[sk_satgas_provinsi]
-        WHERE kode_wilayah = :kodewilayah:
+        WHERE kode_wilayah = :kodewilayah: 
+        AND (soft_delete is null OR soft_delete=0)
         ORDER BY create_date DESC";
 
         $query = $this->db->query($sql, [
@@ -460,7 +538,7 @@ class M_tppk extends Model
         FROM [TPPK].[dbo].[satgas_wilayah] s
         LEFT JOIN [TPPK].[dbo].[jenis_instansi] j ON s.jenis_instansi_id = j.jenis_instansi_id 
         LEFT JOIN [TPPK].[dbo].[sk_satgas_provinsi] sk ON sk.sk_id = s.sk_id 
-        WHERE s.sk_id = :skid:";
+        WHERE s.sk_id = :skid: ORDER BY anggotake";
 
         $query = $this->db->query($sql, [
             'skid' => $skid
@@ -471,8 +549,7 @@ class M_tppk extends Model
 
     public function getDaftarAnggota($idinstansi)
     {
-        $sql = "SELECT ROW_NUMBER() OVER (ORDER BY 
-        CASE WHEN UPPER(peran_ang) LIKE 'PELINDUNG%' THEN 1
+        $sql = "SELECT (CASE WHEN UPPER(peran_ang) LIKE 'PELINDUNG%' THEN 1
              WHEN UPPER(peran_ang) LIKE 'PEMBINA%' THEN 2
              WHEN UPPER(peran_ang) LIKE 'PENGARAH%' THEN 3
              WHEN UPPER(peran_ang) LIKE 'PENANGGUNG%' THEN 4
@@ -481,23 +558,54 @@ class M_tppk extends Model
              WHEN UPPER(peran_ang) LIKE 'SEKRETARIS%' THEN 7
              WHEN UPPER(peran_ang) LIKE 'BENDAHARA%' THEN 8
              WHEN UPPER(peran_ang) LIKE 'HUMAS%' THEN 9
-             WHEN UPPER(peran_ang) LIKE 'KOORDINATOR%' THEN 10
-             WHEN UPPER(peran_ang) LIKE 'SEKSI%' THEN 11
-             ELSE 12 END
-    ) AS urutan, ua.nama as nama_unsur2,s.nama as nama_sekolah,* 
+             WHEN UPPER(peran_ang) LIKE 'KOOR%' THEN 10
+             WHEN UPPER(peran_ang) LIKE 'KORD%' THEN 11
+             WHEN UPPER(peran_ang) LIKE 'SEKSI%' THEN 12
+             ELSE 13 END
+    ) AS urutan, (CASE WHEN k.ptk_id is NULL THEN 0 ELSE 1 END) AS urutan2, ua.nama as nama_unsur2,s.nama as nama_sekolah,l.ptk_id_anggota_1,l.ptk_id_anggota_2,l.ptk_id_anggota_3,k.sk_tugas as nomor_sk,* 
         FROM [TPPK].[dbo].[kepanitiaan] k
         LEFT JOIN TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
         LEFT JOIN Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
         LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
         LEFT JOIN [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+        LEFT JOIN [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
         WHERE k.sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0
         AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
                       FROM [TPPK].[dbo].[kepanitiaan] 
-                      WHERE sekolah_id = :instansi:)
-        ORDER BY urutan, peran_ang ASC";
+                      WHERE sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0) AND (tst_sk_tugas IS NULL 
+         OR tst_sk_tugas = (SELECT MAX(tst_sk_tugas) 
+                            FROM [TPPK].[dbo].[kepanitiaan] 
+                            WHERE sekolah_id = :instansi: 
+                            AND soft_delete_kepanitiaan = 0 
+                            AND soft_delete_anggota_panitia = 0))
+        ORDER BY urutan, urutan2 DESC, k.nm_ang ASC ";
 
         $query = $this->db->query($sql, [
             'instansi' => $idinstansi
+        ]);
+
+        return $query;
+    }
+
+    public function getDaftarAnggotaAktif($sekolah_id)
+    {
+        $sql = "SELECT [nm_ang]
+                ,[no_kontak]
+                ,[unsur_ang]
+                ,[peran_ang]
+                ,[ptk_id]
+                FROM [TPPK].[dbo].[kepanitiaan]
+                where tmt_sk_tugas = (SELECT 
+                        MAX(tmt_sk_tugas) AS max_tmt_sk_tugas 
+                    FROM 
+                        [TPPK].[dbo].[kepanitiaan] 
+                    WHERE 
+                        sekolah_id = :sekolah_id:
+                    GROUP BY 
+                        sekolah_id) AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0 AND sekolah_id = :sekolah_id:";
+
+        $query = $this->db->query($sql, [
+            'sekolah_id' => $sekolah_id
         ]);
 
         return $query;
@@ -519,6 +627,11 @@ class M_tppk extends Model
                 ,[residu_upload_sk]
                 ,[residu_siswa]
                 ,[residu_ganjil]
+                ,[sekolah_belum_sync]
+                ,[sekolah_sudah_sync]
+                ,[residu_sk_lebih_dari_2_tahun]
+                ,[residu_sk_kadaluarsa]
+                ,[residu_ketua_non_ptk]
                 ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
                 ,[jml_tppk] as tot_jml_tppk
                 FROM [TPPK].[rpt].[rekap_tppk]
@@ -536,11 +649,11 @@ class M_tppk extends Model
         $setres_upload = "";
         $setres_residu = "";
 
-        if ($data['residu_upload_sk'] == "update")
-            $setres_upload = "residu_upload_sk = '0'";
-        if ($data['residu'] == "update")
-            $setres_residu = ", residu = '0'";
-        $sql = "UPDATE [TPPK].[rpt].[rekap_tppk] SET " . $setres_upload . $setres_residu . " WHERE id_level_wilayah = 4 AND kode_wilayah = :npsn:";
+        if ($data['residu'] == "9") {
+            $sql = "UPDATE [TPPK].[rpt].[rekap_tppk] SET residu_upload_sk=0 WHERE id_level_wilayah = 4 AND kode_wilayah = :npsn:";
+        } else {
+            $sql = "UPDATE [TPPK].[rpt].[rekap_tppk] SET residu_upload_sk=0, residu=0 WHERE id_level_wilayah = 4 AND kode_wilayah = :npsn:";
+        }
 
         $query = $this->db->query($sql, [
             'npsn' => $npsn
@@ -551,7 +664,6 @@ class M_tppk extends Model
 
     public function getTotalTPPK($kode, $level, $jenjang = 'semua', $bentuk = 'semua', $status = 'semua')
     {
-
         // echo $jenjang . ">";
         // echo $bentuk . ">";
         // echo $status;
@@ -571,8 +683,6 @@ class M_tppk extends Model
             $daftarbentuk = "";
         }
 
-
-
         $sql1 = "SELECT [kode_wilayah]
                 ,[wilayah]
                 ,[id_level_wilayah]
@@ -589,6 +699,7 @@ class M_tppk extends Model
                 ,[residu_ganjil] as tot_ganjil
                 ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
                 ,[jml_tppk] as tot_jml_tppk
+                ,[sekolah_sudah_sync] as tot_sekolah_sudah_sync
                 ,status_sk
                 FROM [TPPK].[rpt].[rekap_tppk] rt
                 LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
@@ -612,6 +723,7 @@ class M_tppk extends Model
                 ,[residu_ganjil] as tot_ganjil
                 ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
                 ,[jml_tppk] as tot_jml_tppk
+                ,[sekolah_sudah_sync] as tot_sekolah_sudah_sync
                 ,status_sk
                 FROM [TPPK].[rpt].[rekap_tppk] rt
                 LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
@@ -625,6 +737,7 @@ class M_tppk extends Model
                 ,[mst_kode_wilayah]
                 ,sum ([jml_satuan_pendidikan]) as tot_jml_satuan_pendidikan
                 ,sum ([jml_tppk]) as tot_jml_tppk
+                ,sum ([sekolah_sudah_sync]) as tot_sekolah_sudah_sync
                 ,sum ([residu]) as tot_residu
                 ,sum ([residu_kepsek]) as tot_residu_kepsek
                 ,sum ([residu_guru]) as tot_residu_guru
@@ -650,6 +763,7 @@ class M_tppk extends Model
                 ,[mst_kode_wilayah]
                 ,sum ([jml_satuan_pendidikan]) as tot_jml_satuan_pendidikan
                 ,sum ([jml_tppk]) as tot_jml_tppk
+                ,sum ([sekolah_sudah_sync]) as tot_sekolah_sudah_sync
                 ,sum ([residu]) as tot_residu
                 ,sum ([residu_kepsek]) as tot_residu_kepsek
                 ,sum ([residu_guru]) as tot_residu_guru
@@ -675,6 +789,7 @@ class M_tppk extends Model
                 ,[mst_kode_wilayah]
                 ,sum ([jml_satuan_pendidikan]) as tot_jml_satuan_pendidikan
                 ,sum ([jml_tppk]) as tot_jml_tppk
+                ,sum ([sekolah_sudah_sync]) as tot_sekolah_sudah_sync
                 ,sum ([residu]) as tot_residu
                 ,sum ([residu_kepsek]) as tot_residu_kepsek
                 ,sum ([residu_guru]) as tot_residu_guru
@@ -701,6 +816,7 @@ class M_tppk extends Model
                 ,[mst_kode_wilayah]
                 ,sum ([jml_satuan_pendidikan]) as tot_jml_satuan_pendidikan
                 ,sum ([jml_tppk]) as tot_jml_tppk
+                ,sum ([sekolah_sudah_sync]) as tot_sekolah_sudah_sync
                 ,sum ([residu]) as tot_residu
                 ,sum ([residu_kepsek]) as tot_residu_kepsek
                 ,sum ([residu_guru]) as tot_residu_guru
@@ -726,6 +842,7 @@ class M_tppk extends Model
                 ,[mst_kode_wilayah]
                 ,sum ([jml_satuan_pendidikan]) as tot_jml_satuan_pendidikan
                 ,sum ([jml_tppk]) as tot_jml_tppk
+                ,sum ([sekolah_sudah_sync]) as tot_sekolah_sudah_sync
                 ,sum ([residu]) as tot_residu
                 ,sum ([residu_kepsek]) as tot_residu_kepsek
                 ,sum ([residu_guru]) as tot_residu_guru
@@ -804,6 +921,88 @@ class M_tppk extends Model
                 'statusnya'  => $status,
             ]);
         }
+
+        // echo $sql;
+        // die();
+
+        return $query;
+    }
+
+    public function getTotalTPPK_npsn($npsn)
+    {
+
+        $sql1 = "SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where kode_wilayah=:npsn: 
+                ORDER BY kode_wilayah";
+
+        $query = $this->db->query($sql1, [
+            'npsn'  => $npsn,
+        ]);
+
+        return $query;
+    }
+
+    public function getTotalTPPKDasbor($kode, $level, $jenjang = 'semua', $bentuk = 'semua', $status = 'semua')
+    {
+        $level++;
+        if ($jenjang == "rekappaud") {
+            $andbentuk = "(bentuk_pendidikan = 'TK' or bentuk_pendidikan = 'TPA' or bentuk_pendidikan = 'SPS' or bentuk_pendidikan = 'KB' or bentuk_pendidikan = 'SPK TK' or bentuk_pendidikan = 'SPK KB')";
+        } else if ($jenjang == "rekapsd") {
+            $andbentuk = "(bentuk_pendidikan = 'SD' or bentuk_pendidikan = 'SPK SD')";
+        } else if ($jenjang == "rekapsmp") {
+            $andbentuk = "(bentuk_pendidikan = 'SMP' or bentuk_pendidikan = 'SPK SMP')";
+        } else if ($jenjang == "rekapsma") {
+            $andbentuk = "(bentuk_pendidikan = 'SMA' or bentuk_pendidikan = 'SPK SMA')";
+        } else if ($jenjang == "rekapsmk") {
+            $andbentuk = "(bentuk_pendidikan = 'SMK')";
+        } else if ($jenjang == "rekapslb") {
+            $andbentuk = "(bentuk_pendidikan = 'SLB')";
+        } else if ($jenjang == "rekapkesetaraan") {
+            $andbentuk = "(bentuk_pendidikan = 'PKBM' or bentuk_pendidikan = 'SKB')";
+        }
+
+        $sql = "SELECT [mst_kode_wilayah]
+                ,sum ([jml_satuan_pendidikan]) as tot_jml_satuan_pendidikan
+                ,sum ([sekolah_sudah_sync]) as tot_sekolah_sudah_sync
+                ,sum ([jml_tppk]) as tot_jml_tppk
+                ,sum ([residu]) as tot_residu
+                ,sum ([residu_kepsek]) as tot_residu_kepsek
+                ,sum ([residu_guru]) as tot_residu_guru
+                ,sum ([residu_komite]) as tot_residu_komite
+                ,sum ([residu_upload_sk]) as tot_residu_upload_sk
+                ,sum ([residu_siswa]) as tot_residu_siswa
+                ,sum ([residu_ganjil]) as tot_residu_ganjil                
+                ,sum (status_sk) as status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah = :kodebaru: 
+                and id_level_wilayah = :levelnya: and 
+				" . $andbentuk . " 
+                group by [mst_kode_wilayah]";
+
+        $query = $this->db->query($sql, [
+            'levelnya'  => $level,
+            'kodebaru'  => $kode,
+        ]);
+
 
         // echo $sql;
         // die();
@@ -1026,6 +1225,15 @@ class M_tppk extends Model
         return $query;
     }
 
+    public function getlastupdate()
+    {
+        $sql = "SELECT TOP (1) [last_update]
+                FROM [TPPK].[dbo].[kepanitiaan]
+                order by last_update DESC";
+
+        $query = $this->db->query($sql)->getRowArray();
+        return $query;
+    }
 
     public function getDaftarSKSatgasBaru($kodeprov)
     {
@@ -1048,7 +1256,7 @@ class M_tppk extends Model
                 WHERE t1.id_level_wilayah = 2
                 GROUP BY LEFT(t1.kode_wilayah, 2)) t3 ON LEFT(t1.kode_wilayah,2) = t3.induk_kode_wilayah
                     WHERE t1.id_level_wilayah = 1
-                    ORDER BY create_date;";
+                    ORDER BY status_sk, create_date;";
 
         $sql1 = "SELECT t1.*, rf.nama 
                 FROM TPPK.dbo.sk_satgas_provinsi t1
@@ -1057,8 +1265,8 @@ class M_tppk extends Model
                     FROM [TPPK].[dbo].[sk_satgas_provinsi]
                     GROUP BY kode_wilayah) t2 ON t1.kode_wilayah = t2.kode_wilayah 
                     AND t1.create_date = t2.max_create_date
-                    WHERE t1.id_level_wilayah = 2 
-                    ORDER BY create_date;";
+                    WHERE t1.id_level_wilayah = 1 
+                    ORDER BY status_sk DESC, create_date;";
 
         $sql2 = "SELECT t1.*, rf.nama 
                 FROM TPPK.dbo.sk_satgas_provinsi t1
@@ -1067,18 +1275,31 @@ class M_tppk extends Model
                     FROM [TPPK].[dbo].[sk_satgas_provinsi]
                     GROUP BY kode_wilayah) t2 ON t1.kode_wilayah = t2.kode_wilayah 
                     AND t1.create_date = t2.max_create_date
+                    WHERE t1.id_level_wilayah = 2 
+                    ORDER BY status_sk DESC, create_date;";
+
+        $sql3 = "SELECT t1.*, rf.nama 
+                FROM TPPK.dbo.sk_satgas_provinsi t1
+                JOIN Referensi.ref.mst_wilayah rf ON rf.kode_wilayah = t1.kode_wilayah 
+                JOIN (SELECT kode_wilayah, MAX(create_date) AS max_create_date
+                    FROM [TPPK].[dbo].[sk_satgas_provinsi]
+                    GROUP BY kode_wilayah) t2 ON t1.kode_wilayah = t2.kode_wilayah 
+                    AND t1.create_date = t2.max_create_date
                     WHERE t1.id_level_wilayah = 2 AND LEFT(t1.kode_wilayah,2) = LEFT(:kode:,2)
-                    ORDER BY create_date;";
+                    ORDER BY status_sk DESC, create_date;";
 
 
-        if ($kodeprov != null) {
+        if ($kodeprov == null) {
+            $sql = $sql1;
+            $query = $this->db->query($sql)->getResultArray();
+        } else if ($kodeprov == "kota") {
             $sql = $sql2;
+            $query = $this->db->query($sql)->getResultArray();
+        } else {
+            $sql = $sql3;
             $query = $this->db->query($sql, [
                 'kode' => $kodeprov
             ])->getResultArray();
-        } else {
-            $sql = $sql1;
-            $query = $this->db->query($sql)->getResultArray();
         }
 
         return $query;
@@ -1165,7 +1386,7 @@ class M_tppk extends Model
     public function cek_sk_npsn($hal)
     {
         $sql = "DECLARE @Halaman INT = " . $hal . "
-                DECLARE @JumlahPerHalaman INT = 1000
+                DECLARE @JumlahPerHalaman INT = 25000
 
                 SELECT 
                     q1.[kode_wilayah],
@@ -1200,7 +1421,160 @@ class M_tppk extends Model
                     RowNum > (@Halaman - 1) * @JumlahPerHalaman AND RowNum <= @Halaman * @JumlahPerHalaman;
 ";
 
+        $sql = "DECLARE @Halaman INT = " . $hal . "
+               DECLARE @JumlahPerHalaman INT = 25000
+
+                SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT 
+                            [kode_wilayah], 
+                            [wilayah], 
+                            [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] 
+                        WHERE 
+                            jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT 
+                            [npsn], 
+                            [sk_tugas],
+                            [tmt_sk_tugas],
+                            [tst_sk_tugas],
+                            [sekolah_id]
+                        FROM 
+                            (
+                                SELECT 
+                                    [npsn], 
+                                    [sk_tugas],
+                                    [tmt_sk_tugas],
+                                    [tst_sk_tugas],
+                                    k.sekolah_id,
+                                    ROW_NUMBER() OVER (PARTITION BY [npsn] ORDER BY [tmt_sk_tugas] DESC) AS RowNum
+                                FROM 
+                                    [TPPK].[dbo].[kepanitiaan] k
+                                LEFT JOIN 
+                                    Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                                WHERE 
+                                    soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                            ) kWithRowNum
+                        WHERE 
+                            kWithRowNum.RowNum = 1
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    RowNum > (@Halaman - 1) * @JumlahPerHalaman AND RowNum <= @Halaman * @JumlahPerHalaman 
+                ORDER BY
+                    q2.[tmt_sk_tugas] DESC";
+
         $query = $this->db->query($sql);
+        return $query->getResultArray();
+    }
+
+    public function cek_sk_npsn_satuan($npsn)
+    {
+        $sql = "SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.sekolah_id,
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT [kode_wilayah], [wilayah], [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM [TPPK].[rpt].[rekap_tppk] 
+                        WHERE jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT [npsn], MAX([sk_tugas]) as [sk_tugas], 
+                        MAX([tmt_sk_tugas]) as [tmt_sk_tugas],
+                        MAX([tst_sk_tugas]) as [tst_sk_tugas],k.sekolah_id
+                        FROM [TPPK].[dbo].[kepanitiaan] k
+                        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                        where soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                        GROUP BY [npsn], k.sekolah_id
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    q2.npsn = :npsn:";
+
+        $sql = "SELECT 
+                    q1.[kode_wilayah],
+                    q1.[wilayah],
+                    q1.[jml_tppk],
+                    q2.[sekolah_id],
+                    q2.[npsn],
+                    q2.[sk_tugas],
+                    q2.[tmt_sk_tugas],
+                    q2.[tst_sk_tugas]
+                FROM 
+                    (
+                        SELECT 
+                            [kode_wilayah], 
+                            [wilayah], 
+                            [jml_tppk],
+                            ROW_NUMBER() OVER (ORDER BY [kode_wilayah]) AS RowNum
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] 
+                        WHERE 
+                            jml_tppk > 0 AND id_level_wilayah = 4
+                    ) q1
+                JOIN 
+                    (
+                        SELECT 
+                            [npsn], 
+                            [sk_tugas],
+                            [tmt_sk_tugas],
+                            [tst_sk_tugas],
+                            [sekolah_id]
+                        FROM 
+                            (
+                                SELECT 
+                                    [npsn], 
+                                    [sk_tugas],
+                                    [tmt_sk_tugas],
+                                    [tst_sk_tugas],
+                                    k.sekolah_id,
+                                    ROW_NUMBER() OVER (PARTITION BY [npsn] ORDER BY [tmt_sk_tugas] DESC) AS RowNum
+                                FROM 
+                                    [TPPK].[dbo].[kepanitiaan] k
+                                LEFT JOIN 
+                                    Arsip.dbo.sekolah s ON s.sekolah_id = k.sekolah_id
+                                WHERE 
+                                    soft_delete_kepanitiaan = 0 AND soft_delete_anggota_panitia = 0
+                            ) kWithRowNum
+                        WHERE 
+                            kWithRowNum.RowNum = 1
+                    ) q2
+                ON 
+                    q1.[kode_wilayah] = q2.[npsn]
+                WHERE
+                    q2.npsn = :npsn:
+                ORDER BY
+                    q2.[tmt_sk_tugas] DESC";
+
+        $query = $this->db->query($sql, [
+            'npsn' => $npsn,
+        ]);
         return $query->getResultArray();
     }
 
@@ -1221,18 +1595,1283 @@ class M_tppk extends Model
         $db      = \Config\Database::connect();
         $builder = $db->table('TPPK.dbo.sk_tppk');
 
-        $sql = "SELECT * FROM TPPK.dbo.sk_tppk  WHERE sekolah_id='" . $data['sekolah_id'] . "'";
+        $sql = "SELECT * FROM TPPK.dbo.sk_tppk WHERE sekolah_id='" . $data['sekolah_id'] . "'";
         $query = $this->db->query($sql)->getResult();
 
         if (!$query) {
-            // echo "TIDAK ADA";
+            // echo "SK NPSN " . $data['npsn'] . " BELUM MASUK TABEL <br>";
             // die();
             $sql2 = "INSERT INTO TPPK.dbo.sk_tppk (sekolah_id, npsn, nomor_sk, tanggal_sk, status_sk) values ('" . $data['sekolah_id'] . "','" . $data['npsn'] . "','" . $data['nomor_sk'] . "','" . $data['tanggal_sk'] . "',0)";
 
             $query2 = $this->db->query($sql2);
         } else {
-            echo "NEMU";
-            die();
+            // echo "SK NPSN " . $data['npsn'] . " AMAN <br>";
+            // die();
         }
+    }
+
+    public function cek_sk_tppk($npsn, $nomor_sk)
+    {
+        $sql = "SELECT * FROM TPPK.dbo.sk_tppk WHERE npsn=:npsn: 
+        AND nomor_sk =:nomor_sk:";
+        $query = $this->db->query($sql, [
+            'npsn' => $npsn,
+            'nomor_sk' => $nomor_sk,
+        ]);
+
+        return $query->getResult();
+    }
+
+    public function cek_sk_belum_ditabel()
+    {
+        $sql = "WITH SK_Pengajuan AS (
+                    SELECT 
+                    r2.sekolah_id,tmt_sk_tugas,
+                    s2.npsn,
+                    [sk_tugas]
+                FROM 
+                (
+                    SELECT 
+                        sekolah_id,tmt_sk_tugas,
+                        [sk_tugas],
+                        ROW_NUMBER() OVER (PARTITION BY sekolah_id ORDER BY tmt_sk_tugas DESC) AS row_num
+                    FROM 
+                        kepanitiaan
+                    WHERE soft_delete_kepanitiaan = 0
+                ) AS r2
+                LEFT JOIN 
+                    Arsip.dbo.sekolah s2 ON r2.sekolah_id = s2.sekolah_id
+                WHERE 
+                    r2.row_num = 1
+                )
+
+                SELECT 
+                        subquery.npsn,sekolah_id,sk_tugas,tmt_sk_tugas,
+                        nomor_sk_terbaru
+                    FROM
+                    (
+                        SELECT 
+                            r.kode_wilayah AS npsn,
+                            COUNT(s.npsn) AS jumlah_sk,
+                            MAX(s.tanggal_sk) AS tanggal_sk_terbaru,
+                            nomor_sk AS nomor_sk_terbaru
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] r
+                        LEFT JOIN 
+                            (
+                                SELECT 
+                                    *,
+                                    ROW_NUMBER() OVER (PARTITION BY npsn ORDER BY tanggal_sk DESC) AS row_num
+                                FROM 
+                                    [TPPK].[dbo].[sk_tppk]
+                            ) s ON r.kode_wilayah = s.npsn
+                        WHERE 
+                            id_level_wilayah = 4 AND jml_tppk > 0
+                        GROUP BY 
+                            r.kode_wilayah, nomor_sk
+                    ) subquery 
+                    LEFT JOIN 
+                    SK_Pengajuan sk ON subquery.npsn = sk.npsn
+                    WHERE 
+                        jumlah_sk = 0";
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function getallnpsn($hal)
+    {
+        $sql = "
+        DECLARE @baris_per_halaman INT = 10000;
+        DECLARE @offset INT = (" . $hal . " - 1) * @baris_per_halaman;
+
+        SELECT tp.kode_wilayah AS npsn, s.sekolah_id, sk_tugas, tmt_sk_tugas 
+        FROM TPPK.rpt.rekap_tppk tp 
+        LEFT JOIN arsip.dbo.sekolah s ON tp.kode_wilayah = s.npsn
+        LEFT JOIN TPPK.dbo.kepanitiaan k ON k.sekolah_id = s.sekolah_id
+        WHERE id_level_wilayah = '4' 
+            AND sk_tugas IS NOT NULL 
+        GROUP BY tp.kode_wilayah, s.sekolah_id, sk_tugas, tmt_sk_tugas
+        ORDER BY npsn
+        OFFSET @offset ROWS 
+        FETCH NEXT @baris_per_halaman ROWS ONLY";
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function getnpsntppk($npsn)
+    {
+        $sql = "SELECT tp.kode_wilayah AS npsn, s.sekolah_id, sk_tugas, tmt_sk_tugas 
+        FROM TPPK.rpt.rekap_tppk tp 
+        LEFT JOIN arsip.dbo.sekolah s ON tp.kode_wilayah = s.npsn
+        LEFT JOIN TPPK.dbo.kepanitiaan k ON k.sekolah_id = s.sekolah_id
+        WHERE id_level_wilayah = '4' AND npsn = :npsn: 
+            AND sk_tugas IS NOT NULL 
+        GROUP BY tp.kode_wilayah, s.sekolah_id, sk_tugas, tmt_sk_tugas
+        ORDER BY npsn";
+        $query = $this->db->query($sql, [
+            'npsn' => $npsn
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function getsiswasekolah($npsn, $nik)
+    {
+        $sql = "SELECT peserta_didik_id, nisn, nik, pd.nama as nama_siswa, tempat_lahir, tanggal_lahir, jenis_kelamin, validDukcapil, s.nama as nama_sekolah, nik_ayah, nama_ayah 
+        FROM arsip.dbo.peserta_didik pd 
+        LEFT JOIN arsip.dbo.sekolah s ON pd.sekolah_id = s.sekolah_id
+        WHERE npsn = :npsn: AND nik = :nik: and pd.aktif=1";
+
+        $query = $this->db->query($sql, [
+            'npsn' => $npsn,
+            'nik' => $nik,
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function getgurunuptk($npsn, $nik)
+    {
+        $sql = "SELECT ptk_id as peserta_didik_id, nuptk as nisn, nik, pd.nama as nama_siswa, tempat_lahir, tanggal_lahir, jenis_kelamin, validDukcapil, s.nama as nama_sekolah
+        FROM arsip.dbo.ptk pd 
+        LEFT JOIN arsip.dbo.sekolah s ON pd.sekolah_id = s.sekolah_id
+        WHERE npsn = :npsn: AND nik = :nik: and pd.aktif=1";
+
+        // echo $sql;
+
+        $query = $this->db->query($sql, [
+            'npsn' => $npsn,
+            'nik' => $nik,
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function getgurunik($npsn, $nuptk)
+    {
+        $sql = "SELECT ptk_id as peserta_didik_id, nuptk as nisn, nik, pd.nama as nama_siswa, tempat_lahir, tanggal_lahir, jenis_kelamin, validDukcapil, s.nama as nama_sekolah
+        FROM arsip.dbo.ptk pd 
+        LEFT JOIN arsip.dbo.sekolah s ON pd.sekolah_id = s.sekolah_id
+        WHERE npsn = :npsn: AND nik = :nuptk: and pd.master=1 and pd.aktif=1";
+
+        // echo $sql;
+
+        $query = $this->db->query($sql, [
+            'npsn' => $npsn,
+            'nuptk' => $nuptk,
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function getkebutuhankhusus($peserta_didik_id)
+    {
+        $sql = "SELECT kebutuhan_khusus, kebutuhan_khusus_id 
+                FROM [Datamart].[datamart].[peserta_didik] 
+                WHERE peserta_didik_id=:peserta_didik_id:
+                ORDER BY semester_id DESC";
+
+        try {
+            $query = $this->db->query($sql, [
+                'peserta_didik_id' => $peserta_didik_id,
+            ]);
+            return $query->getRowArray();
+        } catch (PDOException $e) {
+            // return $query->getRowArray();
+        }
+    }
+
+    public function getkebutuhankhususptk($ptk_id)
+    {
+        $sql = "SELECT keahlian_braille, keahlian_bhs_isyarat 
+                FROM [Datamart].[datamart].[ptk] 
+                WHERE ptk_id=:ptk_id:";
+
+        $query = $this->db->query($sql, [
+            'ptk_id' => $ptk_id,
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function get_status_korban()
+    {
+        $sql = "SELECT status_korban_pelaku_id, nama 
+                FROM [TPPK].[ref].[status_korban_pelaku]";
+
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function get_bentuk_kekerasan()
+    {
+        $sql = "SELECT bentuk_kekerasan_id, nama 
+                FROM [TPPK].[ref].[bentuk_kekerasan]";
+
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function cek_nomor_kasus($npsn)
+    {
+        $sql = "SELECT * FROM TPPK.dbo.kasus 
+                WHERE npsn = :npsn:
+                ORDER BY create_date DESC";
+        $query = $this->db->query($sql, [
+            'npsn' => $npsn
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function carinamasekolah($nama_sekolah, $kode_wilayah)
+    {
+        $and = "";
+        $andkota = "";
+        $andkotafull = "";
+        $sqlkota = "";
+        $jmlkata = 0;
+        if ($nama_sekolah == strval(intval($nama_sekolah))) {
+            $and = "AND npsn = :npsn: ";
+        } else {
+            $kata_kunci = explode(' ', $nama_sekolah);
+
+            foreach ($kata_kunci as $kata) {
+                $jmlkata++;
+                $and .= "AND LOWER(s.nama) LIKE '%" . strtolower($kata) . "%' ";
+            }
+
+            $terakhir = end($kata_kunci);
+            array_pop($kata_kunci);
+            foreach ($kata_kunci as $kata) {
+                $andkota .= "AND LOWER(s.nama) LIKE '%" . strtolower($kata) . "%' ";
+            }
+            $andkotafull = $andkota . "AND LOWER(r2.nama) LIKE '%" . strtolower($terakhir) . "%' ";
+
+            if ($jmlkata > 1)
+                $sqlkota = "SELECT top 5 1 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah,status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 " . $andkotafull . "
+
+                    UNION ALL ";
+        }
+
+
+        $kode_wilayah4 = substr($kode_wilayah, 0, 4);
+
+        $sql = "SELECT TOP 5 npsn, MAX(nama_sekolah) AS nama_sekolah,
+                MAX(kode_wilayah) AS kode_wilayah,
+                MAX(status_sekolah) AS status_sekolah,
+                MAX(provinsi) AS provinsi,
+                MAX(kota) AS kota,
+                MAX(kecamatan) AS kecamatan
+                FROM (
+                    " . $sqlkota . "
+
+                    SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 " . $and . " AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION ALL 
+
+                    SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 " . $and . " AND left(s.kode_wilayah,4) <> :kodewil:
+
+                    -- UNION 
+
+                    -- SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 " . $andkota . " AND left(s.kode_wilayah,4) = :kodewil:
+
+                    -- UNION
+
+                    -- SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 " . $andkota . " AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                GROUP BY npsn
+                ORDER BY MAX(oder)";
+
+        // echo $sql;
+
+        $query = $this->db->query($sql, [
+            'npsn' => $nama_sekolah,
+            'kodewil' => $kode_wilayah4,
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function carinamasekolahall($nama_sekolah)
+    {
+        $and = "";
+        $andkota = "";
+        $andkotafull = "";
+        $sqlkota = "";
+        $jmlkata = 0;
+        if ($nama_sekolah == strval(intval($nama_sekolah))) {
+            $and = "AND npsn = :npsn: ";
+        } else {
+            $kata_kunci = explode(' ', $nama_sekolah);
+
+            foreach ($kata_kunci as $kata) {
+                $jmlkata++;
+                $and .= "AND LOWER(s.nama) LIKE '%" . strtolower($kata) . "%' ";
+            }
+
+            $terakhir = end($kata_kunci);
+            array_pop($kata_kunci);
+            foreach ($kata_kunci as $kata) {
+                $andkota .= "AND LOWER(s.nama) LIKE '%" . strtolower($kata) . "%' ";
+            }
+            $andkotafull = $andkota . "AND LOWER(r2.nama) LIKE '%" . strtolower($terakhir) . "%' ";
+
+            if ($jmlkata > 1)
+                $sqlkota = "SELECT TOP 100 npsn, s.nama as nama_sekolah, s.kode_wilayah,status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 " . $andkotafull . "
+
+                    UNION ALL ";
+        }
+
+
+        $sql = "WITH TopSekolah AS (SELECT TOP 100 npsn, MAX(nama_sekolah) AS nama_sekolah,
+                MAX(kode_wilayah) AS kode_wilayah,
+                MAX(status_sekolah) AS status_sekolah,
+                MAX(provinsi) AS provinsi,
+                MAX(kota) AS kota,
+                MAX(kecamatan) AS kecamatan
+                FROM (
+                    " . $sqlkota . "
+
+                    SELECT npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 " . $and . ") as g 
+                GROUP BY npsn)
+                
+                SELECT 
+                    rt.[kode_wilayah],
+                    [wilayah],
+                    [id_level_wilayah],
+                    [mst_kode_wilayah],
+                    [bentuk_pendidikan],
+                    ts.[status_sekolah],
+                    sk.status_sk,
+                    [jenjang_sekolah],
+                    [residu] as tot_residu,
+                    [residu_kepsek] as tot_residu_kepsek,
+                    [residu_guru] as tot_residu_guru,
+                    [residu_komite] as tot_residu_komite,
+                    [residu_upload_sk] as tot_residu_upload_sk,
+                    [residu_siswa] as tot_siswa,
+                    [residu_ganjil] as tot_ganjil,
+                    [jml_satuan_pendidikan] as tot_jml_satuan_pendidikan,
+                    [jml_tppk] as tot_jml_tppk
+                FROM 
+                    [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN 
+                    TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                INNER JOIN 
+                    TopSekolah ts ON rt.kode_wilayah = ts.npsn
+                GROUP BY rt.kode_wilayah,[wilayah],
+                    [id_level_wilayah],
+                    [mst_kode_wilayah],
+                    [bentuk_pendidikan],
+                    ts.[status_sekolah],
+                    sk.status_sk,
+                    [jenjang_sekolah],
+                    [residu],
+                    [residu_kepsek],
+                    [residu_guru],
+                    [residu_komite],
+                    [residu_upload_sk],
+                    [residu_siswa],
+                    [residu_ganjil],
+                    [jml_satuan_pendidikan],
+                    [jml_tppk]";
+
+        $query = $this->db->query($sql, [
+            'npsn' => $nama_sekolah,
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function get_daf_laporan($npsn)
+    {
+        $sql = "SELECT k.[kasus_id], [nomor_register], k.tanggal_kejadian, 
+                COUNT(CASE WHEN ko.sebagai = 1 THEN 1 END) AS jumlah_korban,
+                COUNT(CASE WHEN ko.sebagai IN (2, 3) THEN 1 END) AS jumlah_pelaku,tanggal_pelaporan,k.create_date 
+                FROM [TPPK].[dbo].[kasus] k
+                LEFT JOIN [TPPK].[dbo].[korban_pelaku] ko ON k.kasus_id = ko.kasus_id 
+                LEFT JOIN (
+                    SELECT kasus_id, 
+                        MAX(tanggal_pelaporan) as tanggal_pelaporan 
+                    FROM pelaporan 
+                    GROUP BY kasus_id
+                ) p_max ON k.kasus_id = p_max.kasus_id
+                WHERE k.npsn = :npsn: AND k.soft_delete=0
+                GROUP BY k.[kasus_id], k.nomor_register, k.tanggal_kejadian, k.create_date, tanggal_pelaporan
+                ORDER BY k.create_date DESC, nomor_register";
+
+        $query = $this->db->query($sql, [
+            'npsn' => $npsn
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function get_daf_provinsi()
+    {
+        $sql = "SELECT kode_wilayah, nama 
+                FROM Referensi.ref.mst_wilayah
+                WHERE id_level_wilayah=1 
+                ORDER BY nama";
+
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function get_daf_kota($kode_provinsi)
+    {
+        $sql = "SELECT kode_wilayah, nama 
+                FROM Referensi.ref.mst_wilayah
+                WHERE mst_kode_wilayah = :kode_provinsi: AND id_level_wilayah=2 
+                ORDER BY nama";
+
+        $query = $this->db->query($sql, [
+            'kode_provinsi' => $kode_provinsi
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function get_daf_kecamatan($kode_kota)
+    {
+        $sql = "SELECT kode_wilayah, nama 
+                FROM Referensi.ref.mst_wilayah
+                WHERE mst_kode_wilayah = :kode_kota: AND id_level_wilayah=3 
+                ORDER BY nama";
+
+        $query = $this->db->query($sql, [
+            'kode_kota' => $kode_kota
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function get_daf_desa($kode_kecamatan)
+    {
+        $sql = "SELECT kode_wilayah, nama 
+                FROM Referensi.ref.mst_wilayah
+                WHERE mst_kode_wilayah = :kode_kecamatan: AND id_level_wilayah=4 
+                ORDER BY nama";
+
+        $query = $this->db->query($sql, [
+            'kode_kecamatan' => $kode_kecamatan
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    private function rekap_tppk_untuk_excel()
+    {
+        $sql = "SELECT r1.nama as propinsi, r2.nama as kota_kab
+                    ,[wilayah] as kecamatan
+                    ,[bentuk_pendidikan]
+                    ,[status_sekolah]
+                    ,[jenjang_sekolah]
+                    ,[jml_satuan_pendidikan]
+                    ,[jml_tppk]
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (rt.mst_kode_wilayah, 2) 
+                AND r1.id_level_wilayah=1 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=3
+                ORDER BY r1.kode_wilayah, r2.kode_wilayah";
+    }
+
+    private function rekap_jumlah_anggota_tppk_untuk_excel()
+    {
+        $sql = "SELECT LEFT(s.kode_wilayah,4), w1.nama as Propinsi, w2.nama as Kabkot,
+                COUNT(id_ang_panitia) AS jml_anggota
+                    ,rp.nama as bentuk_pendidikan
+                    ,(CASE WHEN s.status_sekolah=1 THEN 'negeri' ELSE 'swasta' END) as status_sekolah
+                FROM [TPPK].[dbo].[kepanitiaan] k
+                LEFT JOIN arsip.dbo.sekolah s ON k.sekolah_id = s.sekolah_id
+                LEFT JOIN Referensi.ref.bentuk_pendidikan rp ON rp.bentuk_pendidikan_id = s.bentuk_pendidikan_id
+                LEFT JOIN Referensi.ref.mst_wilayah w1 ON left(w1.kode_wilayah,2) = left(s.kode_wilayah,2) AND w1.id_level_wilayah=1
+                LEFT JOIN Referensi.ref.mst_wilayah w2 ON left(w2.kode_wilayah,4) = left(s.kode_wilayah,4) AND w2.id_level_wilayah=2
+                WHERE soft_delete_anggota_panitia = 0 AND soft_delete_kepanitiaan = 0
+                GROUP BY LEFT(s.kode_wilayah,4)
+                    ,w1.nama
+                    ,w2.nama
+                    ,rp.nama
+                    ,s.status_sekolah
+                order by left(s.kode_wilayah,4)";
+    }
+
+    public function daf_sekolah_nontppk($instansiid, $kodewilayah, $jenjang, $offset = null, $limit = null, $searchValue = null, $orderkolom = null, $orderurut = null)
+    {
+        $andcari = "";
+        $pakailimit = "";
+        if ($offset >= 0) {
+            $pakailimit = "OFFSET " . $offset . " ROWS
+                FETCH NEXT " . $limit . " ROWS ONLY";
+        }
+        if ($searchValue != null) {
+            $andcari = "AND (r2.nama LIKE '%$searchValue%' OR r3.nama LIKE '%$searchValue%' OR wilayah LIKE '%$searchValue%' OR rt.kode_wilayah LIKE '%$searchValue%') ";
+        }
+        if ($instansiid == 1) {
+            $cekdigit34 = substr($kodewilayah, 2, 2);
+            if ($cekdigit34 == "00")
+                $kodwil = "LEFT(r2.kode_wilayah, 2) = '" . substr($kodewilayah, 0, 2) . "'";
+            else
+                $kodwil = "LEFT(r2.kode_wilayah, 4) = '" . substr($kodewilayah, 0, 4) . "'";
+        } else if ($instansiid == 2 || $instansiid == 4 || $instansiid == 18) {
+            $kodwil = "LEFT(r2.kode_wilayah, 2) = '" . substr($kodewilayah, 0, 2) . "'";
+        } else if ($instansiid == 3) {
+            $kodwil = "LEFT(r2.kode_wilayah, 4) = '" . substr($kodewilayah, 0, 4) . "'";
+        }
+
+        $grupjenjang['PAUD'] = array("TK", "TPA", "SPS", "KB", "SPK TK", "SPK KB");
+        $grupjenjang['SD'] = array("SD", "SPK SD");
+        $grupjenjang['SMP'] = array("SMP", "SPK SMP");
+        $grupjenjang['SMA'] = array("SMA", "SPK SMA");
+        $grupjenjang['SMK'] = array("SMK");
+        $grupjenjang['SLB'] = array("SLB");
+        $grupjenjang['KESETARAAN'] = array("PKBM", "SKB");
+
+        $bentuk = $grupjenjang[$jenjang];
+
+        $bentukbentuk = "";
+        foreach ($bentuk as $index => $row) {
+            $bentukbentuk .= "bentuk_pendidikan='" . $row . "'";
+
+            // Tambahkan "OR" jika bukan elemen terakhir
+            if ($index < count($bentuk) - 1) {
+                $bentukbentuk .= " OR ";
+            }
+        }
+
+        $orderan = " ORDER BY r1.kode_wilayah, r2.kode_wilayah, r3.kode_wilayah, sekolah ";
+
+        if ($orderkolom != -1) {
+            if ($orderkolom == 1) {
+                $orderan = " ORDER BY r2.kode_wilayah " . $orderurut . " ";
+            } else if ($orderkolom == 2) {
+                $orderan = " ORDER BY r3.kode_wilayah " . $orderurut . " ";
+            } else if ($orderkolom == 3) {
+                $orderan = " ORDER BY Sekolah " . $orderurut . " ";
+            } else if ($orderkolom == 4) {
+                $orderan = " ORDER BY rt.kode_wilayah " . $orderurut . " ";
+            } else if ($orderkolom == 5) {
+                $orderan = " ORDER BY bentuk_pendidikan " . $orderurut . " ";
+            } else if ($orderkolom == 6) {
+                $orderan = " ORDER BY rt.status_sekolah " . $orderurut . " ";
+            } else if ($orderkolom == 7) {
+                $orderan = " ORDER BY sekolah_belum_sync " . $orderurut . " ";
+            }
+        }
+
+        $sql = "SELECT r1.nama as propinsi, r2.nama as kota_kab, r3.nama as kecamatan
+                    ,[wilayah] as Sekolah
+                    ,rt.kode_wilayah AS NPSN, s.sekolah_id
+                    ,[bentuk_pendidikan]
+                    ,rt.[status_sekolah]
+                    ,[jml_tppk],sekolah_belum_sync
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (rt.mst_kode_wilayah, 2) 
+                AND r1.id_level_wilayah=1 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (rt.mst_kode_wilayah, 6) 
+                AND r3.id_level_wilayah=3
+                LEFT JOIN Arsip.dbo.sekolah s on rt.kode_wilayah = s.npsn 
+                WHERE rt.id_level_wilayah=4 AND (" . $bentukbentuk . ") AND " . $kodwil . " AND jml_tppk=0 
+                " . $andcari . $orderan . $pakailimit . ";";
+
+        // echo $sql;
+
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function daf_sekolah_nontppk_count($instansiid, $kodewilayah, $jenjang, $searchValue = null)
+    {
+        $andcari = "";
+        $pakailimit = "";
+        if ($searchValue != null) {
+            $andcari = "AND (r2.nama LIKE '%$searchValue%' OR r3.nama LIKE '%$searchValue%' OR wilayah LIKE '%$searchValue%' OR rt.kode_wilayah LIKE '%$searchValue%') ";
+        }
+        if ($instansiid == 1) {
+            $cekdigit34 = substr($kodewilayah, 2, 2);
+            if ($cekdigit34 == "00")
+                $kodwil = "LEFT(r2.kode_wilayah, 2) = '" . substr($kodewilayah, 0, 2) . "'";
+            else
+                $kodwil = "LEFT(r2.kode_wilayah, 4) = '" . substr($kodewilayah, 0, 4) . "'";
+        } else if ($instansiid == 2 || $instansiid == 4 || $instansiid == 18) {
+            $kodwil = "LEFT(r2.kode_wilayah, 2) = '" . substr($kodewilayah, 0, 2) . "'";
+        } else if ($instansiid == 3) {
+            $kodwil = "LEFT(r2.kode_wilayah, 4) = '" . substr($kodewilayah, 0, 4) . "'";
+        }
+
+        $grupjenjang['PAUD'] = array("TK", "TPA", "SPS", "KB", "SPK TK", "SPK KB");
+        $grupjenjang['SD'] = array("SD", "SPK SD");
+        $grupjenjang['SMP'] = array("SMP", "SPK SMP");
+        $grupjenjang['SMA'] = array("SMA", "SPK SMA");
+        $grupjenjang['SMK'] = array("SMK");
+        $grupjenjang['SLB'] = array("SLB");
+        $grupjenjang['KESETARAAN'] = array("PKBM", "SKB");
+
+        $bentuk = $grupjenjang[$jenjang];
+
+        $bentukbentuk = "";
+        foreach ($bentuk as $index => $row) {
+            $bentukbentuk .= "bentuk_pendidikan='" . $row . "'";
+
+            // Tambahkan "OR" jika bukan elemen terakhir
+            if ($index < count($bentuk) - 1) {
+                $bentukbentuk .= " OR ";
+            }
+        }
+
+        $orderan = "";
+
+        $sql = "SELECT COUNT (rt.kode_wilayah) AS total 
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (rt.mst_kode_wilayah, 2) 
+                AND r1.id_level_wilayah=1 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (rt.mst_kode_wilayah, 6) 
+                AND r3.id_level_wilayah=3
+                LEFT JOIN Arsip.dbo.sekolah s on rt.kode_wilayah = s.npsn 
+                WHERE rt.id_level_wilayah=4 AND (" . $bentukbentuk . ") AND " . $kodwil . " AND jml_tppk=0 
+                " . $andcari . $orderan . $pakailimit . ";";
+
+        // echo $sql;
+
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function daf_sekolah_nontppkok($instansiid, $kodewilayah, $jenjang)
+    {
+
+        if ($instansiid == 1) {
+            $cekdigit34 = substr($kodewilayah, 2, 2);
+            if ($cekdigit34 == "00")
+                $kodwil = "LEFT(r2.kode_wilayah, 2) = '" . substr($kodewilayah, 0, 2) . "'";
+            else
+                $kodwil = "LEFT(r2.kode_wilayah, 4) = '" . substr($kodewilayah, 0, 4) . "'";
+        } else if ($instansiid == 2 || $instansiid == 4 || $instansiid == 18) {
+            $kodwil = "LEFT(r2.kode_wilayah, 2) = '" . substr($kodewilayah, 0, 2) . "'";
+        } else if ($instansiid == 3) {
+            $kodwil = "LEFT(r2.kode_wilayah, 4) = '" . substr($kodewilayah, 0, 4) . "'";
+        }
+
+        $grupjenjang['PAUD'] = array("TK", "TPA", "SPS", "KB", "SPK TK", "SPK KB");
+        $grupjenjang['SD'] = array("SD", "SPK SD");
+        $grupjenjang['SMP'] = array("SMP", "SPK SMP");
+        $grupjenjang['SMA'] = array("SMA", "SPK SMA");
+        $grupjenjang['SMK'] = array("SMK");
+        $grupjenjang['SLB'] = array("SLB");
+        $grupjenjang['KESETARAAN'] = array("PKBM", "SKB");
+
+        $bentuk = $grupjenjang[$jenjang];
+
+        $bentukbentuk = "";
+        foreach ($bentuk as $index => $row) {
+            $bentukbentuk .= "bentuk_pendidikan='" . $row . "'";
+
+            // Tambahkan "OR" jika bukan elemen terakhir
+            if ($index < count($bentuk) - 1) {
+                $bentukbentuk .= " OR ";
+            }
+        }
+
+        $sql = "SELECT r1.nama as propinsi, r2.nama as kota_kab, r3.nama as kecamatan
+                    ,[wilayah] as Sekolah
+                    ,rt.kode_wilayah AS NPSN, s.sekolah_id
+                    ,[bentuk_pendidikan]
+                    ,rt.[status_sekolah]
+                    ,[jml_tppk],sekolah_belum_sync
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (rt.mst_kode_wilayah, 2) 
+                AND r1.id_level_wilayah=1 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (rt.mst_kode_wilayah, 6) 
+                AND r3.id_level_wilayah=3
+                LEFT JOIN Arsip.dbo.sekolah s on rt.kode_wilayah = s.npsn 
+                WHERE rt.id_level_wilayah=4 AND (" . $bentukbentuk . ") AND " . $kodwil . " AND jml_tppk=0 
+                ORDER BY r1.kode_wilayah, r2.kode_wilayah, r3.kode_wilayah, sekolah;";
+
+        // echo $sql;
+
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function total_daf_sekolah_nontppk($instansiid, $kodewilayah, $jenjang, $searchValue)
+    {
+        if ($instansiid == 1) {
+            $cekdigit34 = substr($kodewilayah, 2, 2);
+            if ($cekdigit34 == "00")
+                $kodwil = "LEFT(r2.kode_wilayah, 2) = '" . substr($kodewilayah, 0, 2) . "'";
+            else
+                $kodwil = "LEFT(r2.kode_wilayah, 4) = '" . substr($kodewilayah, 0, 4) . "'";
+        } else if ($instansiid == 2 || $instansiid == 4 || $instansiid == 18) {
+            $kodwil = "LEFT(r2.kode_wilayah, 2) = '" . substr($kodewilayah, 0, 2) . "'";
+        } else if ($instansiid == 3) {
+            $kodwil = "LEFT(r2.kode_wilayah, 4) = '" . substr($kodewilayah, 0, 4) . "'";
+        }
+
+        $andcari = "";
+
+        if ($searchValue != "") {
+            $searchValue = str_replace('"', "", $searchValue);
+            $searchValue = str_replace("'", "", $searchValue);
+            $andcari = " AND (r2.nama LIKE '%$searchValue%' OR r3.nama LIKE '%$searchValue%' OR wilayah LIKE '%$searchValue%' OR rt.kode_wilayah LIKE '%$searchValue%');";
+        }
+
+        $grupjenjang['PAUD'] = array("TK", "TPA", "SPS", "KB", "SPK TK", "SPK KB");
+        $grupjenjang['SD'] = array("SD", "SPK", "SD");
+        $grupjenjang['SMP'] = array("SMP", "SPK SMP");
+        $grupjenjang['SMA'] = array("SMA", "SPK SMA");
+        $grupjenjang['SMK'] = array("SMK");
+        $grupjenjang['SLB'] = array("SLB");
+        $grupjenjang['KESETARAAN'] = array("PKBM", "SKB");
+
+        $bentuk = $grupjenjang[$jenjang];
+
+        $bentukbentuk = "";
+        foreach ($bentuk as $index => $row) {
+            $bentukbentuk .= "bentuk_pendidikan='" . $row . "'";
+
+            // Tambahkan "OR" jika bukan elemen terakhir
+            if ($index < count($bentuk) - 1) {
+                $bentukbentuk .= " OR ";
+            }
+        }
+
+        $sql = "SELECT count (*) as total
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=4 AND (" . $bentukbentuk . ") AND " . $kodwil . " AND jml_tppk=0";
+
+        // echo $sql;
+
+        $query = $this->db->query($sql);
+
+        return $query->getRowArray();
+    }
+
+    public function getRekapTppkData($instansiid, $kodewilayah, $jenjang)
+    {
+
+        $this->db = \Config\Database::connect('default');
+        $this->dbrpt = \Config\Database::connect('rpt');
+        $dbref = \Config\Database::connect('ref');
+
+        $builder = $this->dbrpt->table('rekap_tppk rt');
+        $modelB = new \App\Models\M_ref($dbref);
+
+        $builder->select('r1.nama as propinsi, r2.nama as kota_kab, r3.nama as kecamatan, wilayah as Sekolah, rt.kode_wilayah AS NPSN, bentuk_pendidikan, status_sekolah, jml_tppk');
+        $builder->join('dbRef.mst_wilayah1 r1', 'LEFT(r1.kode_wilayah, 2) = LEFT(rt.mst_kode_wilayah, 2) AND r1.id_level_wilayah=1', 'left');
+        $builder->join('dbRef.mst_wilayah2 r2', 'LEFT(r2.kode_wilayah, 4) = LEFT(rt.mst_kode_wilayah, 4) AND r2.id_level_wilayah=2', 'left');
+        $builder->join('dbRef.mst_wilayah3 r3', 'LEFT(r3.kode_wilayah, 6) = LEFT(rt.mst_kode_wilayah, 6) AND r3.id_level_wilayah=3', 'left');
+
+        if ($instansiid == 1) {
+            $cekdigit34 = substr($kodewilayah, 2, 2);
+            if ($cekdigit34 == "00") {
+                $builder->where("LEFT(r2.kode_wilayah, 2)", substr($kodewilayah, 0, 2));
+            } else {
+                $builder->where("LEFT(r2.kode_wilayah, 4)", substr($kodewilayah, 0, 4));
+            }
+        } elseif ($instansiid == 2 || $instansiid == 4 || $instansiid == 18) {
+            $builder->where("LEFT(r2.kode_wilayah, 2)", substr($kodewilayah, 0, 2));
+        } elseif ($instansiid == 3) {
+            $builder->where("LEFT(r2.kode_wilayah, 4)", substr($kodewilayah, 0, 4));
+        }
+
+        $grupjenjang['PAUD'] = array("TK", "TPA", "SPS", "KB", "SPK TK", "SPK KB");
+        $grupjenjang['SD'] = array("SD", "SPK", "SD");
+        $grupjenjang['SMP'] = array("SMP", "SPK SMP");
+        $grupjenjang['SMA'] = array("SMA", "SPK SMA");
+        $grupjenjang['SMK'] = array("SMK");
+        $grupjenjang['SLB'] = array("SLB");
+        $grupjenjang['KESETARAAN'] = array("PKBM", "SKB");
+
+        $bentuk = $grupjenjang[$jenjang];
+
+        $builder->groupStart();
+        foreach ($bentuk as $index => $row) {
+            $builder->orGroupStart();
+            $builder->where("bentuk_pendidikan", $row);
+            $builder->groupEnd();
+        }
+        $builder->groupEnd();
+
+        $builder->where('rt.id_level_wilayah', 4);
+        $builder->where('jml_tppk', 100);
+        $builder->orderBy('r1.kode_wilayah, r2.kode_wilayah, r3.kode_wilayah, Sekolah');
+
+        // $this->db = \Config\Database::connect("default");
+
+        return $builder->get()->getResultArray();
+    }
+
+    public function save_kasus($data)
+    {
+        $noreg = $data['nomor_register'];
+        $npsn = $data['npsn'];
+        $kejadian = $data['tanggal_kejadian'];
+        $kode_wilayah = $data['kode_wilayah'];
+        $sql = "INSERT INTO [TPPK].[dbo].[kasus] (nomor_register, npsn, kode_wilayah, tanggal_kejadian) 
+        VALUES (:noreg:,:npsn:,:kode_wilayah:,:kejadian:)";
+
+        $query = $this->db->query($sql, [
+            'noreg' => $noreg,
+            'npsn' => $npsn,
+            'kejadian' => $kejadian,
+            'kode_wilayah' => $kode_wilayah,
+        ]);
+
+        return $query;
+    }
+
+    public function get_lastkasus($npsn)
+    {
+        $sql = "SELECT * FROM [TPPK].[dbo].[kasus]  
+        WHERE npsn = :npsn: 
+        ORDER BY create_date DESC";
+
+        $query = $this->db->query($sql, [
+            'npsn' => $npsn
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function save_pelaporan($data)
+    {
+        $kasus_id = $data['kasus_id'];
+        $tgl_lapor = $data['tanggal_pelaporan'];
+        $tgl_kasus = $data['tanggal_kejadian'];
+        $sts_kasus = $data['status_kasus'];
+        $alasan_dihentikan = $data['alasan_dihentikan'];
+        $bentuk_kekerasan = $data['bentuk_kekerasan'];
+        $cakupan_kekerasan = $data['cakupan_kekerasan'];
+        $kronologi = $data['kronologi'];
+        $tanggalsekarang = date("Y-m-d H:i:s");
+        $pencatat = session()->get('username');
+
+        $sql = "INSERT INTO [TPPK].[dbo].[pelaporan] (kasus_id, tanggal_pelaporan, tanggal_kejadian, status_kasus, alasan_dihentikan, bentuk_kekerasan, cakupan_kekerasan, kronologi, create_date, pencatat)
+        VALUES (:kasus_id:,:tanggal_pelaporan:, :tanggal_kejadian:, :status_kasus:,:alasan_dihentikan:,:bentuk_kekerasan:,:cakupan_kekerasan:,:kronologi:,:create_date:,:pencatat:)";
+
+        $query = $this->db->query($sql, [
+            'kasus_id' => $kasus_id,
+            'tanggal_pelaporan' => $tgl_lapor,
+            'tanggal_kejadian' => $tgl_kasus,
+            'status_kasus' => $sts_kasus,
+            'alasan_dihentikan' => $alasan_dihentikan,
+            'bentuk_kekerasan' => $bentuk_kekerasan,
+            'cakupan_kekerasan' => $cakupan_kekerasan,
+            'kronologi' => $kronologi,
+            'create_date' => $tanggalsekarang,
+            'pencatat' => $pencatat,
+        ]);
+
+
+        return $query;
+    }
+
+    public function save_tbkorban($data)
+    {
+        $this->db->table('korban_pelaku')->insertBatch($data);
+    }
+
+    public function get_lastpelaporan($kasus_id)
+    {
+        $sql = "SELECT * FROM [TPPK].[dbo].[pelaporan]  
+        WHERE kasus_id = :kasus_id: 
+        ORDER BY create_date DESC";
+
+        $query = $this->db->query($sql, [
+            'kasus_id' => $kasus_id
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function get_filter_kekerasan($filter)
+    {
+        $sql = "SELECT * FROM TPPK.dbo.pelaporan
+                WHERE CHARINDEX($filter, bentuk_kekerasan) > 0";
+    }
+
+    public function get_rekap_laporan()
+    {
+        $sql = "SELECT r.[kode_wilayah]
+                    ,r.nama
+                    ,COUNT(CASE WHEN p.status_kasus = 1 THEN 1 END) AS Terbukti
+                    ,COUNT(CASE WHEN p.status_kasus = 2 THEN 1 END) AS TidakTerbukti
+                    ,COUNT(CASE WHEN p.status_kasus = 3 THEN 1 END) AS Dihentikan
+                FROM [TPPK].[dbo].[kasus] k
+                left join TPPK.dbo.pelaporan p ON k.kasus_id=p.kasus_id
+                left join Referensi.ref.mst_wilayah r ON left(k.kode_wilayah, 2) = left(r.kode_wilayah, 2) AND r.id_level_wilayah=1
+                where k.soft_delete=0
+                group by r.kode_wilayah, r.nama";
+
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function get_rekap_laporan_provinsi($kode_provinsi)
+    {
+        $sql = "SELECT r.[kode_wilayah]
+                    ,r.nama
+                    ,COUNT(CASE WHEN p.status_kasus = 1 THEN 1 END) AS Terbukti
+                    ,COUNT(CASE WHEN p.status_kasus = 2 THEN 1 END) AS TidakTerbukti
+                    ,COUNT(CASE WHEN p.status_kasus = 3 THEN 1 END) AS Dihentikan
+                FROM [TPPK].[dbo].[kasus] k
+                left join TPPK.dbo.pelaporan p ON k.kasus_id=p.kasus_id
+                left join Referensi.ref.mst_wilayah r ON left(k.kode_wilayah, 4) = left(r.kode_wilayah, 4) AND r.id_level_wilayah=2
+                where k.soft_delete=0 and r.mst_kode_wilayah=:kode_provinsi: AND k.soft_delete=0
+                group by r.kode_wilayah, r.nama";
+
+        $query = $this->db->query($sql, [
+            'kode_provinsi' => $kode_provinsi
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function get_rekap_laporan_kota($kode_kota)
+    {
+        $sql = "SELECT k.[kasus_id], [nomor_register], k.tanggal_kejadian, MAX(p.tanggal_pelaporan) as tanggal_pelaporan, k.create_date,
+                COUNT(CASE WHEN ko.sebagai = 1 THEN 1 END) AS jumlah_korban,
+                COUNT(CASE WHEN ko.sebagai IN (2, 3) THEN 1 END) AS jumlah_pelaku 
+                FROM [TPPK].[dbo].[kasus] k
+                LEFT JOIN [TPPK].[dbo].[pelaporan] p ON k.kasus_id = p.kasus_id 
+                LEFT JOIN [TPPK].[dbo].[korban_pelaku] ko ON k.kasus_id = ko.kasus_id
+                WHERE LEFT(k.kode_wilayah, 4) = :kode_kota: AND k.soft_delete=0
+                GROUP BY k.[kasus_id], k.nomor_register, k.tanggal_kejadian, p.tanggal_pelaporan, k.create_date
+                ORDER BY k.create_date DESC";
+
+        $query = $this->db->query($sql, [
+            'kode_kota' => substr($kode_kota, 0, 4)
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function get_kebutuhan_khusus()
+    {
+        $sql = "SELECT [kebutuhan_khusus_id]
+                    ,[kebutuhan_khusus]
+                FROM [Referensi].[ref].[kebutuhan_khusus]
+                where kebutuhan_khusus like '%-%';";
+
+        $query = $this->db->query($sql);
+
+        return $query->getResultArray();
+    }
+
+    public function getnamaortu($niksiswa, $nikortu)
+    {
+        $sql = "SELECT nik, nik_ayah, nik_ibu, nik_wali, nama_ayah, nama_ibu_kandung, nama_wali, kebutuhan_khusus_id_ayah, kebutuhan_khusus_ayah, kebutuhan_khusus_id_ibu, kebutuhan_khusus_ibu 
+                FROM [Datamart].[datamart].[peserta_didik]
+                where nik = :niksiswa: AND (nik_ayah = :nikortu: OR nik_ibu = :nikortu: OR nik_wali = :nikortu:)";
+
+        $query = $this->db->query($sql, [
+            'niksiswa' => $niksiswa,
+            'nikortu' => $nikortu,
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function getnamaortunondisabilitas($niksiswa, $nikortu, $statusortu)
+    {
+        if ($statusortu == "ayah")
+            $wherenik = "nik_ayah = :nikortu:";
+        else if ($statusortu == "ibu")
+            $wherenik = "nik_ibu = :nikortu:";
+        else if ($statusortu == "wali")
+            $wherenik = "nik_wali = :nikortu:";
+        $sql = "SELECT nik, nik_ayah, nik_ibu, nik_wali, nama_ayah, nama_ibu_kandung, nama_wali, 'nondata' as kebutuhan_khusus_id_ayah, 'nondata' as kebutuhan_khusus_ayah, 'nondata' as kebutuhan_khusus_id_ibu, 'nondata' as kebutuhan_khusus_ibu 
+                FROM [Arsip].[dbo].[peserta_didik]
+                where nik = :niksiswa: AND " . $wherenik;
+
+        $query = $this->db->query($sql, [
+            'niksiswa' => $niksiswa,
+            'nikortu' => $nikortu,
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function getsekolahtidakaktif($sekolahid)
+    {
+        $this->dbproses = \Config\Database::connect('proses');
+
+        $builder = $this->dbproses->table('rekap_sekolah_tidak_aktif');
+
+        $query = $builder->select('sekolah_id, kode_semester_tidak_aktif')
+            ->whereIn('sekolah_id', $sekolahid)
+            ->get();
+
+        return $query->getResultArray();
+    }
+
+    public function get_kasus($kasus_id)
+    {
+        $sql = "SELECT * FROM [TPPK].[dbo].[kasus]  
+        WHERE kasus_id = :kasus_id: AND soft_delete=0";
+
+        $query = $this->db->query($sql, [
+            'kasus_id' => $kasus_id
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function get_pelaporan($kasus_id)
+    {
+        $sql = "SELECT * FROM [TPPK].[dbo].[pelaporan]  
+        WHERE kasus_id = :kasus_id: and soft_delete = 0 
+        ORDER BY tanggal_pelaporan DESC";
+
+        $query = $this->db->query($sql, [
+            'kasus_id' => $kasus_id
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function get_daf_siswa($sekolah_id)
+    {
+        $sql = "SELECT nama, 
+                nisn,
+                nik
+                FROM [Arsip].[dbo].[peserta_didik]
+                WHERE aktif = 1 AND soft_delete = 0 AND sekolah_id = :sekolah_id:
+                ORDER BY nama ASC";
+
+        $query = $this->db->query($sql, [
+            'sekolah_id' => $sekolah_id
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function get_daf_ptk($sekolah_id, $jenis)
+    {
+        if ($jenis == "p") {
+            $jenisptkid = "jenis_ptk_id IN (1,3,4,5,6,12,13,14,15,16,17,60,63)";
+        } else if ($jenis == "tk") {
+            $jenisptkid = "jenis_ptk_id NOT IN (1,3,4,5,6,12,13,14,15,16,17,20,60,63)";
+        } else if ($jenis == "kepsek") {
+            $jenisptkid = "jenis_ptk_id = 20";
+        }
+        $sql = "SELECT nuptk,nama,nik FROM [Arsip].[dbo].[ptk]  
+        WHERE " . $jenisptkid . " and aktif = 1 and soft_delete = 0 and sekolah_id=:sekolah_id: 
+        ORDER BY nama ASC";
+
+        $query = $this->db->query($sql, [
+            'sekolah_id' => $sekolah_id
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function get_kepsek($sekolah_id)
+    {
+        $sql = "SELECT nuptk,nama,nik FROM [Arsip].[dbo].[ptk]  
+        WHERE jenis_ptk_id = 20 and aktif = 1 and soft_delete = 0 and sekolah_id=:sekolah_id: 
+        ORDER BY nama ASC";
+
+        $query = $this->db->query($sql, [
+            'sekolah_id' => $sekolah_id
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function get_korban_pelaku($kasus_id, $sebagai)
+    {
+        $sql = "SELECT r1.nama as kota, r2.nama as kecamatan, r3.nama as desa, kk.kebutuhan_khusus, kp.* 
+                FROM [TPPK].[dbo].[korban_pelaku] kp
+                LEFT JOIN Referensi.ref.mst_wilayah r1 ON LEFT(kp.kode_wilayah,4)=LEFT(r1.kode_wilayah,4) and r1.id_level_wilayah=2
+				LEFT JOIN Referensi.ref.mst_wilayah r2 ON LEFT(kp.kode_wilayah,6)=LEFT(r2.kode_wilayah,6) and r2.id_level_wilayah=3
+				LEFT JOIN Referensi.ref.mst_wilayah r3 ON LEFT(kp.kode_wilayah,8)=LEFT(r3.kode_wilayah,8) and r3.id_level_wilayah=4
+                LEFT JOIN Referensi.ref.kebutuhan_khusus kk ON kp.kebutuhan_khusus_id=kk.kebutuhan_khusus_id 
+                WHERE kasus_id = :kasus_id: and sebagai=:sebagai: and soft_delete = 0";
+
+        $query = $this->db->query($sql, [
+            'kasus_id' => $kasus_id,
+            'sebagai' => $sebagai,
+        ]);
+
+        return $query->getResultArray();
+    }
+
+    public function cekketua($sekolah_id)
+    {
+        $sql = "SELECT 
+                (CASE 
+                    WHEN UPPER(peran_ang) LIKE 'KETUA%' THEN 1
+                    WHEN UPPER(peran_ang) LIKE 'KOOR%' THEN 2
+                    WHEN UPPER(peran_ang) LIKE 'KORD%' THEN 3
+                    ELSE 4
+                END) AS urutan, 
+                ua.nama as nama_unsur2,
+                l.ptk_id_ketua,
+                l.ptk_id_anggota_1,
+                l.ptk_id_anggota_2,
+                l.ptk_id_anggota_3,
+                k.sk_tugas,k.ptk_id,
+                CASE 
+                    WHEN DATEADD(YEAR, 2, (SELECT MAX(tmt_sk_tugas) 
+                                            FROM [TPPK].[dbo].[kepanitiaan] 
+                                            WHERE sekolah_id = :sekolah_id: 
+                                                AND soft_delete_kepanitiaan = 0 
+                                                AND soft_delete_anggota_panitia = 0)
+                        ) < GETDATE() THEN 'kadaluwarsa' 
+                    ELSE 'aktif' 
+                END AS status_kadaluwarsa
+            FROM 
+                [TPPK].[dbo].[kepanitiaan] k
+            LEFT JOIN 
+                TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+            LEFT JOIN 
+                Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+            LEFT JOIN 
+                Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+            LEFT JOIN 
+                [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+            LEFT JOIN 
+                [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+            WHERE 
+                k.sekolah_id = :sekolah_id: 
+                AND soft_delete_kepanitiaan = 0 
+                AND soft_delete_anggota_panitia = 0
+                AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                                    FROM [TPPK].[dbo].[kepanitiaan] 
+                                    WHERE sekolah_id = :sekolah_id: 
+                                        AND soft_delete_kepanitiaan = 0 
+                                        AND soft_delete_anggota_panitia = 0)
+                                        ORDER BY urutan";
+
+        $query = $this->db->query($sql, [
+            'sekolah_id' => $sekolah_id,
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function getortusiswa($nik, $jenis)
+    {
+        $nama = $jenis;
+        if ($jenis == "ibu")
+            $nama = "ibu_kandung";
+
+        $sql = "SELECT nik_" . $jenis . " as nikortu, nama_" . $nama . " as namaortu 
+        FROM arsip.dbo.peserta_didik 
+        WHERE nik = :nik: and aktif=1";
+
+        $query = $this->db->query($sql, [
+            'nik' => $nik,
+        ]);
+
+        return $query->getRowArray();
+    }
+
+    public function update_login_ketua($data_simpan)
+    {
+        $sekolah_id = $data_simpan['sekolah_id'];
+        $sk_tugas = $data_simpan['sk_tugas'];
+        $ptk_id_ketua = $data_simpan['ptk_id_ketua'];
+        $ptk_id = $data_simpan['ptk_id'];
+        $sql = "SELECT sk_tugas FROM [TPPK].[dbo].[login_tppk] 
+        WHERE sekolah_id = '" . $sekolah_id . "' AND sk_tugas ='" . $sk_tugas . "'";
+        $query = $this->db->query($sql)->getResult();
+
+        if ($query) {
+            if ($ptk_id != $ptk_id_ketua) {
+                $sql2 = "UPDATE [TPPK].[dbo].[login_tppk] SET ptk_id_ketua = '" . $ptk_id_ketua . "'  
+                     WHERE sekolah_id = '" . $sekolah_id . "' AND sk_tugas ='" . $sk_tugas . "'";
+                $this->db->query($sql2);
+            }
+        } else {
+            $sql2 = "INSERT INTO [TPPK].[dbo].[login_tppk] (sekolah_id, sk_tugas, ptk_id_ketua) VALUES ('" . $sekolah_id . "', '" . $sk_tugas . "', '" . $ptk_id_ketua . "')";
+            $this->db->query($sql2);
+        }
+    }
+
+    public function simpan_login_anggota($sekolah_id, $sk_tugas, $ptk_id)
+    {
+        $sql = "UPDATE [TPPK].[dbo].[login_tppk] SET ptk_id_anggota_1 = '" . $ptk_id . "'  
+                     WHERE sekolah_id = '" . $sekolah_id . "' AND sk_tugas ='" . $sk_tugas . "'";
+        $this->db->query($sql);
+    }
+
+    private function query_residu_sekolah_sesuai_jenjang()
+    {
+        $jenjangPAUD = '1,2,3,4,43,52';
+        $jenjangSMP = '6,54';
+        $PAUD = "TK, KB, TPA, SPS, SPK TK, dan SPK KB";
+        $SMP = "SMP itu SMP dan SPK SMP";
+        $sql = "SELECT 
+                    w3.nama, w2.nama, w1.nama, s.kode_wilayah,
+                    s.sekolah_id,
+                    s.nama,
+                    s.npsn,
+                    s.bentuk_pendidikan_id,
+                    r.kode_semester_tidak_aktif
+                FROM 
+                    arsip.dbo.sekolah s
+                JOIN 
+                    Dataprocess.rpt.rekap_sekolah_tidak_aktif r ON s.sekolah_id = r.sekolah_id
+                JOIN 
+                    Referensi.ref.mst_wilayah w1 ON w1.kode_wilayah = LEFT(s.kode_wilayah,6)
+                JOIN 
+                    Referensi.ref.mst_wilayah w2 ON w1.mst_kode_wilayah = w2.kode_wilayah
+                JOIN 
+                    Referensi.ref.mst_wilayah w3 ON w2.mst_kode_wilayah = w3.kode_wilayah
+                WHERE 
+                    r.kode_semester_tidak_aktif > 0 and s.aktif=1 and bentuk_pendidikan_id IN (6,54)";
     }
 }

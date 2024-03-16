@@ -132,6 +132,9 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
                     <th>Nama</th>
                     <th>Status Keanggotaan</th>
                     <th>Asal Instansi</th>
+                    <?php if ($instansiid == 1) : ?>
+                        <th class='none'>Nomor Telepon</th>
+                    <?php endif ?>
                 </thead>
 
                 <tbody>
@@ -141,8 +144,11 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
                         <tr>
                             <td><?= $nomor++ ?></td>
                             <td><?= $row['namaanggota'] ?></td>
-                            <td><?= $jabatan[$row['anggotake']] ?></td>
+                            <td><?= ($row['anggotake'] == 0) ? "Ketua" : "Anggota " . $row['anggotake'] ?></td>
                             <td><?= $row['instansi'] ?></td>
+                            <?php if ($instansiid == 1) : ?>
+                                <td><?= $row['telepon'] ?></td>
+                            <?php endif ?>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -198,8 +204,16 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
                 <?= ($nomor > 1) ? date("d-m-Y H:i:s", strtotime($datask['modified_date'])) : "-" ?>]</i>
             <?php if ($instansiid == 1) : ?>
                 <div style="float:right">
-                    <button class="tbmerah" onclick="return sksesuai(1);">SK Tidak Sesuai</button>
-                    <button class="tbijo" onclick="return sksesuai(2);">SK Sesuai</button>
+                    <button id="tbsesuai" class="tbmerah" onclick="return sksesuai(1);">SK Tidak Sesuai</button>
+                    <button id="tbtaksesuai" class="tbijo" onclick="return sksesuai(2);">SK Sesuai</button>
+                    <div id="dinputcatatan" style="display: none;">
+                        <br>
+                        <span style="color:red; font-size:14px">Tidak sesuai karena: </span><br>
+                        <textarea style="font-size: 14px;" name="catatansk" id="catatansk" cols="30" rows="10"></textarea>
+                        <br>
+                        <button class="tbmerah" onclick="return batalin();">Batal</button>
+                        <button class="tbijo" onclick="return tolak();">Submit</button>
+                    </div>
                 </div>
             <?php endif ?>
         </div>
@@ -213,6 +227,7 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
 <script>
     var w = window.innerWidth;
     var h = window.innerHeight;
+    var konfirmtolak = 0;
 
     if (w < h) {
         teru = true;
@@ -226,27 +241,62 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
         paging: false,
         info: false,
         processing: true,
+        responsive: true,
     });
 
     function editanggota() {
         window.open("<?= base_url() ?>inputdata/edit", "_self");
     }
 
-    function sksesuai(opsinya) {
+    function batalin() {
+        $('#tbsesuai').show();
+        $('#tbtaksesuai').show();
+        $('#dinputcatatan').hide();
+    }
+
+    function tolak() {
         $.ajax({
             type: 'GET',
             data: {
                 kodewilayah: '<?= $kodewilayah ?>',
-                opsi: opsinya,
+                opsi: 1,
             },
             dataType: 'text',
             cache: false,
             url: '<?php echo base_url() ?>inputdata/sksesuai',
             success: function(result) {
-                //window.open("<?= base_url() ?>inputdata/daftar_skbaru", "_self");
+                window.open("<?= base_url() ?>inputdata/daftar_skbaru", "_self");
                 return false;
             }
         });
+    }
+
+    function sksesuai(opsinya) {
+        konfirmtolak = 0;
+        if (opsinya == 1) {
+            $('#tbsesuai').hide();
+            $('#tbtaksesuai').hide();
+            $('#dinputcatatan').show();
+            $('html, body').animate({
+                scrollTop: $('#dinputcatatan').offset().top + $('#dinputcatatan').height()
+            }, 'slow');
+            return false;
+        } else {
+            $.ajax({
+                type: 'GET',
+                data: {
+                    kodewilayah: '<?= $kodewilayah ?>',
+                    opsi: opsinya,
+                },
+                dataType: 'text',
+                cache: false,
+                url: '<?php echo base_url() ?>inputdata/sksesuai',
+                success: function(result) {
+                    window.open("<?= base_url() ?>inputdata/daftar_skbaru", "_self");
+                    return false;
+                }
+            });
+        }
     }
 
     function kembali() {

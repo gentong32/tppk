@@ -555,7 +555,7 @@
             oke = false;
         }
 
-        if (checkUnique(arrayinputnya) == false && inamaketua != 00) {
+        if (checkUnique(arrayinputnya) == false && inamaketua != "00") {
             alert("Ada nama yang sama");
             oke = false;
         }

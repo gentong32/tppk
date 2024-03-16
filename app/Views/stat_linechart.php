@@ -69,7 +69,44 @@ else if ($status == "swasta")
   .apexcharts-xaxis-label {
     font-weight: lighter;
   }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 750px;
+    margin-top: 20px;
+  }
+
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  td:nth-child(n+3):nth-child(-n+5) {
+    text-align: right;
+  }
+
+  .totalgraph2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 25px;
+    font-weight: bold;
+  }
 </style>
+
 <script src="<?= base_url() ?>js/jquery-3.5.1.js"></script>
 <script>
   window.Promise ||
@@ -99,6 +136,10 @@ else if ($status == "swasta")
 $tglawal = strtotime(date("Y-m-01 07:00:00")) * 1000;
 $tglmax = strtotime(date("Y-m-d 07:00:00")) * 1000;
 
+$totalsatpen = $rekappaud['tot_jml_satuan_pendidikan'] + $rekapsd['tot_jml_satuan_pendidikan'] + $rekapsmp['tot_jml_satuan_pendidikan'] + $rekapsma['tot_jml_satuan_pendidikan'] + $rekapsmk['tot_jml_satuan_pendidikan'] + $rekapslb['tot_jml_satuan_pendidikan'] + $rekapkesetaraan['tot_jml_satuan_pendidikan'];
+$totalsudahsync = $rekappaud['tot_sekolah_sudah_sync'] + $rekapsd['tot_sekolah_sudah_sync'] + $rekapsmp['tot_sekolah_sudah_sync'] + $rekapsma['tot_sekolah_sudah_sync'] + $rekapsmk['tot_sekolah_sudah_sync'] + $rekapslb['tot_sekolah_sudah_sync'] + $rekapkesetaraan['tot_sekolah_sudah_sync'];
+$totalnyatppk = $rekappaud['tot_jml_tppk'] + $rekapsd['tot_jml_tppk'] + $rekapsmp['tot_jml_tppk'] + $rekapsma['tot_jml_tppk'] + $rekapsmk['tot_jml_tppk'] + $rekapslb['tot_jml_tppk'] + $rekapkesetaraan['tot_jml_tppk'];
+$totalpersendash = $totalnyatppk * 100 / $totalsudahsync;
 ?>
 
 <div class="content-wrap">
@@ -106,8 +147,98 @@ $tglmax = strtotime(date("Y-m-d 07:00:00")) * 1000;
   <!-- /===================== GRAFIK PD ==========================-->
   <div class="subjudul">
     <h4>TPPK</h4>
-    <h6><?= $tglsekarang ?><h6>
+    <h6><b>per <?= $tglsekarang ?></b></h6>
+    <h6>[Update terakhir: <?= $last_update ?>]</h6>
   </div>
+
+  <div class="row">
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Jenjang</th>
+          <th>Jumlah Satuan Pendidikan</th>
+          <th>Satuan Pendidikan Update</th>
+          <th>TPPK</th>
+          <th>Persen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>PAUD <sup>*</sup></td>
+          <td><?= number_format($rekappaud['tot_jml_satuan_pendidikan'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekappaud['tot_sekolah_sudah_sync'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekappaud['tot_jml_tppk'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekappaud['tot_jml_tppk'] * 100 / $rekappaud['tot_sekolah_sudah_sync'], 2, ',', '.') ?>%</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>SD <sup>*</sup></td>
+          <td><?= number_format($rekapsd['tot_jml_satuan_pendidikan'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsd['tot_sekolah_sudah_sync'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsd['tot_jml_tppk'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsd['tot_jml_tppk'] * 100 / $rekapsd['tot_sekolah_sudah_sync'], 2, ',', '.') ?>%</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>SMP <sup>*</sup></td>
+          <td><?= number_format($rekapsmp['tot_jml_satuan_pendidikan'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsmp['tot_sekolah_sudah_sync'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsmp['tot_jml_tppk'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsmp['tot_jml_tppk'] * 100 / $rekapsmp['tot_sekolah_sudah_sync'], 2, ',', '.') ?>%</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>SMA <sup>*</sup></td>
+          <td><?= number_format($rekapsma['tot_jml_satuan_pendidikan'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsma['tot_sekolah_sudah_sync'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsma['tot_jml_tppk'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsma['tot_jml_tppk'] * 100 / $rekapsma['tot_sekolah_sudah_sync'], 2, ',', '.') ?>%</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>SMK <sup>*</sup></td>
+          <td><?= number_format($rekapsmk['tot_jml_satuan_pendidikan'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsmk['tot_sekolah_sudah_sync'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsmk['tot_jml_tppk'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapsmk['tot_jml_tppk'] * 100 / $rekapsmk['tot_sekolah_sudah_sync'], 2, ',', '.') ?>%</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>SLB <sup>*</sup></td>
+          <td><?= number_format($rekapslb['tot_jml_satuan_pendidikan'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapslb['tot_sekolah_sudah_sync'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapslb['tot_jml_tppk'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapslb['tot_jml_tppk'] * 100 / $rekapslb['tot_sekolah_sudah_sync'], 2, ',', '.') ?>%</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Kesetaraan <sup>*</sup></td>
+          <td><?= number_format($rekapkesetaraan['tot_jml_satuan_pendidikan'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapkesetaraan['tot_sekolah_sudah_sync'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapkesetaraan['tot_jml_tppk'], 0, ',', '.') ?></td>
+          <td><?= number_format($rekapkesetaraan['tot_jml_tppk'] * 100 / $rekapkesetaraan['tot_sekolah_sudah_sync'], 2, ',', '.') ?>%</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><b>TOTAL <sup>*</sup></b></td>
+          <td><?= number_format($totalsatpen, 0, ',', '.') ?></td>
+          <td><?= number_format($totalsudahsync, 0, ',', '.') ?></td>
+          <td><?= number_format($totalnyatppk, 0, ',', '.') ?></td>
+          <td><?= number_format($totalpersendash, 2, ',', '.') ?>%</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="max-width: 740px;width:100%;margin-top:10px;">
+      <i>* Sederajat (Tidak termasuk Satuan Pendidikan Keagamaan)</i>
+    </div>
+  </div>
+
+  <br><br>
+
+  <hr>
+  <br><br>
 
   <center>
     <div class="dfilter">
@@ -150,7 +281,9 @@ $tglmax = strtotime(date("Y-m-d 07:00:00")) * 1000;
   <div class="row">
     <div class="chartbox">
       <h5>Jumlah Satuan Pendidikan</h5>
-      <div class="totalgraph"><?= number_format($totalsp, 0, ',', '.') ?></div>
+      <div class="totalgraph2"><?= number_format($totalsp, 0, ',', '.') ?></div>
+      <h4>Satuan Pendidikan Update </h4>
+      <div class="totalgraph2"><?= number_format($totalsync, 0, ',', '.') ?></div>
     </div>
     <div class="chartbox">
       <h5>Jumlah TPPK</h5>
@@ -165,7 +298,7 @@ $tglmax = strtotime(date("Y-m-d 07:00:00")) * 1000;
   <div style="margin-top:35px"></div>
   <div class="subjudul">
     <h4>Satuan Tugas</h4>
-    <h6><?= $tglsekarang ?><h6>
+    <h6><b>per <?= $tglsekarang ?></b></h6>
   </div>
 
   <div class="row">
@@ -198,6 +331,8 @@ $tglmax = strtotime(date("Y-m-d 07:00:00")) * 1000;
     </div>
   </div>
 
+
+
 </div>
 <?= $this->endSection() ?>
 
@@ -207,8 +342,8 @@ $tglmax = strtotime(date("Y-m-d 07:00:00")) * 1000;
   var options2 = {};
   var options3 = {};
   var data = {};
-  <?php if ($totalsp > 0) { ?>
-    data[1] = [<?= (intval($totaltppk * 10000 / $totalsp) / 100) ?>, <?= (100 - (intval($totaltppk * 10000 / $totalsp) / 100)) ?>];
+  <?php if ($totalsync > 0) { ?>
+    data[1] = [<?= number_format(($totaltppk / $totalsync) * 100, 2) ?>, <?= (100 - number_format(($totaltppk / $totalsync) * 100, 2)) ?>];
   <?php } else { ?>
     data[1] = [0, 0];
   <?php } ?>

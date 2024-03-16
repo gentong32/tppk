@@ -1,0 +1,49 @@
+INFO - 2023-11-06 10:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-06 10:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-06 10:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-06 10:06:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.kepanitiaan.tmt_sk_tugas' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2023-11-06 10:06:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.kepanitiaan.tmt_sk_tugas' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1268): CodeIgniter\Database\BaseConnection->query('
+        DECLARE @baris_per_halaman INT = 10000;
+        DECLARE @offset INT = (30402498 - 1) * @baris_per_halaman;
+
+        SELECT tp.kode_wilayah AS npsn, s.sekolah_id, sk_tugas, tmt_sk_tugas 
+        FROM TPPK.rpt.rekap_tppk tp 
+        LEFT JOIN arsip.dbo.sekolah s ON tp.kode_wilayah = s.npsn
+        LEFT JOIN TPPK.dbo.kepanitiaan k ON k.sekolah_id = s.sekolah_id
+        WHERE id_level_wilayah = \'4\' 
+            AND sk_tugas IS NOT NULL 
+            AND residu_upload_sk = 1
+        GROUP BY tp.kode_wilayah, s.sekolah_id, sk_tugas
+        ORDER BY npsn
+        OFFSET @offset ROWS 
+        FETCH NEXT @baris_per_halaman ROWS ONLY')
+ 2 APPPATH\Controllers\TPPK.php(554): App\Models\M_tppk->getallnpsn('30402498')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->clear_residu_all('30402498', 'npsn')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-06 10:06:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.kepanitiaan.tmt_sk_tugas' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2023-11-06 10:06:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.kepanitiaan.tmt_sk_tugas' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1268): CodeIgniter\Database\BaseConnection->query('
+        DECLARE @baris_per_halaman INT = 10000;
+        DECLARE @offset INT = (30402498 - 1) * @baris_per_halaman;
+
+        SELECT tp.kode_wilayah AS npsn, s.sekolah_id, sk_tugas, tmt_sk_tugas 
+        FROM TPPK.rpt.rekap_tppk tp 
+        LEFT JOIN arsip.dbo.sekolah s ON tp.kode_wilayah = s.npsn
+        LEFT JOIN TPPK.dbo.kepanitiaan k ON k.sekolah_id = s.sekolah_id
+        WHERE id_level_wilayah = \'4\' 
+            AND sk_tugas IS NOT NULL 
+            AND residu_upload_sk = 1
+        GROUP BY tp.kode_wilayah, s.sekolah_id, sk_tugas
+        ORDER BY npsn
+        OFFSET @offset ROWS 
+        FETCH NEXT @baris_per_halaman ROWS ONLY')
+ 2 APPPATH\Controllers\TPPK.php(554): App\Models\M_tppk->getallnpsn('30402498')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->clear_residu_all('30402498', 'npsn')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

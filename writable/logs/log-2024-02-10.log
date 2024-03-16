@@ -1,0 +1,159 @@
+CRITICAL - 2024-02-10 10:17:58 --> Undefined array key "tanggal_pelaporan"
+in APPPATH\Views\daftarlaporan.php on line 79.
+ 1 APPPATH\Views\daftarlaporan.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_pelaporan"', 'APPPATH\\Views\\daftarlaporan.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1260): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 10:18:15 --> Undefined array key "tanggal_pelaporan"
+in APPPATH\Views\daftarlaporan.php on line 79.
+ 1 APPPATH\Views\daftarlaporan.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_pelaporan"', 'APPPATH\\Views\\daftarlaporan.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1260): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-10 10:18:23 --> Undefined array key "tanggal_pelaporan"
+in APPPATH\Views\daftarlaporan.php on line 79.
+ 1 APPPATH\Views\daftarlaporan.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_pelaporan"', 'APPPATH\\Views\\daftarlaporan.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1260): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-10 10:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-10 10:19:47 --> Undefined array key "tanggal_pelaporan"
+in APPPATH\Views\daftarlaporan.php on line 79.
+ 1 APPPATH\Views\daftarlaporan.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_pelaporan"', 'APPPATH\\Views\\daftarlaporan.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1260): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-10 10:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-10 10:22:29 --> Undefined array key "tanggal_pelaporan"
+in APPPATH\Views\daftarlaporan.php on line 79.
+ 1 APPPATH\Views\daftarlaporan.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_pelaporan"', 'APPPATH\\Views\\daftarlaporan.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1263): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-10 10:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-10 10:24:01 --> Undefined array key "tanggal_pelaporan"
+in APPPATH\Views\daftarlaporan.php on line 79.
+ 1 APPPATH\Views\daftarlaporan.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_pelaporan"', 'APPPATH\\Views\\daftarlaporan.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1263): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-10 10:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-10 10:24:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'tgl_pelaporan'.
+CRITICAL - 2024-02-10 10:24:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'tgl_pelaporan'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1867): CodeIgniter\Database\BaseConnection->query('SELECT k.[kasus_id], [nomor_register], k.tanggal_kejadian, 
+                COUNT(CASE WHEN ko.sebagai = 1 THEN 1 END) AS jumlah_korban,
+                COUNT(CASE WHEN ko.sebagai IN (2, 3) THEN 1 END) AS jumlah_pelaku,tgl_pelaporan 
+                FROM [TPPK].[dbo].[kasus] k
+                LEFT JOIN [TPPK].[dbo].[korban_pelaku] ko ON k.kasus_id = ko.kasus_id 
+                LEFT JOIN [TPPK].[dbo].pelaporan p ON k.kasus_id = p.kasus_id 
+                WHERE k.npsn = :npsn:
+                GROUP BY k.[kasus_id], k.nomor_register, k.tanggal_kejadian
+                ORDER BY nomor_register', [...])
+ 2 APPPATH\Controllers\InputData.php(1258): App\Models\M_tppk->get_daf_laporan('10100594')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-10 10:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-10 10:25:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.pelaporan.tanggal_pelaporan' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2024-02-10 10:25:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.pelaporan.tanggal_pelaporan' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1867): CodeIgniter\Database\BaseConnection->query('SELECT k.[kasus_id], [nomor_register], k.tanggal_kejadian, 
+                COUNT(CASE WHEN ko.sebagai = 1 THEN 1 END) AS jumlah_korban,
+                COUNT(CASE WHEN ko.sebagai IN (2, 3) THEN 1 END) AS jumlah_pelaku,tanggal_pelaporan 
+                FROM [TPPK].[dbo].[kasus] k
+                LEFT JOIN [TPPK].[dbo].[korban_pelaku] ko ON k.kasus_id = ko.kasus_id 
+                LEFT JOIN [TPPK].[dbo].pelaporan p ON k.kasus_id = p.kasus_id 
+                WHERE k.npsn = :npsn:
+                GROUP BY k.[kasus_id], k.nomor_register, k.tanggal_kejadian
+                ORDER BY nomor_register', [...])
+ 2 APPPATH\Controllers\InputData.php(1258): App\Models\M_tppk->get_daf_laporan('10100594')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-10 10:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-10 10:25:30 --> Undefined array key "create_date"
+in APPPATH\Views\daftarlaporan.php on line 79.
+ 1 APPPATH\Views\daftarlaporan.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "create_date"', 'APPPATH\\Views\\daftarlaporan.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1263): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-10 10:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-10 10:26:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.kasus.create_date' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2024-02-10 10:26:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'TPPK.dbo.kasus.create_date' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1867): CodeIgniter\Database\BaseConnection->query('SELECT k.[kasus_id], [nomor_register], k.tanggal_kejadian, 
+                COUNT(CASE WHEN ko.sebagai = 1 THEN 1 END) AS jumlah_korban,
+                COUNT(CASE WHEN ko.sebagai IN (2, 3) THEN 1 END) AS jumlah_pelaku,tanggal_pelaporan,k.create_date 
+                FROM [TPPK].[dbo].[kasus] k
+                LEFT JOIN [TPPK].[dbo].[korban_pelaku] ko ON k.kasus_id = ko.kasus_id 
+                LEFT JOIN [TPPK].[dbo].pelaporan p ON k.kasus_id = p.kasus_id 
+                WHERE k.npsn = :npsn:
+                GROUP BY k.[kasus_id], k.nomor_register, k.tanggal_kejadian, tanggal_pelaporan
+                ORDER BY nomor_register', [...])
+ 2 APPPATH\Controllers\InputData.php(1258): App\Models\M_tppk->get_daf_laporan('10100594')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-10 10:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-10 10:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-10 11:00:08 --> Uninitialized string offset 0
+in SYSTEMPATH\CodeIgniter.php on line 892.
+ 1 SYSTEMPATH\CodeIgniter.php(892): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 0', 'SYSTEMPATH\\CodeIgniter.php', 892)
+ 2 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-10 11:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

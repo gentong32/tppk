@@ -1,0 +1,1499 @@
+ERROR - 2024-02-08 08:50:13 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(427): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(134): App\Models\M_tppk->getSekolah('20602836')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20602836')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 08:50:13 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(427): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_id as instansi_id,\'\' as kode_instansi, s.nama as nama_sekolah, s.nama as nama, npsn, s.kode_wilayah as kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+            FROM [arsip].[dbo].[sekolah] s
+            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+            WHERE npsn = :npsn:', [...])
+ 3 APPPATH\Controllers\TPPK.php(134): App\Models\M_tppk->getSekolah('20602836')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20602836')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 08:54:00 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1610): CodeIgniter\Database\BaseConnection->query('WITH SK_Pengaju...')
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(625): App\Models\M_tppk->cek_sk_belum_ditabel()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_belum_di_tabel()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 08:54:00 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1610): CodeIgniter\Database\BaseConnection->query('WITH SK_Pengajuan AS (
+                    SELECT 
+                    r2.sekolah_id,tmt_sk_tugas,
+                    s2.npsn,
+                    [sk_tugas]
+                FROM 
+                (
+                    SELECT 
+                        sekolah_id,tmt_sk_tugas,
+                        [sk_tugas],
+                        ROW_NUMBER() OVER (PARTITION BY sekolah_id ORDER BY tmt_sk_tugas DESC) AS row_num
+                    FROM 
+                        kepanitiaan
+                ) AS r2
+                LEFT JOIN 
+                    Arsip.dbo.sekolah s2 ON r2.sekolah_id = s2.sekolah_id
+                WHERE 
+                    r2.row_num = 1
+                )
+
+                SELECT 
+                        subquery.npsn,sekolah_id,sk_tugas,tmt_sk_tugas,
+                        nomor_sk_terbaru
+                    FROM
+                    (
+                        SELECT 
+                            r.kode_wilayah AS npsn,
+                            COUNT(s.npsn) AS jumlah_sk,
+                            MAX(s.tanggal_sk) AS tanggal_sk_terbaru,
+                            nomor_sk AS nomor_sk_terbaru
+                        FROM 
+                            [TPPK].[rpt].[rekap_tppk] r
+                        LEFT JOIN 
+                            (
+                                SELECT 
+                                    *,
+                                    ROW_NUMBER() OVER (PARTITION BY npsn ORDER BY tanggal_sk DESC) AS row_num
+                                FROM 
+                                    [TPPK].[dbo].[sk_tppk]
+                            ) s ON r.kode_wilayah = s.npsn
+                        WHERE 
+                            id_level_wilayah = 4 AND jml_tppk > 0
+                        GROUP BY 
+                            r.kode_wilayah, nomor_sk
+                    ) subquery 
+                    LEFT JOIN 
+                    SK_Pengajuan sk ON subquery.npsn = sk.npsn
+                    WHERE 
+                        jumlah_sk = 0')
+ 3 APPPATH\Controllers\TPPK.php(625): App\Models\M_tppk->cek_sk_belum_ditabel()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cek_sk_belum_di_tabel()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 08:54:01 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(427): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(134): App\Models\M_tppk->getSekolah('10100594')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->anggota('10100594')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 08:54:01 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(427): CodeIgniter\Database\BaseConnection->query('SELECT sekolah_id as instansi_id,\'\' as kode_instansi, s.nama as nama_sekolah, s.nama as nama, npsn, s.kode_wilayah as kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+            FROM [arsip].[dbo].[sekolah] s
+            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+            WHERE npsn = :npsn:', [...])
+ 3 APPPATH\Controllers\TPPK.php(134): App\Models\M_tppk->getSekolah('10100594')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('10100594')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-08 08:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 08:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 08:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-08 08:56:45 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 08:56:45 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 08:56:45 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::renderSection() in D:\laragon\www\tppk\app\Views\errors\html\production.php:11
+Stack trace:
+#0 D:\laragon\www\tppk\system\Debug\Exceptions.php(277): include()
+#1 D:\laragon\www\tppk\system\Debug\Exceptions.php(280): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#2 D:\laragon\www\tppk\system\Debug\Exceptions.php(151): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#4 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#2 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in APPPATH\Views\errors\html\production.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-08 08:57:01 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 08:57:01 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 08:57:01 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::renderSection() in D:\laragon\www\tppk\app\Views\errors\html\production.php:11
+Stack trace:
+#0 D:\laragon\www\tppk\system\Debug\Exceptions.php(277): include()
+#1 D:\laragon\www\tppk\system\Debug\Exceptions.php(280): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#2 D:\laragon\www\tppk\system\Debug\Exceptions.php(151): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#4 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#2 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in APPPATH\Views\errors\html\production.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-08 08:57:54 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 08:57:54 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 08:57:54 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::renderSection() in D:\laragon\www\tppk\app\Views\errors\html\production.php:11
+Stack trace:
+#0 D:\laragon\www\tppk\system\Debug\Exceptions.php(277): include()
+#1 D:\laragon\www\tppk\system\Debug\Exceptions.php(280): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#2 D:\laragon\www\tppk\system\Debug\Exceptions.php(151): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#4 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#2 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in APPPATH\Views\errors\html\production.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-08 08:59:07 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 08:59:07 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:00:15 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:00:16 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:00:59 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:00:59 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:02:01 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:02:01 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:02:09 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:02:09 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:02:16 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:02:16 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:02:40 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:02:40 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:05:48 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:05:48 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:06:22 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:06:22 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:06:52 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:06:52 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:07:21 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:07:21 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:08:57 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:08:57 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:09:12 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:09:12 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:15:19 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:15:19 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:16:43 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:16:43 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:17:52 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:17:52 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:18:17 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:18:17 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:18:21 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:18:21 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:18:26 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:18:26 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:19:04 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:19:04 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:20:32 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:20:32 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:21:00 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:21:00 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:22:07 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:22:07 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:22:16 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wi...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:22:16 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(809): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu] as tot_residu
+                ,[residu_kepsek] as tot_residu_kepsek
+                ,[residu_guru] as tot_residu_guru
+                ,[residu_komite] as tot_residu_komite
+                ,[residu_upload_sk] as tot_residu_upload_sk
+                ,[residu_siswa] as tot_siswa
+                ,[residu_ganjil] as tot_ganjil
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                ,status_sk
+                FROM [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                where mst_kode_wilayah=:kodebaru: 
+                and jenjang_sekolah=\'semua\' and id_level_wilayah=:levelnya:
+                ORDER BY kode_wilayah', [...])
+ 3 APPPATH\Controllers\TPPK.php(103): App\Models\M_tppk->getTotalTPPK('000000', 1, 'semua', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:22:20 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1877): CodeIgniter\Database\BaseConnection->query('SELECT kode_wil...')
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1894): App\Models\M_tppk->get_daf_provinsi()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->daftarsekolahnontppk()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:22:20 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1877): CodeIgniter\Database\BaseConnection->query('SELECT kode_wilayah, nama 
+                FROM Referensi.ref.mst_wilayah
+                WHERE id_level_wilayah=1 ORDER BY kode_wilayah')
+ 3 APPPATH\Controllers\InputData.php(1894): App\Models\M_tppk->get_daf_provinsi()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftarsekolahnontppk()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:23:31 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml...')
+#3 D:\laragon\www\tppk\app\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:23:31 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1016): CodeIgniter\Database\BaseConnection->query('SELECT SUM (jml_satuan_pendidikan) as total_jml_sp, 
+                SUM (jml_tppk) as total_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where id_level_wilayah = 1 AND bentuk_pendidikan=\'semua\'
+                group by id_level_wilayah')
+ 3 APPPATH\Controllers\Dashboard.php(28): App\Models\M_tppk->getTotalJendralPPTK()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:23:37 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1877): CodeIgniter\Database\BaseConnection->query('SELECT kode_wil...')
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1894): App\Models\M_tppk->get_daf_provinsi()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->daftarsekolahnontppk()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:23:37 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1877): CodeIgniter\Database\BaseConnection->query('SELECT kode_wilayah, nama 
+                FROM Referensi.ref.mst_wilayah
+                WHERE id_level_wilayah=1 ORDER BY kode_wilayah')
+ 3 APPPATH\Controllers\InputData.php(1894): App\Models\M_tppk->get_daf_provinsi()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftarsekolahnontppk()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:33:15 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1306): CodeIgniter\Database\BaseConnection->query('INSERT INTO [TP...')
+#3 D:\laragon\www\tppk\app\Controllers\Login.php(57): App\Models\M_tppk->simpan_log_userlogin()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:33:15 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1306): CodeIgniter\Database\BaseConnection->query('INSERT INTO [TPPK].[dbo].[statuserlogin] (username, login_time, nama, jenis_instansi_id, wilayah_akses) values (\'hardianto@kemdikbud.go.id\',GETDATE(),\'Hardianto,M.Kom\',\'2\',\'280000\')')
+ 3 APPPATH\Controllers\Login.php(57): App\Models\M_tppk->simpan_log_userlogin()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:33:35 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM T...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:33:35 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.kasus 
+                WHERE npsn = :npsn:
+                ORDER BY create_date DESC', [...])
+ 3 APPPATH\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:33:42 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM T...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:33:42 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.kasus 
+                WHERE npsn = :npsn:
+                ORDER BY create_date DESC', [...])
+ 3 APPPATH\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:33:57 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM T...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:33:57 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.kasus 
+                WHERE npsn = :npsn:
+                ORDER BY create_date DESC', [...])
+ 3 APPPATH\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 09:36:20 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM T...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:36:20 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.kasus 
+                WHERE npsn = :npsn:
+                ORDER BY create_date DESC', [...])
+ 3 APPPATH\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-08 09:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-08 09:37:00 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM T...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:37:00 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.kasus 
+                WHERE npsn = :npsn:
+                ORDER BY create_date DESC', [...])
+ 3 APPPATH\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-08 09:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-08 09:39:40 --> Undefined variable $getstatuskorban
+in APPPATH\Controllers\InputData.php on line 1322.
+ 1 APPPATH\Controllers\InputData.php(1322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getstatuskorban', 'APPPATH\\Controllers\\InputData.php', 1322)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-08 09:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-08 09:39:58 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM T...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-08 09:39:58 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1757): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.kasus 
+                WHERE npsn = :npsn:
+                ORDER BY create_date DESC', [...])
+ 3 APPPATH\Controllers\InputData.php(1296): App\Models\M_tppk->cek_nomor_kasus('20100216')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-08 09:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-08 09:48:42 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(490): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * ...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(169): App\Models\M_tppk->getSKProv('280000')
+#4 D:\laragon\www\tppk\app\Controllers\InputData.php(58): App\Controllers\InputData->satgasprov()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->index()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 09:48:42 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]SHUTDOWN is in progress. SQLSTATE: 42000, code: 6005
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'u_anto'. Only administrators may connect at this time. SQLSTATE: 42000, code: 18451
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(490): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * 
+        FROM [TPPK].[dbo].[sk_satgas_provinsi]
+        WHERE kode_wilayah = :kodewilayah: 
+        ORDER BY create_date DESC', [...])
+ 3 APPPATH\Controllers\InputData.php(169): App\Models\M_tppk->getSKProv('280000')
+ 4 APPPATH\Controllers\InputData.php(58): App\Controllers\InputData->satgasprov()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-08 09:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 09:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 09:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 09:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 09:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 09:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 09:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 09:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 09:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 10:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-08 10:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-08 11:47:17 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Api/Auth::login"
+in SYSTEMPATH\Router\Router.php on line 474.
+ 1 SYSTEMPATH\Router\Router.php(474): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Api/Auth::login')
+ 2 SYSTEMPATH\Router\Router.php(182): CodeIgniter\Router\Router->checkRoutes('login2')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('login2')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 11:47:22 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Api/Auth::login"
+in SYSTEMPATH\Router\Router.php on line 474.
+ 1 SYSTEMPATH\Router\Router.php(474): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Api/Auth::login')
+ 2 SYSTEMPATH\Router\Router.php(182): CodeIgniter\Router\Router->checkRoutes('login2')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('login2')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

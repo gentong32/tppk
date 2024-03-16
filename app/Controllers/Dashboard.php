@@ -47,16 +47,24 @@ class Dashboard extends BaseController
         // var_dump($datatppk);
         $total_sp = 0;
         $total_tppk = 0;
+        $total_sync = 0;
         foreach ($datatppk as $row) {
             $total_sp = $total_sp + $row['tot_jml_satuan_pendidikan'];
+            $total_sync = $total_sync + $row['tot_sekolah_sudah_sync'];
             $total_tppk = $total_tppk + $row['tot_jml_tppk'];
         }
 
+        $updateterakhir = $this->model_tppk->getlastupdate();
+
+        $tglakhir = $updateterakhir['last_update'];
+
         $now = date("Y-m-d");
         $data['tglsekarang'] = namabulan_panjang($now);
+        $data['last_update'] = tgl_jam($tglakhir);
         $data['persen_sp'] = $persen_sp;
         $data['persen_tppk'] = $persen_tppk;
         $data['totalsp'] = $total_sp;
+        $data['totalsync'] = $total_sync;
         $data['totaltppk'] = $total_tppk;
 
         $data['persen_provinsi'] = $persen_provinsi;
@@ -68,6 +76,23 @@ class Dashboard extends BaseController
         $data['persen_satgaskota'] = $persen_satgaskota;
         $data['totalkota'] = $persentasesatgaskota->jml_kota;
         $data['totalsatgaskota'] = $persentasesatgaskota->total_jml_satgas_kota;
+
+        $query1 = $this->model_tppk->getTotalTPPKDasbor('000000', 0, 'rekappaud', 'semua', 'semua');
+        $data['rekappaud'] = $query1->getRowArray();
+        $query2 = $this->model_tppk->getTotalTPPKDasbor('000000', 0, 'rekapsd', $bentuk, $status);
+        $data['rekapsd'] = $query2->getRowArray();
+        $query3 = $this->model_tppk->getTotalTPPKDasbor('000000', 0, 'rekapsmp', $bentuk, $status);
+        $data['rekapsmp'] = $query3->getRowArray();
+        $query4 = $this->model_tppk->getTotalTPPKDasbor('000000', 0, 'rekapsma', $bentuk, $status);
+        $data['rekapsma'] = $query4->getRowArray();
+        $query5 = $this->model_tppk->getTotalTPPKDasbor('000000', 0, 'rekapsmk', $bentuk, $status);
+        $data['rekapsmk'] = $query5->getRowArray();
+        $query6 = $this->model_tppk->getTotalTPPKDasbor('000000', 0, 'rekapslb', $bentuk, $status);
+        $data['rekapslb'] = $query6->getRowArray();
+        $query7 = $this->model_tppk->getTotalTPPKDasbor('000000', 0, 'rekapkesetaraan', $bentuk, $status);
+        $data['rekapkesetaraan'] = $query7->getRowArray();
+
+        // echo var_dump($data['rekappaud']); //['tot_jml_satuan_pendidikan'] . ", " . $data['rekappaud']['tot_jml_tppk'];
 
         return view('stat_linechart', $data);
     }

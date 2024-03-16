@@ -39,6 +39,14 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
         background-color: #5a96c7;
         color: white;
     }
+
+    .kadaluwarsa {
+        color: red;
+    }
+
+    .kadaluwarsa a {
+        color: red;
+    }
 </style>
 
 <?= $this->endSection(); ?>
@@ -75,6 +83,9 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
             <th>Nama</th>
             <th>Status Keanggotaan</th>
             <th>Asal Instansi</th>
+            <?php if ($instansiid == 1) : ?>
+                <th>Telp</th>
+            <?php endif ?>
         </thead>
 
         <tbody>
@@ -84,8 +95,11 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
                 <tr>
                     <td><?= $nomor++ ?></td>
                     <td><?= $row['namaanggota'] ?></td>
-                    <td><?= $jabatan[$row['anggotake']] ?></td>
+                    <td><?= ($row['anggotake'] == 0) ? "Ketua" : "Anggota " . $row['anggotake'] ?></td>
                     <td><?= $row['instansi'] ?></td>
+                    <?php if ($instansiid == 1) : ?>
+                        <td><?= $row['telepon'] ?></td>
+                    <?php endif ?>
                 </tr>
             <?php endforeach; ?>
         </tbody>
@@ -105,8 +119,8 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
             <tr>
                 <td>Tanggal Berakhir SK</td>
                 <td>:</td>
-                <td><?= ($nomor > 1) ?
-                        $tanggal_tambah = date("d-m-Y", strtotime($datask['tanggal_sk'] . " +6 months")) : "-" ?></td>
+                <td class="<?= ($kadaluwarsa) ? 'kadaluwarsa' : '' ?>"><?= ($nomor > 1) ?
+                                                                            $tanggal_tambah = date("d-m-Y", strtotime($datask['tanggal_sk'] . " +4 years")) : "-" ?></td>
             </tr>
             <tr>
                 <td>Status SK</td>
@@ -127,10 +141,17 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
 
         <div style="color: gray;font-size:10px;"><i>[Update
                 <?= ($nomor > 1) ? date("d-m-Y H:i:s", strtotime($datask['modified_date'])) : "-" ?>]</i>
-            <?php if (($instansiid == 2 && $kodewilayah == substr(session()->get('wilayah_akses'), 0, 2) . "0000") || ($instansiid == 3 && $kodewilayah == substr(session()->get('wilayah_akses'), 0, 4) . "00")) : ?>
-                <div style="float:right"><button onclick="return editanggota();">Edit Anggota</button>
-                </div>
-            <?php endif ?>
+            <?php if (($instansiid == 2 && $kodewilayah == substr(session()->get('wilayah_akses'), 0, 2) . "0000") || ($instansiid == 3 && $kodewilayah == substr(session()->get('wilayah_akses'), 0, 4) . "00")) {
+                if ($adasatgas) { ?>
+                    <div style="float:right"><button onclick="return editanggota();">Edit Anggota</button>
+                    </div>
+                <?php } else { ?>
+                    <div style="float:right"><button onclick="return inputanggota();">Input Anggota</button>
+                    </div>
+                <?php }
+                ?>
+
+            <?php } ?>
         </div>
 
     </div>
@@ -159,6 +180,10 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
 
     function editanggota() {
         window.open("<?= base_url() ?>inputdata/edit", "_self");
+    }
+
+    function inputanggota() {
+        window.open("<?= base_url() ?>inputdata", "_self");
     }
 
     function kembali() {

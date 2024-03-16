@@ -11,8 +11,8 @@ $routes = Services::routes();
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
-$routes->setDefaultMethod('index');
+$routes->setDefaultController('');
+$routes->setDefaultMethod('');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
@@ -53,9 +53,28 @@ $routes->get('/login/logout', 'Login::logout');
 $routes->get('/tppk/viewer', 'TPPK::viewer');
 $routes->get('/tppk/viewer/(:segment)', 'TPPK::viewer/$1');
 
+$routes->get('/residu', 'InputData::daftarsekolahnontppk');
+
+$routes->get('/inputdata/get_data_p', 'InputData::get_data_p');
+$routes->get('/inputdata/pelaporan', 'InputData::pelaporan');
+$routes->post('/inputdata/get_data_siswa', 'InputData::get_data_siswa');
+$routes->post('/inputdata/get_ortu', 'InputData::get_ortu');
+$routes->post('/inputdata/simpan_kasus', 'InputData::simpan_kasus');
+$routes->get('/inputdata/cari_sekolah', 'InputData::cari_sekolah');
+$routes->get('/inputdata/ajaxGetDaftarNonTPPK', 'InputData::ajaxGetDaftarNonTPPK');
+$routes->post('/inputdata/ajaxGetDaftarNonTPPK', 'InputData::ajaxGetDaftarNonTPPK');
+
+$routes->get('/inputdata/tes', 'InputData::tes');
+
+$routes->get('/daftar_laporan_kekerasan', 'InputData::daftar_laporan');
+$routes->get('/status_laporan_kekerasan', 'InputData::status_laporan');
+
+$routes->get('/webinar', 'Webinar::index');
+
 // $routes->get('/pesertadidik', 'PesertaDidik::index');
 // $routes->get('/pesertadidik/wilayah', 'PesertaDidik::wilayah');
 // $routes->get('/pesertadidik/wilayah/(:any)', 'PesertaDidik::wilayah/$1');
+
 
 /*
  * --------------------------------------------------------------------

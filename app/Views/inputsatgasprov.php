@@ -45,7 +45,7 @@
     }
 
     .info-container.show {
-        max-height: 330px;
+        max-height: 410px;
     }
 
     .multilineInput {
@@ -54,7 +54,33 @@
         width: 100%;
         padding: 2px;
     }
-</style>
+
+    .info {
+        color: red;
+        font-style: italic;
+        font-size: 12px;
+        display: none;
+        margin-top: -10px;
+        margin-left: 0px;
+    }
+
+    .tbcek {
+        background: #5db029;
+        background-image: -webkit-linear-gradient(top, #5db029, #348221);
+        background-image: -moz-linear-gradient(top, #5db029, #348221);
+        background-image: -ms-linear-gradient(top, #5db029, #348221);
+        background-image: -o-linear-gradient(top, #5db029, #348221);
+        background-image: linear-gradient(to bottom, #5db029, #348221);
+        -webkit-border-radius: 9;
+        -moz-border-radius: 9;
+        border-radius: 9px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 7px 16px 7px 16px;
+        text-decoration: none;
+        border: 0.5px solid green;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -118,20 +144,25 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                     </div>
                 </div>
 
+                <div class="info" id="infodinas1">Pilih instansi dahulu</div>
+                <div class="info" id="infodinas2">Pilih instansi dahulu</div>
+                <div class="info" id="infodinas3">Pilih instansi dahulu</div>
+
                 <div class="form-group">
                     <label for="nomor_sk">Nomor SK</label>
                     <input type="text" id="nomor_sk" name="nomor_sk" value="<?= ($opsi == 'edit') ? $datask['nomor_sk'] : '' ?>">
                 </div>
+                <div class="info" id="infonomor_sk">Nomor SK wajib diisi</div>
                 <div class="form-group">
                     <label for="tanggal_sk">Tanggal SK</label>
                     <input type="text" id="tanggal_sk" name="tanggal_sk" value="<?= ($opsi == 'edit') ? date('d-m-Y', strtotime($datask['tanggal_sk'])) : '' ?>">
                 </div>
-
+                <div class="info" id="infotanggal_sk">Tanggal SK wajib diisi</div>
                 <div class="form-group">
                     <label for="file_sk">FIle SK</label>
                     <input type="file" id="file_sk" name="file_sk" accept=".jpg,.jpeg,.png,.pdf">
                 </div>
-
+                <div class="info" id="infofile_sk">FIle SK wajib diunggah</div>
                 <?php
                 if ($opsi == "edit") {
                     $namafileoke = preg_replace("/[^a-zA-Z0-9]/", "", $datask['nomor_sk']);
@@ -166,19 +197,23 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                                 <option <?= ($instansianggota[0] == 31) ? 'selected' : '' ?> value="31">Lainnya</option>
                             </select>
                         </div>
+                        <div class="info" id="infodinas0">Pilih instansi dahulu</div>
                     </div>
                     <div class="form-group ctim">
                         <label for="inama0">Nama</label>
                         <input type="text" id="inama0" name="inama0" value="<?= ($opsi == 'edit') ? $namaanggota[0] : '' ?>">
                     </div>
+                    <div class="info" id="infonama0">Nama wajib diisi</div>
                     <div class="form-group ctim">
                         <label for="inik0">NIK</label>
                         <input type="text" maxlength="16" id="inik0" name="inik0" value="<?= ($opsi == 'edit') ? $nikanggota[0] : '' ?>">
                     </div>
+                    <div class="info" id="infonik0">NIK wajib diisi</div>
                     <div class="form-group ctim">
                         <label for="itglahir0">Tanggal Lahir</label>
                         <input type="text" id="itglahir0" name="itglahir0" value="<?= ($opsi == 'edit' && $tglahiranggota[0] != '') ? date('d-m-Y', strtotime($tglahiranggota[0])) : '' ?>">
                     </div>
+                    <div class="info" id="infotglahir0">Tanggal lahir diisi</div>
                     <div class="form-group ctim">
                         <label for="isex0">Jenis Kelamin</label>
                         <select class="single" id="isex0" name="isex0">
@@ -187,19 +222,22 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                             <option <?= ($opsi == 'edit' && $sexanggota[0] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
                         </select>
                     </div>
+                    <div class="info" id="infosex0">Jenis kelamin diisi</div>
                     <div class="form-group ctim">
                         <label for="ihp0">Nomor HP</label>
                         <input type="text" id="ihp0" name="ihp0" value="<?= ($opsi == 'edit') ? $hapeanggota[0] : '' ?>">
                     </div>
+                    <div class="info" id="infohp0">Nomor HP wajib diisi</div>
                     <div class="form-group ctim">
                         <label for="iemail0">Email</label>
                         <input type="text" id="iemail0" name="iemail0" value="<?= ($opsi == 'edit') ? $emailanggota[1] : '' ?>">
                     </div>
+                    <button class="tbcek" onclick="return ceknama(0);">Cek Dukcapil</button>
                     <div class="form-group ctim">
                         <label for="idukcapil0">Status Dukcapil</label>
                         <textarea readonly id="idukcapil0" name="idukcapil0" class="multilineInput"><?= ($opsi == 'edit') ? $dukcapilanggota[0] : '' ?></textarea>
                     </div>
-                    <button class="tbcek" onclick="return ceknama(0);">Cek Dukcapil</button>
+                    <div class="info" id="infodukcapil0">Cek Dukcapil dahulu</div>
                 </div>
                 <hr class="hrtim">
 
@@ -213,14 +251,17 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                                 <label for="inama1">Nama</label>
                                 <input type="text" id="inama1" name="inama1" value="<?= ($opsi == 'edit') ? $namaanggota[1] : '' ?>">
                             </div>
+                            <div class="info" id="infonama1">Nama wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="inik1">NIK</label>
                                 <input type="text" maxlength="16" id="inik1" name="inik1" value="<?= ($opsi == 'edit') ? $nikanggota[1] : '' ?>">
                             </div>
+                            <div class="info" id="infonik1">NIK wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="itglahir1">Tanggal Lahir</label>
                                 <input type="text" id="itglahir1" name="itglahir1" value="<?= ($opsi == 'edit' && $tglahiranggota[1] != '') ? date('d-m-Y', strtotime($tglahiranggota[1])) : '' ?>">
                             </div>
+                            <div class="info" id="infotglahir1">Tanggal lahir diisi</div>
                             <div class="form-group ctim">
                                 <label for="isex1">Jenis Kelamin</label>
                                 <select class="single" id="isex1" name="isex1">
@@ -229,19 +270,22 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                                     <option <?= ($opsi == 'edit' && $sexanggota[1] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
                                 </select>
                             </div>
+                            <div class="info" id="infosex1">Jenis kelamin diisi</div>
                             <div class="form-group ctim">
                                 <label for="ihp1">Nomor HP</label>
                                 <input type="text" id="ihp1" name="ihp1" value="<?= ($opsi == 'edit') ? $hapeanggota[1] : '' ?>">
                             </div>
+                            <div class="info" id="infohp1">Nomor HP wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="iemail1">Email</label>
                                 <input type="text" id="iemail1" name="iemail1" value="<?= ($opsi == 'edit') ? $emailanggota[1] : '' ?>">
                             </div>
+                            <button class="tbcek" onclick="return ceknama(1);">Cek Dukcapil</button>
                             <div class="form-group ctim">
                                 <label for="idukcapil1">Status Dukcapil</label>
                                 <textarea readonly id="idukcapil1" name="idukcapil1" class="multilineInput"><?= ($opsi == 'edit') ? $dukcapilanggota[1] : '' ?></textarea>
                             </div>
-                            <button class="tbcek" onclick="return ceknama(1);">Cek Dukcapil</button>
+                            <div class="info" id="infodukcapil1">Cek Dukcapil dahulu</div>
                         </div>
                         <hr class="hrtim">
                     </li>
@@ -254,14 +298,17 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                                 <label for="inama2">Nama</label>
                                 <input type="text" id="inama2" name="inama2" value="<?= ($opsi == 'edit') ? $namaanggota[2] : '' ?>">
                             </div>
+                            <div class="info" id="infonama2">Nama wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="inik2">NIK</label>
                                 <input type="text" maxlength="16" id="inik2" name="inik2" value="<?= ($opsi == 'edit') ? $nikanggota[2] : '' ?>">
                             </div>
+                            <div class="info" id="infonik2">NIK wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="itglahir2">Tanggal Lahir</label>
                                 <input type="text" id="itglahir2" name="itglahir2" value="<?= ($opsi == 'edit' && $tglahiranggota[2] != '') ? date('d-m-Y', strtotime($tglahiranggota[2])) : '' ?>">
                             </div>
+                            <div class="info" id="infotglahir2">Tanggal lahir diisi</div>
                             <div class="form-group ctim">
                                 <label for="isex2">Jenis Kelamin</label>
                                 <select class="single" id="isex2" name="isex2">
@@ -270,19 +317,22 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                                     <option <?= ($opsi == 'edit' && $sexanggota[2] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
                                 </select>
                             </div>
+                            <div class="info" id="infosex2">Jenis kelamin diisi</div>
                             <div class="form-group ctim">
                                 <label for="ihp2">Nomor HP</label>
                                 <input type="text" id="ihp2" name="ihp2" value="<?= ($opsi == 'edit') ? $hapeanggota[2] : '' ?>">
                             </div>
+                            <div class="info" id="infohp2">Nomor HP wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="iemail2">Email</label>
                                 <input type="text" id="iemail2" name="iemail2" value="<?= ($opsi == 'edit') ? $emailanggota[2] : '' ?>">
                             </div>
+                            <button class="tbcek" onclick="return ceknama(2);">Cek Dukcapil</button>
                             <div class="form-group ctim">
                                 <label for="idukcapil2">Status Dukcapil</label>
                                 <textarea readonly id="idukcapil2" name="idukcapil2" class="multilineInput"><?= ($opsi == 'edit') ? $dukcapilanggota[2] : '' ?></textarea>
                             </div>
-                            <button class="tbcek" onclick="return ceknama(2);">Cek Dukcapil</button>
+                            <div class="info" id="infodukcapil2">Cek Dukcapil dahulu</div>
                         </div>
                         <hr class="hrtim">
                     </li>
@@ -295,14 +345,17 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                                 <label for="inama3">Nama</label>
                                 <input type="text" id="inama3" name="inama3" value="<?= ($opsi == 'edit') ? $namaanggota[3] : '' ?>">
                             </div>
+                            <div class="info" id="infonama3">Nama wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="inik3">NIK</label>
                                 <input type="text" maxlength="16" id="inik3" name="inik3" value="<?= ($opsi == 'edit') ? $nikanggota[3] : '' ?>">
                             </div>
+                            <div class="info" id="infonik3">NIK wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="itglahir3">Tanggal Lahir</label>
                                 <input type="text" id="itglahir3" name="itglahir3" value="<?= ($opsi == 'edit' && $tglahiranggota[3] != '') ? date('d-m-Y', strtotime($tglahiranggota[3])) : '' ?>">
                             </div>
+                            <div class="info" id="infotglahir3">Tanggal lahir diisi</div>
                             <div class="form-group ctim">
                                 <label for="isex3">Jenis Kelamin</label>
                                 <select class="single" id="isex3" name="isex3">
@@ -311,26 +364,98 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                                     <option <?= ($opsi == 'edit' && $sexanggota[3] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
                                 </select>
                             </div>
+                            <div class="info" id="infosex3">Jenis kelamin diisi</div>
                             <div class="form-group ctim">
                                 <label for="ihp3">Nomor HP</label>
                                 <input type="text" id="ihp3" name="ihp3" value="<?= ($opsi == 'edit') ? $hapeanggota[3] : '' ?>">
                             </div>
+                            <div class="info" id="infohp3">Nomor HP wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="iemail3">Email</label>
                                 <input type="text" id="iemail3" name="iemail3" value="<?= ($opsi == 'edit') ? $emailanggota[3] : '' ?>">
                             </div>
+                            <button class="tbcek" onclick="return ceknama(3);">Cek Dukcapil</button>
                             <div class="form-group ctim">
                                 <label for="idukcapil3">Status Dukcapil</label>
                                 <textarea readonly id="idukcapil3" name="idukcapil3" class="multilineInput"><?= ($opsi == 'edit') ? $dukcapilanggota[3] : '' ?></textarea>
                             </div>
-                            <button class="tbcek" onclick="return ceknama(3);">Cek Dukcapil</button>
+                            <div class="info" id="infodukcapil3">Cek Dukcapil dahulu</div>
+                        </div>
+                        <hr class="hrtim">
+                    </li>
+                    <li>
+                        <a href="#" onclick="toggleInfo(event,4)">
+                            <h3 style="margin-bottom:15px;">ANGGOTA 4 &#9660;</h3>
+                        </a>
+                        <?php $a = 4; ?>
+                        <div id="info4" class="fanggota info-container" style="margin-bottom:10px">
+                            <div class="form-group ctim">
+                                <label for="djenis<?= $a ?>">Instansi <sup>*</sup></label>
+                                <div id="djenis<?= $a ?>">
+                                    <select class="single" id="idinas<?= $a ?>" name="idinas<?= $a ?>">
+                                        <option value="00">- Pilih Instansi -</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 20) ? 'selected' : '' ?> value="20">Dinas Pendidikan</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 21) ? 'selected' : '' ?> value="21">Dinas Sosial</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 22) ? 'selected' : '' ?> value="22">Dinas PPPA</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 23) ? 'selected' : '' ?> value="23">Dinas Kesehatan</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 24) ? 'selected' : '' ?> value="24">UPTD PPA</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 25) ? 'selected' : '' ?> value="25">Kepolisian</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 26) ? 'selected' : '' ?> value="26">Balai Pemasyarakatan</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 27) ? 'selected' : '' ?> value="27">Fasilitas Kesehatan</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 28) ? 'selected' : '' ?> value="28">Fasilitas Rehab Sosial</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 29) ? 'selected' : '' ?> value="29">Tokoh Adat / Masyarakat</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 30) ? 'selected' : '' ?> value="30">Lembaga Swadaya Masyarakat</option>
+                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 31) ? 'selected' : '' ?> value="31">Lainnya</option>
+                                    </select>
+                                </div>
+                                <div class="info" id="infodinas4">Pilih instansi dahulu</div>
+                            </div>
+                            <div class="form-group ctim">
+                                <label for="inama<?= $a ?>">Nama <sup>*</sup></label>
+                                <input type="text" id="inama<?= $a ?>" name="inama<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $namaanggota[$a] : '' ?>">
+                            </div>
+                            <div class="info" id="infonama4">Nama wajib diisi</div>
+                            <div class="form-group ctim">
+                                <label for="inik<?= $a ?>">NIK <sup>*</sup></label>
+                                <input type="text" maxlength="16" id="inik<?= $a ?>" name="inik<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $nikanggota[$a] : '' ?>">
+                            </div>
+                            <div class="info" id="infonik4">NIK wajib diisi</div>
+                            <div class="form-group ctim">
+                                <label for="itglahir<?= $a ?>">Tanggal Lahir <sup>*</sup></label>
+                                <input type="text" id="itglahir<?= $a ?>" name="itglahir<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $tglahiranggota[$a] != '') ? date('d-m-Y', strtotime($tglahiranggota[$a])) : '' ?>">
+                            </div>
+                            <div class="info" id="infotglahir4">Tanggal lahir diisi</div>
+                            <div class="form-group ctim">
+                                <label for="isex<?= $a ?>">Jenis Kelamin <sup>*</sup></label>
+                                <select class="single" id="isex<?= $a ?>" name="isex<?= $a ?>">
+                                    <option value="0">- Pilih Jenis Kelamin -</option>
+                                    <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $sexanggota[$a] == 1) ? 'selected' : '' ?> value="1">Laki-laki</option>
+                                    <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $sexanggota[$a] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="info" id="infosex4">Jenis kelamin diisi</div>
+                            <div class="form-group ctim">
+                                <label for="ihp<?= $a ?>">Nomor HP <sup>*</sup></label>
+                                <input type="text" id="ihp<?= $a ?>" name="ihp<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $hapeanggota[$a] : '' ?>">
+                            </div>
+                            <div class="info" id="infohp4">Nomor HP wajib diisi</div>
+                            <div class="form-group ctim">
+                                <label for="iemail<?= $a ?>">Email</label>
+                                <input type="text" id="iemail<?= $a ?>" name="iemail<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $emailanggota[$a] : '' ?>">
+                            </div>
+                            <div class="form-group ctim">
+                                <label for="idukcapil<?= $a ?>">Status Dukcapil <sup>*</sup></label>
+                                <textarea readonly id="idukcapil<?= $a ?>" name="idukcapil<?= $a ?>" class="multilineInput"><?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $dukcapilanggota[$a] : '' ?></textarea>
+                            </div>
+                            <div class="info" id="infodukcapil4">Cek Dukcapil dahulu</div>
+                            <button class="tbcek" onclick="return ceknama(<?= $a ?>);">Cek Dukcapil</button>
                         </div>
                         <hr class="hrtim">
                     </li>
                 </ul>
 
                 <!-- ANGGOTA 4-8 -->
-                <?php for ($a = 4; $a <= 8; $a++) { ?>
+                <?php for ($a = 5; $a <= 28; $a++) { ?>
                     <div id="danggota<?= $a ?>" style="display:<?= ($jmlanggota >= ($a + 1) && $opsi == 'edit') ? 'block' : 'none' ?>;">
                         <label>
                             <h3 style="margin-bottom:15px;">ANGGOTA <?= $a ?>:</h3>
@@ -355,19 +480,23 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                                         <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 31) ? 'selected' : '' ?> value="31">Lainnya</option>
                                     </select>
                                 </div>
+                                <div class="info" id="infodinas<?= $a ?>">Pilih instansi dahulu</div>
                             </div>
                             <div class="form-group ctim">
                                 <label for="inama<?= $a ?>">Nama</label>
                                 <input type="text" id="inama<?= $a ?>" name="inama<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $namaanggota[$a] : '' ?>">
                             </div>
+                            <div class="info" id="infonama<?= $a ?>">Nama wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="inik<?= $a ?>">NIK</label>
                                 <input type="text" maxlength="16" id="inik<?= $a ?>" name="inik<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $nikanggota[$a] : '' ?>">
                             </div>
+                            <div class="info" id="infonik<?= $a ?>">NIK wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="itglahir<?= $a ?>">Tanggal Lahir</label>
                                 <input type="text" id="itglahir<?= $a ?>" name="itglahir<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $tglahiranggota[$a] != '') ? date('d-m-Y', strtotime($tglahiranggota[$a])) : '' ?>">
                             </div>
+                            <div class="info" id="infotglahir<?= $a ?>">Tanggal lahir diisi</div>
                             <div class="form-group ctim">
                                 <label for="isex<?= $a ?>">Jenis Kelamin</label>
                                 <select class="single" id="isex<?= $a ?>" name="isex<?= $a ?>">
@@ -376,19 +505,22 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
                                     <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $sexanggota[$a] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
                                 </select>
                             </div>
+                            <div class="info" id="infosex<?= $a ?>">Jenis kelamin diisi</div>
                             <div class="form-group ctim">
                                 <label for="ihp<?= $a ?>">Nomor HP</label>
                                 <input type="text" id="ihp<?= $a ?>" name="ihp<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $hapeanggota[$a] : '' ?>">
                             </div>
+                            <div class="info" id="infohp<?= $a ?>">Nomor HP wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="iemail<?= $a ?>">Email</label>
                                 <input type="text" id="iemail<?= $a ?>" name="iemail<?= $a ?>" value="<?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $emailanggota[$a] : '' ?>">
                             </div>
+                            <button class="tbcek" onclick="return ceknama(<?= $a ?>);">Cek Dukcapil</button>
                             <div class="form-group ctim">
                                 <label for="idukcapil<?= $a ?>">Status Dukcapil</label>
                                 <textarea readonly id="idukcapil<?= $a ?>" name="idukcapil<?= $a ?>" class="multilineInput"><?= ($opsi == 'edit' && $jmlanggota >= ($a + 1)) ? $dukcapilanggota[$a] : '' ?></textarea>
                             </div>
-                            <button class="tbcek" onclick="return ceknama(<?= $a ?>);">Cek Dukcapil</button>
+                            <div class="info" id="infodukcapil<?= $a ?>">Cek Dukcapil dahulu</div>
                         </div>
                         <hr class="hrtim">
                     </div> <?php } ?>
@@ -443,6 +575,13 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
 <script>
     var sekolahid;
     var jabatan = [];
+    var counter = 5;
+    <?php if ($jmlanggota > 5) {
+        if ($jmlanggota % 2 == 0) {
+            $jmlanggota++;
+        }
+        echo "counter = " . ($jmlanggota) . ";\n";
+    } ?>
 
     <?php if ($opsi == "edit") : ?>
         var info1 = document.getElementById("info1");
@@ -461,11 +600,17 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
 
         $("#tanggal_sk").datepicker({
             dateFormat: "dd-mm-yy",
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "c-100:c+10",
         });
 
-        for (var n = 0; n <= 8; n++)
+        for (var n = 0; n <= 28; n++)
             $("#itglahir" + n).datepicker({
                 dateFormat: "dd-mm-yy",
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "c-100:c+10",
                 onSelect: function(dateText, inst) {
                     var index = this.id.replace('itglahir', '');
                     clearTextarea(index);
@@ -478,17 +623,13 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
 
     });
 
-    var counter = 4;
-    <?php if ($jmlanggota > 4) {
-        echo "counter = " . $jmlanggota . ";\n";
-    } ?>
-
     function tambahInput() {
         $("#tbkurang").show();
         $("#danggota" + counter).show();
-        if (counter <= 8)
-            counter++;
-        if (counter == 9)
+        $("#danggota" + (counter + 1)).show();
+        if (counter <= 27)
+            counter = counter + 2;
+        if (counter == 29)
             $("#tbtambah").hide();
         return false;
     }
@@ -496,10 +637,11 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
     function kurangiInput() {
         $("#tbtambah").show();
         if (counter > 2)
-            counter--;
-        if (counter == 4)
+            counter = counter - 2;
+        if (counter == 5)
             $("#tbkurang").hide();
         $("#danggota" + counter).hide();
+        $("#danggota" + (counter + 1)).hide();
         return false;
     }
 
@@ -521,7 +663,7 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i <= 28; i++) {
             var inama = document.getElementById('inama' + i);
             var inik = document.getElementById('inik' + i);
             var itglahir = document.getElementById('itglahir' + i);
@@ -533,7 +675,7 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
     });
 
     $(document).ready(function() {
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i <= 28; i++) {
             var isex = $('#isex' + i);
             isex.select2();
             observeChangeSelect2(isex, i);
@@ -642,6 +784,57 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
             oke = false;
         }
 
+        info1 = document.getElementById("info1");
+        info1.classList.toggle("show");
+        info2 = document.getElementById("info2");
+        info2.classList.toggle("show");
+        info3 = document.getElementById("info3");
+        info3.classList.toggle("show");
+
+        if (document.getElementById("nomor_sk").value == "") {
+            document.getElementById("infonomor_sk").style.display = "block";
+        } else
+            document.getElementById("infonomor_sk").style.display = "";
+        if (document.getElementById("tanggal_sk").value == "") {
+            document.getElementById("infotanggal_sk").style.display = "block";
+        } else
+            document.getElementById("infotanggal_sk").style.display = "";
+        if (document.getElementById("file_sk").value == "") {
+            document.getElementById("infofile_sk").style.display = "block";
+        } else
+            document.getElementById("infofile_sk").style.display = "";
+
+        for (var a = 0; a < counter; a++) {
+            if (document.getElementById("idinas" + a).value == "00") {
+                document.getElementById("infodinas" + a).style.display = "block";
+            } else
+                document.getElementById("infodinas" + a).style.display = "";
+            if (document.getElementById("inama" + a).value == "") {
+                document.getElementById("infonama" + a).style.display = "block";
+            } else
+                document.getElementById("infonama" + a).style.display = "";
+            if (document.getElementById("inik" + a).value == "") {
+                document.getElementById("infonik" + a).style.display = "block";
+            } else
+                document.getElementById("infonik" + a).style.display = "";
+            if (document.getElementById("itglahir" + a).value == "") {
+                document.getElementById("infotglahir" + a).style.display = "block";
+            } else
+                document.getElementById("infotglahir" + a).style.display = "";
+            if (document.getElementById("isex" + a).value == 0) {
+                document.getElementById("infosex" + a).style.display = "block";
+            } else
+                document.getElementById("infosex" + a).style.display = "";
+            if (document.getElementById("ihp" + a).value == "") {
+                document.getElementById("infohp" + a).style.display = "block";
+            } else
+                document.getElementById("infohp" + a).style.display = "";
+            if (document.getElementById("idukcapil" + a).value == "") {
+                document.getElementById("infodukcapil" + a).style.display = "block";
+            } else
+                document.getElementById("infodukcapil" + a).style.display = "";
+        }
+
 
         for (var a = 0; a < counter; a++) {
             if (document.getElementById("idinas" + a).value == "00" || document.getElementById("inama" + a).value == "" || document.getElementById("inik" + a).value == "" || document.getElementById("itglahir" + a).value == "" || document.getElementById("isex" + a).value == "0" || document.getElementById("ihp" + a).value == "" || document.getElementById("idukcapil" + a).value == "") {
@@ -689,7 +882,13 @@ for ($a = $jmlanggota + 1; $a <= 8; $a++) {
 
             return true;
         } else {
-            alert("Silakan periksa kembali ...");
+            // alert("Silakan periksa kembali ...");
+            var elements = document.querySelectorAll('[style*="block"]');
+            if (elements.length > 0) {
+                elements[0].scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
             return false;
         }
     }

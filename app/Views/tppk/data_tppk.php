@@ -179,6 +179,7 @@ else if ($status == "swasta")
                     <th width="10px">No</th>
                     <th><?= $judulnama ?></th>
                     <th>Jumlah Satuan Pendidikan</th>
+                    <th>Satuan Pendidikan Update</th>
                     <th>Jumlah TPPK *)</th>
                     <th>Jumlah TPPK Valid</th>
                     <th>Persentase TPPK</th>
@@ -215,9 +216,10 @@ else if ($status == "swasta")
                                                                                     } ?></a>
                             </td>
                             <td><?= $value['tot_jml_satuan_pendidikan'] ?></td>
+                            <td><?= $value['tot_sekolah_sudah_sync'] ?></td>
                             <td><?= $value['tot_jml_tppk'] ?></td>
                             <td><?= ($value['tot_jml_satuan_pendidikan'] - $value['tot_residu']) ?></td>
-                            <td><?= number_format($value['tot_jml_tppk'] * 100 / $value['tot_jml_satuan_pendidikan'], 2, '.', '') ?>%</td>
+                            <td><?= number_format($value['tot_jml_tppk'] * 100 / $value['tot_sekolah_sudah_sync'], 2, '.', '') ?>%</td>
 
 
                         </tr>
@@ -227,6 +229,7 @@ else if ($status == "swasta")
 
                 <tfoot align="right">
                     <tr>
+                        <th></th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -280,7 +283,7 @@ else if ($status == "swasta")
             },
             {
                 className: 'text-right',
-                targets: [(kolom_angka), (kolom_angka + 1), (kolom_angka + 2), (kolom_angka + 3)]
+                targets: [(kolom_angka), (kolom_angka + 1), (kolom_angka + 2), (kolom_angka + 3), (kolom_angka + 4)]
             },
             // {
             //     "targets": [5], // Kolom 6 dan 7 (indeks 5 dan 6)
@@ -302,7 +305,7 @@ else if ($status == "swasta")
             //     }
             // },
             {
-                "targets": 4, // Kolom ke-5 (indeks dimulai dari 0)
+                "targets": 5, // Kolom ke-5 (indeks dimulai dari 0)
                 "visible": false, // Mengatur kolom tidak terlihat
                 "searchable": false // Mengatur kolom tidak dapat dicari
             }
@@ -371,12 +374,12 @@ else if ($status == "swasta")
                 'padding-right': '0px'
             });
 
-            // totalPersentase = total2 / total1 * 100;
-            // $(this.api().column(6).footer()).html(totalPersentase.toFixed(2) + '%');
-            // $(this.api().column(6).footer()).css({
-            //     'text-align': 'right',
-            //     'padding-right': '0px'
-            // });
+            totalPersentase = total3 / total2 * 100;
+            $(this.api().column(6).footer()).html(totalPersentase.toFixed(2) + '%');
+            $(this.api().column(6).footer()).css({
+                'text-align': 'right',
+                'padding-right': '-0px',
+            });
 
 
         },

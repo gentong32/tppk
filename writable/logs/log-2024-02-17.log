@@ -1,0 +1,1690 @@
+CRITICAL - 2024-02-17 06:51:51 --> Cannot use object of type CodeIgniter\Database\SQLSRV\Result as array
+in APPPATH\Controllers\InputData.php on line 2087.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:52:26 --> Undefined property: CodeIgniter\Database\SQLSRV\Result::$sekolah_id
+in APPPATH\Controllers\InputData.php on line 2087.
+ 1 APPPATH\Controllers\InputData.php(2087): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\SQLSRV\\Result::$sekolah_id', 'APPPATH\\Controllers\\InputData.php', 2087)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:52:51 --> Undefined property: CodeIgniter\Database\SQLSRV\Result::$sekolah_id
+in APPPATH\Controllers\InputData.php on line 2088.
+ 1 APPPATH\Controllers\InputData.php(2088): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\SQLSRV\\Result::$sekolah_id', 'APPPATH\\Controllers\\InputData.php', 2088)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:53:57 --> Undefined property: CodeIgniter\Database\SQLSRV\Result::$sekolah_id
+in APPPATH\Controllers\InputData.php on line 2088.
+ 1 APPPATH\Controllers\InputData.php(2088): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\SQLSRV\\Result::$sekolah_id', 'APPPATH\\Controllers\\InputData.php', 2088)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:54:49 --> Array to string conversion
+in APPPATH\Controllers\InputData.php on line 2088.
+ 1 APPPATH\Controllers\InputData.php(2088): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\InputData.php', 2088)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:55:11 --> Array to string conversion
+in APPPATH\Controllers\InputData.php on line 2088.
+ 1 APPPATH\Controllers\InputData.php(2088): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\InputData.php', 2088)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:55:21 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 2088.
+ 1 APPPATH\Controllers\InputData.php(2088): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 2088)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:55:29 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 2088.
+ 1 APPPATH\Controllers\InputData.php(2088): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 2088)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:55:44 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 2089.
+ 1 APPPATH\Controllers\InputData.php(2089): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 2089)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:55:57 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\InputData.php on line 2089.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:56:06 --> Undefined array key "sekolah_id"
+in APPPATH\Controllers\InputData.php on line 2089.
+ 1 APPPATH\Controllers\InputData.php(2089): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_id"', 'APPPATH\\Controllers\\InputData.php', 2089)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 06:57:38 --> Invalid file: "tppk/daftaranggotatppk.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tppk/daftaranggotatppk.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 3 APPPATH\Controllers\InputData.php(2091): view('tppk/daftaranggotatppk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:00:46 --> Undefined variable $namasekolah
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 137.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namasekolah', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 137)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2091): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:02:20 --> Undefined variable $provinsi
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 148.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $provinsi', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 148)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2092): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:02:40 --> Undefined variable $kepalasekolah
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 151.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kepalasekolah', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 151)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2092): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:03:12 --> Trying to access array offset on value of type resource
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 164.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type resource', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 164)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2092): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:05:45 --> Trying to access array offset on value of type resource
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 164.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type resource', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 164)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2093): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:06:41 --> Undefined array key "jenis_ptk"
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 166.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jenis_ptk"', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2093): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 07:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:19:23 --> Undefined array key "status_login"
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 165.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_login"', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 165)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2093): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:19:33 --> Undefined array key "status_login"
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 166.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_login"', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2093): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 07:39:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.login_ptk'.
+CRITICAL - 2024-02-17 07:39:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'TPPK.dbo.login_ptk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(568): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() OVER (ORDER BY 
+        CASE WHEN UPPER(peran_ang) LIKE \'PELINDUNG%\' THEN 1
+             WHEN UPPER(peran_ang) LIKE \'PEMBINA%\' THEN 2
+             WHEN UPPER(peran_ang) LIKE \'PENGARAH%\' THEN 3
+             WHEN UPPER(peran_ang) LIKE \'PENANGGUNG%\' THEN 4
+             WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 5
+             WHEN UPPER(peran_ang) LIKE \'WAKIL%\' THEN 6
+             WHEN UPPER(peran_ang) LIKE \'SEKRETARIS%\' THEN 7
+             WHEN UPPER(peran_ang) LIKE \'BENDAHARA%\' THEN 8
+             WHEN UPPER(peran_ang) LIKE \'HUMAS%\' THEN 9
+             WHEN UPPER(peran_ang) LIKE \'KOORDINATOR%\' THEN 10
+             WHEN UPPER(peran_ang) LIKE \'SEKSI%\' THEN 11
+             ELSE 12 END
+    ) AS urutan, ua.nama as nama_unsur2,s.nama as nama_sekolah,* 
+        FROM [TPPK].[dbo].[kepanitiaan] k
+        LEFT JOIN TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+        LEFT JOIN Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+        LEFT JOIN [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+        LEFT JOIN [TPPK].[dbo].[login_ptk] l ON l.sk_tugas = k.sk_tugas 
+        WHERE k.sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0
+        AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                      FROM [TPPK].[dbo].[kepanitiaan] 
+                      WHERE sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0)
+        ORDER BY urutan, peran_ang ASC', [...])
+ 2 APPPATH\Controllers\InputData.php(2089): App\Models\M_tppk->getDaftarAnggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:40:11 --> Undefined array key "status_login"
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 166.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_login"', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2093): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:42:36 --> Undefined variable $approver
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 172.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $approver', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2093): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 07:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 07:43:45 --> Undefined variable $kadaluwarsa
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 178.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kadaluwarsa', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 178)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2093): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 08:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 08:31:54 --> Undefined variable $approver
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 221.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(221): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $approver', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 221)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2093): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 08:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 08:50:09 --> Undefined array key "id_anggota"
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 160.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_anggota"', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 160)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2093): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 08:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 08:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 09:04:36 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/daftar_anggota_tppk/simpan.php', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 09:07:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'ptk_id'.
+CRITICAL - 2024-02-17 09:07:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'ptk_id'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(568): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() OVER (ORDER BY 
+        CASE WHEN UPPER(peran_ang) LIKE \'PELINDUNG%\' THEN 1
+             WHEN UPPER(peran_ang) LIKE \'PEMBINA%\' THEN 2
+             WHEN UPPER(peran_ang) LIKE \'PENGARAH%\' THEN 3
+             WHEN UPPER(peran_ang) LIKE \'PENANGGUNG%\' THEN 4
+             WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 5
+             WHEN UPPER(peran_ang) LIKE \'WAKIL%\' THEN 6
+             WHEN UPPER(peran_ang) LIKE \'SEKRETARIS%\' THEN 7
+             WHEN UPPER(peran_ang) LIKE \'BENDAHARA%\' THEN 8
+             WHEN UPPER(peran_ang) LIKE \'HUMAS%\' THEN 9
+             WHEN UPPER(peran_ang) LIKE \'KOORDINATOR%\' THEN 10
+             WHEN UPPER(peran_ang) LIKE \'SEKSI%\' THEN 11
+             ELSE 12 END
+    ) AS urutan, ua.nama as nama_unsur2,s.nama as nama_sekolah,l.ptk_id_anggota_1,l.ptk_id_anggota_2,l.ptk_id_anggota_3,* 
+        FROM [TPPK].[dbo].[kepanitiaan] k
+        LEFT JOIN TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+        LEFT JOIN Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+        LEFT JOIN [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+        LEFT JOIN [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+        WHERE k.sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0
+        AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                      FROM [TPPK].[dbo].[kepanitiaan] 
+                      WHERE sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0)
+        ORDER BY urutan, peran_ang ASC, ptk_id DESC', [...])
+ 2 APPPATH\Controllers\InputData.php(2089): App\Models\M_tppk->getDaftarAnggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 09:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 09:10:47 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/daftar_anggota_tppk/simpan.php', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 09:10:51 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/daftar_anggota_tppk/simpan.php', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 09:10:54 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/daftar_anggota_tppk/simpan.php', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 09:10:56 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/daftar_anggota_tppk/simpan.php', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 09:10:59 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/daftar_anggota_tppk/simpan.php', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 09:11:03 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/daftar_anggota_tppk/simpan.php', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 09:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 09:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-17 10:17:21 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'CASE'.
+CRITICAL - 2024-02-17 10:17:21 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'CASE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(568): CodeIgniter\Database\BaseConnection->query('(CASE WHEN UPPER(peran_ang) LIKE \'PELINDUNG%\' THEN 1
+             WHEN UPPER(peran_ang) LIKE \'PEMBINA%\' THEN 2
+             WHEN UPPER(peran_ang) LIKE \'PENGARAH%\' THEN 3
+             WHEN UPPER(peran_ang) LIKE \'PENANGGUNG%\' THEN 4
+             WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 5
+             WHEN UPPER(peran_ang) LIKE \'WAKIL%\' THEN 6
+             WHEN UPPER(peran_ang) LIKE \'SEKRETARIS%\' THEN 7
+             WHEN UPPER(peran_ang) LIKE \'BENDAHARA%\' THEN 8
+             WHEN UPPER(peran_ang) LIKE \'HUMAS%\' THEN 9
+             WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 10
+             WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 11
+             WHEN UPPER(peran_ang) LIKE \'SEKSI%\' THEN 12
+             ELSE 13 END
+    ) AS urutan, ua.nama as nama_unsur2,s.nama as nama_sekolah,l.ptk_id_anggota_1,l.ptk_id_anggota_2,l.ptk_id_anggota_3,* 
+        FROM [TPPK].[dbo].[kepanitiaan] k
+        LEFT JOIN TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+        LEFT JOIN Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+        LEFT JOIN [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+        LEFT JOIN [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+        WHERE k.sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0
+        AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                      FROM [TPPK].[dbo].[kepanitiaan] 
+                      WHERE sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0)
+        ORDER BY urutan,k.nm_ang ', [...])
+ 2 APPPATH\Controllers\InputData.php(2089): App\Models\M_tppk->getDaftarAnggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 10:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-17 10:18:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'ptk_id'.
+CRITICAL - 2024-02-17 10:18:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'ptk_id'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(568): CodeIgniter\Database\BaseConnection->query('SELECT (CASE WHEN UPPER(peran_ang) LIKE \'PELINDUNG%\' THEN 1
+             WHEN UPPER(peran_ang) LIKE \'PEMBINA%\' THEN 2
+             WHEN UPPER(peran_ang) LIKE \'PENGARAH%\' THEN 3
+             WHEN UPPER(peran_ang) LIKE \'PENANGGUNG%\' THEN 4
+             WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 5
+             WHEN UPPER(peran_ang) LIKE \'WAKIL%\' THEN 6
+             WHEN UPPER(peran_ang) LIKE \'SEKRETARIS%\' THEN 7
+             WHEN UPPER(peran_ang) LIKE \'BENDAHARA%\' THEN 8
+             WHEN UPPER(peran_ang) LIKE \'HUMAS%\' THEN 9
+             WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 10
+             WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 11
+             WHEN UPPER(peran_ang) LIKE \'SEKSI%\' THEN 12
+             ELSE 13 END
+    ) AS urutan, ua.nama as nama_unsur2,s.nama as nama_sekolah,l.ptk_id_anggota_1,l.ptk_id_anggota_2,l.ptk_id_anggota_3,* 
+        FROM [TPPK].[dbo].[kepanitiaan] k
+        LEFT JOIN TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+        LEFT JOIN Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+        LEFT JOIN [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+        LEFT JOIN [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+        WHERE k.sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0
+        AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                      FROM [TPPK].[dbo].[kepanitiaan] 
+                      WHERE sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0)
+        ORDER BY urutan,ptk_id,k.nm_ang ', [...])
+ 2 APPPATH\Controllers\InputData.php(2089): App\Models\M_tppk->getDaftarAnggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 10:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 10:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 10:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 10:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-17 10:21:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-17 10:21:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(568): CodeIgniter\Database\BaseConnection->query('SELECT (CASE WHEN UPPER(peran_ang) LIKE \'PELINDUNG%\' THEN 1
+             WHEN UPPER(peran_ang) LIKE \'PEMBINA%\' THEN 2
+             WHEN UPPER(peran_ang) LIKE \'PENGARAH%\' THEN 3
+             WHEN UPPER(peran_ang) LIKE \'PENANGGUNG%\' THEN 4
+             WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 5
+             WHEN UPPER(peran_ang) LIKE \'WAKIL%\' THEN 6
+             WHEN UPPER(peran_ang) LIKE \'SEKRETARIS%\' THEN 7
+             WHEN UPPER(peran_ang) LIKE \'BENDAHARA%\' THEN 8
+             WHEN UPPER(peran_ang) LIKE \'HUMAS%\' THEN 9
+             WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 10
+             WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 11
+             WHEN UPPER(peran_ang) LIKE \'SEKSI%\' THEN 12
+             ELSE 13 END
+    ) AS urutan, (CASE WHEN ptk.id is NULL THEN 0 ELSE 1) AS urutan2, ua.nama as nama_unsur2,s.nama as nama_sekolah,l.ptk_id_anggota_1,l.ptk_id_anggota_2,l.ptk_id_anggota_3,* 
+        FROM [TPPK].[dbo].[kepanitiaan] k
+        LEFT JOIN TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+        LEFT JOIN Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+        LEFT JOIN [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+        LEFT JOIN [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+        WHERE k.sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0
+        AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                      FROM [TPPK].[dbo].[kepanitiaan] 
+                      WHERE sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0)
+        ORDER BY urutan, urutan2 DESC, k.nm_ang ASC ', [...])
+ 2 APPPATH\Controllers\InputData.php(2089): App\Models\M_tppk->getDaftarAnggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 10:21:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "ptk.id" could not be bound.
+CRITICAL - 2024-02-17 10:21:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "ptk.id" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(568): CodeIgniter\Database\BaseConnection->query('SELECT (CASE WHEN UPPER(peran_ang) LIKE \'PELINDUNG%\' THEN 1
+             WHEN UPPER(peran_ang) LIKE \'PEMBINA%\' THEN 2
+             WHEN UPPER(peran_ang) LIKE \'PENGARAH%\' THEN 3
+             WHEN UPPER(peran_ang) LIKE \'PENANGGUNG%\' THEN 4
+             WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 5
+             WHEN UPPER(peran_ang) LIKE \'WAKIL%\' THEN 6
+             WHEN UPPER(peran_ang) LIKE \'SEKRETARIS%\' THEN 7
+             WHEN UPPER(peran_ang) LIKE \'BENDAHARA%\' THEN 8
+             WHEN UPPER(peran_ang) LIKE \'HUMAS%\' THEN 9
+             WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 10
+             WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 11
+             WHEN UPPER(peran_ang) LIKE \'SEKSI%\' THEN 12
+             ELSE 13 END
+    ) AS urutan, (CASE WHEN ptk.id is NULL THEN 0 ELSE 1 END) AS urutan2, ua.nama as nama_unsur2,s.nama as nama_sekolah,l.ptk_id_anggota_1,l.ptk_id_anggota_2,l.ptk_id_anggota_3,* 
+        FROM [TPPK].[dbo].[kepanitiaan] k
+        LEFT JOIN TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+        LEFT JOIN Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+        LEFT JOIN [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+        LEFT JOIN [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+        WHERE k.sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0
+        AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                      FROM [TPPK].[dbo].[kepanitiaan] 
+                      WHERE sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0)
+        ORDER BY urutan, urutan2 DESC, k.nm_ang ASC ', [...])
+ 2 APPPATH\Controllers\InputData.php(2089): App\Models\M_tppk->getDaftarAnggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 10:21:44 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ptk'.
+CRITICAL - 2024-02-17 10:21:44 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ptk'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(568): CodeIgniter\Database\BaseConnection->query('SELECT (CASE WHEN UPPER(peran_ang) LIKE \'PELINDUNG%\' THEN 1
+             WHEN UPPER(peran_ang) LIKE \'PEMBINA%\' THEN 2
+             WHEN UPPER(peran_ang) LIKE \'PENGARAH%\' THEN 3
+             WHEN UPPER(peran_ang) LIKE \'PENANGGUNG%\' THEN 4
+             WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 5
+             WHEN UPPER(peran_ang) LIKE \'WAKIL%\' THEN 6
+             WHEN UPPER(peran_ang) LIKE \'SEKRETARIS%\' THEN 7
+             WHEN UPPER(peran_ang) LIKE \'BENDAHARA%\' THEN 8
+             WHEN UPPER(peran_ang) LIKE \'HUMAS%\' THEN 9
+             WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 10
+             WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 11
+             WHEN UPPER(peran_ang) LIKE \'SEKSI%\' THEN 12
+             ELSE 13 END
+    ) AS urutan, (CASE WHEN k.ptk.id is NULL THEN 0 ELSE 1 END) AS urutan2, ua.nama as nama_unsur2,s.nama as nama_sekolah,l.ptk_id_anggota_1,l.ptk_id_anggota_2,l.ptk_id_anggota_3,* 
+        FROM [TPPK].[dbo].[kepanitiaan] k
+        LEFT JOIN TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+        LEFT JOIN Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+        LEFT JOIN [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+        LEFT JOIN [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+        WHERE k.sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0
+        AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                      FROM [TPPK].[dbo].[kepanitiaan] 
+                      WHERE sekolah_id = :instansi: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0)
+        ORDER BY urutan, urutan2 DESC, k.nm_ang ASC ', [...])
+ 2 APPPATH\Controllers\InputData.php(2089): App\Models\M_tppk->getDaftarAnggota('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk('20104471')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 10:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-17 10:22:12 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\TPPK.php on line 230.
+ 1 APPPATH\Controllers\TPPK.php(230): preg_replace('/[^a-zA-Z0-9]/', 'D:\\laragon\\www\\tppk', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 10:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 10:22:39 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/daftar_anggota_tppk/simpan.php', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 10:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 10:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 10:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 10:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 10:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 10:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 10:56:12 --> Class "UserModel" not found
+in APPPATH\Helpers\pengguna_helper.php on line 5.
+ 1 APPPATH\Controllers\InputData.php(2102): cekstatuskeanggotaan(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 10:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 10:57:41 --> Call to undefined function App\Controllers\cekstatuskeanggotaan()
+in APPPATH\Controllers\InputData.php on line 2102.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 10:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 10:58:27 --> Call to undefined function App\Controllers\cekstatuskeanggotaan()
+in APPPATH\Controllers\InputData.php on line 2102.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 10:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 10:59:37 --> Call to undefined function App\Controllers\cekstatuskeanggotaan()
+in APPPATH\Controllers\InputData.php on line 2103.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 11:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-17 11:00:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'as'.
+CRITICAL - 2024-02-17 11:00:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'as'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2687): CodeIgniter\Database\BaseConnection->query('ua.nama as nama_unsur2,l.ptk_id_anggota_1,l.ptk_id_anggota_2,l.ptk_id_anggota_3,* 
+        FROM [TPPK].[dbo].[kepanitiaan] k
+        LEFT JOIN TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+        LEFT JOIN Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+        LEFT JOIN Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+        LEFT JOIN [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+        LEFT JOIN [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+        WHERE k.sekolah_id = :sekolah_id: AND k.ptk_id = :ptk_id: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0
+        AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                      FROM [TPPK].[dbo].[kepanitiaan] 
+                      WHERE sekolah_id = :sekolah_id: AND k.ptk_id = :ptk_id: AND soft_delete_kepanitiaan=0 AND soft_delete_anggota_panitia=0)', [...])
+ 2 APPPATH\Helpers\pengguna_helper.php(9): App\Models\M_tppk->getstatuskeanggotaan('907DDA96-2BF5-E011-88C1-E5F5F89A8634', '90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 APPPATH\Controllers\InputData.php(2101): cekstatuskeanggotaan('907DDA96-2BF5-E011-88C1-E5F5F89A8634', '90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 11:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 11:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 11:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 11:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 11:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 11:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 11:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-17 11:49:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2024-02-17 11:49:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2726): CodeIgniter\Database\BaseConnection->query('SELECT 
+                (CASE 
+                    WHEN UPPER(peran_ang) LIKE \'PELINDUNG%\' THEN 1
+                    WHEN UPPER(peran_ang) LIKE \'PEMBINA%\' THEN 2
+                    WHEN UPPER(peran_ang) LIKE \'PENGARAH%\' THEN 3
+                    WHEN UPPER(peran_ang) LIKE \'PENANGGUNG%\' THEN 4
+                    WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 5
+                    WHEN UPPER(peran_ang) LIKE \'WAKIL%\' THEN 6
+                    WHEN UPPER(peran_ang) LIKE \'SEKRETARIS%\' THEN 7
+                    WHEN UPPER(peran_ang) LIKE \'BENDAHARA%\' THEN 8
+                    WHEN UPPER(peran_ang) LIKE \'HUMAS%\' THEN 9
+                    WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 10
+                    WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 11
+                    WHEN UPPER(peran_ang) LIKE \'SEKSI%\' THEN 12
+                    ELSE 13 
+                END) AS urutan, 
+                ua.nama as nama_unsur2,
+                l.ptk_id_anggota_1,
+                l.ptk_id_anggota_2,
+                l.ptk_id_anggota_3,
+                *,
+                CASE 
+                    WHEN DATEADD(YEAR, 2, (SELECT MAX(tmt_sk_tugas) 
+                                            FROM [TPPK].[dbo].[kepanitiaan] 
+                                            WHERE sekolah_id = \'34234324dfdsf\' 
+                                                AND soft_delete_kepanitiaan = 0 
+                                                AND soft_delete_anggota_panitia = 0)
+                        ) < GETDATE() THEN \'kadaluwarsa\' 
+                    ELSE \'\' 
+                END AS status_kadaluwarsa
+            FROM 
+                [TPPK].[dbo].[kepanitiaan] k
+            LEFT JOIN 
+                TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+            LEFT JOIN 
+                Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+            LEFT JOIN 
+                Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+            LEFT JOIN 
+                [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+            LEFT JOIN 
+                [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+            WHERE 
+                k.sekolah_id = :sekolah_id: 
+                AND soft_delete_kepanitiaan = 0 
+                AND soft_delete_anggota_panitia = 0
+                AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                                    FROM [TPPK].[dbo].[kepanitiaan] 
+                                    WHERE sekolah_id = :sekolah_id: 
+                                        AND soft_delete_kepanitiaan = 0 
+                                        AND soft_delete_anggota_panitia = 0)', [...])
+ 2 APPPATH\Controllers\InputData.php(2130): App\Models\M_tppk->cekketua('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 11:49:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2024-02-17 11:49:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2726): CodeIgniter\Database\BaseConnection->query('SELECT 
+                (CASE 
+                    WHEN UPPER(peran_ang) LIKE \'PELINDUNG%\' THEN 1
+                    WHEN UPPER(peran_ang) LIKE \'PEMBINA%\' THEN 2
+                    WHEN UPPER(peran_ang) LIKE \'PENGARAH%\' THEN 3
+                    WHEN UPPER(peran_ang) LIKE \'PENANGGUNG%\' THEN 4
+                    WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 5
+                    WHEN UPPER(peran_ang) LIKE \'WAKIL%\' THEN 6
+                    WHEN UPPER(peran_ang) LIKE \'SEKRETARIS%\' THEN 7
+                    WHEN UPPER(peran_ang) LIKE \'BENDAHARA%\' THEN 8
+                    WHEN UPPER(peran_ang) LIKE \'HUMAS%\' THEN 9
+                    WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 10
+                    WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 11
+                    WHEN UPPER(peran_ang) LIKE \'SEKSI%\' THEN 12
+                    ELSE 13 
+                END) AS urutan, 
+                ua.nama as nama_unsur2,
+                l.ptk_id_anggota_1,
+                l.ptk_id_anggota_2,
+                l.ptk_id_anggota_3,
+                *,
+                CASE 
+                    WHEN DATEADD(YEAR, 2, (SELECT MAX(tmt_sk_tugas) 
+                                            FROM [TPPK].[dbo].[kepanitiaan] 
+                                            WHERE sekolah_id = \'34234324dfdsf\' 
+                                                AND soft_delete_kepanitiaan = 0 
+                                                AND soft_delete_anggota_panitia = 0)
+                        ) < GETDATE() THEN \'kadaluwarsa\' 
+                    ELSE \'\' 
+                END AS status_kadaluwarsa
+            FROM 
+                [TPPK].[dbo].[kepanitiaan] k
+            LEFT JOIN 
+                TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+            LEFT JOIN 
+                Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+            LEFT JOIN 
+                Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+            LEFT JOIN 
+                [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+            LEFT JOIN 
+                [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+            WHERE 
+                k.sekolah_id = :sekolah_id: 
+                AND soft_delete_kepanitiaan = 0 
+                AND soft_delete_anggota_panitia = 0
+                AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                                    FROM [TPPK].[dbo].[kepanitiaan] 
+                                    WHERE sekolah_id = :sekolah_id: 
+                                        AND soft_delete_kepanitiaan = 0 
+                                        AND soft_delete_anggota_panitia = 0)', [...])
+ 2 APPPATH\Controllers\InputData.php(2130): App\Models\M_tppk->cekketua('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 11:51:03 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+CRITICAL - 2024-02-17 11:51:03 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting from a character string to uniqueidentifier.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2717): CodeIgniter\Database\BaseConnection->query('SELECT 
+                (CASE 
+                    WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 1
+                    WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 2
+                    WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 3
+                    ELSE 4
+                END) AS urutan, 
+                ua.nama as nama_unsur2,
+                l.ptk_id_anggota_1,
+                l.ptk_id_anggota_2,
+                l.ptk_id_anggota_3,
+                *,
+                CASE 
+                    WHEN DATEADD(YEAR, 2, (SELECT MAX(tmt_sk_tugas) 
+                                            FROM [TPPK].[dbo].[kepanitiaan] 
+                                            WHERE sekolah_id = \'34234324dfdsf\' 
+                                                AND soft_delete_kepanitiaan = 0 
+                                                AND soft_delete_anggota_panitia = 0)
+                        ) < GETDATE() THEN \'kadaluwarsa\' 
+                    ELSE \'\' 
+                END AS status_kadaluwarsa
+            FROM 
+                [TPPK].[dbo].[kepanitiaan] k
+            LEFT JOIN 
+                TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+            LEFT JOIN 
+                Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+            LEFT JOIN 
+                Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+            LEFT JOIN 
+                [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+            LEFT JOIN 
+                [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+            WHERE 
+                k.sekolah_id = :sekolah_id: 
+                AND soft_delete_kepanitiaan = 0 
+                AND soft_delete_anggota_panitia = 0
+                AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                                    FROM [TPPK].[dbo].[kepanitiaan] 
+                                    WHERE sekolah_id = :sekolah_id: 
+                                        AND soft_delete_kepanitiaan = 0 
+                                        AND soft_delete_anggota_panitia = 0)', [...])
+ 2 APPPATH\Controllers\InputData.php(2130): App\Models\M_tppk->cekketua('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 12:44:57 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(2719): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(2130): App\Models\M_tppk->cekketua('90B39B94-2BF5-E...')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->tes()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-17 12:44:57 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(2719): CodeIgniter\Database\BaseConnection->query('SELECT 
+                (CASE 
+                    WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 1
+                    WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 2
+                    WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 3
+                    ELSE 4
+                END) AS urutan, 
+                ua.nama as nama_unsur2,
+                l.ptk_id_ketua,
+                l.ptk_id_anggota_1,
+                l.ptk_id_anggota_2,
+                l.ptk_id_anggota_3,
+                *,
+                CASE 
+                    WHEN DATEADD(YEAR, 2, (SELECT MAX(tmt_sk_tugas) 
+                                            FROM [TPPK].[dbo].[kepanitiaan] 
+                                            WHERE sekolah_id = :sekolah_id: 
+                                                AND soft_delete_kepanitiaan = 0 
+                                                AND soft_delete_anggota_panitia = 0)
+                        ) < GETDATE() THEN \'kadaluwarsa\' 
+                    ELSE \'aktif\' 
+                END AS status_kadaluwarsa
+            FROM 
+                [TPPK].[dbo].[kepanitiaan] k
+            LEFT JOIN 
+                TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+            LEFT JOIN 
+                Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+            LEFT JOIN 
+                Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+            LEFT JOIN 
+                [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+            LEFT JOIN 
+                [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+            WHERE 
+                k.sekolah_id = :sekolah_id: 
+                AND soft_delete_kepanitiaan = 0 
+                AND soft_delete_anggota_panitia = 0
+                AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                                    FROM [TPPK].[dbo].[kepanitiaan] 
+                                    WHERE sekolah_id = :sekolah_id: 
+                                        AND soft_delete_kepanitiaan = 0 
+                                        AND soft_delete_anggota_panitia = 0)
+                                        ORDER BY urutan', [...])
+ 3 APPPATH\Controllers\InputData.php(2130): App\Models\M_tppk->cekketua('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 12:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 12:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 13:17:34 --> Undefined array key "ptk_id"
+in APPPATH\Models\M_tppk.php on line 2730.
+ 1 APPPATH\Models\M_tppk.php(2730): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ptk_id"', 'APPPATH\\Models\\M_tppk.php', 2730)
+ 2 APPPATH\Controllers\InputData.php(2143): App\Models\M_tppk->update_login_ketua([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 13:20:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'B39B94'.
+CRITICAL - 2024-02-17 13:20:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'B39B94'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2743): CodeIgniter\Database\BaseConnection->query('INSERT INTO [TPPK].[dbo].[login_tppk] (sekolah_id, sk_tugas, ptk_id_ketua) VALUES (90B39B94-2BF5-E011-9D81-4DB8C8802639, ,907DDA96-2BF5-E011-88C1-E5F5F89A8634)')
+ 2 APPPATH\Controllers\InputData.php(2144): App\Models\M_tppk->update_login_ketua([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 13:23:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'B39B94'.
+CRITICAL - 2024-02-17 13:23:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'B39B94'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2744): CodeIgniter\Database\BaseConnection->query('INSERT INTO [TPPK].[dbo].[login_tppk] (sekolah_id, sk_tugas, ptk_id_ketua) VALUES (90B39B94-2BF5-E011-9D81-4DB8C8802639, , 907DDA96-2BF5-E011-88C1-E5F5F89A8634)')
+ 2 APPPATH\Controllers\InputData.php(2144): App\Models\M_tppk->update_login_ketua([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 13:24:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'B39B94'.
+CRITICAL - 2024-02-17 13:24:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'B39B94'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2744): CodeIgniter\Database\BaseConnection->query('INSERT INTO [TPPK].[dbo].[login_tppk] (sekolah_id, sk_tugas, ptk_id_ketua) VALUES (90B39B94-2BF5-E011-9D81-4DB8C8802639, , 907DDA96-2BF5-E011-88C1-E5F5F89A8634)')
+ 2 APPPATH\Controllers\InputData.php(2144): App\Models\M_tppk->update_login_ketua([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 13:35:19 --> Undefined array key "ptk_id"
+in APPPATH\Controllers\InputData.php on line 2136.
+ 1 APPPATH\Controllers\InputData.php(2136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ptk_id"', 'APPPATH\\Controllers\\InputData.php', 2136)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 13:36:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'CASE'.
+CRITICAL - 2024-02-17 13:36:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'CASE'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2719): CodeIgniter\Database\BaseConnection->query('SELECT 
+                (CASE 
+                    WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 1
+                    WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 2
+                    WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 3
+                    ELSE 4
+                END) AS urutan, 
+                ua.nama as nama_unsur2,
+                l.ptk_id_ketua,
+                l.ptk_id_anggota_1,
+                l.ptk_id_anggota_2,
+                l.ptk_id_anggota_3,
+                k.sk_tugas,k.ptk_id
+                CASE 
+                    WHEN DATEADD(YEAR, 2, (SELECT MAX(tmt_sk_tugas) 
+                                            FROM [TPPK].[dbo].[kepanitiaan] 
+                                            WHERE sekolah_id = :sekolah_id: 
+                                                AND soft_delete_kepanitiaan = 0 
+                                                AND soft_delete_anggota_panitia = 0)
+                        ) < GETDATE() THEN \'kadaluwarsa\' 
+                    ELSE \'aktif\' 
+                END AS status_kadaluwarsa
+            FROM 
+                [TPPK].[dbo].[kepanitiaan] k
+            LEFT JOIN 
+                TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+            LEFT JOIN 
+                Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+            LEFT JOIN 
+                Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+            LEFT JOIN 
+                [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+            LEFT JOIN 
+                [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+            WHERE 
+                k.sekolah_id = :sekolah_id: 
+                AND soft_delete_kepanitiaan = 0 
+                AND soft_delete_anggota_panitia = 0
+                AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                                    FROM [TPPK].[dbo].[kepanitiaan] 
+                                    WHERE sekolah_id = :sekolah_id: 
+                                        AND soft_delete_kepanitiaan = 0 
+                                        AND soft_delete_anggota_panitia = 0)
+                                        ORDER BY urutan', [...])
+ 2 APPPATH\Controllers\InputData.php(2130): App\Models\M_tppk->cekketua('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-17 13:38:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'DDA96'.
+CRITICAL - 2024-02-17 13:38:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'DDA96'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2744): CodeIgniter\Database\BaseConnection->query('INSERT INTO [TPPK].[dbo].[login_tppk] (sekolah_id, sk_tugas, ptk_id_ketua) VALUES (\'90B39B94-2BF5-E011-9D81-4DB8C8802639\', \'4 TAHUN 2024\', 907DDA96-2BF5-E011-88C1-E5F5F89A8634\')')
+ 2 APPPATH\Controllers\InputData.php(2146): App\Models\M_tppk->update_login_ketua([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 13:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-17 13:53:12 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\TPPK.php on line 230.
+ 1 APPPATH\Controllers\TPPK.php(230): preg_replace('/[^a-zA-Z0-9]/', 'D:\\laragon\\www\\tppk', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20104472')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 13:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 13:55:55 --> Undefined variable $sekolah_id
+in APPPATH\Controllers\InputData.php on line 2133.
+ 1 APPPATH\Controllers\InputData.php(2133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sekolah_id', 'APPPATH\\Controllers\\InputData.php', 2133)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 13:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 13:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 13:56:18 --> Undefined array key "ptk_id_anggota1"
+in APPPATH\Helpers\pengguna_helper.php on line 15.
+ 1 APPPATH\Helpers\pengguna_helper.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ptk_id_anggota1"', 'APPPATH\\Helpers\\pengguna_helper.php', 15)
+ 2 APPPATH\Controllers\InputData.php(2104): cekstatuskeanggotaan('90B39B94-2BF5-E011-9D81-4DB8C8802639', '66111A84-5B4D-11E5-94E2-A7F79F7D0280')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 13:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 13:56:18 --> Undefined array key "ptk_id_anggota1"
+in APPPATH\Helpers\pengguna_helper.php on line 15.
+ 1 APPPATH\Helpers\pengguna_helper.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ptk_id_anggota1"', 'APPPATH\\Helpers\\pengguna_helper.php', 15)
+ 2 APPPATH\Controllers\InputData.php(2104): cekstatuskeanggotaan('90B39B94-2BF5-E011-9D81-4DB8C8802639', '66111A84-5B4D-11E5-94E2-A7F79F7D0280')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 13:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 13:56:39 --> Cannot access offset of type string on string
+in APPPATH\Controllers\InputData.php on line 2106.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 14:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 14:20:28 --> Cannot access offset of type string on string
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 141.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 4 APPPATH\Controllers\InputData.php(2117): view('tppk/daftaranggotatppk', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 14:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 14:23:31 --> Cannot access offset of type string on string
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 141.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 4 APPPATH\Controllers\InputData.php(2119): view('tppk/daftaranggotatppk', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 14:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-17 14:26:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+CRITICAL - 2024-02-17 14:26:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ':'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(424): CodeIgniter\Database\BaseConnection->query('SELECT nama, npsn FROM [arsip].[dbo].[sekolah] where sekolah_id=:sekolah_id:', [...])
+ 2 APPPATH\Controllers\InputData.php(2112): App\Models\M_tppk->getSekolahuId('90B39B94-2BF5-E011-9D81-4DB8C8802639')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 14:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 14:56:20 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/simpan_login_anggota', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 14:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:57:08 --> CSRF token verified.
+INFO - 2024-02-17 14:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:57:45 --> CSRF token verified.
+INFO - 2024-02-17 14:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 14:58:22 --> CSRF token verified.
+INFO - 2024-02-17 14:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 15:00:17 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\InputData.php on line 2135.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('inputdata/daftar_anggota_tppk')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('inputdata/daftar_anggota_tppk')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('inputdata/daftar_anggota_tppk')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 15:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 15:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 15:03:46 --> Undefined array key "sk_tugas"
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 242.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sk_tugas"', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 242)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2118): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 15:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 15:04:11 --> Undefined array key "sk_tugas"
+in APPPATH\Views\tppk\daftaranggotatppk.php on line 242.
+ 1 APPPATH\Views\tppk\daftaranggotatppk.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sk_tugas"', 'APPPATH\\Views\\tppk\\daftaranggotatppk.php', 242)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggotatppk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggotatppk', [], true)
+ 5 APPPATH\Controllers\InputData.php(2119): view('tppk/daftaranggotatppk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 15:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 15:05:05 --> CSRF token verified.
+INFO - 2024-02-17 15:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 15:05:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\InputData.php(2134): CodeIgniter\Model->__call('simpan_login_anggota', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan_login_anggota()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 16:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-17 16:37:30 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(2729): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#3 D:\laragon\www\tppk\app\Helpers\pengguna_helper.php(9): App\Models\M_tppk->cekketua('00E09B94-2BF5-E...')
+#4 D:\laragon\www\tppk\app\Controllers\InputData.php(2105): cekstatuskeanggotaan('00E09B94-2BF5-E...', '66111A84-5B4D-1...')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-02-17 16:37:30 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(2729): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#3 D:\laragon\www\tppk\app\Helpers\pengguna_helper.php(9): App\Models\M_tppk->cekketua('00E09B94-2BF5-E...')
+#4 D:\laragon\www\tppk\app\Controllers\InputData.php(2105): cekstatuskeanggotaan('00E09B94-2BF5-E...', '66111A84-5B4D-1...')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-17 16:37:30 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(2729): CodeIgniter\Database\BaseConnection->query('SELECT 
+                (CASE 
+                    WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 1
+                    WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 2
+                    WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 3
+                    ELSE 4
+                END) AS urutan, 
+                ua.nama as nama_unsur2,
+                l.ptk_id_ketua,
+                l.ptk_id_anggota_1,
+                l.ptk_id_anggota_2,
+                l.ptk_id_anggota_3,
+                k.sk_tugas,k.ptk_id,
+                CASE 
+                    WHEN DATEADD(YEAR, 2, (SELECT MAX(tmt_sk_tugas) 
+                                            FROM [TPPK].[dbo].[kepanitiaan] 
+                                            WHERE sekolah_id = :sekolah_id: 
+                                                AND soft_delete_kepanitiaan = 0 
+                                                AND soft_delete_anggota_panitia = 0)
+                        ) < GETDATE() THEN \'kadaluwarsa\' 
+                    ELSE \'aktif\' 
+                END AS status_kadaluwarsa
+            FROM 
+                [TPPK].[dbo].[kepanitiaan] k
+            LEFT JOIN 
+                TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+            LEFT JOIN 
+                Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+            LEFT JOIN 
+                Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+            LEFT JOIN 
+                [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+            LEFT JOIN 
+                [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+            WHERE 
+                k.sekolah_id = :sekolah_id: 
+                AND soft_delete_kepanitiaan = 0 
+                AND soft_delete_anggota_panitia = 0
+                AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                                    FROM [TPPK].[dbo].[kepanitiaan] 
+                                    WHERE sekolah_id = :sekolah_id: 
+                                        AND soft_delete_kepanitiaan = 0 
+                                        AND soft_delete_anggota_panitia = 0)
+                                        ORDER BY urutan', [...])
+ 3 APPPATH\Helpers\pengguna_helper.php(9): App\Models\M_tppk->cekketua('00E09B94-2BF5-E011-9894-31473205A536')
+ 4 APPPATH\Controllers\InputData.php(2105): cekstatuskeanggotaan('00E09B94-2BF5-E011-9894-31473205A536', '66111A84-5B4D-11E5-94E2-A7F79F7D0280')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-17 16:37:30 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(2729): CodeIgniter\Database\BaseConnection->query('SELECT 
+                (CASE 
+                    WHEN UPPER(peran_ang) LIKE \'KETUA%\' THEN 1
+                    WHEN UPPER(peran_ang) LIKE \'KOOR%\' THEN 2
+                    WHEN UPPER(peran_ang) LIKE \'KORD%\' THEN 3
+                    ELSE 4
+                END) AS urutan, 
+                ua.nama as nama_unsur2,
+                l.ptk_id_ketua,
+                l.ptk_id_anggota_1,
+                l.ptk_id_anggota_2,
+                l.ptk_id_anggota_3,
+                k.sk_tugas,k.ptk_id,
+                CASE 
+                    WHEN DATEADD(YEAR, 2, (SELECT MAX(tmt_sk_tugas) 
+                                            FROM [TPPK].[dbo].[kepanitiaan] 
+                                            WHERE sekolah_id = :sekolah_id: 
+                                                AND soft_delete_kepanitiaan = 0 
+                                                AND soft_delete_anggota_panitia = 0)
+                        ) < GETDATE() THEN \'kadaluwarsa\' 
+                    ELSE \'aktif\' 
+                END AS status_kadaluwarsa
+            FROM 
+                [TPPK].[dbo].[kepanitiaan] k
+            LEFT JOIN 
+                TPPK.dbo.ref_unsur_anggota ua ON ua.id_unsur_anggota = k.unsur_ang 
+            LEFT JOIN 
+                Arsip.dbo.ptk p ON p.ptk_id = k.ptk_id
+            LEFT JOIN 
+                Arsip.dbo.sekolah s ON s.sekolah_id = p.sekolah_id
+            LEFT JOIN 
+                [Referensi].[ref].[jenis_ptk] r ON r.jenis_ptk_id = p.jenis_ptk_id 
+            LEFT JOIN 
+                [TPPK].[dbo].[login_tppk] l ON l.sk_tugas = k.sk_tugas 
+            WHERE 
+                k.sekolah_id = :sekolah_id: 
+                AND soft_delete_kepanitiaan = 0 
+                AND soft_delete_anggota_panitia = 0
+                AND tmt_sk_tugas = (SELECT MAX(tmt_sk_tugas) 
+                                    FROM [TPPK].[dbo].[kepanitiaan] 
+                                    WHERE sekolah_id = :sekolah_id: 
+                                        AND soft_delete_kepanitiaan = 0 
+                                        AND soft_delete_anggota_panitia = 0)
+                                        ORDER BY urutan', [...])
+ 3 APPPATH\Helpers\pengguna_helper.php(9): App\Models\M_tppk->cekketua('00E09B94-2BF5-E011-9894-31473205A536')
+ 4 APPPATH\Controllers\InputData.php(2105): cekstatuskeanggotaan('00E09B94-2BF5-E011-9894-31473205A536', '66111A84-5B4D-11E5-94E2-A7F79F7D0280')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_anggota_tppk()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 16:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:37:59 --> CSRF token verified.
+INFO - 2024-02-17 16:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:38:55 --> CSRF token verified.
+INFO - 2024-02-17 16:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 16:39:29 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/simpan_login_anggota', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 16:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:40:57 --> CSRF token verified.
+INFO - 2024-02-17 16:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:41:05 --> CSRF token verified.
+INFO - 2024-02-17 16:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:45:35 --> CSRF token verified.
+INFO - 2024-02-17 16:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 16:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 17:33:26 --> Uninitialized string offset 0
+in SYSTEMPATH\CodeIgniter.php on line 892.
+ 1 SYSTEMPATH\CodeIgniter.php(892): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 0', 'SYSTEMPATH\\CodeIgniter.php', 892)
+ 2 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 17:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 17:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 18:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 18:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-17 18:16:51 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\TPPK.php on line 233.
+ 1 APPPATH\Controllers\TPPK.php(233): preg_replace('/[^a-zA-Z0-9]/', 'D:\\laragon\\www\\tppk', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20613768')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 18:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-17 18:16:51 --> Attempt to read property "nama_operator" on string
+in APPPATH\Views\tppk\daftaranggota.php on line 409.
+ 1 APPPATH\Views\tppk\daftaranggota.php(409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_operator" on string', 'APPPATH\\Views\\tppk\\daftaranggota.php', 409)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(358): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20613768')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 18:20:05 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\TPPK.php on line 233.
+ 1 APPPATH\Controllers\TPPK.php(233): preg_replace('/[^a-zA-Z0-9]/', 'D:\\laragon\\www\\tppk', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20613768')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 18:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-17 20:31:58 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\TPPK.php on line 234.
+ 1 APPPATH\Controllers\TPPK.php(234): preg_replace('/[^a-zA-Z0-9]/', 'D:\\laragon\\www\\tppk', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20613768')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 20:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-17 20:33:31 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\TPPK.php on line 234.
+ 1 APPPATH\Controllers\TPPK.php(234): preg_replace('/[^a-zA-Z0-9]/', 'D:\\laragon\\www\\tppk', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20613768')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 20:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-17 20:35:24 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\TPPK.php on line 234.
+ 1 APPPATH\Controllers\TPPK.php(234): preg_replace('/[^a-zA-Z0-9]/', 'D:\\laragon\\www\\tppk', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20613768')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 20:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-17 20:35:53 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\TPPK.php on line 234.
+ 1 APPPATH\Controllers\TPPK.php(234): preg_replace('/[^a-zA-Z0-9]/', 'D:\\laragon\\www\\tppk', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20613768')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 20:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 20:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 20:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 20:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 21:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 21:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-17 21:59:38 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(2): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 21:59:38 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 21:59:38 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 21:59:38 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 21:59:38 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 21:59:38 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 21:59:38 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(116): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 22:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 22:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-17 22:00:40 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(2): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 22:00:40 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 22:00:40 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 22:00:40 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 22:00:40 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 22:00:40 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(113): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-17 22:00:40 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(116): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(2074): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-17 22:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-17 22:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

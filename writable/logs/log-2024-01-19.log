@@ -1,0 +1,308 @@
+INFO - 2024-01-19 08:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-19 08:10:27 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(3): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(1560): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-19 08:10:27 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(104): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(1560): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-19 08:10:27 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(104): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(1560): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-19 08:10:27 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(104): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(1560): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-19 08:10:27 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(104): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(1560): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-19 08:10:27 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(104): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(1560): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-19 08:10:27 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(1560): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 08:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 09:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 10:02:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 630.
+ 1 APPPATH\Controllers\InputData.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 630)
+ 2 APPPATH\Controllers\InputData.php(63): App\Controllers\InputData->npsn(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 10:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 10:02:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 630.
+ 1 APPPATH\Controllers\InputData.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 630)
+ 2 APPPATH\Controllers\InputData.php(63): App\Controllers\InputData->npsn(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 10:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 10:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 11:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 11:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 11:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 11:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 11:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 11:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 11:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 11:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 11:33:56 --> CSRF token verified.
+INFO - 2024-01-19 11:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 11:33:57 --> Undefined array key "tanggal_kejadian"
+in APPPATH\Models\M_tppk.php on line 1703.
+ 1 APPPATH\Models\M_tppk.php(1703): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_kejadian"', 'APPPATH\\Models\\M_tppk.php', 1703)
+ 2 APPPATH\Controllers\InputData.php(1403): App\Models\M_tppk->save_pelaporan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan_kasus()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 11:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 13:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 14:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 14:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 14:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-19 14:10:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'nik'.
+CRITICAL - 2024-01-19 14:10:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'nik'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1776): CodeIgniter\Database\BaseConnection->query('SELECT nik_ayah, nik_ibu, nik_wali, nama_ayah, nama_ibu_kandung, nama_wali 
+                FROM [Arsip].[dbo].[sekolah]
+                where nik = :niksiswa: AND (nik_ayah = :nikortu: OR nik_ibu = :nikortu: OR nik_wali = :nikortu:)', [...])
+ 2 APPPATH\Controllers\InputData.php(1350): App\Models\M_tppk->getnamaortu('3101026504131001', '3101021712780001')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 14:14:10 --> Call to a member function getRowArray() on array
+in APPPATH\Controllers\InputData.php on line 1350.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 14:21:56 --> Array to string conversion
+in APPPATH\Controllers\InputData.php on line 1376.
+ 1 APPPATH\Controllers\InputData.php(1376): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\InputData.php', 1376)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 14:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 14:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 15:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 15:10:19 --> Undefined array key "NAMA_LGKP"
+in APPPATH\Controllers\InputData.php on line 1381.
+ 1 APPPATH\Controllers\InputData.php(1381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NAMA_LGKP"', 'APPPATH\\Controllers\\InputData.php', 1381)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 15:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 15:12:36 --> Undefined array key "NAMA_LGKP"
+in APPPATH\Controllers\InputData.php on line 1383.
+ 1 APPPATH\Controllers\InputData.php(1383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NAMA_LGKP"', 'APPPATH\\Controllers\\InputData.php', 1383)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 15:12:44 --> Undefined array key "NAMA_LGKP"
+in APPPATH\Controllers\InputData.php on line 1383.
+ 1 APPPATH\Controllers\InputData.php(1383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NAMA_LGKP"', 'APPPATH\\Controllers\\InputData.php', 1383)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 15:15:05 --> Undefined array key "NAMA_LGKP"
+in APPPATH\Controllers\InputData.php on line 1383.
+ 1 APPPATH\Controllers\InputData.php(1383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NAMA_LGKP"', 'APPPATH\\Controllers\\InputData.php', 1383)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 15:17:58 --> Undefined array key "NAMA_LGKP"
+in APPPATH\Controllers\InputData.php on line 1381.
+ 1 APPPATH\Controllers\InputData.php(1381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NAMA_LGKP"', 'APPPATH\\Controllers\\InputData.php', 1381)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 15:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 15:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 15:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 16:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 16:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 16:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 16:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 16:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 16:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 17:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

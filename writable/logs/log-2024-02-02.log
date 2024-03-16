@@ -1,0 +1,108 @@
+INFO - 2024-02-02 08:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-02 15:32:30 --> Too few arguments to function App\Models\M_tppk::getTotalTPPK(), 1 passed in D:\laragon\www\tppk\app\Controllers\TPPK.php on line 34 and at least 2 expected
+in APPPATH\Models\M_tppk.php on line 607.
+ 1 APPPATH\Controllers\TPPK.php(34): App\Models\M_tppk->getTotalTPPK('20104471')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_npsn('20104471')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 15:32:42 --> Undefined variable $namalevel1
+in APPPATH\Views\tppk\data_tppksekolah.php on line 48.
+ 1 APPPATH\Views\tppk\data_tppksekolah.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namalevel1', 'APPPATH\\Views\\tppk\\data_tppksekolah.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah', [], true)
+ 5 APPPATH\Controllers\TPPK.php(36): view('tppk/data_tppksekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_npsn('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 15:33:19 --> Undefined variable $namalevel2
+in APPPATH\Views\tppk\data_tppksekolah.php on line 59.
+ 1 APPPATH\Views\tppk\data_tppksekolah.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namalevel2', 'APPPATH\\Views\\tppk\\data_tppksekolah.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah', [], true)
+ 5 APPPATH\Controllers\TPPK.php(37): view('tppk/data_tppksekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_npsn('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 15:33:25 --> Undefined variable $namapilihan
+in APPPATH\Views\tppk\data_tppksekolah.php on line 145.
+ 1 APPPATH\Views\tppk\data_tppksekolah.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namapilihan', 'APPPATH\\Views\\tppk\\data_tppksekolah.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah', [], true)
+ 5 APPPATH\Controllers\TPPK.php(38): view('tppk/data_tppksekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_npsn('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 15:33:44 --> Undefined variable $dafbentuk
+in APPPATH\Views\tppk\data_tppksekolah.php on line 162.
+ 1 APPPATH\Views\tppk\data_tppksekolah.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dafbentuk', 'APPPATH\\Views\\tppk\\data_tppksekolah.php', 162)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah', [], true)
+ 5 APPPATH\Controllers\TPPK.php(39): view('tppk/data_tppksekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_npsn('20104471')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 15:34:42 --> Undefined variable $datanas2
+in APPPATH\Views\tppk\tppk_lv1.php on line 17.
+ 1 APPPATH\Views\tppk\tppk_lv1.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datanas2', 'APPPATH\\Views\\tppk\\tppk_lv1.php', 17)
+ 2 APPPATH\Views\tppk\data_tppksekolah_npsn.php(239): include('APPPATH\\Views\\tppk\\tppk_lv1.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 6 APPPATH\Controllers\TPPK.php(39): view('tppk/data_tppksekolah_npsn', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_npsn('20104471')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 15:57:26 --> Undefined variable $datanas2
+in APPPATH\Views\tppk\tppk_lv1.php on line 17.
+ 1 APPPATH\Views\tppk\tppk_lv1.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datanas2', 'APPPATH\\Views\\tppk\\tppk_lv1.php', 17)
+ 2 APPPATH\Views\tppk\data_tppksekolah_npsn.php(236): include('APPPATH\\Views\\tppk\\tppk_lv1.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 6 APPPATH\Controllers\TPPK.php(39): view('tppk/data_tppksekolah_npsn', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_npsn('20104471')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 15:57:41 --> Undefined variable $jml_satgas
+in APPPATH\Views\tppk\script_lv1.php on line 48.
+ 1 APPPATH\Views\tppk\script_lv1.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_satgas', 'APPPATH\\Views\\tppk\\script_lv1.php', 48)
+ 2 APPPATH\Views\tppk\data_tppksekolah_npsn.php(402): include('APPPATH\\Views\\tppk\\script_lv1.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 6 APPPATH\Controllers\TPPK.php(39): view('tppk/data_tppksekolah_npsn', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_npsn('20104471')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 15:58:10 --> Undefined variable $jml_satgas
+in APPPATH\Views\tppk\script_lv1.php on line 48.
+ 1 APPPATH\Views\tppk\script_lv1.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_satgas', 'APPPATH\\Views\\tppk\\script_lv1.php', 48)
+ 2 APPPATH\Views\tppk\data_tppksekolah_npsn.php(399): include('APPPATH\\Views\\tppk\\script_lv1.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 6 APPPATH\Controllers\TPPK.php(39): view('tppk/data_tppksekolah_npsn', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_npsn('20104471')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-02 15:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-02 15:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-02 15:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-02 15:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-02 16:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-02 16:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-02 16:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-02 16:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

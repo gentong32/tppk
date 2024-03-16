@@ -1,69 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle View</title>
     <style>
-        .tab {
+        .hide {
             display: none;
         }
 
-        button {
-            background-color: #ccc;
-            border: none;
-            color: #000;
+        .tabs button {
+            display: inline-block;
             padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0 5px;
+            background-color: #fff;
             cursor: pointer;
+            transition: 0.3s;
+            text-align: center;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         }
 
-        .aktif {
-            background-color: blue;
+        .tabs button:hover {
+            background-color: #ddd;
+        }
+
+        .tabs button.active {
+            background-color: #000;
             color: #fff;
+        }
+
+        .tabs button:last-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: 10px solid #000;
         }
     </style>
 </head>
 
-<body onload="openTab('tab1')">
-    <button onclick="openTab('tab1')" id="btntab1">Tab 1</button>
-    <button onclick=" openTab('tab2')" id="btntab2">Tab 2</button>
-    <button onclick="openTab('tab3')" id="btntab3">Tab 3</button>
+<body>
+    <button id="singleViewBtn">Tampilan 1</button>
+    <button id="multiViewBtn">Per Bagian</button>
 
-    <div id="tab1" class="tab">
-        <h2>Isi Tab 1</h2>
-        <p>Ini adalah isi dari tab 1.</p>
+    <div id="tabs-container">
+        <ul id="tabs"></ul>
+        <div id="tab-content"></div>
     </div>
 
-    <div id="tab2" class="tab">
-        <h2>Isi Tab 2</h2>
-        <p>Ini adalah isi dari tab 2.</p>
-    </div>
-
-    <div id="tab3" class="tab">
-        <h2>Isi Tab 3</h2>
-        <p>Ini adalah isi dari tab 3.</p>
-    </div>
+    <div class="dif1">Konten 1</div>
+    <div class="dif2">Konten 2</div>
+    <div class="dif3">Konten 3</div>
+    <div class="dif4">Konten 4</div>
 
     <script>
-        function openTab(tabName) {
-            var i, tabContent;
+        document.addEventListener("DOMContentLoaded", function() {
+            const singleViewBtn = document.getElementById('singleViewBtn');
+            const multiViewBtn = document.getElementById('multiViewBtn');
 
-            // Sembunyikan semua tab
-            tabContent = document.getElementsByClassName("tab");
-            for (i = 0; i < tabContent.length; i++) {
-                tabContent[i].style.display = "none";
+            const divs = document.querySelectorAll('div[class^="dif"]');
+
+            // Fungsi untuk menyimpan preferensi pengguna
+            function savePreference(viewType) {
+                localStorage.setItem('viewPreference', viewType);
             }
 
-            // Hapus kelas 'active' dari semua tombol
-            var buttons = document.getElementsByTagName("button");
-            for (i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove("aktif");
+            // Fungsi untuk memuat preferensi pengguna yang tersimpan
+            function loadPreference() {
+                const preference = localStorage.getItem('viewPreference');
+                if (preference) {
+                    showView(preference);
+                }
             }
 
-            // Tampilkan tab yang dipilih
-            document.getElementById(tabName).style.display = "block";
+            // Memuat preferensi pengguna saat dokumen siap
+            loadPreference();
 
-            // Tambahkan kelas 'active' pada tombol yang dipilih
-            document.getElementById("btn" + tabName).classList.add("aktif");
-        }
+            function createTab(divId, title) {
+                const tab = document.createElement('button');
+                tab.classList.add('tab');
+                tab.textContent = title;
+
+                tab.addEventListener('click', function() {
+                    showTabContent(divId);
+                });
+
+                return tab;
+            }
+
+            function showTabContent(divId) {
+                const tabContent = document.getElementById('tab-content');
+                const divs = tabContent.querySelectorAll('div');
+
+                divs.forEach(div => div.classList.add('hide'));
+
+                const contentDiv = document.getElementById(divId);
+                contentDiv.classList.remove('hide');
+            }
+
+            function showView(viewType) {
+                if (viewType === 'single') {
+                    document.getElementById('tabs-container').classList.add('hide');
+                    divs.forEach(div => div.classList.remove('hide'));
+                } else {
+                    divs.forEach(div => div.classList.add('hide'));
+                    document.getElementById('tabs-container').classList.remove('hide');
+
+                    const tabs = document.getElementById('tabs');
+                    tabs.innerHTML = '';
+
+                    const tabContent = document.getElementById('tab-content');
+                    tabContent.innerHTML = '';
+
+                    divs.forEach((div, index) => {
+                        const tab = createTab(`dif${index + 1}`, div.textContent);
+                        tabs.appendChild(tab);
+
+                        const contentDiv = div.cloneNode(true);
+                        contentDiv.id = `dif${index + 1}`;
+                        contentDiv.classList.add('hide');
+                        tabContent.appendChild(contentDiv);
+                    });
+
+                    showTabContent('dif1');
+                }
+            }
+
+            multiViewBtn.addEventListener('click', function() {
+                showView('multi');
+                savePreference('multi');
+            });
+
+            singleViewBtn.addEventListener('click', function() {
+                showView('single');
+                savePreference('single');
+            });
+
+
+        });
     </script>
 </body>
 

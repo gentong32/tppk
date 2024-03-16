@@ -1,0 +1,534 @@
+INFO - 2024-01-18 08:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 08:33:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 1306.
+ 1 APPPATH\Controllers\InputData.php(1306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 1306)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 08:33:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 1306.
+ 1 APPPATH\Controllers\InputData.php(1306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 1306)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 08:33:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 1306.
+ 1 APPPATH\Controllers\InputData.php(1306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 1306)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 08:33:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 1306.
+ 1 APPPATH\Controllers\InputData.php(1306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 1306)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 08:33:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 1306.
+ 1 APPPATH\Controllers\InputData.php(1306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 1306)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 08:35:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 1307.
+ 1 APPPATH\Controllers\InputData.php(1307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 1307)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 08:36:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 1306.
+ 1 APPPATH\Controllers\InputData.php(1306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 1306)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-18 08:53:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2024-01-18 08:53:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1525): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn,
+                MAX(nama_sekolah) AS nama_sekolah,
+                MAX(kode_wilayah) AS kode_wilayah,
+                MAX(status_sekolah) AS status_sekolah,
+                MAX(provinsi) AS provinsi,
+                MAX(kota) AS kota,
+                MAX(kecamatan) AS kecamatan
+                FROM (
+                    
+
+                    SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION ALL 
+
+                    SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+
+                    -- UNION 
+
+                    -- SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    -- UNION
+
+                    -- SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                WHERE CombinedData.npsn IN (1, 2, 3) 
+                GROUP BY npsn 
+                ORDER BY ODER', [...])
+ 2 APPPATH\Controllers\InputData.php(1311): App\Models\M_tppk->carinamasekolah('sma', '000000')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-18 08:56:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2024-01-18 08:56:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1525): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn,
+                MAX(nama_sekolah) AS nama_sekolah,
+                MAX(kode_wilayah) AS kode_wilayah,
+                MAX(status_sekolah) AS status_sekolah,
+                MAX(provinsi) AS provinsi,
+                MAX(kota) AS kota,
+                MAX(kecamatan) AS kecamatan
+                FROM (
+                    SELECT top 5 1 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah,status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(r2.nama) LIKE \'%selatan%\' 
+
+                    UNION ALL 
+
+                    SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION ALL 
+
+                    SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+
+                    -- UNION 
+
+                    -- SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    -- UNION
+
+                    -- SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                -- WHERE CombinedData.oder IN (1, 2, 3) 
+                GROUP BY npsn 
+                ORDER BY ODER', [...])
+ 2 APPPATH\Controllers\InputData.php(1311): App\Models\M_tppk->carinamasekolah('sma 3 tangerang selatan', '000000')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-18 08:58:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'CombinedData.npsn' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2024-01-18 08:58:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'CombinedData.npsn' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1523): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn,
+                MAX(nama_sekolah) AS nama_sekolah,
+                MAX(kode_wilayah) AS kode_wilayah,
+                MAX(status_sekolah) AS status_sekolah,
+                MAX(provinsi) AS provinsi,
+                MAX(kota) AS kota,
+                MAX(kecamatan) AS kecamatan
+                FROM (
+                    SELECT top 5 1 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah,status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(r2.nama) LIKE \'%selatan%\' 
+
+                    UNION ALL 
+
+                    SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION ALL 
+
+                    SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+
+                    -- UNION 
+
+                    -- SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    -- UNION
+
+                    -- SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                ORDER BY ODER', [...])
+ 2 APPPATH\Controllers\InputData.php(1311): App\Models\M_tppk->carinamasekolah('sma 3 tangerang selatan', '000000')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 08:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 08:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-18 08:59:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2024-01-18 08:59:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1518): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn
+                FROM (
+                    SELECT top 5 1 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah,status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(r2.nama) LIKE \'%selatan%\' 
+
+                    UNION ALL 
+
+                    SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION ALL 
+
+                    SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+
+                    -- UNION 
+
+                    -- SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    -- UNION
+
+                    -- SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                GROUP BY npsn
+                ORDER BY ODER', [...])
+ 2 APPPATH\Controllers\InputData.php(1311): App\Models\M_tppk->carinamasekolah('sma 3 tangerang selatan', '000000')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 09:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-18 09:00:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'CombinedData'.
+CRITICAL - 2024-01-18 09:00:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'CombinedData'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1518): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn
+                FROM (
+                    SELECT top 5 1 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah,status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(r2.nama) LIKE \'%selatan%\' 
+
+                    UNION ALL 
+
+                    SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION ALL 
+
+                    SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+
+                    -- UNION 
+
+                    -- SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    -- UNION
+
+                    -- SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                GROUP BY npsn, CombinedData
+                ORDER BY ODER', [...])
+ 2 APPPATH\Controllers\InputData.php(1311): App\Models\M_tppk->carinamasekolah('sma 3 tangerang selatan', '000000')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 09:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-18 09:01:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2024-01-18 09:01:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1518): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn
+                FROM (
+                    SELECT top 5 1 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah,status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(r2.nama) LIKE \'%selatan%\' 
+
+                    UNION ALL 
+
+                    SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION ALL 
+
+                    SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+
+                    -- UNION 
+
+                    -- SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    -- UNION
+
+                    -- SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                GROUP BY npsn
+                ORDER BY oder', [...])
+ 2 APPPATH\Controllers\InputData.php(1311): App\Models\M_tppk->carinamasekolah('sma 3 tangerang selatan', '000000')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 09:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-18 09:03:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2024-01-18 09:03:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "CombinedData.oder" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1518): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn, max(oder)
+                FROM (
+                    SELECT top 5 1 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah,status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(r2.nama) LIKE \'%selatan%\' 
+
+                    UNION ALL 
+
+                    SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION ALL 
+
+                    SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\' AND LOWER(s.nama) LIKE \'%selatan%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+
+                    -- UNION 
+
+                    -- SELECT top 5 2 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    -- UNION
+
+                    -- SELECT top 5 3 as oder, npsn, s.nama as nama_sekolah, s.kode_wilayah, w.nama as kota
+                    --         FROM [Arsip].[dbo].[sekolah] s
+                    --         LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                    --         WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' AND LOWER(s.nama) LIKE \'%3%\' AND LOWER(s.nama) LIKE \'%tangerang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                GROUP BY npsn
+                ORDER BY oder', [...])
+ 2 APPPATH\Controllers\InputData.php(1311): App\Models\M_tppk->carinamasekolah('sma 3 tangerang selatan', '000000')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 09:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 09:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 10:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 11:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 12:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 12:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 12:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 12:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 12:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 13:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 14:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 14:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 14:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 14:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 14:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 15:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 15:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 15:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 15:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 15:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 15:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 15:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 16:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 16:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

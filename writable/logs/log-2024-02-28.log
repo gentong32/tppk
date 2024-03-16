@@ -1,0 +1,343 @@
+INFO - 2024-02-28 09:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-28 09:46:51 --> Undefined array key "[residu_ketua_non_ptk]"
+in APPPATH\Views\tppk\daftaranggota.php on line 209.
+ 1 APPPATH\Views\tppk\daftaranggota.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "[residu_ketua_non_ptk]"', 'APPPATH\\Views\\tppk\\daftaranggota.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(359): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-28 09:47:00 --> Undefined array key "[residu_ketua_non_ptk]"
+in APPPATH\Views\tppk\daftaranggota.php on line 209.
+ 1 APPPATH\Views\tppk\daftaranggota.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "[residu_ketua_non_ptk]"', 'APPPATH\\Views\\tppk\\daftaranggota.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(359): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-28 09:47:04 --> Undefined array key "[residu_ketua_non_ptk]"
+in APPPATH\Views\tppk\daftaranggota.php on line 209.
+ 1 APPPATH\Views\tppk\daftaranggota.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "[residu_ketua_non_ptk]"', 'APPPATH\\Views\\tppk\\daftaranggota.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(359): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-28 09:47:19 --> Undefined array key "[residu_ketua_non_ptk]"
+in APPPATH\Views\tppk\daftaranggota.php on line 209.
+ 1 APPPATH\Views\tppk\daftaranggota.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "[residu_ketua_non_ptk]"', 'APPPATH\\Views\\tppk\\daftaranggota.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(359): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-28 09:50:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+CRITICAL - 2024-02-28 09:50:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(636): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu]
+                ,[residu_kepsek]
+                ,[residu_guru]
+                ,[residu_komite]
+                ,[residu_upload_sk]
+                ,[residu_siswa]
+                ,[residu_ganjil]
+                ,[residu_belum_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sk_lebih_dari_2_tahun]
+                ,[residu_sk_kadaluarsa]
+                ,[residu_ketua_non_ptk]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where kode_wilayah=:npsn:', [...])
+ 2 APPPATH\Controllers\TPPK.php(303): App\Models\M_tppk->getResiduSekolah('20107355')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-28 09:50:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+CRITICAL - 2024-02-28 09:50:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(636): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu]
+                ,[residu_kepsek]
+                ,[residu_guru]
+                ,[residu_komite]
+                ,[residu_upload_sk]
+                ,[residu_siswa]
+                ,[residu_ganjil]
+                ,[residu_belum_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sk_lebih_dari_2_tahun]
+                ,[residu_sk_kadaluarsa]
+                ,[residu_ketua_non_ptk]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where kode_wilayah=:npsn:', [...])
+ 2 APPPATH\Controllers\TPPK.php(303): App\Models\M_tppk->getResiduSekolah('20107355')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-28 09:50:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+CRITICAL - 2024-02-28 09:50:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(636): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu]
+                ,[residu_kepsek]
+                ,[residu_guru]
+                ,[residu_komite]
+                ,[residu_upload_sk]
+                ,[residu_siswa]
+                ,[residu_ganjil]
+                ,[residu_belum_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sk_lebih_dari_2_tahun]
+                ,[residu_sk_kadaluarsa]
+                ,[residu_ketua_non_ptk]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where kode_wilayah=:npsn:', [...])
+ 2 APPPATH\Controllers\TPPK.php(303): App\Models\M_tppk->getResiduSekolah('20107355')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-28 09:50:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+CRITICAL - 2024-02-28 09:50:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(636): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu]
+                ,[residu_kepsek]
+                ,[residu_guru]
+                ,[residu_komite]
+                ,[residu_upload_sk]
+                ,[residu_siswa]
+                ,[residu_ganjil]
+                ,[residu_belum_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sk_lebih_dari_2_tahun]
+                ,[residu_sk_kadaluarsa]
+                ,[residu_ketua_non_ptk]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where kode_wilayah=:npsn:', [...])
+ 2 APPPATH\Controllers\TPPK.php(303): App\Models\M_tppk->getResiduSekolah('20107355')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-28 09:50:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+CRITICAL - 2024-02-28 09:50:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(636): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu]
+                ,[residu_kepsek]
+                ,[residu_guru]
+                ,[residu_komite]
+                ,[residu_upload_sk]
+                ,[residu_siswa]
+                ,[residu_ganjil]
+                ,[residu_belum_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sudah_sync]
+                ,[residu_sk_lebih_dari_2_tahun]
+                ,[residu_sk_kadaluarsa]
+                ,[residu_ketua_non_ptk]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where kode_wilayah=:npsn:', [...])
+ 2 APPPATH\Controllers\TPPK.php(303): App\Models\M_tppk->getResiduSekolah('20107355')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-28 09:51:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+CRITICAL - 2024-02-28 09:51:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'residu_belum_sync'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(636): CodeIgniter\Database\BaseConnection->query('SELECT [kode_wilayah]
+                ,[wilayah]
+                ,[id_level_wilayah]
+                ,[mst_kode_wilayah]
+                ,[bentuk_pendidikan]
+                ,[status_sekolah]
+                ,[jenjang_sekolah]
+                ,[residu]
+                ,[residu_kepsek]
+                ,[residu_guru]
+                ,[residu_komite]
+                ,[residu_upload_sk]
+                ,[residu_siswa]
+                ,[residu_ganjil]
+                ,[residu_belum_sync]
+                ,[sekolah_sudah_sync]
+                ,[sekolah_sudah_sync]
+                ,[residu_sk_lebih_dari_2_tahun]
+                ,[residu_sk_kadaluarsa]
+                ,[residu_ketua_non_ptk]
+                ,[jml_satuan_pendidikan] as tot_jml_satuan_pendidikan
+                ,[jml_tppk] as tot_jml_tppk
+                FROM [TPPK].[rpt].[rekap_tppk]
+                where kode_wilayah=:npsn:', [...])
+ 2 APPPATH\Controllers\TPPK.php(303): App\Models\M_tppk->getResiduSekolah('20107355')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-28 09:52:07 --> Undefined array key "[residu_ketua_non_ptk]"
+in APPPATH\Views\tppk\daftaranggota.php on line 209.
+ 1 APPPATH\Views\tppk\daftaranggota.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "[residu_ketua_non_ptk]"', 'APPPATH\\Views\\tppk\\daftaranggota.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\daftaranggota.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/daftaranggota', [], true)
+ 5 APPPATH\Controllers\TPPK.php(359): view('tppk/daftaranggota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20107355')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 09:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 09:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 10:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 11:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 13:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 13:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 13:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 13:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 13:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 13:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 13:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 13:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-28 14:22:15 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(512): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * ...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(168): App\Models\M_tppk->getSKProv('280000')
+#4 D:\laragon\www\tppk\app\Controllers\InputData.php(57): App\Controllers\InputData->satgasprov()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->index()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-28 14:22:15 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(512): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * 
+        FROM [TPPK].[dbo].[sk_satgas_provinsi]
+        WHERE kode_wilayah = :kodewilayah: 
+        ORDER BY create_date DESC', [...])
+ 3 APPPATH\Controllers\InputData.php(168): App\Models\M_tppk->getSKProv('280000')
+ 4 APPPATH\Controllers\InputData.php(57): App\Controllers\InputData->satgasprov()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 14:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-28 14:22:35 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(512): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * ...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(168): App\Models\M_tppk->getSKProv('280000')
+#4 D:\laragon\www\tppk\app\Controllers\InputData.php(57): App\Controllers\InputData->satgasprov()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->index()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-28 14:22:35 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(512): CodeIgniter\Database\BaseConnection->query('SELECT TOP 1 * 
+        FROM [TPPK].[dbo].[sk_satgas_provinsi]
+        WHERE kode_wilayah = :kodewilayah: 
+        ORDER BY create_date DESC', [...])
+ 3 APPPATH\Controllers\InputData.php(168): App\Models\M_tppk->getSKProv('280000')
+ 4 APPPATH\Controllers\InputData.php(57): App\Controllers\InputData->satgasprov()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-28 14:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-28 14:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

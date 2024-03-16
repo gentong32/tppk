@@ -1,0 +1,313 @@
+INFO - 2024-01-10 08:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 09:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 09:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 09:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 09:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 09:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 09:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 09:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 09:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 10:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 11:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 11:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 11:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 11:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 11:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 11:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 11:54:57 --> Undefined variable $nik
+in APPPATH\Controllers\InputData.php on line 1182.
+ 1 APPPATH\Controllers\InputData.php(1182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nik', 'APPPATH\\Controllers\\InputData.php', 1182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_data_p()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 11:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 11:55:19 --> Undefined variable $nik
+in APPPATH\Controllers\InputData.php on line 1182.
+ 1 APPPATH\Controllers\InputData.php(1182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nik', 'APPPATH\\Controllers\\InputData.php', 1182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_data_p()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 11:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 11:59:23 --> Undefined variable $nik
+in APPPATH\Controllers\InputData.php on line 1182.
+ 1 APPPATH\Controllers\InputData.php(1182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nik', 'APPPATH\\Controllers\\InputData.php', 1182)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_data_p()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 13:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 13:12:08 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1391): CodeIgniter\Database\BaseConnection->query('SELECT * FROM T...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(1112): App\Models\M_tppk->cek_nomor_kasus('10901347')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-10 13:12:08 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1391): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TPPK.dbo.kasus 
+                WHERE LEFT(nomor_register, 8) = :npsn:', [...])
+ 3 APPPATH\Controllers\InputData.php(1112): App\Models\M_tppk->cek_nomor_kasus('10901347')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 13:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 13:42:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 1270.
+ 1 APPPATH\Controllers\InputData.php(1270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 1270)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknpsnsekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 13:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 13:47:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\InputData.php on line 1270.
+ 1 APPPATH\Controllers\InputData.php(1270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\InputData.php', 1270)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknpsnsekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 13:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 13:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 14:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 14:14:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'nama_sekolah'.
+CRITICAL - 2024-01-10 14:14:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'nama_sekolah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1409): CodeIgniter\Database\BaseConnection->query('SELECT TOP 10 npsn, nama as nama_sekolah 
+            FROM [Arsip].[dbo].[sekolah] 
+            WHERE soft_delete = 0 AND nama_sekolah LIKE \'%sma%\' AND nama_sekolah LIKE \'%3%\' AND nama_sekolah LIKE \'%semarang%\' ')
+ 2 APPPATH\Controllers\InputData.php(1280): App\Models\M_tppk->carinamasekolah('sma 3 semarang')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 14:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 14:15:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'nama_sekolah'.
+CRITICAL - 2024-01-10 14:15:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'nama_sekolah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1411): CodeIgniter\Database\BaseConnection->query('SELECT TOP 10 npsn, nama as nama_sekolah 
+            FROM [Arsip].[dbo].[sekolah] 
+            WHERE soft_delete = 0 AND nama_sekolah LIKE \'%sma%\' AND nama_sekolah LIKE \'%3%\' AND nama_sekolah LIKE \'%semarang%\' ')
+ 2 APPPATH\Controllers\InputData.php(1280): App\Models\M_tppk->carinamasekolah('sma 3 semarang')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 14:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 14:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 14:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 14:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 14:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 14:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 15:21:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'nama'.
+CRITICAL - 2024-01-10 15:21:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'nama'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 *
+                FROM (
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0AND LOWER(nama) LIKE \'%smp%\' AND LOWER(nama) LIKE \'%3%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION
+
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0AND LOWER(nama) LIKE \'%smp%\' AND LOWER(nama) LIKE \'%3%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                ORDER BY CASE WHEN LEFT(kode_wilayah, 4) = :kodewil: THEN 1 ELSE 2 END ', [...])
+ 2 APPPATH\Controllers\InputData.php(1283): App\Models\M_tppk->carinamasekolah('smp 3', '290301AD')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 15:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 15:21:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'nama'.
+CRITICAL - 2024-01-10 15:21:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'nama'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 *
+                FROM (
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(nama) LIKE \'%smp%\' AND LOWER(nama) LIKE \'%2%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION
+
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(nama) LIKE \'%smp%\' AND LOWER(nama) LIKE \'%2%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                ORDER BY CASE WHEN LEFT(kode_wilayah, 4) = :kodewil: THEN 1 ELSE 2 END ', [...])
+ 2 APPPATH\Controllers\InputData.php(1283): App\Models\M_tppk->carinamasekolah('smp 2', '290301AD')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 15:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 15:24:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'nama'.
+CRITICAL - 2024-01-10 15:24:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'nama'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                FROM (
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(nama) LIKE \'%smp%\' AND LOWER(nama) LIKE \'%5%\' AND LOWER(nama) LIKE \'%semarang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION
+
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(nama) LIKE \'%smp%\' AND LOWER(nama) LIKE \'%5%\' AND LOWER(nama) LIKE \'%semarang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                ORDER BY CASE WHEN LEFT(kode_wilayah, 4) = :kodewil: THEN 1 ELSE 2 END ', [...])
+ 2 APPPATH\Controllers\InputData.php(1283): App\Models\M_tppk->carinamasekolah('smp 5 semarang', '290301AD')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 15:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 15:24:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "s.nama" could not be bound.
+CRITICAL - 2024-01-10 15:24:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "s.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                FROM (
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%smp%\' AND LOWER(s.nama) LIKE \'%5%\' AND LOWER(s.nama) LIKE \'%semarang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION
+
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%smp%\' AND LOWER(s.nama) LIKE \'%5%\' AND LOWER(s.nama) LIKE \'%semarang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                ORDER BY CASE WHEN LEFT(kode_wilayah, 4) = :kodewil: THEN 1 ELSE 2 END ', [...])
+ 2 APPPATH\Controllers\InputData.php(1283): App\Models\M_tppk->carinamasekolah('smp 5 semarang', '290301AD')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 15:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 15:26:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'nama_sekolah'.
+CRITICAL - 2024-01-10 15:26:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'nama_sekolah'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                FROM (
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(nama_sekolah) LIKE \'%smp%\' AND LOWER(nama_sekolah) LIKE \'%5%\' AND LOWER(nama_sekolah) LIKE \'%semarang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION
+
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(nama_sekolah) LIKE \'%smp%\' AND LOWER(nama_sekolah) LIKE \'%5%\' AND LOWER(nama_sekolah) LIKE \'%semarang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                ORDER BY CASE WHEN LEFT(kode_wilayah, 4) = :kodewil: THEN 1 ELSE 2 END ', [...])
+ 2 APPPATH\Controllers\InputData.php(1283): App\Models\M_tppk->carinamasekolah('smp 5 semarang', '290301AD')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 15:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 15:27:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "s.nama" could not be bound.
+CRITICAL - 2024-01-10 15:27:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "s.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT TOP 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                FROM (
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%smp%\' AND LOWER(s.nama) LIKE \'%5%\' AND LOWER(s.nama) LIKE \'%semarang%\'  AND left(s.kode_wilayah,4) = :kodewil:
+
+                    UNION
+
+                    SELECT top 5 npsn, s.nama as nama_sekolah, s.kode_wilayah
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah w on s.kode_wilayah = w.kode_wilayah
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%smp%\' AND LOWER(s.nama) LIKE \'%5%\' AND LOWER(s.nama) LIKE \'%semarang%\'  AND left(s.kode_wilayah,4) <> :kodewil:
+                ) AS CombinedData
+                ORDER BY CASE WHEN LEFT(kode_wilayah, 4) = :kodewil: THEN 1 ELSE 2 END ', [...])
+ 2 APPPATH\Controllers\InputData.php(1283): App\Models\M_tppk->carinamasekolah('smp 5 semarang', '290301AD')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->cari_sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-10 15:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 15:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

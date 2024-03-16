@@ -1,0 +1,637 @@
+INFO - 2024-01-23 08:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-23 08:48:19 --> Undefined variable $daf_kebutuhan_khusus
+in APPPATH\Views\tppk\input_formulir.php on line 499.
+ 1 APPPATH\Views\tppk\input_formulir.php(499): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $daf_kebutuhan_khusus', 'APPPATH\\Views\\tppk\\input_formulir.php', 499)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\input_formulir.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/input_formulir', [], true)
+ 5 APPPATH\Controllers\InputData.php(1222): view('tppk/input_formulir', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->pelaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 08:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 08:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 09:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 10:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-23 10:01:28 --> Undefined variable $valnama
+in APPPATH\Controllers\InputData.php on line 1401.
+ 1 APPPATH\Controllers\InputData.php(1401): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $valnama', 'APPPATH\\Controllers\\InputData.php', 1401)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 10:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 10:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 10:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 10:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 10:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-23 10:51:22 --> Undefined variable $valnama
+in APPPATH\Controllers\InputData.php on line 1409.
+ 1 APPPATH\Controllers\InputData.php(1409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $valnama', 'APPPATH\\Controllers\\InputData.php', 1409)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 10:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 10:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 10:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-23 11:01:18 --> Undefined variable $valnama
+in APPPATH\Controllers\InputData.php on line 1409.
+ 1 APPPATH\Controllers\InputData.php(1409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $valnama', 'APPPATH\\Controllers\\InputData.php', 1409)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-23 11:01:26 --> Undefined variable $valnama
+in APPPATH\Controllers\InputData.php on line 1409.
+ 1 APPPATH\Controllers\InputData.php(1409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $valnama', 'APPPATH\\Controllers\\InputData.php', 1409)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-23 11:01:31 --> Undefined variable $valnama
+in APPPATH\Controllers\InputData.php on line 1409.
+ 1 APPPATH\Controllers\InputData.php(1409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $valnama', 'APPPATH\\Controllers\\InputData.php', 1409)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 11:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-23 11:03:19 --> Undefined variable $disabilitasid
+in APPPATH\Controllers\InputData.php on line 1413.
+ 1 APPPATH\Controllers\InputData.php(1413): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabilitasid', 'APPPATH\\Controllers\\InputData.php', 1413)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ceknikortu()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 11:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 11:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 12:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 13:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-23 14:46:34 --> Undefined array key "NAMA_LGKP"
+in APPPATH\Controllers\InputData.php on line 1272.
+ 1 APPPATH\Controllers\InputData.php(1272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NAMA_LGKP"', 'APPPATH\\Controllers\\InputData.php', 1272)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->get_data_p()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 14:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 14:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:09:24 --> CSRF token verified.
+INFO - 2024-01-23 15:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-23 15:09:24 --> Undefined array key "tanggal_kejadian"
+in APPPATH\Models\M_tppk.php on line 1831.
+ 1 APPPATH\Models\M_tppk.php(1831): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_kejadian"', 'APPPATH\\Models\\M_tppk.php', 1831)
+ 2 APPPATH\Controllers\InputData.php(1484): App\Models\M_tppk->save_pelaporan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan_kasus()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-23 15:13:42 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('inputdata/simpan_kasus', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 15:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:15:06 --> CSRF token verified.
+INFO - 2024-01-23 15:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-23 15:15:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:24 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 15:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-23 15:15:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:15:28 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 15:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-23 15:18:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:18:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:18:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:18:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:18:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:18:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 15:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-23 15:19:17 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:17 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:17 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:17 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:17 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:17 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 15:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-23 15:19:54 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:54 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:54 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:54 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 8, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:54 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 12.
+ 1 APPPATH\Helpers\tanggalan_helper.php(12): substr(null, 5, 2)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-23 15:19:54 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\tanggalan_helper.php on line 13.
+ 1 APPPATH\Helpers\tanggalan_helper.php(13): substr(null, 0, 4)
+ 2 APPPATH\Views\daftarlaporan.php(62): namabulan_panjang(null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 6 APPPATH\Controllers\InputData.php(1165): view('daftarlaporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 15:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:27:02 --> CSRF token verified.
+INFO - 2024-01-23 15:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-23 15:27:02 --> Undefined array key "kejadian"
+in APPPATH\Models\M_tppk.php on line 1803.
+ 1 APPPATH\Models\M_tppk.php(1803): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kejadian"', 'APPPATH\\Models\\M_tppk.php', 1803)
+ 2 APPPATH\Controllers\InputData.php(1467): App\Models\M_tppk->save_kasus([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan_kasus()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 15:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:29:23 --> CSRF token verified.
+INFO - 2024-01-23 15:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:34:35 --> CSRF token verified.
+INFO - 2024-01-23 15:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-23 15:34:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'npsn', table 'TPPK.dbo.kasus'; column does not allow nulls. INSERT fails.
+CRITICAL - 2024-01-23 15:34:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'npsn', table 'TPPK.dbo.kasus'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(1810): CodeIgniter\Database\BaseConnection->query('INSERT INTO [TPPK].[dbo].[kasus] (nomor_register, npsn, tanggal_kejadian) 
+        VALUES (:noreg:,:npsn:,:kejadian:)', [...])
+ 2 APPPATH\Controllers\InputData.php(1467): App\Models\M_tppk->save_kasus([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->simpan_kasus()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 15:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:36:17 --> CSRF token verified.
+INFO - 2024-01-23 15:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-23 15:59:21 --> CSRF token verified.
+INFO - 2024-01-23 15:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

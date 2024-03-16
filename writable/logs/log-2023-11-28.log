@@ -1,0 +1,29 @@
+INFO - 2023-11-28 08:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 08:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 08:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 08:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 08:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 08:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 08:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 08:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 08:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-28 08:55:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'ptk1'.
+CRITICAL - 2023-11-28 08:55:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'ptk1'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(113): CodeIgniter\Database\BaseConnection->query('SELECT * 
+                FROM [arsip].[dbo].[ptk_terdaftar] ptk1
+                LEFT JOIN arsip.dbo.ptk ptk ON ptk.ptk_id=ptk1.ptk_id 
+                where ptk.aktif=1 AND ptk1.jenis_ptk_id=20 AND ptk1.sekolah_id=:sekolahid: 
+                AND tahun_ajaran_id = (SELECT MAX(tahun_ajaran_id) FROM Referensi.ref.tahun_ajaran WHERE expired_date IS NULL) AND ptk1.Soft_delete=0 ptk1.jenis_keluar_id IS NULL', [...])
+ 2 APPPATH\Controllers\TPPK.php(136): App\Models\M_tppk->getPTK('60D8AE0F-2CF5-E011-AFB3-39DD59DE4FF2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota('20201968')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 08:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 09:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 13:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 13:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 13:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 14:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 14:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

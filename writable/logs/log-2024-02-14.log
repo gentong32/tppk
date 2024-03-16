@@ -1,0 +1,1893 @@
+INFO - 2024-02-14 05:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 05:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 05:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-14 05:45:56 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(2): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:45:56 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:45:56 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:45:56 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:45:56 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:45:56 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:45:56 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(106): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 05:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-14 05:46:11 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(2): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:46:11 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:46:11 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:46:11 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:46:11 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:46:11 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:46:11 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(106): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 05:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 05:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-14 05:47:12 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(2): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:47:13 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:47:13 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:47:13 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:47:13 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:47:13 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(103): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:47:13 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(106): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 05:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 05:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-14 05:51:16 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(2): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:51:18 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:51:18 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:51:18 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:51:18 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:51:18 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 05:51:18 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(110): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(2066): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-14 05:52:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:52:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:52:19 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:52:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:52:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:52:54 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:53:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:53:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:53:16 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:53:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:53:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:53:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:53:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:53:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:53:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:53:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:53:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:53:39 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:53:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:53:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:53:41 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:54:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:54:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:54:08 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:54:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:54:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:54:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:54:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:54:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:54:28 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 05:54:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 05:54:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 05:54:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '051100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-14 05:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 05:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:03:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:03:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:03:24 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 06:03:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:03:42 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:03:42 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-14 06:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:05:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:05:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:05:43 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 06:06:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:06:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:06:08 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-14 06:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:07:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:07:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:07:50 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-14 06:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:08:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:08:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:08:51 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-14 06:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:10:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:10:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:10:05 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 06:10:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:10:23 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:10:23 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 06:10:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:10:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:10:41 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-02-14 06:10:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:10:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:10:51 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '050100')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-14 06:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:18:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:18:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:18:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2506): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-14 06:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:31:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+CRITICAL - 2024-02-14 06:31:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2255): CodeIgniter\Database\BaseConnection->query('SELECT count (*) as total
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=4 AND (bentuk_pendidikan=\'TK\' OR bentuk_pendidikan=\'TPA\' OR bentuk_pendidikan=\'SPS\' OR bentuk_pendidikan=\'KB\' OR bentuk_pendidikan=\'SPK TK\' OR bentuk_pendidikan=\'SPK KB\') AND LEFT(r2.kode_wilayah, 4) = \'0164\' AND jml_tppk=0 AND (r2.nama LIKE \'%r%\' OR r3.nama LIKE \'%r%\' OR wilayah LIKE \'%r%\' OR rt.kode_wilayah LIKE \'%r%\') ')
+ 2 APPPATH\Controllers\InputData.php(1945): App\Models\M_tppk->total_daf_sekolah_nontppk(1, '016400', 'PAUD', 'r')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-14 06:31:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+CRITICAL - 2024-02-14 06:31:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2255): CodeIgniter\Database\BaseConnection->query('SELECT count (*) as total
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=4 AND (bentuk_pendidikan=\'TK\' OR bentuk_pendidikan=\'TPA\' OR bentuk_pendidikan=\'SPS\' OR bentuk_pendidikan=\'KB\' OR bentuk_pendidikan=\'SPK TK\' OR bentuk_pendidikan=\'SPK KB\') AND LEFT(r2.kode_wilayah, 4) = \'0164\' AND jml_tppk=0 AND (r2.nama LIKE \'%reb%\' OR r3.nama LIKE \'%reb%\' OR wilayah LIKE \'%reb%\' OR rt.kode_wilayah LIKE \'%reb%\') ')
+ 2 APPPATH\Controllers\InputData.php(1945): App\Models\M_tppk->total_daf_sekolah_nontppk(1, '016400', 'PAUD', 'reb')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-14 06:32:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+CRITICAL - 2024-02-14 06:32:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2255): CodeIgniter\Database\BaseConnection->query('SELECT count (*) as total
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=4 AND (bentuk_pendidikan=\'TK\' OR bentuk_pendidikan=\'TPA\' OR bentuk_pendidikan=\'SPS\' OR bentuk_pendidikan=\'KB\' OR bentuk_pendidikan=\'SPK TK\' OR bentuk_pendidikan=\'SPK KB\') AND LEFT(r2.kode_wilayah, 4) = \'0164\' AND jml_tppk=0 AND (r2.nama LIKE \'%rebo%\' OR r3.nama LIKE \'%rebo%\' OR wilayah LIKE \'%rebo%\' OR rt.kode_wilayah LIKE \'%rebo%\') ')
+ 2 APPPATH\Controllers\InputData.php(1945): App\Models\M_tppk->total_daf_sekolah_nontppk(1, '016400', 'PAUD', 'rebo')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-14 06:32:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+ERROR - 2024-02-14 06:32:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+CRITICAL - 2024-02-14 06:32:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2255): CodeIgniter\Database\BaseConnection->query('SELECT count (*) as total
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=4 AND (bentuk_pendidikan=\'TK\' OR bentuk_pendidikan=\'TPA\' OR bentuk_pendidikan=\'SPS\' OR bentuk_pendidikan=\'KB\' OR bentuk_pendidikan=\'SPK TK\' OR bentuk_pendidikan=\'SPK KB\') AND LEFT(r2.kode_wilayah, 4) = \'0164\' AND jml_tppk=0 AND (r2.nama LIKE \'%a%\' OR r3.nama LIKE \'%a%\' OR wilayah LIKE \'%a%\' OR rt.kode_wilayah LIKE \'%a%\') ')
+ 2 APPPATH\Controllers\InputData.php(1945): App\Models\M_tppk->total_daf_sekolah_nontppk(1, '016400', 'PAUD', 'a')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:32:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2255): CodeIgniter\Database\BaseConnection->query('SELECT count (*) as total
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=4 AND (bentuk_pendidikan=\'TK\' OR bentuk_pendidikan=\'TPA\' OR bentuk_pendidikan=\'SPS\' OR bentuk_pendidikan=\'KB\' OR bentuk_pendidikan=\'SPK TK\' OR bentuk_pendidikan=\'SPK KB\') AND LEFT(r2.kode_wilayah, 4) = \'0164\' AND jml_tppk=0 AND (r2.nama LIKE \'%asih%\' OR r3.nama LIKE \'%asih%\' OR wilayah LIKE \'%asih%\' OR rt.kode_wilayah LIKE \'%asih%\') ')
+ 2 APPPATH\Controllers\InputData.php(1945): App\Models\M_tppk->total_daf_sekolah_nontppk(1, '016400', 'PAUD', 'asih')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-14 06:32:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+CRITICAL - 2024-02-14 06:32:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2255): CodeIgniter\Database\BaseConnection->query('SELECT count (*) as total
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=4 AND (bentuk_pendidikan=\'TK\' OR bentuk_pendidikan=\'TPA\' OR bentuk_pendidikan=\'SPS\' OR bentuk_pendidikan=\'KB\' OR bentuk_pendidikan=\'SPK TK\' OR bentuk_pendidikan=\'SPK KB\') AND LEFT(r2.kode_wilayah, 4) = \'0164\' AND jml_tppk=0 AND (r2.nama LIKE \'%asi%\' OR r3.nama LIKE \'%asi%\' OR wilayah LIKE \'%asi%\' OR rt.kode_wilayah LIKE \'%asi%\') ')
+ 2 APPPATH\Controllers\InputData.php(1945): App\Models\M_tppk->total_daf_sekolah_nontppk(1, '016400', 'PAUD', 'asi')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 06:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:33:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+CRITICAL - 2024-02-14 06:33:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2255): CodeIgniter\Database\BaseConnection->query('SELECT count (*) as total
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=4 AND (bentuk_pendidikan=\'TK\' OR bentuk_pendidikan=\'TPA\' OR bentuk_pendidikan=\'SPS\' OR bentuk_pendidikan=\'KB\' OR bentuk_pendidikan=\'SPK TK\' OR bentuk_pendidikan=\'SPK KB\') AND LEFT(r2.kode_wilayah, 4) = \'0164\' AND jml_tppk=0  AND (r2.nama LIKE \'%a%\' OR r3.nama LIKE \'%a%\' OR wilayah LIKE \'%a%\' OR rt.kode_wilayah LIKE \'%a%\') ')
+ 2 APPPATH\Controllers\InputData.php(1945): App\Models\M_tppk->total_daf_sekolah_nontppk(1, '016400', 'PAUD', 'a')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 06:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:33:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+CRITICAL - 2024-02-14 06:33:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The multi-part identifier "r3.nama" could not be bound.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(2255): CodeIgniter\Database\BaseConnection->query('SELECT count (*) as total
+                FROM [TPPK].[rpt].[rekap_tppk] rt 
+                LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (rt.mst_kode_wilayah, 4) 
+                AND r2.id_level_wilayah=2 
+                WHERE rt.id_level_wilayah=4 AND (bentuk_pendidikan=\'TK\' OR bentuk_pendidikan=\'TPA\' OR bentuk_pendidikan=\'SPS\' OR bentuk_pendidikan=\'KB\' OR bentuk_pendidikan=\'SPK TK\' OR bentuk_pendidikan=\'SPK KB\') AND LEFT(r2.kode_wilayah, 4) = \'0164\' AND jml_tppk=0  AND (r2.nama LIKE \'%a%\' OR r3.nama LIKE \'%a%\' OR wilayah LIKE \'%a%\' OR rt.kode_wilayah LIKE \'%a%\');')
+ 2 APPPATH\Controllers\InputData.php(1945): App\Models\M_tppk->total_daf_sekolah_nontppk(1, '016400', 'PAUD', 'a')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 06:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 06:43:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2024-02-14 06:43:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah_id", "kode_semester_tidak_aktif"
+FROM "Dataprocess"."rpt"."rekap_sekolah_tidak_aktif"
+WHERE "sekolah_id" IN :sekolah_id:', [...], false)
+ 2 APPPATH\Models\M_tppk.php(2515): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif([])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:43:19 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 D:\laragon\www\tppk\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT "sekolah...', Array, false)
+#1 D:\laragon\www\tppk\app\Models\M_tppk.php(2515): CodeIgniter\Database\SQLSRV\Builder->get()
+#2 D:\laragon\www\tppk\app\Controllers\InputData.php(1952): App\Models\M_tppk->getsekolahtidakaktif(Array)
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('PAUD', '016400')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-14 06:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-14 06:46:31 --> Trying to access array offset on value of type int
+in APPPATH\Controllers\InputData.php on line 1951.
+ 1 APPPATH\Controllers\InputData.php(1951): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Controllers\\InputData.php', 1951)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('SD', '016400')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 06:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-14 06:47:27 --> Trying to access array offset on value of type int
+in APPPATH\Controllers\InputData.php on line 1952.
+ 1 APPPATH\Controllers\InputData.php(1952): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Controllers\\InputData.php', 1952)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('SD', '016400')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 06:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-14 06:48:07 --> Trying to access array offset on value of type int
+in APPPATH\Controllers\InputData.php on line 1980.
+ 1 APPPATH\Controllers\InputData.php(1980): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Controllers\\InputData.php', 1980)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('SD', '016400')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:48:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\laragon\www\tppk\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\laragon\www\tppk\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\laragon\www\tppk\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\laragon\www\tppk\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\laragon\www\tppk\system\Debug\Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type int
+#0 D:\laragon\www\tppk\app\Controllers\InputData.php(1980): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\laragon\\www\\...', 1980)
+#1 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->ajaxGetDaftarNonTPPK('SD', '016400')
+#2 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#3 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-14 06:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-14 06:51:28 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(2): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:28 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:28 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:28 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:28 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:28 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:28 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(110): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 06:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-14 06:51:45 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(2): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:45 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:45 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:45 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:45 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:45 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:51:45 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(110): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 06:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 06:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-14 06:53:01 --> [DEPRECATED] Optional parameter $pCoordinate declared before required parameter $pValue is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php on line 1482.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(364): PHPExcel_Autoloader::Load('PHPExcel_Worksheet')
+ 3 APPPATH\Views\tppk\ekspor.php(2): PHPExcel->__construct()
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 7 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:53:02 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::current() should either be compatible with Iterator::current(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 86.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:53:02 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::next() should either be compatible with Iterator::next(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 104.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:53:02 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::key() should either be compatible with Iterator::key(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 96.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:53:02 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::valid() should either be compatible with Iterator::valid(): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 114.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:53:02 --> [DEPRECATED] Return type of PHPExcel_WorksheetIterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php on line 76.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('FCPATH\\vendor\\phpoffice\\phpexcel\\Classes\\PHPExcel\\WorksheetIterator.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel.php(840): PHPExcel_Autoloader::Load('PHPExcel_WorksheetIterator')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php(844): PHPExcel->getWorksheetIterator()
+ 4 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php(883): PHPExcel_ReferenceHelper->updateNamedFormulas(Object(PHPExcel), 'Worksheet', 'Sekolah')
+ 5 APPPATH\Views\tppk\ekspor.php(107): PHPExcel_Worksheet->setTitle('Sekolah')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 9 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-02-14 06:53:02 --> [DEPRECATED] Optional parameter $dataType declared before required parameter $pSheet is implicitly treated as a required parameter in FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php on line 1339.
+ 1 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php(86): require('SYSTEMPATH\\Debug\\Exceptions.php')
+ 2 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php(154): PHPExcel_Autoloader::Load('PHPExcel_Writer_Excel2007_Chart')
+ 3 FCPATH\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php(141): PHPExcel_Writer_Excel2007->__construct(Object(PHPExcel))
+ 4 APPPATH\Views\tppk\ekspor.php(110): PHPExcel_IOFactory::createWriter(Object(PHPExcel), 'Excel2007')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\ekspor.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/ekspor', [], true)
+ 8 APPPATH\Controllers\InputData.php(2070): view('tppk/ekspor', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->ekspor()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 06:57:36 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\data_tppksekolah_npsn.php on line 190.
+ 1 APPPATH\Views\tppk\data_tppksekolah_npsn.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 5 APPPATH\Controllers\TPPK.php(64): view('tppk/data_tppksekolah_npsn', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah('20328948')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 07:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-14 07:09:27 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\data_tppksekolah_npsn.php on line 190.
+ 1 APPPATH\Views\tppk\data_tppksekolah_npsn.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 5 APPPATH\Controllers\TPPK.php(64): view('tppk/data_tppksekolah_npsn', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah('asa')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 07:13:18 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\data_tppksekolah_npsn.php on line 190.
+ 1 APPPATH\Views\tppk\data_tppksekolah_npsn.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 5 APPPATH\Controllers\TPPK.php(64): view('tppk/data_tppksekolah_npsn', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah('sma 3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 07:14:02 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\data_tppksekolah_npsn.php on line 190.
+ 1 APPPATH\Views\tppk\data_tppksekolah_npsn.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 5 APPPATH\Controllers\TPPK.php(64): view('tppk/data_tppksekolah_npsn', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah('sma 3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 07:14:24 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\data_tppksekolah_npsn.php on line 190.
+ 1 APPPATH\Views\tppk\data_tppksekolah_npsn.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 5 APPPATH\Controllers\TPPK.php(64): view('tppk/data_tppksekolah_npsn', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah('sma 3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 07:14:28 --> Too few arguments to function App\Controllers\TPPK::cari_sekolah(), 0 passed in D:\laragon\www\tppk\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\TPPK.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 07:14:32 --> Uninitialized string offset 0
+in SYSTEMPATH\CodeIgniter.php on line 892.
+ 1 SYSTEMPATH\CodeIgniter.php(892): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 0', 'SYSTEMPATH\\CodeIgniter.php', 892)
+ 2 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 07:14:33 --> Uninitialized string offset 0
+in SYSTEMPATH\CodeIgniter.php on line 892.
+ 1 SYSTEMPATH\CodeIgniter.php(892): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 0', 'SYSTEMPATH\\CodeIgniter.php', 892)
+ 2 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 07:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-14 07:14:42 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\data_tppksekolah_npsn.php on line 190.
+ 1 APPPATH\Views\tppk\data_tppksekolah_npsn.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 5 APPPATH\Controllers\TPPK.php(64): view('tppk/data_tppksekolah_npsn', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah('sma')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-14 10:46:20 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(1959): CodeIgniter\Database\BaseConnection->query('WITH TopSekolah...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\TPPK.php(62): App\Models\M_tppk->carinamasekolahall('sma')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah('sma')
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-14 10:46:20 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  SQLSTATE: 08001, code: 53
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 53
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(1959): CodeIgniter\Database\BaseConnection->query('WITH TopSekolah AS (SELECT TOP 100 npsn, MAX(nama_sekolah) AS nama_sekolah,
+                MAX(kode_wilayah) AS kode_wilayah,
+                MAX(status_sekolah) AS status_sekolah,
+                MAX(provinsi) AS provinsi,
+                MAX(kota) AS kota,
+                MAX(kecamatan) AS kecamatan
+                FROM (
+                    
+
+                    SELECT npsn, s.nama as nama_sekolah, s.kode_wilayah, status_sekolah, r1.nama as provinsi, r2.nama as kota, r3.nama as kecamatan
+                            FROM [Arsip].[dbo].[sekolah] s
+                            LEFT JOIN Referensi.ref.mst_wilayah r1 on LEFT(r1.kode_wilayah, 2) = LEFT (s.kode_wilayah, 2) AND r1.id_level_wilayah=1 
+            LEFT JOIN Referensi.ref.mst_wilayah r2 on LEFT(r2.kode_wilayah, 4) = LEFT (s.kode_wilayah, 4) AND r2.id_level_wilayah=2 
+            LEFT JOIN Referensi.ref.mst_wilayah r3 on LEFT(r3.kode_wilayah, 6) = LEFT (s.kode_wilayah, 6) AND r3.id_level_wilayah=3 
+                            WHERE soft_delete = 0 AND LOWER(s.nama) LIKE \'%sma%\' ) as g 
+                GROUP BY npsn)
+                
+                SELECT 
+                    rt.[kode_wilayah],
+                    [wilayah],
+                    [id_level_wilayah],
+                    [mst_kode_wilayah],
+                    [bentuk_pendidikan],
+                    ts.[status_sekolah],
+                    [jenjang_sekolah],
+                    [residu] as tot_residu,
+                    [residu_kepsek] as tot_residu_kepsek,
+                    [residu_guru] as tot_residu_guru,
+                    [residu_komite] as tot_residu_komite,
+                    [residu_upload_sk] as tot_residu_upload_sk,
+                    [residu_siswa] as tot_siswa,
+                    [residu_ganjil] as tot_ganjil,
+                    [jml_satuan_pendidikan] as tot_jml_satuan_pendidikan,
+                    [jml_tppk] as tot_jml_tppk
+                FROM 
+                    [TPPK].[rpt].[rekap_tppk] rt
+                LEFT JOIN 
+                    TPPK.dbo.sk_tppk sk ON rt.kode_wilayah = sk.npsn
+                INNER JOIN 
+                    TopSekolah ts ON rt.kode_wilayah = ts.npsn
+                GROUP BY rt.kode_wilayah,[wilayah],
+                    [id_level_wilayah],
+                    [mst_kode_wilayah],
+                    [bentuk_pendidikan],
+                    ts.[status_sekolah],
+                    [jenjang_sekolah],
+                    [residu],
+                    [residu_kepsek],
+                    [residu_guru],
+                    [residu_komite],
+                    [residu_upload_sk],
+                    [residu_siswa],
+                    [residu_ganjil],
+                    [jml_satuan_pendidikan],
+                    [jml_tppk]', [...])
+ 3 APPPATH\Controllers\TPPK.php(62): App\Models\M_tppk->carinamasekolahall('sma')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah('sma')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-14 10:46:31 --> Undefined array key "status_sk"
+in APPPATH\Views\tppk\data_tppksekolah_npsn.php on line 190.
+ 1 APPPATH\Views\tppk\data_tppksekolah_npsn.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_sk"', 'APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tppk\\data_tppksekolah_npsn.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tppk/data_tppksekolah_npsn', [], true)
+ 5 APPPATH\Controllers\TPPK.php(64): view('tppk/data_tppksekolah_npsn', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->cari_sekolah('sma')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 10:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 10:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 11:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 11:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 11:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 11:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 11:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 11:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 11:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 11:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 11:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-14 13:49:09 --> Uninitialized string offset 0
+in SYSTEMPATH\CodeIgniter.php on line 892.
+ 1 SYSTEMPATH\CodeIgniter.php(892): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 0', 'SYSTEMPATH\\CodeIgniter.php', 892)
+ 2 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 13:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 13:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-14 14:43:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'nama'.
+CRITICAL - 2024-02-14 14:43:16 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Ambiguous column name 'nama'.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(533): CodeIgniter\Database\BaseConnection->query('SELECT s.nama as namaanggota,j.nama as instansi,*
+        FROM [TPPK].[dbo].[satgas_wilayah] s
+        LEFT JOIN [TPPK].[dbo].[jenis_instansi] j ON s.jenis_instansi_id = j.jenis_instansi_id 
+        LEFT JOIN [TPPK].[dbo].[sk_satgas_provinsi] sk ON sk.sk_id = s.sk_id 
+        WHERE s.sk_id = :skid: ORDER BY nama', [...])
+ 2 APPPATH\Controllers\TPPK.php(467): App\Models\M_tppk->getAnggotaProv('E03AD94E-6284-4277-BF46-8CA787130C8F')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TPPK->anggota2('340000')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TPPK))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-14 14:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 14:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 21:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 21:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-14 21:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

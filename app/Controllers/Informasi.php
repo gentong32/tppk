@@ -6,7 +6,12 @@ class Informasi extends BaseController
 {
     public function index()
     {
-        return view('informasi');
+        $instansiid = 0;
+        if (session()->get('jenis_instansi_id'))
+            $instansiid = session()->get('jenis_instansi_id');
+        $data = [];
+        $data['instansiid'] = $instansiid;
+        return view('informasi', $data);
     }
 
     public function peraturan()
@@ -27,5 +32,10 @@ class Informasi extends BaseController
     public function syarat()
     {
         return view('info_syarat');
+    }
+
+    public function ketunaan()
+    {
+        return view('informasiketunaan');
     }
 }
