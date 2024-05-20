@@ -46,12 +46,12 @@ class InputData extends BaseController
                 // session()->set('jenis_instansi_id', '2');
                 // session()->set('wilayah_akses', '270800');
 
-                // $instansiid = 2;
-                // session()->set('jenis_instansi_id', $instansiid);
+                $instansiid = 3;
+                session()->set('jenis_instansi_id', $instansiid);
                 // session()->set('wilayah_akses', '280000');
-                // session()->set('wilayah_akses', '036200');
-                // session()->set('npsn_user', '30311432'); //20613768 sman6, 20503156 ada isi
-                // $npsn = session()->get('npsn_user');
+                session()->set('wilayah_akses', '191700');
+                // session()->set('npsn_user', '030700'); //20613768 sman6, 20503156 ada isi
+                $npsn = session()->get('npsn_user');
                 // session()->set('jenis_instansi_id', '4');
                 // session()->set('wilayah_akses', '051000');
             }
@@ -126,22 +126,44 @@ class InputData extends BaseController
         } else {
             echo "Belum terdaftar .... Hubungi admin!";
         }
+    }
 
-        // if ($username == "hardiantos@kemdikbud.go.id") {
-        //     session()->set('sebagai', 'dinaskota');
-        //     session()->set('wilayah_akses', '016000');
-        //     return $this->satgaskota('edit');
-        // } else if ($npsn != "" && $npsn != null && $sebagai == "os") {
-        //     return $this->npsn($npsn);
-        // } else if ($sebagai == "os") {
-        //     return $this->tppk();
-        // } else if ($sebagai == "dp") {
-        //     return $this->satgasprov();
-        // } else if ($sebagai == "dk") {
-        //     return $this->satgaskota('edit');
-        // } else {
-        //     echo "...";
-        // }
+    public function ubahfile()
+    {
+        $instansiid = session()->get('jenis_instansi_id');
+        $sebagai = session()->get('sebagai');
+        $npsn = session()->get('npsn_user');
+        $kodewilayah = session()->get('wilayah_akses');
+        $username = session()->get('username');
+
+        if ($instansiid == 2) {
+            session()->set('sebagai', 'dinasprovinsi');
+            return $this->satgasprov('ubahfile');
+        } else if ($instansiid == 3) {
+            session()->set('sebagai', 'dinaskota');
+            return $this->satgaskota('ubahfile');
+        } else {
+            echo "Belum terdaftar .... Hubungi admin!";
+        }
+    }
+
+    public function skbaru()
+    {
+        $instansiid = session()->get('jenis_instansi_id');
+        $sebagai = session()->get('sebagai');
+        $npsn = session()->get('npsn_user');
+        $kodewilayah = session()->get('wilayah_akses');
+        $username = session()->get('username');
+
+        if ($instansiid == 2) {
+            session()->set('sebagai', 'dinasprovinsi');
+            return $this->satgasprov('skbaru');
+        } else if ($instansiid == 3) {
+            session()->set('sebagai', 'dinaskota');
+            return $this->satgaskota('skbaru');
+        } else {
+            echo "Belum terdaftar .... Hubungi admin!";
+        }
     }
 
     public function tppk($mstWilayah = '000000', $level = 1)
@@ -167,15 +189,6 @@ class InputData extends BaseController
 
     public function satgasprov($opsi = null)
     {
-        if ($opsi == null) {
-
-            $ceksatgaskota = $this->model_tppk->getSKProv(session()->get('wilayah_akses'));
-
-            if ($ceksatgaskota) {
-                return redirect()->to('/tppk/anggota2/' . substr(session()->get('wilayah_akses'), 0, 2) . '0000');
-            }
-        }
-
         $sebagai = session()->get('sebagai');
         if (trim($sebagai) != "dp" && $sebagai != "dinasprovinsi") {
             return redirect()->to('/home');
@@ -183,51 +196,144 @@ class InputData extends BaseController
 
         session()->set('pilihan', 1);
         $data = array();
+
+        $fileada = false;
+        $nomor_sk = "";
+        $tanggal_sk = "";
+        $namafilesk = "";
+        $skid = "";
+        $adasatgas = 0;
+
+        $ceksk = $this->model_tppk->getSKProv(session()->get('wilayah_akses'));
+
+        if ($ceksk) {
+            $nomor_sk = $ceksk['nomor_sk'];
+            $tanggal_sk = $ceksk['tanggal_sk'];
+            $fileabjad = preg_replace("/[^a-zA-Z0-9]/", "", $nomor_sk);
+            $namafiletanpaekstensi = "sk_" . trim(session()->get('wilayah_akses')) . "_" . $fileabjad;
+
+            $namafilesk = $this->cekfilesk($namafiletanpaekstensi);
+
+            if ($namafilesk != "") {
+                $fileada = true;
+            }
+
+            $data['nomor_sk'] = $nomor_sk;
+            $data['tanggal_sk'] = $tanggal_sk;
+            $data['nama_file'] = $namafilesk;
+
+            $adasatgas = 0;
+            $skid = $ceksk['sk_id'];
+            $dafanggota = $this->model_tppk->getAnggotaProv($skid);
+            $data['anggotasatgas'] = $dafanggota;
+
+            if ($dafanggota) {
+                $adasatgas = 1;
+            }
+        }
+
+        $data['skid'] = $skid;
+
+        if ($opsi == "edit" && $adasatgas == 0)
+            return redirect()->to('/inputdata');
+
+        if ($opsi != "edit" && $adasatgas)
+            return redirect()->to('/tppk/anggota2/' . substr(session()->get('wilayah_akses'), 0, 2) . '00');
+
         $data['namaPropinsi'] = $this->model_tppk->getNamaWilayah('000000', 1);
         $kodeprovsaya = substr(session()->get('wilayah_akses'), 0, 2) . '0000';
 
         $data['wilayahsaya'] = $kodeprovsaya;
         $data['sebagai'] = session()->get('sebagai');
         $data['opsi'] = $opsi;
-        $datask = $this->model_tppk->getSKProv($kodeprovsaya);
-        if ($datask) {
-            $data['datask'] = $datask;
-            $skid = $datask['sk_id'];
-            $data['skid'] = $skid;
-            $data['anggotasatgas'] = $this->model_tppk->getAnggotaProv($skid);
+
+        if ($fileada) {
+            $data['opsi'] = "edit";
+            return view('inputsatgasprov', $data);
+        } else {
+            if ($adasatgas == 1)
+                $data['opsi'] = "ubahfile";
+            else
+                $data['opsi'] = "skbaru";
+            return view('inputsatgasprov_file', $data);
         }
-        // echo var_dump($data['anggotasatgas']);
-        // die();
-        // die();
-        // $data['validation'] = $validation;
-        // dd($data['namaWilayah']);
+
+        // $datask = $this->model_tppk->getSKProv($kodeprovsaya);
+        // if ($datask) {
+        //     $data['datask'] = $datask;
+        //     $skid = $datask['sk_id'];
+        //     $data['skid'] = $skid;
+        //     $data['anggotasatgas'] = $this->model_tppk->getAnggotaProv($skid);
+        // }
+
+        // if ($opsi == null) {
+        //     $ceksatgaskota = $this->model_tppk->getSKProv(session()->get('wilayah_akses'));
+        //     if ($ceksatgaskota) {
+        //         return redirect()->to('/tppk/anggota2/' . substr(session()->get('wilayah_akses'), 0, 2) . '0000');
+        //     }
+        // }
+
         return view('inputsatgasprov', $data);
     }
 
     public function satgaskota($opsi = null)
     {
-        if ($opsi == null) {
-
-            $ceksatgaskota = $this->model_tppk->getSKProv(session()->get('wilayah_akses'));
-
-            // echo var_dump($ceksatgaskota);
-            // die();
-
-            if ($ceksatgaskota) {
-                return redirect()->to('/tppk/anggota2/' . substr(session()->get('wilayah_akses'), 0, 4) . '00');
-            }
-        }
-
         $sebagai = session()->get('sebagai');
         if (trim($sebagai) != "dk" && $sebagai != "dinaskota") {
             return redirect()->to('/home');
         }
+
+        session()->set('pilihan', 2);
+        $data = array();
+
+        $fileada = false;
+        $nomor_sk = "";
+        $tanggal_sk = "";
+        $namafilesk = "";
+        $skid = "";
+        $adasatgas = 0;
+
+        $ceksk = $this->model_tppk->getSKProv(session()->get('wilayah_akses'));
+
+        if ($ceksk) {
+            $nomor_sk = $ceksk['nomor_sk'];
+            $tanggal_sk = $ceksk['tanggal_sk'];
+            $fileabjad = preg_replace("/[^a-zA-Z0-9]/", "", $nomor_sk);
+            $namafiletanpaekstensi = "sk_" . trim(session()->get('wilayah_akses')) . "_" . $fileabjad;
+
+            $namafilesk = $this->cekfilesk($namafiletanpaekstensi);
+
+            if ($namafilesk != "") {
+                $fileada = true;
+            }
+
+            $data['nomor_sk'] = $nomor_sk;
+            $data['tanggal_sk'] = $tanggal_sk;
+            $data['nama_file'] = $namafilesk;
+
+            $adasatgas = 0;
+            $skid = $ceksk['sk_id'];
+            $dafanggota = $this->model_tppk->getAnggotaProv($skid);
+            $data['anggotasatgas'] = $dafanggota;
+
+            if ($dafanggota) {
+                $adasatgas = 1;
+            }
+        }
+
+        $data['skid'] = $skid;
+
+        if ($opsi == "edit" && $adasatgas == 0)
+            return redirect()->to('/inputdata');
+
+        if ($opsi != "edit" && $adasatgas)
+            return redirect()->to('/tppk/anggota2/' . substr(session()->get('wilayah_akses'), 0, 4) . '00');
+
         // $validation = session('validation');
         // if (empty($validation)) {
         //     $validation = [];
         // }
-        session()->set('pilihan', 2);
-        $data = array();
+
         $data['namaPropinsi'] = $this->model_tppk->getNamaWilayah('000000', 1);
         $kodeprovsaya = substr(session()->get('wilayah_akses'), 0, 2) . '0000';
         $kodekotasaya = substr(session()->get('wilayah_akses'), 0, 4) . '00';
@@ -241,17 +347,17 @@ class InputData extends BaseController
         $data['wilayahkotasaya'] = $kodekotasaya;
         $data['sebagai'] = session()->get('sebagai');
         $data['opsi'] = $opsi;
-        $datask = $this->model_tppk->getSKProv($kodekotasaya);
-        if ($datask) {
-            $data['datask'] = $datask;
-            $skid = $datask['sk_id'];
-            $data['skid'] = $skid;
-            $data['anggotasatgas'] = $this->model_tppk->getAnggotaProv($skid);
-        }
 
-        // $data['validation'] = $validation;
-        // dd($data['namaWilayah']);
-        return view('inputsatgaskabkot', $data);
+        if ($fileada) {
+            $data['opsi'] = "edit";
+            return view('inputsatgaskabkot', $data);
+        } else {
+            if ($adasatgas == 1)
+                $data['opsi'] = "ubahfile";
+            else
+                $data['opsi'] = "skbaru";
+            return view('inputsatgaskabkot_file', $data);
+        }
     }
 
     public function getNamaWilayah()
@@ -391,7 +497,6 @@ class InputData extends BaseController
 
         $filesk->move(ROOTPATH . '/uploads', $namafilebaru);
 
-
         $data = [];
 
         $tgl = $request->getPost('tanggal_sk');
@@ -447,15 +552,9 @@ class InputData extends BaseController
         $postData = $request->getPost();
         $jmlpetugas = $request->getPost('jmlpengguna');
         $addedit = $request->getPost('addedit');
-        $tglsk = $request->getPost('tanggal_sk');
-        $nmrsk = $request->getPost('nomor_sk');
-        $filesk = $request->getFile('file_sk');
         $skid = $request->getPost('skid');
-        $namafile = $filesk->getName();
 
         $namasaya = session()->get('nama');
-
-        $tanggalsk = substr($tglsk, 6, 4) . "-" . substr($tglsk, 3, 2) . "-" . substr($tglsk, 0, 2);
 
         $level_wilayah = $request->getPost('id_level_wilayah');
         if ($level_wilayah == 1)
@@ -464,13 +563,6 @@ class InputData extends BaseController
             $kodeprov = $request->getPost('ikotaon');
 
         $uuid = $this->generate_uuid_v4();
-        if ($addedit == "add") {
-            $datask = array('sk_id' => $uuid, 'kode_wilayah' => $kodeprov, 'id_level_wilayah' => $level_wilayah, 'nomor_sk' => $nmrsk, 'tanggal_sk' => $tanggalsk, 'nama_operator' => $namasaya);
-            $this->model_tppk->insert_sk_baru($datask);
-        } else {
-            $datask = array('nomor_sk' => $nmrsk, 'tanggal_sk' => $tanggalsk, 'nama_operator' => $namasaya);
-            $this->model_tppk->update_sk($datask, $skid);
-        }
 
         if ($jmlpetugas > 0) {
 
@@ -496,7 +588,40 @@ class InputData extends BaseController
             $this->model_tppk->updaterekapwilayah($level_wilayah, $kodeprov, 1);
             $this->model_tppk->update_jumlah_satgas($kodeprov, $jmlpetugas);
             if ($skid != "")
-                $this->model_tppk->setsksesuai($skid, 0);
+                $this->model_tppk->setsksesuai($skid, 0, "");
+        }
+
+        return redirect()->to('/tppk/anggota2/' . $kodeprov);
+    }
+
+    public function simpanfilesatgas()
+    {
+        $request = \Config\Services::request();
+        $postData = $request->getPost();
+        $addedit = $request->getPost('addedit');
+        $tglsk = $request->getPost('tanggal_sk');
+        $nmrsk = $request->getPost('nomor_sk');
+        $filesk = $request->getFile('file_sk');
+        $skid = $request->getPost('skid');
+        $namafile = $filesk->getName();
+
+        $namasaya = session()->get('nama');
+
+        $tanggalsk = substr($tglsk, 6, 4) . "-" . substr($tglsk, 3, 2) . "-" . substr($tglsk, 0, 2);
+
+        $level_wilayah = $request->getPost('id_level_wilayah');
+        if ($level_wilayah == 1)
+            $kodeprov = $request->getPost('ipropinsion');
+        else if ($level_wilayah == 2)
+            $kodeprov = $request->getPost('ikotaon');
+
+        $uuid = $this->generate_uuid_v4();
+        if ($addedit == "skbaru") {
+            $datask = array('sk_id' => $uuid, 'kode_wilayah' => $kodeprov, 'id_level_wilayah' => $level_wilayah, 'nomor_sk' => $nmrsk, 'tanggal_sk' => $tanggalsk, 'nama_operator' => $namasaya);
+            $this->model_tppk->insert_sk_baru($datask);
+        } else {
+            $datask = array('nomor_sk' => $nmrsk, 'tanggal_sk' => $tanggalsk, 'nama_operator' => $namasaya);
+            $this->model_tppk->update_sk($datask, $skid);
         }
 
         $filesk = $request->getFile('file_sk');
@@ -506,15 +631,25 @@ class InputData extends BaseController
             $ukuranFile = $filesk->getSize();
             $tipeFile = $filesk->getMimeType();
             $ext = $filesk->getClientExtension();
+
+            if ($ukuranFile > 2000 * 1024 || $ext !== 'pdf') {
+                return redirect()->back()->with('error', 'Gagal unggah file. File harus berukuran kurang dari 2 MB dan berformat PDF.');
+            }
+
             $namafileoke = preg_replace("/[^a-zA-Z0-9]/", "", $nmrsk);
             $namafilebaru = "sk_" . trim($kodeprov) . "_" . $namafileoke . "." . $ext;
-            // echo "***" . $namafilebaru . "***<br>";
-            $filesk->move(WRITEPATH . 'uploads/', $namafilebaru);
+            $files = glob('public/uploads/sk_' . trim($kodeprov) . '*.*');
+            foreach ($files as $file) {
+                if (is_file($file)) {
+                    unlink($file);
+                }
+            }
+            $filesk->move('public/uploads/', $namafilebaru);
         } else {
             echo $filesk->getError();
         }
 
-        return redirect()->to('/tppk/anggota2/' . $kodeprov);
+        return redirect()->to('/inputdata');
     }
 
     function generate_uuid_v4()
@@ -575,6 +710,12 @@ class InputData extends BaseController
             if (is_file($lokasiFile)) {
                 // Jika ada, hapus file lama
                 unlink($lokasiFile);
+            }
+
+            $files = glob('public/uploads/' . 'sk_' . $npsn . '_*');
+
+            foreach ($files as $file) {
+                unlink($file);
             }
 
             if (session()->get('username') == "hardianto@kemdikbud.go.id") {
@@ -749,6 +890,24 @@ class InputData extends BaseController
         }
 
         return view('tppk/input_sk', $data);
+    }
+
+    public function cek_sk_gagal_upload()
+    {
+        $getdaftarsk_satgas = $this->model_tppk->getAllSKSatgas();
+        $nomor = 0;
+        foreach ($getdaftarsk_satgas as $data) {
+            $kode_wilayah = $data['kode_wilayah'];
+            $sktugas = $data['nomor_sk'];
+            $nama_wilayah = $data['nama'];
+            $fileabjad = preg_replace("/[^a-zA-Z0-9]/", "", $sktugas);
+            $namafiletanpaekstensi = "sk_" . $kode_wilayah . "_" . $fileabjad;
+            $namafilesk = $this->cekfilesk($namafiletanpaekstensi);
+            if ($namafilesk == "") {
+                $nomor++;
+                echo "SK KodeWilayah $kode_wilayah ($nama_wilayah) gagal upload!<br>";
+            }
+        }
     }
 
     private function cekfilesk($namafiletanpaekstensi)
@@ -927,6 +1086,16 @@ class InputData extends BaseController
 
     public function lihatanggota($npsn)
     {
+        $tanggalSekarang = date('Y-m-d');
+        $tanggalTertentu = date('Y-m-d', strtotime('2024-04-21'));
+        if ($tanggalSekarang < $tanggalTertentu) {
+        } else {
+            $userlogin = session()->get('loggedIn');
+            if (!$userlogin) {
+                return redirect()->to('/home');
+            }
+        }
+
         $query1 = $this->model_tppk->getSekolah($npsn);
         $hasil = $query1->getRowArray();
 
@@ -1057,6 +1226,16 @@ class InputData extends BaseController
 
     public function lihatanggota2($kodewilayah)
     {
+        $tanggalSekarang = date('Y-m-d');
+        $tanggalTertentu = date('Y-m-d', strtotime('2024-04-21'));
+        if ($tanggalSekarang < $tanggalTertentu) {
+        } else {
+            $userlogin = session()->get('loggedIn');
+            if (!$userlogin) {
+                return redirect()->to('/home');
+            }
+        }
+
         $namakota = "";
         $namaprovinsi = "";
         if (intval(substr($kodewilayah, 2) == 0)) {
@@ -1146,12 +1325,17 @@ class InputData extends BaseController
             $opsi = $request->getVar('opsi');
             $getsk = $this->model_tppk->getSKProv($kodewilayah);
             $skid = $getsk['sk_id'];
-            $this->model_tppk->setsksesuai($skid, $opsi);
 
             $status = 0;
+            $catatan = "";
             if ($opsi == 2) {
                 $status = 1;
+            } else {
+                $catatan = $request->getVar('catatan');
             }
+
+            $this->model_tppk->setsksesuai($skid, $opsi, $catatan);
+
             $level_wilayah = 2;
             if (substr($kodewilayah, 2, 2) == '00') {
                 $level_wilayah = 1;
@@ -1202,45 +1386,239 @@ class InputData extends BaseController
     {
         $request = \Config\Services::request();
 
+        $datajenjang = ['first', 'semua', 'dikmen', 'dikdas'];
+        $daftaropsijenjang[1] = ['PAUD', 'SD', 'SMP', 'SMA', 'SMK', 'SLB', 'Kesetaraan'];
+        $daftaropsijenjang[2] = ['SMA', 'SMK', 'SLB'];
+        $daftaropsijenjang[3] = ['PAUD', 'SD', 'SMP', 'Kesetaraan'];
+
+        $sebagai = session()->get('sebagai');
+        $instansiid = session()->get('jenis_instansi_id');
+        $indeks = 0;
+        if ($sebagai == "irjen" || $sebagai == "pusat")
+            $indeks = 1;
+        else if ($sebagai == "dinasprov")
+            $indeks = 2;
+        else if ($sebagai == "dinaskota")
+            $indeks = 3;
+
         if ($request->getVar('kode_wilayah'))
             $kode_wilayah = $request->getVar('kode_wilayah');
-        else $kode_wilayah = '000000';
+        else
+            $kode_wilayah = '000000';
+        if ($request->getVar('npsn'))
+            $npsn = $request->getVar('npsn');
+        else
+            $npsn = "";
 
-        // $userlogin = session()->get('loggedIn');
-        // if (!$userlogin) {
-        //     return redirect()->to('/home');
-        // } else 
-        {
-            $view = 'statuslaporan';
+        $jenjangall = $datajenjang[$indeks];
+        if ($request->getVar('jenjang'))
+            $jenjang = $request->getVar('jenjang');
+        else
+            $jenjang = $jenjangall;
+
+        $laporan = "";
+        if ($request->getVar('laporan'))
+            $laporan = $request->getVar('laporan');
+
+        if (in_array($jenjang, $datajenjang)) {
+            if ($jenjang != $jenjangall) {
+                echo "Tidak Sesuai";
+                die();
+            }
+        } else if (!in_array($jenjang, $daftaropsijenjang[$indeks])) {
+            echo "Tidak Sesuai";
+            die();
+        }
+
+        $data = [];
+        $wilayahakses = "";
+        if (session()->get('wilayah_akses'))
+            $wilayahakses = session()->get('wilayah_akses');
+
+        if ($sebagai != "irjen" && $sebagai != "pusat" && $sebagai != "dinasprov" && $sebagai != "dinaskota") {
+            return redirect()->to('/home');
+        } else {
+            $level = 99;
             $namawilayah1 = "";
             $namawilayah2 = "";
-            if ($kode_wilayah == '000000') {
-                $get_rekap_laporan = $this->model_tppk->get_rekap_laporan();
-            } else if (substr($kode_wilayah, 2, 2) == '00') {
-                $get_rekap_laporan = $this->model_tppk->get_rekap_laporan_provinsi($kode_wilayah);
+            $namawilayah3 = "";
+            if ($kode_wilayah == '000000' && $npsn == "") {
+                if ($sebagai == "dinasprov" || $sebagai == "dinaskota") {
+                    $kode_wilayah = $wilayahakses;
+                } else {
+                    $level = 0;
+                    $data['judulkolom'] = "Provinsi";
+                    $data['judul'] = "DI INDONESIA";
+                }
+            }
+        }
+
+        if ($level == 99) {
+
+            $kodelevel2 = substr($kode_wilayah, 2, 2);
+            $kodelevel3 = substr($kode_wilayah, 4, 2);
+
+            if ($kodelevel2 == '00') {
                 $namawilayah1 = $this->model_tppk->getJudulProp(1, $kode_wilayah)['nama'];
-            } else if (substr($kode_wilayah, 4, 2) == '00') {
-                $get_rekap_laporan = $this->model_tppk->get_rekap_laporan_kota($kode_wilayah);
+                $level = 1;
+                $data['judulkolom'] = "Kota/Kabupaten";
+                $data['judul'] = strtoupper($namawilayah1);
+            } else if ($kodelevel3 == '00') {
                 $namawilayah1 = $this->model_tppk->getJudulProp(1, substr($kode_wilayah, 0, 2) . '0000')['nama'];
                 $namawilayah2 = $this->model_tppk->getJudulProp(1, $kode_wilayah)['nama'];
-                $view = 'daftarlaporan';
-            } else {
+                $level = 2;
+                $data['judulkolom'] = "Kecamatan";
+                $data['judul'] = strtoupper($namawilayah2);
+            } else if ($kodelevel3 != "00" && $npsn == "") {
+                if ($sebagai != "irjen" && $sebagai != "pusat") {
+                    return redirect()->to('/home');
+                }
+                $namawilayah1 = $this->model_tppk->getJudulProp(1, substr($kode_wilayah, 0, 2) . '0000')['nama'];
+                $namawilayah2 = $this->model_tppk->getJudulProp(1, substr($kode_wilayah, 0, 4) . '00')['nama'];
+                $namawilayah3 = $this->model_tppk->getJudulProp(1, $kode_wilayah)['nama'];
+                $level = 3;
+                $data['judulkolom'] = "Satuan Pendidikan";
+                $data['judul'] = strtoupper($namawilayah3);
+            } else if ($kode_wilayah != '000000') {
+                if ($sebagai != "irjen" && $sebagai != "pusat") {
+                    return redirect()->to('/home');
+                }
+                $namawilayah1 = $this->model_tppk->getJudulProp(1, substr($kode_wilayah, 0, 4) . '00')['nama'];
+                $namawilayah2 = $this->model_tppk->getJudulProp(1, substr($kode_wilayah, 0, 4) . '00')['nama'];
+                $namawilayah3 = $this->model_tppk->getJudulProp(1, $kode_wilayah)['nama'];
+                $namasekolah = $this->model_tppk->getInfoSekolah($npsn);
+                $data['judul'] = strtoupper($namasekolah['nama']);
+                $data['judulkolom'] = "Satuan Pendidikan";
+                $level = 4;
             }
-
-            $npsn = session()->get('npsn_user');
-            $data = [];
-            $data['area'] = true;
-            $data['rekap_laporan'] = $get_rekap_laporan;
-            $data['wilayah1'] = $namawilayah1;
-            $data['wilayah2'] = $namawilayah2;
-            $data['kode_wilayah'] = $kode_wilayah;
-
-            return view($view, $data);
         }
+
+        $linkindonesiaoff = "Indonesia";
+        $linkindonesiaon = "<a href=" . base_url('status_laporan_kekerasan') . ">Indonesia</a>";
+
+        $linkprovinsioff = substr($namawilayah1, 5);
+        $linkprovinsion = "<a href=" . base_url('status_laporan_kekerasan?kode_wilayah=' . substr($kode_wilayah, 0, 2) . '0000') . ">" . substr($namawilayah1, 5) . "</a>";
+
+        $linkkotaoff = ">> " . substr($namawilayah2, 0);
+        $linkkotaon = ">> <a href=" . base_url('status_laporan_kekerasan?kode_wilayah=' . substr($kode_wilayah, 0, 4) . '00') . ">" . substr($namawilayah2, 0) . "</a>";
+
+        $linkkecamatanoff = ">> " . substr($namawilayah3, 0);
+        $linkkecamatanon = ">> <a href=" . base_url('status_laporan_kekerasan?kode_wilayah=' . substr($kode_wilayah, 0, 6)) . ">" . $namawilayah3 . "</a>";
+
+
+        $data['jenjangall'] = $jenjangall;
+        $data['jenjang'] = $jenjang;
+
+        $view = 'statuslaporan';
+        if ($laporan == "dinas") {
+            $view = 'daftarlaporan';
+            if ($level == 1) {
+                $linkprovinsion = $linkprovinsioff;
+                $linkkotaoff = "";
+                $linkkotaon = "";
+                $linkkecamatanoff = "";
+                $linkkecamatanon = "";
+            } else if ($level == 2) {
+                $linkkotaon = $linkkotaoff;
+                $linkkecamatanoff = "";
+                $linkkecamatanon = "";
+            }
+        } else {
+            // if ($level == 1 && $sebagai == "dinasprov")
+            //     $view = 'daftarlaporan';
+            // else if ($level == 2 && $sebagai == "dinaskota")
+            //     $view = 'daftarlaporan';
+            if ($level == 4)
+                $view = 'daftarlaporan';
+        }
+
+        if ($sebagai == "irjen" || $sebagai == "pusat") {
+            $data['linkindonesia'] = $linkindonesiaon;
+            $data['linkprovinsi'] = $linkprovinsion;
+            $data['linkkota'] = $linkkotaon;
+            $data['linkkecamatan'] = $linkkecamatanon;
+            $data['opsijenjang'] = $daftaropsijenjang[1];
+        } else if ($sebagai == "dinasprov") {
+            $data['linkindonesia'] = $linkindonesiaoff;
+            $data['linkprovinsi'] = $linkprovinsion;
+            $data['linkkota'] = $linkkotaon;
+            $data['linkkecamatan'] = $linkkecamatanon;
+            $data['opsijenjang'] = $daftaropsijenjang[2];
+            $prefikswilayahakses = substr($wilayahakses, 0, 2);
+            $prefikskodewilayah = substr($kode_wilayah, 0, 2);
+            if ($prefikswilayahakses != $prefikskodewilayah) {
+                echo "Tidak dapat mengakses";
+                die();
+            }
+        } else if ($sebagai == "dinaskota") {
+            $data['linkindonesia'] = $linkindonesiaoff;
+            $data['linkprovinsi'] = $linkprovinsioff;
+            $data['linkkota'] = $linkkotaon;
+            $data['linkkecamatan'] = $linkkecamatanon;
+            $data['opsijenjang'] = $daftaropsijenjang[3];
+            $prefikswilayahakses = substr($wilayahakses, 0, 4);
+            $prefikskodewilayah = substr($kode_wilayah, 0, 4);
+            if ($prefikswilayahakses != $prefikskodewilayah) {
+                echo "Tidak dapat mengakses";
+                die();
+            }
+        }
+
+        if ($level == 0) {
+            $get_rekap_laporan = $this->model_tppk->get_rekap_laporan($jenjang);
+        } else if ($level == 1) {
+            $get_rekap_laporan = $this->model_tppk->get_rekap_laporan_provinsi($kode_wilayah, $jenjang);
+            if ($laporan == "dinas" && ($sebagai == "irjen" || $sebagai == "dinasprov")) {
+                $level = 4;
+                $get_rekap_laporan = $this->model_tppk->get_rekap_dinas_provinsi($kode_wilayah);
+            }
+        } else if ($level == 2) {
+            $get_rekap_laporan = $this->model_tppk->get_rekap_laporan_kota($kode_wilayah, $jenjang);
+            if ($laporan == "dinas" && ($sebagai == "irjen" || $sebagai == "dinaskota")) {
+                $level = 5;
+                $get_rekap_laporan = $this->model_tppk->get_rekap_dinas_provinsi($kode_wilayah);
+            }
+        } else if ($level == 3) {
+            if ($sebagai == "irjen")
+                $get_rekap_laporan = $this->model_tppk->get_rekap_laporan_kecamatan($kode_wilayah, $jenjang);
+            else {
+                echo "Tidak memiliki akses";
+                die();
+            }
+        } else if ($level == 4) {
+            $get_rekap_laporan = $this->model_tppk->get_rekap_laporan_sekolah($npsn);
+        }
+
+
+
+
+        $data['area'] = true;
+        $data['rekap_laporan'] = $get_rekap_laporan;
+        $data['laporan'] = $laporan;
+        $data['wilayah1'] = $namawilayah1;
+        $data['wilayah2'] = $namawilayah2;
+        $data['wilayah3'] = $namawilayah3;
+        $data['kode_wilayah'] = $kode_wilayah;
+        $data['level'] = $level;
+        $data['jenjang'] = $jenjang;
+        $data['sebagai'] = $sebagai;
+        $data['instansiid'] = $instansiid;
+
+        // echo $view . "-" . $sebagai . "-" . $level;
+        // echo $instansiid;
+        // die();
+
+        return view($view, $data);
     }
 
     public function daftar_laporan($opsilogin = "prod")
     {
+        $request = \Config\Services::request();
+
+        $laporan = "";
+        if ($request->getVar('laporan'))
+            $laporan = $request->getVar('laporan');
+
         if ($opsilogin == "test")
             $viewlogin = "login_eksternal_test";
         else
@@ -1290,9 +1668,11 @@ class InputData extends BaseController
         }
         $asallogin = session()->get('asallogin');
 
+        $sebagai = "sekolah";
         $instansiid = session()->get('jenis_instansi_id');
         if ($instansiid == 2 || $instansiid == 3) {
             session()->set('statustppk', 'anggota1');
+            $sebagai = "dinas";
         }
 
         if ($asallogin != "eksternal" && $instansiid != 2 && $instansiid != 3) {
@@ -1316,12 +1696,13 @@ class InputData extends BaseController
                     $namasekolah = $infoSekolah['nama'];
                 $data = [];
                 $data['area'] = false;
+                $data['laporan'] = $laporan;
+                $data['sebagai'] = $sebagai;
                 $data['kode_wilayah'] = "";
                 $data['wilayah2'] = $namasekolah;
                 $data['rekap_laporan'] = $this->model_tppk->get_daf_laporan($npsn);
 
-                // $pesan = "<script>console.log('NPSN:" . session()->get('npsn_user') . "');console.log('ID:" . session()->get('ptk_id') . "');</script>";
-                // echo $pesan;
+
 
                 return view('daftarlaporan', $data);
             } else {
@@ -1364,13 +1745,16 @@ class InputData extends BaseController
             $instansiid = session()->get('jenis_instansi_id');
             $wilayah = session()->get('wilayah_akses');
             $npsn = session()->get('npsn_user');
-            $infoSekolah = $this->model_tppk->getInfoSekolah($npsn);
-            $sekolah_id = $infoSekolah['sekolah_id'];
             $nomordepan = $npsn;
             $ceknomor = $this->model_tppk->cek_nomor_kasus($npsn);
             if ($instansiid == 2 || $instansiid == 3) {
                 $npsn = '';
                 $nomordepan = $wilayah;
+                $infoSekolah = "";
+                $sekolah_id = "";
+            } else {
+                $infoSekolah = $this->model_tppk->getInfoSekolah($npsn);
+                $sekolah_id = $infoSekolah['sekolah_id'];
             }
             $nomorbaru = "";
             if (!$ceknomor)
@@ -1391,17 +1775,23 @@ class InputData extends BaseController
             $getbentukkekerasan = $this->model_tppk->get_bentuk_kekerasan();
             $getkebutuhankhusus = $this->model_tppk->get_kebutuhan_khusus();
             $getprovinsi = $this->model_tppk->get_daf_provinsi();
-            $getdaftarsiswa = $this->model_tppk->get_daf_siswa($sekolah_id);
-            $getdaftarpendidik = $this->model_tppk->get_daf_ptk($sekolah_id, "p");
-            $getdaftartenagakependidikan = $this->model_tppk->get_daf_ptk($sekolah_id, "tk");
-            $getdaftarkepsek = $this->model_tppk->get_kepsek($sekolah_id);
 
-            if ($instansiid == 2 || $instansiid == 3)
+
+
+            if ($instansiid == 2 || $instansiid == 3) {
                 $sebagai = "dinas";
-            else {
+                $getdaftarsiswa = "";
+                $getdaftarpendidik = "";
+                $getdaftartenagakependidikan = "";
+                $getdaftarkepsek = "";
+            } else {
                 $sebagai = "sekolah";
                 $getsekolah = $this->model_tppk->getSekolah($npsn)->getRowArray();
                 $data['sekolah_saya'] = $getsekolah;
+                $getdaftarsiswa = $this->model_tppk->get_daf_siswa($sekolah_id);
+                $getdaftarpendidik = $this->model_tppk->get_daf_ptk($sekolah_id, "p");
+                $getdaftartenagakependidikan = $this->model_tppk->get_daf_ptk($sekolah_id, "tk");
+                $getdaftarkepsek = $this->model_tppk->get_kepsek($sekolah_id);
             }
             $data['sebagai'] = $sebagai;
             $data['nomor_register'] = $nomorbaru;
@@ -1505,6 +1895,7 @@ class InputData extends BaseController
         $status = "nonaktif";
         $nama_siswa = "";
         $valnama = "-";
+        $valnik = "-";
         $nisn = "";
         // $nik = "";
         $tgl_lahir = "";
@@ -1542,6 +1933,38 @@ class InputData extends BaseController
 
             $hasilpadan = $this->padankandatakasus($nik, $nama_siswa, $tgllahir, $jk);
             $decodedData = json_decode($hasilpadan, true);
+
+            $valid = strpos($hasilpadan, 'NAMA_LGKP');
+            $niktaknemu = strpos($hasilpadan, 'NIK tidak terdapat di database Kependudukan');
+            $niksalahformat = strpos($hasilpadan, 'NIK tidak sesuai format Dukcapil');
+            $niksalahformat2 = strpos($hasilpadan, 'NIK yang dimasukan tidak sesuai format');
+            if ($valid) {
+                $valnik = "NIK sesuai";
+                $decodedData = json_decode($hasilpadan, true);
+                $valnama = $decodedData['NAMA_LGKP'];
+                $valsex = $decodedData['JENIS_KLMIN'];
+            } else if ($niktaknemu) {
+                $valnama = "Nama tidak sesuai NIK";
+                $valnik = "NIK tidak ditemukan";
+                $valsex = "-";
+                $valtglahir = "-";
+            } else if ($niksalahformat) {
+                $valnama = "Nama tidak sesuai NIK";
+                $valnik = "NIK tidak sesuai format";
+                $valsex = "-";
+                $valtglahir = "-";
+            } else if ($niksalahformat2) {
+                $valnama = "Nama tidak sesuai NIK";
+                $valnik = "NIK tidak sesuai format";
+                $valsex = "-";
+                $valtglahir = "-";
+            } else {
+                $valnama = "Server Dukcapil tidak aktif";
+                $valnik = "Server Dukcapil tidak aktif";
+                $valsex = "-";
+                $valtglahir = "-";
+            }
+
             // echo var_dump($decodedData);
 
             if (isset($decodedData['NAMA_LGKP'])) {
@@ -1568,6 +1991,7 @@ class InputData extends BaseController
         $response['nisn'] = $nisn;
         // $response['nik'] = $nik;
         $response['valnama_siswa'] = $valnama;
+        $response['valnik'] = $valnik;
         $response['nomor'] = $nomor;
         $response['nik_ayah'] = $nikayah;
         $response['nama_ayah'] = $namaayah;
@@ -1580,6 +2004,48 @@ class InputData extends BaseController
         $response['nama_sekolah'] = $nama_sekolah;
         $response['kebutuhan_khusus_id'] = $kebutuhan_khusus_id;
         $response['kebutuhan_khusus'] = $kebutuhan_khusus;
+
+        return $this->response->setJSON($response);
+    }
+
+    public function nik_siswa()
+    {
+        $request = \Config\Services::request();
+        $npsn = $request->getVar('npsn');
+        $nisn = $request->getVar('nisn');
+        $jenis = $request->getVar('jenis');
+        if ($jenis == 1 || $jenis == 2)
+            $get_nik_siswa = $this->model_tppk->getsiswanikbynisn($npsn, $nisn);
+        else
+            $get_nik_siswa = $this->model_tppk->getnikbynuptk($npsn, $nisn, $jenis);
+        $response = [];
+        $response['kodhes'] = csrf_hash();
+        if ($get_nik_siswa)
+            $niksiswa = $get_nik_siswa['nik'];
+        else
+            $niksiswa = "-";
+        $response['niksiswa'] = $niksiswa;
+        return $this->response->setJSON($response);
+    }
+
+    public function get_kepsek()
+    {
+        $request = \Config\Services::request();
+        $npsn = $request->getVar('npsn');
+        $get_kepsek = $this->model_tppk->getkepsekbynpsn($npsn);
+        $response = [];
+        $response['kodhes'] = csrf_hash();
+        $nik = "";
+        $nuptk = "";
+        $nama = "";
+        if ($get_kepsek) {
+            $nik = $get_kepsek['nik'];
+            $nuptk = $get_kepsek['nuptk'];
+            $nama = $get_kepsek['nama'];
+        }
+        $response['nikkepsek'] = $nik;
+        $response['nuptkkepsek'] = $nuptk;
+        $response['namakepsek'] = $nama;
 
         return $this->response->setJSON($response);
     }
@@ -1605,6 +2071,37 @@ class InputData extends BaseController
 
         $hasilpadan = $this->padankandatakasus($nik, $nama, $tgllahir, $jk);
 
+        $valid = strpos($hasilpadan, 'NAMA_LGKP');
+        $niktaknemu = strpos($hasilpadan, 'NIK tidak terdapat di database Kependudukan');
+        $niksalahformat = strpos($hasilpadan, 'NIK tidak sesuai format Dukcapil');
+        $niksalahformat2 = strpos($hasilpadan, 'NIK yang dimasukan tidak sesuai format');
+        if ($valid) {
+            $valnik = "NIK sesuai";
+            $decodedData = json_decode($hasilpadan, true);
+            $valnama = $decodedData['NAMA_LGKP'];
+            $valsex = $decodedData['JENIS_KLMIN'];
+        } else if ($niktaknemu) {
+            $valnama = "Nama tidak sesuai NIK";
+            $valnik = "NIK tidak ditemukan";
+            $valsex = "-";
+            $valtglahir = "-";
+        } else if ($niksalahformat) {
+            $valnama = "Nama tidak sesuai NIK";
+            $valnik = "NIK tidak sesuai format";
+            $valsex = "-";
+            $valtglahir = "-";
+        } else if ($niksalahformat2) {
+            $valnama = "Nama tidak sesuai NIK";
+            $valnik = "NIK tidak sesuai format";
+            $valsex = "-";
+            $valtglahir = "-";
+        } else {
+            $valnama = "Server Dukcapil tidak aktif";
+            $valnik = "Server Dukcapil tidak aktif";
+            $valsex = "-";
+            $valtglahir = "-";
+        }
+
 
         $decodedData = json_decode($hasilpadan, true);
         if (isset($decodedData['NAMA_LGKP'])) {
@@ -1618,6 +2115,7 @@ class InputData extends BaseController
         $response['status'] = $status;
         $response['nisn'] = $nisn;
         $response['valnama_siswa'] = $valnama;
+        $response['valnik'] = $valnik;
         $response['jenis_kelamin'] = $sex;
         $response['valjenis_kelamin'] = $valsex;
         $response['nama_sekolah'] = $nama_sekolah;
@@ -1753,6 +2251,7 @@ class InputData extends BaseController
         $niksalahformat = strpos($hasilpadan, 'NIK tidak sesuai format Dukcapil');
         $niksalahformat2 = strpos($hasilpadan, 'NIK yang dimasukan tidak sesuai format');
         if ($valid) {
+            $valnik = "NIK sesuai";
             $decodedData = json_decode($hasilpadan, true);
             $valnama = $decodedData['NAMA_LGKP'];
             $valsex = $decodedData['JENIS_KLMIN'];
@@ -1893,14 +2392,15 @@ class InputData extends BaseController
                 'kasus_id' => $kasus_id,
                 'pelaporan_id' => $pelaporan_id,
                 'sebagai' => 1,
+                'urutan' => $korban['urutan'],
                 'status_korban_pelaku' => $korban['status'],
                 'nik' => $korban['nik'],
                 'nikpdptk' => $korban['nikpdptk'],
                 'npsn' => $korban['npsn'],
                 'nisn' => $korban['nisn'],
                 'nama' => $korban['nama'],
-                'nama2' => $korban['nama2'],
-                'status_ortu' => $korban['statusortu'],
+                'ver_nama' => $korban['ver_nama'],
+                'ver_nik' => $korban['ver_nik'],
                 'usia' => $korban['usia'],
                 'tanggal_lahir' => $tgl_lairok,
                 'alamat' => $korban['alamat'],
@@ -1911,6 +2411,13 @@ class InputData extends BaseController
                 'kebutuhan_khusus_id' => $korban['inputdisabilitas'],
                 'last_update' => date('Y-m-d H:i:s')
             );
+            if ($korban['status'] == 2) {
+                $data['nama2'] = $korban['nama2'];
+                $data['status_ortu'] = $korban['statusortu'];
+            } else {
+                $data['nama2'] = "";
+                $data['status_ortu'] = "";
+            }
             $batch_datakorban[] = $data;
         }
         $this->model_tppk->save_tbkorban($batch_datakorban);
@@ -1942,14 +2449,15 @@ class InputData extends BaseController
                     'kasus_id' => $kasus_id,
                     'pelaporan_id' => $pelaporan_id,
                     'sebagai' => $sebagainya,
+                    'urutan' => $pelaku['urutan'],
                     'status_korban_pelaku' => $pelaku['status'],
                     'nik' => $pelaku['nik'],
                     'nikpdptk' => $pelaku['nikpdptk'],
                     'npsn' => $pelaku['npsn'],
                     'nisn' => $pelaku['nisn'],
                     'nama' => $pelaku['nama'],
-                    'nama2' => $pelaku['nama2'],
-                    'status_ortu' => $pelaku['statusortu'],
+                    'ver_nama' => $pelaku['ver_nama'],
+                    'ver_nik' => $pelaku['ver_nik'],
                     'usia' => $pelaku['usia'],
                     'tanggal_lahir' => $tgl_lairok,
                     'alamat' => $pelaku['alamat'],
@@ -1960,6 +2468,13 @@ class InputData extends BaseController
                     'kebutuhan_khusus_id' => $pelaku['inputdisabilitas'],
                     'last_update' => date('Y-m-d H:i:s')
                 );
+                if ($pelaku['status'] == 2) {
+                    $data['nama2'] = $pelaku['nama2'];
+                    $data['status_ortu'] = $pelaku['statusortu'];
+                } else {
+                    $data['nama2'] = "";
+                    $data['status_ortu'] = "";
+                }
                 $batch_datapelaku[] = $data;
             }
 
@@ -2276,26 +2791,6 @@ class InputData extends BaseController
 
     public function tes()
     {
-        $nik = '3101024505851001';
-        $nama = 'Abu';
-        $jk = 'Laki-Laki';
-
-        $valnama = "";
-        $valsex = "";
-        $valtglahir = "";
-
-        $tgllahir = '01-01-1900';
-
-        $hasilpadan = $this->padankandatakasus($nik, $nama, $tgllahir, $jk);
-        $decodedData = json_decode($hasilpadan, true);
-        $valnama = $decodedData['NAMA_LGKP'];
-        $valsex = $decodedData['JENIS_KLMIN'];
-
-        $response = [];
-        $response['valnama'] = $valnama;
-        $response['valjenis_kelamin'] = $valsex;
-        $response['valtgl_lahir'] = $valtglahir;
-        // echo var_dump($getsekolah);
-        return $this->response->setJSON($response);
+        $this->model_tppk->simpan_log_userlogin_tes();
     }
 }

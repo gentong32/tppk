@@ -1,0 +1,274 @@
+INFO - 2024-04-26 10:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-26 10:50:06 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(463): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp...', Array)
+#3 D:\laragon\www\tppk\app\Controllers\Login.php(99): App\Models\M_tppk->getTokenSSO('C8427D0A-967D-4...')
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-04-26 10:50:06 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(463): CodeIgniter\Database\BaseConnection->query('EXEC sdm.dbo.sp_sso_checkToken :token:', [...])
+ 3 APPPATH\Controllers\Login.php(99): App\Models\M_tppk->getTokenSSO('C8427D0A-967D-42C0-9D95-8D159AF1A41A')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->actionLoginsso()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 10:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:52:53 --> CSRF token verified.
+INFO - 2024-04-26 10:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:55:39 --> CSRF token verified.
+INFO - 2024-04-26 10:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:57:03 --> CSRF token verified.
+INFO - 2024-04-26 10:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 10:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 10:57:04 --> Undefined variable $datask
+in APPPATH\Views\inputsatgasprov.php on line 153.
+ 1 APPPATH\Views\inputsatgasprov.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datask', 'APPPATH\\Views\\inputsatgasprov.php', 153)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:04:46 --> Undefined variable $datask
+in APPPATH\Views\inputsatgasprov.php on line 144.
+ 1 APPPATH\Views\inputsatgasprov.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datask', 'APPPATH\\Views\\inputsatgasprov.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:06:14 --> Undefined array key 0
+in APPPATH\Views\inputsatgasprov.php on line 193.
+ 1 APPPATH\Views\inputsatgasprov.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\inputsatgasprov.php', 193)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:08:12 --> Undefined array key 0
+in APPPATH\Views\inputsatgasprov.php on line 198.
+ 1 APPPATH\Views\inputsatgasprov.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\inputsatgasprov.php', 198)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:08:36 --> Undefined array key 0
+in APPPATH\Views\inputsatgasprov.php on line 210.
+ 1 APPPATH\Views\inputsatgasprov.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\inputsatgasprov.php', 210)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:09:38 --> Undefined array key 0
+in APPPATH\Views\inputsatgasprov.php on line 217.
+ 1 APPPATH\Views\inputsatgasprov.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\inputsatgasprov.php', 217)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:10:00 --> Undefined array key 1
+in APPPATH\Views\inputsatgasprov.php on line 222.
+ 1 APPPATH\Views\inputsatgasprov.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\inputsatgasprov.php', 222)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:10:14 --> Undefined variable $dukcapilanggota
+in APPPATH\Views\inputsatgasprov.php on line 227.
+ 1 APPPATH\Views\inputsatgasprov.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dukcapilanggota', 'APPPATH\\Views\\inputsatgasprov.php', 227)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:10:39 --> Undefined variable $dukcapilanggota
+in APPPATH\Views\inputsatgasprov.php on line 227.
+ 1 APPPATH\Views\inputsatgasprov.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dukcapilanggota', 'APPPATH\\Views\\inputsatgasprov.php', 227)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:11:55 --> Undefined array key 1
+in APPPATH\Views\inputsatgasprov.php on line 242.
+ 1 APPPATH\Views\inputsatgasprov.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\inputsatgasprov.php', 242)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:13:45 --> Undefined array key 1
+in APPPATH\Views\inputsatgasprov.php on line 247.
+ 1 APPPATH\Views\inputsatgasprov.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\inputsatgasprov.php', 247)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:14:05 --> Undefined array key 1
+in APPPATH\Views\inputsatgasprov.php on line 247.
+ 1 APPPATH\Views\inputsatgasprov.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\inputsatgasprov.php', 247)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:15:07 --> Undefined array key 1
+in APPPATH\Views\inputsatgasprov.php on line 247.
+ 1 APPPATH\Views\inputsatgasprov.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\inputsatgasprov.php', 247)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:15:16 --> Undefined array key 1
+in APPPATH\Views\inputsatgasprov.php on line 259.
+ 1 APPPATH\Views\inputsatgasprov.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\inputsatgasprov.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:17:04 --> Undefined array key 1
+in APPPATH\Views\inputsatgasprov.php on line 266.
+ 1 APPPATH\Views\inputsatgasprov.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\inputsatgasprov.php', 266)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:17:45 --> Undefined array key 1
+in APPPATH\Views\inputsatgasprov.php on line 271.
+ 1 APPPATH\Views\inputsatgasprov.php(271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\inputsatgasprov.php', 271)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-26 11:18:43 --> Undefined array key 1
+in APPPATH\Views\inputsatgasprov.php on line 276.
+ 1 APPPATH\Views\inputsatgasprov.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\inputsatgasprov.php', 276)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inputsatgasprov.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inputsatgasprov', [], true)
+ 5 APPPATH\Controllers\InputData.php(252): view('inputsatgasprov', [...])
+ 6 APPPATH\Controllers\InputData.php(61): App\Controllers\InputData->satgasprov()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-26 11:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 11:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 11:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 11:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 11:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 11:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-26 11:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -126,6 +126,7 @@ $tglahiranggota = [];
 $sexanggota = [];
 $hapeanggota = [];
 $emailanggota = [];
+$dukcapilanggota = [];
 $jmlanggota = 0;
 
 if ($opsi == "edit") {
@@ -199,27 +200,20 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
 
                 <div class="form-group">
                     <label for="nomor_sk">Nomor SK <sup>*</sup></label>
-                    <input type="text" id="nomor_sk" name="nomor_sk" value="<?= ($opsi == 'edit') ? $datask['nomor_sk'] : '' ?>">
+                    <input disabled type="text" id="nomor_sk" name="nomor_sk" value="<?= $nomor_sk ?>">
                 </div>
                 <div class="info" id="infonomor_sk">Nomor SK wajib diisi</div>
                 <div class="form-group">
                     <label for="tanggal_sk">Tanggal SK <sup>*</sup></label>
-                    <input type="text" id="tanggal_sk" name="tanggal_sk" value="<?= ($opsi == 'edit') ? date('d-m-Y', strtotime($datask['tanggal_sk'])) : '' ?>">
+                    <input disabled type="text" id="tanggal_sk" name="tanggal_sk" value="<?= date('d-m-Y', strtotime($tanggal_sk)) ?>">
                 </div>
                 <div class="info" id="infotanggal_sk">Tanggal SK wajib diisi</div>
                 <div class="form-group">
                     <label for="file_sk">FIle SK <sup>*</sup></label>
-                    <input type="file" id="file_sk" name="file_sk" accept=".jpg,.jpeg,.png,.pdf">
+                    <input disabled type="text" id="file_sk" name="file_sk" value="<?= $nama_file ?>">
                 </div>
                 <div class="info" id="infofile_sk">FIle SK wajib diunggah</div>
 
-                <?php
-                if ($opsi == "edit") {
-                    $namafileoke = preg_replace("/[^a-zA-Z0-9]/", "", $datask['nomor_sk']);
-                    $namafilebaru = "sk_" . trim($wilayahkotasaya) . "_" . $namafileoke;
-                    echo "<span style='color:grey;margin-left:130px;'><i>" . $namafilebaru . "</i></span>";
-                }
-                ?>
                 <div style="margin-bottom: 25px;"></div>
 
                 <h2 class="form-title">Keanggotaan</h2>
@@ -232,92 +226,92 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
                 <ul class="infoul">
                     <li>
                         <a href="#" onclick="toggleInfo(event,0)">
-                            <h3 style="margin-bottom:15px;">KETUA: DINAS PENDIDIKAN &#9660;</h3>
+                            <h3 style="margin-bottom:15px;">1. KETUA: DINAS PENDIDIKAN &#9660;</h3>
                         </a>
                         <div id="info0" class="fanggota info-container" style="margin-bottom:10px">
                             <div class="form-group ctim">
                                 <label for="inama0">Nama <sup>*</sup></label>
-                                <input type="text" id="inama0" name="inama0" value="<?= ($opsi == 'edit') ? $namaanggota[0] : '' ?>">
+                                <input type="text" id="inama0" name="inama0" value="<?= ($namaanggota) ? $namaanggota[0] : '' ?>">
                             </div>
                             <div class="info" id="infonama0">Nama wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="inik1">NIK <sup>*</sup></label>
-                                <input type="text" maxlength="16" id="inik0" name="inik0" value="<?= ($opsi == 'edit') ? $nikanggota[0] : '' ?>">
+                                <input type="text" maxlength="16" id="inik0" name="inik0" value="<?= ($nikanggota) ? $nikanggota[0] : '' ?>">
                             </div>
                             <div class="info" id="infonik0">NIK wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="itglahir0">Tanggal Lahir <sup>*</sup></label>
-                                <input type="text" id="itglahir0" name="itglahir0" value="<?= ($opsi == 'edit' && $tglahiranggota[0] != '') ? date('d-m-Y', strtotime($tglahiranggota[0])) : '' ?>">
+                                <input type="text" id="itglahir0" name="itglahir0" value="<?= ($tglahiranggota && $tglahiranggota[0] != '') ? date('d-m-Y', strtotime($tglahiranggota[0])) : '' ?>">
                             </div>
                             <div class="info" id="infotglahir0">Tanggal lahir diisi</div>
                             <div class="form-group ctim">
                                 <label for="isex0">Jenis Kelamin <sup>*</sup></label>
                                 <select class="single" id="isex0" name="isex0">
                                     <option value="0">- Pilih Jenis Kelamin -</option>
-                                    <option <?= ($opsi == 'edit' && $sexanggota[0] == 1) ? 'selected' : '' ?> value="1">Laki-laki</option>
-                                    <option <?= ($opsi == 'edit' && $sexanggota[0] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
+                                    <option <?= ($sexanggota && $sexanggota[0] == 1) ? 'selected' : '' ?> value="1">Laki-laki</option>
+                                    <option <?= ($sexanggota && $sexanggota[0] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
                                 </select>
                             </div>
                             <div class="info" id="infosex0">Jenis kelamin diisi</div>
                             <div class="form-group ctim">
                                 <label for="ihp0">Nomor HP <sup>*</sup></label>
-                                <input type="text" id="ihp0" name="ihp0" value="<?= ($opsi == 'edit') ? $hapeanggota[0] : '' ?>">
+                                <input type="text" id="ihp0" name="ihp0" value="<?= ($hapeanggota) ? $hapeanggota[0] : '' ?>">
                             </div>
                             <div class="info" id="infohp0">Nomor HP wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="iemail0">Email</label>
-                                <input type="text" id="iemail0" name="iemail0" value="<?= ($opsi == 'edit') ? $emailanggota[0] : '' ?>">
+                                <input type="text" id="iemail0" name="iemail0" value="<?= ($emailanggota) ? $emailanggota[0] : '' ?>">
                             </div>
+                            <button class="tbcek" onclick="return ceknama(0);">Cek Dukcapil</button>
                             <div class="form-group ctim">
                                 <label for="idukcapil0">Status Dukcapil <sup>*</sup></label>
-                                <textarea readonly id="idukcapil0" name="idukcapil0" class="multilineInput"><?= ($opsi == 'edit') ? $dukcapilanggota[0] : '' ?></textarea>
+                                <textarea readonly id="idukcapil0" name="idukcapil0" class="multilineInput"><?= ($dukcapilanggota) ? $dukcapilanggota[0] : '' ?></textarea>
                             </div>
                             <div class="info" id="infodukcapil0">Cek Dukcapil dahulu</div>
-                            <button class="tbcek" onclick="return ceknama(0);">Cek Dukcapil</button>
                         </div>
                         <hr class="hrtim">
                     </li>
                     <li>
                         <a href="#" onclick="toggleInfo(event,1)">
-                            <h3 style="margin-bottom:15px;">ANGGOTA 1: DINAS PENDIDIKAN &#9660;</h3>
+                            <h3 style="margin-bottom:15px;">2. ANGGOTA : DINAS PENDIDIKAN &#9660;</h3>
                         </a>
                         <div id="info1" class="fanggota info-container" style="margin-bottom:10px">
                             <div class="form-group ctim">
                                 <label for="inama1">Nama <sup>*</sup></label>
-                                <input type="text" id="inama1" name="inama1" value="<?= ($opsi == 'edit') ? $namaanggota[1] : '' ?>">
+                                <input type="text" id="inama1" name="inama1" value="<?= ($namaanggota) ? $namaanggota[1] : '' ?>">
                             </div>
                             <div class="info" id="infonama1">Nama wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="inik1">NIK <sup>*</sup></label>
-                                <input type="text" maxlength="16" id="inik1" name="inik1" value="<?= ($opsi == 'edit') ? $nikanggota[1] : '' ?>">
+                                <input type="text" maxlength="16" id="inik1" name="inik1" value="<?= ($nikanggota) ? $nikanggota[1] : '' ?>">
                             </div>
                             <div class="info" id="infonik1">NIK wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="itglahir1">Tanggal Lahir <sup>*</sup></label>
-                                <input type="text" id="itglahir1" name="itglahir1" value="<?= ($opsi == 'edit' && $tglahiranggota[1] != '') ? date('d-m-Y', strtotime($tglahiranggota[1])) : '' ?>">
+                                <input type="text" id="itglahir1" name="itglahir1" value="<?= ($tglahiranggota && $tglahiranggota[1] != '') ? date('d-m-Y', strtotime($tglahiranggota[1])) : '' ?>">
                             </div>
                             <div class="info" id="infotglahir1">Tanggal lahir diisi</div>
                             <div class="form-group ctim">
                                 <label for="isex1">Jenis Kelamin <sup>*</sup></label>
                                 <select class="single" id="isex1" name="isex1">
                                     <option value="0">- Pilih Jenis Kelamin -</option>
-                                    <option <?= ($opsi == 'edit' && $sexanggota[1] == 1) ? 'selected' : '' ?> value="1">Laki-laki</option>
-                                    <option <?= ($opsi == 'edit' && $sexanggota[1] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
+                                    <option <?= ($sexanggota && $sexanggota[1] == 1) ? 'selected' : '' ?> value="1">Laki-laki</option>
+                                    <option <?= ($sexanggota && $sexanggota[1] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
                                 </select>
                             </div>
                             <div class="info" id="infosex1">Jenis kelamin diisi</div>
                             <div class="form-group ctim">
                                 <label for="ihp1">Nomor HP <sup>*</sup></label>
-                                <input type="text" id="ihp1" name="ihp1" value="<?= ($opsi == 'edit') ? $hapeanggota[1] : '' ?>">
+                                <input type="text" id="ihp1" name="ihp1" value="<?= ($hapeanggota) ? $hapeanggota[1] : '' ?>">
                             </div>
                             <div class="info" id="infohp1">Nomor HP wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="iemail1">Email</label>
-                                <input type="text" id="iemail1" name="iemail1" value="<?= ($opsi == 'edit') ? $emailanggota[1] : '' ?>">
+                                <input type="text" id="iemail1" name="iemail1" value="<?= ($emailanggota) ? $emailanggota[1] : '' ?>">
                             </div>
                             <div class="form-group ctim">
                                 <label for="idukcapil1">Status Dukcapil <sup>*</sup></label>
-                                <textarea readonly id="idukcapil1" name="idukcapil1" class="multilineInput"><?= ($opsi == 'edit') ? $dukcapilanggota[1] : '' ?></textarea>
+                                <textarea readonly id="idukcapil1" name="idukcapil1" class="multilineInput"><?= ($dukcapilanggota) ? $dukcapilanggota[1] : '' ?></textarea>
                             </div>
                             <div class="info" id="infodukcapil1">Cek Dukcapil dahulu</div>
                             <button class="tbcek" onclick="return ceknama(1);">Cek Dukcapil</button>
@@ -326,45 +320,45 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
                     </li>
                     <li>
                         <a href="#" onclick="toggleInfo(event,2)">
-                            <h3 style="margin-bottom:15px;">ANGGOTA 2: DINAS SOSIAL &#9660;</h3>
+                            <h3 style="margin-bottom:15px;">3. ANGGOTA : DINAS SOSIAL &#9660;</h3>
                         </a>
                         <div id="info2" class="fanggota info-container" style="margin-bottom:10px">
                             <div class="form-group ctim">
                                 <label for="inama2">Nama <sup>*</sup></label>
-                                <input type="text" id="inama2" name="inama2" value="<?= ($opsi == 'edit') ? $namaanggota[2] : '' ?>">
+                                <input type="text" id="inama2" name="inama2" value="<?= ($namaanggota) ? $namaanggota[2] : '' ?>">
                             </div>
                             <div class="info" id="infonama2">Nama wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="inik2">NIK <sup>*</sup></label>
-                                <input type="text" maxlength="16" id="inik2" name="inik2" value="<?= ($opsi == 'edit') ? $nikanggota[2] : '' ?>">
+                                <input type="text" maxlength="16" id="inik2" name="inik2" value="<?= ($nikanggota) ? $nikanggota[2] : '' ?>">
                             </div>
                             <div class="info" id="infonik2">NIK wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="itglahir2">Tanggal Lahir <sup>*</sup></label>
-                                <input type="text" id="itglahir2" name="itglahir2" value="<?= ($opsi == 'edit' && $tglahiranggota[2] != '') ? date('d-m-Y', strtotime($tglahiranggota[2])) : '' ?>">
+                                <input type="text" id="itglahir2" name="itglahir2" value="<?= ($tglahiranggota && $tglahiranggota[2] != '') ? date('d-m-Y', strtotime($tglahiranggota[2])) : '' ?>">
                             </div>
                             <div class="info" id="infotglahir2">Tanggal lahir diisi</div>
                             <div class="form-group ctim">
                                 <label for="isex2">Jenis Kelamin <sup>*</sup></label>
                                 <select class="single" id="isex2" name="isex2">
                                     <option value="0">- Pilih Jenis Kelamin -</option>
-                                    <option <?= ($opsi == 'edit' && $sexanggota[2] == 1) ? 'selected' : '' ?> value="1">Laki-laki</option>
-                                    <option <?= ($opsi == 'edit' && $sexanggota[2] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
+                                    <option <?= ($sexanggota && $sexanggota[2] == 1) ? 'selected' : '' ?> value="1">Laki-laki</option>
+                                    <option <?= ($sexanggota && $sexanggota[2] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
                                 </select>
                             </div>
                             <div class="info" id="infosex2">Jenis kelamin diisi</div>
                             <div class="form-group ctim">
                                 <label for="ihp2">Nomor HP <sup>*</sup></label>
-                                <input type="text" id="ihp2" name="ihp2" value="<?= ($opsi == 'edit') ? $hapeanggota[2] : '' ?>">
+                                <input type="text" id="ihp2" name="ihp2" value="<?= ($hapeanggota) ? $hapeanggota[2] : '' ?>">
                             </div>
                             <div class="info" id="infohp2">Nomor HP wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="iemail2">Email</label>
-                                <input type="text" id="iemail2" name="iemail2" value="<?= ($opsi == 'edit') ? $emailanggota[2] : '' ?>">
+                                <input type="text" id="iemail2" name="iemail2" value="<?= ($emailanggota) ? $emailanggota[2] : '' ?>">
                             </div>
                             <div class="form-group ctim">
                                 <label for="idukcapil2">Status Dukcapil <sup>*</sup></label>
-                                <textarea readonly id="idukcapil2" name="idukcapil2" class="multilineInput"><?= ($opsi == 'edit') ? $dukcapilanggota[2] : '' ?></textarea>
+                                <textarea readonly id="idukcapil2" name="idukcapil2" class="multilineInput"><?= ($dukcapilanggota) ? $dukcapilanggota[2] : '' ?></textarea>
                             </div>
                             <div class="info" id="infodukcapil2">Cek Dukcapil dahulu</div>
                             <button class="tbcek" onclick="return ceknama(2);">Cek Dukcapil</button>
@@ -373,45 +367,45 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
                     </li>
                     <li>
                         <a href="#" onclick="toggleInfo(event,3)">
-                            <h3 style="margin-bottom:15px;">ANGGOTA 3: DINAS PPPA &#9660;</h3>
+                            <h3 style="margin-bottom:15px;">4. ANGGOTA : DINAS PPPA &#9660;</h3>
                         </a>
                         <div id="info3" class="fanggota info-container" style="margin-bottom:10px">
                             <div class="form-group ctim">
                                 <label for="inama3">Nama <sup>*</sup></label>
-                                <input type="text" id="inama3" name="inama3" value="<?= ($opsi == 'edit') ? $namaanggota[3] : '' ?>">
+                                <input type="text" id="inama3" name="inama3" value="<?= ($namaanggota) ? $namaanggota[3] : '' ?>">
                             </div>
                             <div class="info" id="infonama3">Nama wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="inik3">NIK <sup>*</sup></label>
-                                <input type="text" maxlength="16" id="inik3" name="inik3" value="<?= ($opsi == 'edit') ? $nikanggota[3] : '' ?>">
+                                <input type="text" maxlength="16" id="inik3" name="inik3" value="<?= ($nikanggota) ? $nikanggota[3] : '' ?>">
                             </div>
                             <div class="info" id="infonik3">NIK wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="itglahir3">Tanggal Lahir <sup>*</sup></label>
-                                <input type="text" id="itglahir3" name="itglahir3" value="<?= ($opsi == 'edit' && $tglahiranggota[3] != '') ? date('d-m-Y', strtotime($tglahiranggota[3])) : '' ?>">
+                                <input type="text" id="itglahir3" name="itglahir3" value="<?= ($tglahiranggota && $tglahiranggota[3] != '') ? date('d-m-Y', strtotime($tglahiranggota[3])) : '' ?>">
                             </div>
                             <div class="info" id="infotglahir3">Tanggal lahir diisi</div>
                             <div class="form-group ctim">
                                 <label for="isex3">Jenis Kelamin <sup>*</sup></label>
                                 <select class="single" id="isex3" name="isex3">
                                     <option value="0">- Pilih Jenis Kelamin -</option>
-                                    <option <?= ($opsi == 'edit' && $sexanggota[3] == 1) ? 'selected' : '' ?> value="1">Laki-laki</option>
-                                    <option <?= ($opsi == 'edit' && $sexanggota[3] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
+                                    <option <?= ($sexanggota && $sexanggota[3] == 1) ? 'selected' : '' ?> value="1">Laki-laki</option>
+                                    <option <?= ($sexanggota && $sexanggota[3] == 2) ? 'selected' : '' ?> value="2">Perempuan</option>
                                 </select>
                             </div>
                             <div class="info" id="infosex3">Jenis kelamin diisi</div>
                             <div class="form-group ctim">
                                 <label for="ihp3">Nomor HP <sup>*</sup></label>
-                                <input type="text" id="ihp3" name="ihp3" value="<?= ($opsi == 'edit') ? $hapeanggota[3] : '' ?>">
+                                <input type="text" id="ihp3" name="ihp3" value="<?= ($hapeanggota) ? $hapeanggota[3] : '' ?>">
                             </div>
                             <div class="info" id="infohp3">Nomor HP wajib diisi</div>
                             <div class="form-group ctim">
                                 <label for="iemail3">Email</label>
-                                <input type="text" id="iemail3" name="iemail3" value="<?= ($opsi == 'edit') ? $emailanggota[3] : '' ?>">
+                                <input type="text" id="iemail3" name="iemail3" value="<?= ($emailanggota) ? $emailanggota[3] : '' ?>">
                             </div>
                             <div class="form-group ctim">
                                 <label for="idukcapil3">Status Dukcapil <sup>*</sup></label>
-                                <textarea readonly id="idukcapil3" name="idukcapil3" class="multilineInput"><?= ($opsi == 'edit') ? $dukcapilanggota[3] : '' ?></textarea>
+                                <textarea readonly id="idukcapil3" name="idukcapil3" class="multilineInput"><?= ($dukcapilanggota) ? $dukcapilanggota[3] : '' ?></textarea>
                             </div>
                             <div class="info" id="infodukcapil3">Cek Dukcapil dahulu</div>
                             <button class="tbcek" onclick="return ceknama(3);">Cek Dukcapil</button>
@@ -420,7 +414,7 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
                     </li>
                     <li>
                         <a href="#" onclick="toggleInfo(event,4)">
-                            <h3 style="margin-bottom:15px;">ANGGOTA 4 &#9660;</h3>
+                            <h3 style="margin-bottom:15px;">5. ANGGOTA : INSTANSI/ORGANISASI LAINNYA &#9660;</h3>
                         </a>
                         <?php $a = 4; ?>
                         <div id="info4" class="fanggota info-container" style="margin-bottom:10px">
@@ -429,9 +423,6 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
                                 <div id="djenis<?= $a ?>">
                                     <select class="single" id="idinas<?= $a ?>" name="idinas<?= $a ?>">
                                         <option value="00">- Pilih Instansi -</option>
-                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 20) ? 'selected' : '' ?> value="20">Dinas Pendidikan</option>
-                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 21) ? 'selected' : '' ?> value="21">Dinas Sosial</option>
-                                        <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 22) ? 'selected' : '' ?> value="22">Dinas PPPA</option>
                                         <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 23) ? 'selected' : '' ?> value="23">Dinas Kesehatan</option>
                                         <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 24) ? 'selected' : '' ?> value="24">UPTD PPA</option>
                                         <option <?= ($opsi == 'edit' && $jmlanggota >= ($a + 1) && $instansianggota[$a] == 25) ? 'selected' : '' ?> value="25">Kepolisian</option>
@@ -491,7 +482,7 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
                         <div id="danggota<?= $a ?>" style="display:<?= ($jmlanggota >= ($a + 1) && $opsi == 'edit') ? 'block' : 'none' ?>;">
                             <li>
                                 <a href="#" onclick="toggleInfo(event,<?= $a ?>)">
-                                    <h3 style="margin-bottom:15px;">ANGGOTA <?= $a ?> &#9660;</h3>
+                                    <h3 style="margin-bottom:15px;"><?= ($a + 1) ?>. ANGGOTA &#9660;</h3>
                                 </a>
                                 <div id="info<?= $a ?>" class="fanggota info-container" style="margin-bottom:10px">
                                     <div class="form-group ctim">
@@ -569,7 +560,7 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
 
 
                 <input type="hidden" id="addedit" name="addedit" value="<?= ($opsi == "edit") ? "edit" : "add" ?>">
-                <input type="hidden" id="skid" name="skid" value="<?= ($opsi == "edit") ? $skid : "" ?>">
+                <input type="hidden" id="skid" name="skid" value="<?= $skid ?>">
                 <input type="hidden" id="jmlpengguna" name="jmlpengguna" value="5">
                 <input type="hidden" id="idinas0" name="idinas0" value="20">
                 <input type="hidden" id="idinas1" name="idinas1" value="20">
@@ -680,34 +671,6 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
         $("#danggota" + counter).hide();
         $("#danggota" + (counter + 1)).hide();
         return false;
-    }
-
-    $('#ipropinsi').change(function() {
-        getkota();
-    });
-
-    function getkota() {
-        var kode = $('#ipropinsi').val();
-        $.ajax({
-            type: 'GET',
-            data: {
-                kode: kode,
-                level: 2
-            },
-            dataType: 'json',
-            cache: false,
-            url: '<?php echo base_url() ?>inputdata/getNamaWilayah',
-            success: function(result) {
-                isihtml1 = '<select class="single" id="ikota" name="ikota">';
-                isihtml2 = '<option value="00">- Pilih Kota/Kabupaten -</option>';
-                $.each(result, function(i, result) {
-                    isihtml2 = isihtml2 + "<option value='" + result.kode_wilayah + "'>" + result.nama + "</option>";
-                });
-                isihtml3 = '</select>';
-                $('#dkota').html(isihtml1 + isihtml2 + isihtml3);
-                $('.single').select2();
-            }
-        });
     }
 
     function clearTextarea(index) {
@@ -839,26 +802,8 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
             edit = true;
         <?php endif ?>
 
-        valsk = document.getElementById("file_sk").value;
-        fileExt = valsk.split('.').pop();
-        valtgl = document.getElementById("tanggal_sk").value;
-
         // arrayinputnya.push(inamaketua);
         // arrayinputnya.push(inamaanggota1);
-
-        if (edit == false && valsk == "") {
-            oke = false;
-        }
-
-        if (document.getElementById("nomor_sk").value == "") {
-            document.getElementById("infonomor_sk").style.display = "block";
-        }
-        if (document.getElementById("tanggal_sk").value == "") {
-            document.getElementById("infotanggal_sk").style.display = "block";
-        }
-        if (document.getElementById("file_sk").value == "") {
-            document.getElementById("infofile_sk").style.display = "block";
-        }
 
         for (var a = 0; a < counter; a++) {
             if (document.getElementById("idinas" + a).value == "00") {
@@ -894,31 +839,15 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
             arrayinputnya.push(document.getElementById("inama" + a).value);
         }
 
-        if (edit == false && fileExt != "jpg" && fileExt != "jpeg" && fileExt != "png" && fileExt != "pdf") {
-            oke = false;
-        }
-
-        if (valtgl == "") {
-            oke = false;
-        } else if (!isValidDate(valtgl)) {
-            alert("Tanggal tidak sesuai format");
-            oke = false;
-        }
-
         if (checkUnique(arrayinputnya) == false && document.getElementById("inama" + a).value != "") {
             alert("Ada nama yang sama");
             oke = false;
         }
 
-        if (emailvalid == false) {
-            // alert("Alamat email tidak valid");
-
-        }
 
 
 
         if (oke) {
-            // alert("Berhasil.... Hanya Uji Coba Dahulu");
             document.getElementById("jmlpengguna").value = counter;
             document.getElementById("ipropinsion").value = document.getElementById("ipropinsi").value;
             document.getElementById("ikotaon").value = document.getElementById("ikota").value;
@@ -928,7 +857,7 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
 
             return true;
         } else {
-            // alert("Silakan periksa kembali ...");
+            alert("Silakan periksa kembali ...");
             return false;
         }
     }

@@ -219,7 +219,7 @@ else if ($status == "swasta")
                             <td><?= $value['tot_sekolah_sudah_sync'] ?></td>
                             <td><?= $value['tot_jml_tppk'] ?></td>
                             <td><?= ($value['tot_jml_satuan_pendidikan'] - $value['tot_residu']) ?></td>
-                            <td><?= number_format($value['tot_jml_tppk'] * 100 / $value['tot_sekolah_sudah_sync'], 2, '.', '') ?>%</td>
+                            <td><?= ($value['tot_sekolah_sudah_sync'] > 0) ? number_format($value['tot_jml_tppk'] * 100 / $value['tot_sekolah_sudah_sync'], 2, '.', '') : 0 ?>%</td>
 
 
                         </tr>

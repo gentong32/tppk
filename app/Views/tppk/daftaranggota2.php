@@ -74,6 +74,23 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
         </tr>
     </table> -->
 
+    <?php if ($daftaranggota && $sudah_upload == false) { ?>
+        <br>
+        <div style='color: red'>
+            <div style="border: #d0535f solid; border-radius: 5px; padding: 5px;max-width:480px;">
+                <h3>Tidak valid:</h3>
+                <table class="tabelinfo">
+                    <tr>
+                        <td>File SK belum berhasil diunggah. Silakan unggah ulang file SK.</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    <?php } ?>
+
 
     <div style="margin:20px auto 10px;font-size:16px;">ANGGOTA</div>
 

@@ -145,10 +145,11 @@
                     "data": "status_sekolah"
                 },
                 {
-                    "data": "sekolah_belum_sync",
                     "render": function(data, type, row) {
-                        if (data === 1) {
+                        if (row.sekolah_belum_sync === 1) {
                             return "<span style='color:red'>tidak update</span>";
+                        } else if (row.residu_jumlah_siswa === 1) {
+                            return "<span style='color:red'>jumlah siswa 0</span>";
                         } else {
                             return "";
                         }

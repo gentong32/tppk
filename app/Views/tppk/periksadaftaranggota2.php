@@ -181,17 +181,17 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
                 <td>Tanggal Berakhir SK</td>
                 <td>:</td>
                 <td><?= ($nomor > 1) ?
-                        $tanggal_tambah = date("d-m-Y", strtotime($datask['tanggal_sk'] . " +6 months")) : "-" ?></td>
+                        $tanggal_tambah = date("d-m-Y", strtotime($datask['tanggal_sk'] . " +4 years")) : "-" ?></td>
             </tr>
             <tr>
-                <td>Status SK</td>
-                <td>:</td>
-                <td><?= ($nomor > 1) ?
-                        $txtstatus[intval($datask['status_sk'])] : "-" ?></td>
+                <td style="vertical-align: top;">Status SK</td>
+                <td style="vertical-align: top;">:</td>
+                <td style="vertical-align: top;"><?= ($nomor > 1) ?
+                                                        $txtstatus[intval($datask['status_sk'])] : "-" ?><?= (intval($datask['status_sk']) == 1) ? "<br><i>[" . $datask['catatan_sk'] . "</i>" : "" ?></td>
             </tr>
         </table>
         <br>
-        <table class="tabelinfo">
+        <table class=" tabelinfo">
             <tr>
                 <td>Operator Dinas</td>
                 <td>:</td>
@@ -255,11 +255,13 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
     }
 
     function tolak() {
+        var catatan = $('#catatansk').val();
         $.ajax({
             type: 'GET',
             data: {
                 kodewilayah: '<?= $kodewilayah ?>',
                 opsi: 1,
+                catatan: catatan,
             },
             dataType: 'text',
             cache: false,

@@ -55,6 +55,12 @@ $routes->get('/tppk/viewer/(:segment)', 'TPPK::viewer/$1');
 
 $routes->get('/residu', 'InputData::daftarsekolahnontppk');
 
+$routes->get('/loginevent', 'Login::loginevent');
+$routes->post('/login/ceklogin', 'Login::ceklogin');
+
+$routes->get('/login/sebagai/(:any)', 'Login::sebagai/$1');
+$routes->get('/login/sebagai/(:any)/(:any)', 'Login::sebagai/$1/$2');
+
 $routes->get('/inputdata/get_data_p', 'InputData::get_data_p');
 $routes->get('/inputdata/pelaporan', 'InputData::pelaporan');
 $routes->post('/inputdata/get_data_siswa', 'InputData::get_data_siswa');
@@ -64,7 +70,15 @@ $routes->get('/inputdata/cari_sekolah', 'InputData::cari_sekolah');
 $routes->get('/inputdata/ajaxGetDaftarNonTPPK', 'InputData::ajaxGetDaftarNonTPPK');
 $routes->post('/inputdata/ajaxGetDaftarNonTPPK', 'InputData::ajaxGetDaftarNonTPPK');
 
+$routes->post('/inputdata/nik_siswa', 'InputData::nik_siswa');
+
 $routes->get('/inputdata/tes', 'InputData::tes');
+$routes->get('/login_dapodik', 'InputData::daftar_laporan');
+$routes->get('/login_dapodik/(:any)', 'Login::login_dapodik/$1');
+
+$routes->get('/cek_sk_gagal_upload', 'InputData::cek_sk_gagal_upload');
+
+$routes->get('/softdel/(:any)/(:any)', 'InputData::softdel/$1/$2');
 
 $routes->get('/daftar_laporan_kekerasan', 'InputData::daftar_laporan');
 $routes->get('/status_laporan_kekerasan', 'InputData::status_laporan');

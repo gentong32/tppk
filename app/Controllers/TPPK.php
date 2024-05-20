@@ -81,6 +81,7 @@ class TPPK extends BaseController
         $data['bentuk'] = $bentuk;
         $data['status'] = $status;
         $data['pilihan'] = $pilihan;
+        $data['sebagai'] = session()->get('sebagai');
 
         $data['kode'] = $kode;
         $data['level'] = $level;
@@ -145,7 +146,7 @@ class TPPK extends BaseController
                 $level2 = 1;
             $query2 = $this->model_tppk->getTotalSatgas($kode2, $level2);
             $data['datanas2'] = $query2->getResultArray();
-            // echo var_dump($data['datanas2']);
+            // echo var_dump($data['datanas']);
             // die();
             return view('tppk/data_tppksekolah', $data);
         } else {
@@ -471,6 +472,7 @@ class TPPK extends BaseController
             $dafanggota = $this->model_tppk->getAnggotaProv($getsk['sk_id']);
         }
         $data['daftaranggota'] = $dafanggota;
+        $data['sudah_upload'] = false;
         // echo $getsk['sk_id'];
         // echo var_dump($dafanggota);
 
@@ -483,7 +485,12 @@ class TPPK extends BaseController
 
             $namafilesk = $this->cekfilesk($namafiletanpaekstensi);
 
+            if ($namafilesk != "") {
+                $data['sudah_upload'] = true;
+            }
+
             if ($namafilesk != "" && session()->get('loggedIn') && $dafanggota) {
+
                 $fileUrl = base_url('inputdata/download_sk/' . $namafilesk);
                 $linknomorsk = '<a href="' . $fileUrl . '" target="_blank">' . $dafanggota[0]['nomor_sk'] . '</a>';
             } else {

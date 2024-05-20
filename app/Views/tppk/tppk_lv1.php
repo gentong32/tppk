@@ -26,18 +26,27 @@
                     <td><?= $key + 1 ?></td>
                     <td align="left" class="link1">
                         <?php if ($level <= 3) {
-
-                        ?>
-                            <a href="<?= site_url('tppk/anggota2/' .
-                                            trim($value['kode_wilayah'])) ?>"><?php
-                                                                                if ($level == 0 && $value['wilayah'] != "Luar Negeri") {
-                                                                                    echo substr($value['wilayah'], 5);
-                                                                                } else if ($level == 2 && substr($kode, 0, 2) != '35') {
-                                                                                    echo substr($value['wilayah'], 4);
-                                                                                } else {
-                                                                                    echo $value['wilayah'];
-                                                                                } ?></a>
-                        <?php
+                            if ($sebagai == "viewersk") { ?>
+                                <a href="<?= site_url('inputdata/lihatanggota2/' .
+                                                trim($value['kode_wilayah'])) ?>"><?php
+                                                                                    if ($level == 0 && $value['wilayah'] != "Luar Negeri") {
+                                                                                        echo substr($value['wilayah'], 5);
+                                                                                    } else if ($level == 2 && substr($kode, 0, 2) != '35') {
+                                                                                        echo substr($value['wilayah'], 4);
+                                                                                    } else {
+                                                                                        echo $value['wilayah'];
+                                                                                    } ?></a>
+                            <?php } else { ?>
+                                <a href="<?= site_url('tppk/anggota2/' .
+                                                trim($value['kode_wilayah'])) ?>"><?php
+                                                                                    if ($level == 0 && $value['wilayah'] != "Luar Negeri") {
+                                                                                        echo substr($value['wilayah'], 5);
+                                                                                    } else if ($level == 2 && substr($kode, 0, 2) != '35') {
+                                                                                        echo substr($value['wilayah'], 4);
+                                                                                    } else {
+                                                                                        echo $value['wilayah'];
+                                                                                    } ?></a>
+                        <?php }
                         } else {
 
                             if ($level == 0 && $value['wilayah'] != "Luar Negeri") {

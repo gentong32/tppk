@@ -71,6 +71,8 @@ if ($instansiid <= 2) {
         $takupdate = "";
         if ($value['sekolah_belum_sync'] == 1)
             $takupdate = "tidak update";
+        else if ($value['residu_jumlah_siswa'] == 1)
+            $takupdate = "jumlah siswa 0";
         $object->getActiveSheet()->setCellValueByColumnAndRow(1, $nomor + 5, $nomor);
         $object->getActiveSheet()->setCellValueByColumnAndRow(2, $nomor + 5, $value['kecamatan']);
         $object->getActiveSheet()->setCellValueByColumnAndRow(3, $nomor + 5, $value['Sekolah']);

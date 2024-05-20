@@ -17,11 +17,67 @@ class Login extends BaseController
         //
     }
 
-    public function sebagai($opsi)
+    public function loginevent()
     {
-        session()->set('loggedIn', true); // Menyimpan data sesi
-        session()->set('sebagai', $opsi);
-        return redirect()->to('/home');
+        echo view('login_umum');
+    }
+
+    public function ceklogin()
+    {
+        $username = $this->request->getPost("username");
+        $password = $this->request->getPost("password");
+        $tanggalSekarang = date('Y-m-d');
+        $tanggalTertentu = date('Y-m-d', strtotime('2024-04-21'));
+
+        $ceklogin = $this->model_tppk->cekpsw($username, $password);
+
+        if ($ceklogin > 0 && $tanggalSekarang < $tanggalTertentu) {
+            $params = [
+                'loggedIn' => true,
+                'jenis_instansi_id' => "99",
+                'nama' => "Puspeka",
+                'wilayah_akses' => "000000",
+                'sekolah_id' => "",
+                'npsn_user' => "000000",
+                'username' => "puspeka_user",
+                'peran' => 'viewersk',
+                'ptk_id' => '',
+                'asallogin' => 'internal',
+                'statustppk' => 'viewersk',
+                'sebagai' => 'viewersk',
+            ];
+            session()->set($params);
+            return redirect()->to("/");
+        } else {
+            session()->setFlashdata('pesan', 'Username atau password salah.');
+            return redirect()->back();
+        }
+    }
+
+    public function login_dapodik($opsilogin = "prod")
+    {
+        if ($opsilogin == "test")
+            $viewlogin = "login_eksternal_test";
+        else
+            $viewlogin = "login_eksternal";
+        return view($viewlogin);
+    }
+
+    public function sebagai($opsi, $wilayah = "010000")
+    {
+        $username = session()->get('username');
+        if ($username == "hardianto@kemdikbud.go.id" || $username == "bintangakbar1219@gmail.com") {
+            session()->set('sebagai', $opsi);
+            if ($opsi == "dinasprov")
+                session()->set('jenis_instansi_id', 2);
+            else if ($opsi == "dinaskota")
+                session()->set('jenis_instansi_id', 3);
+            else if ($opsi == "irjen")
+                session()->set('jenis_instansi_id', 100);
+            if ($wilayah != null)
+                session()->set('wilayah_akses', $wilayah);
+            return redirect()->to('/home');
+        }
     }
 
     public function actionLoginsso()
@@ -37,6 +93,8 @@ class Login extends BaseController
             echo "Failed";
         }
 
+        $sebagai = "";
+
         if ($asal == "internal") {
             $checkToken = $this->model_tppk->getTokenSSO($tokenKey);
             if ($checkToken->tokenStatus > 0) {
@@ -45,6 +103,14 @@ class Login extends BaseController
                 $npsnuser = $akun->NPSN;
                 if ($akun->jenis_instansi_id == 2 || $akun->jenis_instansi_id == 3)
                     $npsnuser = $akun->wilayah_akses;
+
+                if ($akun->jenis_instansi_id == 1) {
+                    $sebagai = "pusat";
+                } else if ($akun->jenis_instansi_id == 2) {
+                    $sebagai = "dinasprov";
+                } else if ($akun->jenis_instansi_id == 3) {
+                    $sebagai = "dinaskota";
+                }
                 // echo var_dump($akun);
                 // die();
                 $user = $akun->pengguna_id;
@@ -53,7 +119,7 @@ class Login extends BaseController
                     $params = [
                         'loggedIn' => true,
                         'jenis_instansi_id' => $akun->jenis_instansi_id,
-                        'nama' => $akun->nama,
+                        'nama' => str_replace("'", "_", $akun->nama),
                         'wilayah_akses' => $akun->wilayah_akses,
                         'sekolah_id' => $sekolah_id,
                         'npsn_user' => $npsnuser,
@@ -62,6 +128,7 @@ class Login extends BaseController
                         'ptk_id' => '',
                         'asallogin' => 'internal',
                         'statustppk' => 'asing',
+                        'sebagai' => $sebagai,
                     ];
                     session()->set($params);
                     $this->model_tppk->simpan_log_userlogin();
@@ -111,7 +178,7 @@ class Login extends BaseController
             $params = [
                 'loggedIn' => true,
                 'jenis_instansi_id' => '99',
-                'nama' => $data['nama'],
+                'nama' => str_replace("'", "_", $data['nama']),
                 'wilayah_akses' => $data['kode_wilayah'],
                 'sekolah_id' => $sekolah_id,
                 'npsn_user' => $npsn->npsn,
@@ -122,6 +189,7 @@ class Login extends BaseController
                 'statustppk' => $peran_dalam_tim,
                 'tokenkey' => $tokenKey,
                 'tokendapo' => $tokendapo,
+                'sebagai' => 'sekolah',
             ];
             session()->set($params);
             $this->model_tppk->simpan_log_userlogin();
@@ -283,13 +351,16 @@ class Login extends BaseController
                 echo "npsn,ptk_id,wilayah,asallogin,jenis_instansi,sekolah_id,statustppk";
             } else {
                 $request = \Config\Services::request();
-                session()->set('npsn_user', $request->getVar('npsn') ?? null);
-                session()->set('ptk_id', $request->getVar('ptk_id') ?? null);
-                session()->set('wilayah_akses', $request->getVar('wilayah') ?? null);
-                session()->set('asallogin', $request->getVar('asallogin') ?? null);
-                session()->set('jenis_instansi_id', $request->getVar('jenis_instansi') ?? null);
-                session()->set('sekolah_id', $request->getVar('sekolah_id') ?? null);
-                session()->set('statustppk', $request->getVar('statustppk') ?? null);
+                ($request->getVar('npsn')) ? session()->set('npsn_user', $request->getVar('npsn')) : "";
+                ($request->getVar('wilayah')) ? session()->set('wilayah_akses', $request->getVar('wilayah')) : "";
+                ($request->getVar('jenis_instansi')) ? session()->set('jenis_instansi_id', $request->getVar('jenis_instansi')) : "";
+                // session()->set('npsn_user', $request->getVar('npsn') ?? null);
+                // session()->set('ptk_id', $request->getVar('ptk_id') ?? null);
+                // session()->set('wilayah_akses', $request->getVar('wilayah') ?? null);
+                // session()->set('asallogin', $request->getVar('asallogin') ?? null);
+                // session()->set('jenis_instansi_id', $request->getVar('jenis_instansi') ?? null);
+                // session()->set('sekolah_id', $request->getVar('sekolah_id') ?? null);
+                // session()->set('statustppk', $request->getVar('statustppk') ?? null);
                 return redirect()->to('/home');
             }
         }
@@ -341,5 +412,10 @@ class Login extends BaseController
             $session->setFlashdata('flash_message', 'Email atau password salah!');
             return redirect()->to('/login/login_dummy');
         }
+    }
+
+    public function ceksebagai()
+    {
+        echo session()->get('sebagai');
     }
 }

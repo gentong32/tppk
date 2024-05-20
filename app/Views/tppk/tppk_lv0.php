@@ -44,9 +44,13 @@
                         } ?>
                     </td>
                     <!-- <i class="far fa-eye"></i> -->
-                    <td><?php if ($value['jml_satgas_provinsi'] == 1) { ?>
-                            <a href="<?= base_url() . 'tppk/anggota2/' . trim($value['kode_wilayah']) ?>"><i class="far fa-eye"></i></a>
-                        <?php } else {
+                    <td><?php if ($value['jml_satgas_provinsi'] == 1) {
+                            if ($sebagai == "viewersk") { ?>
+                                <a href="<?= base_url() . 'inputdata/lihatanggota2/' . trim($value['kode_wilayah']) ?>"><i class="far fa-eye"></i></a>
+                            <?php } else { ?>
+                                <a href="<?= base_url() . 'tppk/anggota2/' . trim($value['kode_wilayah']) ?>"><i class="far fa-eye"></i></a>
+                        <?php }
+                        } else {
                             echo '<i class="far fa-eye-slash"></i>';
                         } ?>
                     </td>

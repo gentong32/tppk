@@ -182,6 +182,8 @@ if ($asallogin == "internal") {
         $namastatus = "Akun Dinas Kab/Kota";
     else if ($jenisinstansiid == 1)
         $namastatus = "Akun Pusat";
+    else if ($jenisinstansiid == 99)
+        $namastatus = "User Umum";
 } else {
     if ($statustppk == "ketua" || $statustppk == "koordinator")
         $namastatus = "Ketua TPPK";
@@ -198,7 +200,7 @@ if ($asallogin == "internal") {
             <ul>
                 <?php if (!$userlogin) : ?>
                     <li id="ilogin" class="dropdown">
-                        <a href="https://sso.data.kemdikbud.go.id/sys/login?appkey=<?= appid; ?>" class="dropbtn">Masuk</a>
+                        <a href="#" onclick="showmasuk();">Masuk</a>
                     </li>
                 <?php endif; ?>
                 <?php if ($userlogin) : ?>
@@ -214,7 +216,12 @@ if ($asallogin == "internal") {
                 <li><a href="<?php echo base_url(); ?>dashboard">Dasbor</a></li>
                 <li><a href="<?php echo base_url(); ?>tppk/wilayah">TPPK dan Satuan Tugas</a></li>
                 <li><a href="<?php echo base_url(); ?>residu">Residu</a></li>
-                <li><a href="<?php echo base_url(); ?>inputdata/daftar_laporan">Pelaporan</a></li>
+                <?php if ($userlogin && $asallogin == "eksternal") { ?>
+                    <li><a href="<?php echo base_url(); ?>inputdata/daftar_laporan">Pelaporan</a></li>
+                <?php } ?>
+                <?php if ($userlogin && ($jenisinstansiid == "99" || $jenisinstansiid == "1" || $jenisinstansiid == "2" || $jenisinstansiid == "3")) { ?>
+                    <li><a href="<?php echo base_url(); ?>status_laporan_kekerasan">Pelaporan</a></li>
+                <?php } ?>
                 <li><a href="<?php echo base_url(); ?>informasi">Informasi</a>
                 </li>
             </ul>
@@ -232,7 +239,12 @@ if ($asallogin == "internal") {
             <li><a href="<?php echo base_url(); ?>dashboard">Dasbor</a></li>
             <li><a href="<?php echo base_url(); ?>tppk/wilayah">TPPK dan Satgas</a></li>
             <li><a href="<?php echo base_url(); ?>residu">Residu</a></li>
-            <li><a href="<?php echo base_url(); ?>inputdata/daftar_laporan">Pelaporan</a></li>
+            <?php if ($userlogin && $asallogin == "eksternal") { ?>
+                <li><a href="<?php echo base_url(); ?>inputdata/daftar_laporan">Pelaporan</a></li>
+            <?php } ?>
+            <?php if ($userlogin && ($jenisinstansiid == "99" || $jenisinstansiid == "1" || $jenisinstansiid == "2" || $jenisinstansiid == "3")) { ?>
+                <li><a href="<?php echo base_url(); ?>status_laporan_kekerasan">Pelaporan</a></li>
+            <?php } ?>
             <li><a href="<?php echo base_url(); ?>informasi">Informasi</a></li>
         </ul>
     </div>
@@ -299,6 +311,21 @@ if ($asallogin == "internal") {
         </table>
     </div>
 
+    <div class="submobile2" id="imasuk" style="display: none;">
+        <table>
+            <tr>
+                <td>
+                    <a href="https://sso.data.kemdikbud.go.id/sys/login?appkey=<?= appid; ?>" class="dropbtn">Sebagai Operator Sekolah/Dinas</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="<?= base_url('/login_dapodik') ?>" class="dropbtn">Sebagai Anggota TPPK</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
     <!-- dbo.app untuk local 4cade60a-2f9f-4946-8839-a4df754b1621 -->
     <!-- dbo.app untuk referensi.data D1D21323-6C8F-4F30-A005-3FA5DECA4C05 -->
 
@@ -337,6 +364,15 @@ if ($asallogin == "internal") {
 
     function showmenu() {
         var x = document.getElementById("imenu");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function showmasuk() {
+        var x = document.getElementById("imasuk");
         if (x.style.display == "none") {
             x.style.display = "block";
         } else {

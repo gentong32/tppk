@@ -178,7 +178,7 @@ body {
 }
 
 .dropdown-content {
-  display: none;
+  display: block;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 220px;
@@ -1193,19 +1193,28 @@ button:focus {
   .dlogin li a,
   .dropbtn {
     display: inline-block;
-    color: white;
+    color: black !important;
     text-align: right;
-    padding: 5px 5px;
+    /* padding: 5px 5px; */
     text-decoration: none;
-    background-color: gray;
+    background-color: rgb(255, 255, 255) !important;
     width: auto;
   }
 
+  .dropbtn:hover {
+    display: inline-block;
+    color: black !important;
+    text-align: right;
+    /* padding: 5px 5px; */
+    text-decoration: none;
+    background-color: rgb(205, 240, 207);
+    width: auto;
+  }
   .navbar .navbar-nav li a:hover,
   .dropdown:hover .dropbtn {
-    background-color: rgb(212, 235, 237);
+    background-color: #ccc !important;
     color: #000000;
-    padding: 5px 5px;
+    /* padding: 5px 5px; */
     margin: 0;
   }
 }

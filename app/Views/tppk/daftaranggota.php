@@ -208,7 +208,7 @@ $npsnuser = session()->get('npsn_user');
                     <?php } ?>
                     <?php if ($daftar_residu['residu_ketua_non_ptk'] == 1) { ?>
                         <tr>
-                            <td>"Ketua" atau "Koordinator" TPPK tidak mengisi kolom "Guru Bila Guru" di Aplikasi Dapodik </td>
+                            <td>- "Ketua" atau "Koordinator" TPPK tidak mengisi kolom "Guru" (Bila Guru) di Aplikasi Dapodik </td>
                             <td></td>
                             <td></td>
                         </tr>

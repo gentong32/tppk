@@ -122,6 +122,10 @@ else if ($status == "swasta")
         text-align: left !important;
         /* padding-right: 25px !important; */
     }
+
+    .merahin {
+        color: red;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -186,10 +190,10 @@ else if ($status == "swasta")
             <table class="table table-striped" id="tabel">
                 <thead>
                     <th width="10px">No</th>
-                    <th>NPSN</th>
+                    <th>NPSN *)</th>
                     <th><?= $judulnama ?></th>
-                    <th>Validitas *)</th>
-                    <th>TPPK **)</th>
+                    <th>Validitas **)</th>
+                    <th>TPPK ***)</th>
                     <th>Jumlah Anggota TPPK</th>
                 </thead>
 
@@ -207,7 +211,7 @@ else if ($status == "swasta")
                     ?>
                         <tr>
                             <td><?= $key + 1 ?></td>
-                            <td><?= trim($value['kode_wilayah']); ?></td>
+                            <td <?= ($value['tot_sekolah_sudah_sync'] == 0) ? 'class="merahin"' : '' ?>><?= trim($value['kode_wilayah']); ?></td>
                             <td align="left" class="link1">
                                 <?php if ($level < 3) {
                                 ?>
@@ -257,9 +261,10 @@ else if ($status == "swasta")
                 </tfoot>
 
             </table>
-            <span class="link1" style="padding-bottom:25px;"><i> &nbsp;&nbsp;*) <div class="residu2 hijau" style="display: inline-block;"></div>:valid &nbsp;&nbsp;<div class="residu2 merah" style="display: inline-block;"></div>:residu </i></span><br>
+            <span class="link1" style="padding-bottom:25px;"><i> &nbsp;&nbsp;&nbsp;&nbsp;*) NPSN <span style="color:red">merah</span>: sekolah tidak update / siswa 0</i></span><br>
+            <span class="link1" style="padding-bottom:25px;"><i> &nbsp;&nbsp;**) <div class="residu2 hijau" style="display: inline-block;"></div>:valid &nbsp;&nbsp;<div class="residu2 merah" style="display: inline-block;"></div>:residu </i></span><br>
             <!-- &nbsp;&nbsp;<div class="residu2 orange" style="display: inline-block;"></div>:menunggu persetujuan SK -->
-            <span class="link1" style="padding-bottom:25px;"><i>**) Sumber: Dapodik</i></span><br><br>
+            <span class="link1" style="padding-bottom:25px;"><i>***) Sumber: Dapodik</i></span><br><br>
         </div>
     </div>
 

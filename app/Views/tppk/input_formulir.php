@@ -568,78 +568,85 @@
                         </td>
                         <td>:</td>
                         <td><textarea <?= ($sebagai == "sekolah") ? "disabled" : "" ?> id="sekolahkorban" name="sekolahkorban"><?= ($sebagai == "sekolah") ? $sekolah_saya['nama'] : "" ?></textarea>
-                            <?php
-                            $xstatus = ($sekolah_saya['nama_sekolah'] == 1) ? "Negeri" : "Swasta";
-                            $kec = substr($sekolah_saya['kecamatan'], 5);
-                            $kota = (substr($sekolah_saya['kota'], 0, 3) == "Kab.") ? "Kab: " : "Kota: ";
-                            $kota = $kota . substr($sekolah_saya['kota'], 5);
-                            $provinsi = substr($sekolah_saya['provinsi'], 6);
+                            <?php if ($sebagai == "sekolah") {
+                                $xstatus = ($sekolah_saya['nama_sekolah'] == 1) ? "Negeri" : "Swasta";
+                                $kec = substr($sekolah_saya['kecamatan'], 5);
+                                $kota = (substr($sekolah_saya['kota'], 0, 3) == "Kab.") ? "Kab: " : "Kota: ";
+                                $kota = $kota . substr($sekolah_saya['kota'], 5);
+                                $provinsi = substr($sekolah_saya['provinsi'], 6);
+                            }
                             ?>
                             <span class="info" id="infosekolahkorban">
-                                <div style='color:black; margin-left:10px'>Status: <?= $xstatus ?><br> Kec: <?= $kec ?><br> <?= $kota ?> <br> Provinsi: <?= $provinsi ?> </div>
+                                <?php if ($sebagai == "sekolah") { ?>
+                                    <div style='color:black; margin-left:10px'>Status: <?= $xstatus ?><br> Kec: <?= $kec ?><br> <?= $kota ?> <br> Provinsi: <?= $provinsi ?> </div>
+                                <?php } ?>
                             </span>
                             <button onclick="konfirmsekolahkorban(0)" id="tbsekolahkorban" class="btn_ijo">Konfirmasi</button>
                         </td>
                     </tr>
-                    <tr id="daftarpdRowkorban" style="display: none;">
-                        <td>
-                            Nama Korban *
-                        </td>
-                        <td>:</td>
-                        <td>
-                            <select class="js-pil" id="daftarpdkorban" name="daftarpdkorban" style="width: 100%;">
-                                <option value="000000">Pilih Siswa</option>
-                                <?php foreach ($daf_siswa as $key => $value) : ?>
-                                    <option value="<?= $value['nisn'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <span class="info" id="infodaftarpdkorban"></span><br>
-                        </td>
-                    </tr>
-                    <tr id="daftarptkRowkorban" style="display: none;">
-                        <td>
-                            Nama Korban *
-                        </td>
-                        <td>:</td>
-                        <td>
-                            <select class="js-pil" id="daftarptkkorban" name="daftarptkkorban" style="width: 100%;">
-                                <option value="000000">Pilih Pendidik</option>
-                                <?php foreach ($daf_pendidik as $key => $value) : ?>
-                                    <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <span class="info" id="infodaftarptkkorban"></span><br>
-                        </td>
-                    </tr>
-                    <tr id="daftarptk2Rowkorban" style="display: none;">
-                        <td>
-                            Nama Korban *
-                        </td>
-                        <td>:</td>
-                        <td>
-                            <select class="js-pil" id="daftarptk2korban" name="daftarptk2korban" style="width: 100%;">
-                                <option value="000000">Pilih TK</option>
-                                <?php foreach ($daf_tenagakependidikan as $key => $value) : ?>
-                                    <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <span class="info" id="infodaftarptk2korban"></span><br>
-                        </td>
-                    </tr>
-                    <tr id="daftarkepsekRowkorban" style="display: none;">
-                        <td>
-                            Nama Korban *
-                        </td>
-                        <td>:</td>
-                        <td>
-                            <select class="js-pil" id="daftarkepsekkorban" name="daftarkepsekkorban" style="width: 100%;">
-                                <?php foreach ($daf_kepsek as $key => $value) : ?>
-                                    <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <span class="info" id="infodaftarkepsekkorban"></span><br>
-                        </td>
-                    </tr>
+                    <?php if ($sebagai == "sekolah") { ?>
+                        <tr id="daftarpdRowkorban" style="display: none;">
+                            <td>
+                                Nama Korban *
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <select class="js-pil" id="daftarpdkorban" name="daftarpdkorban" style="width: 100%;">
+                                    <option value="000000">Pilih Siswa</option>
+                                    <?php foreach ($daf_siswa as $key => $value) : ?>
+                                        <option value="<?= $value['nisn'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <span class="info" id="infodaftarpdkorban"></span><br>
+                            </td>
+                        </tr>
+                        <tr id="daftarptkRowkorban" style="display: none;">
+                            <td>
+                                Nama Korban *
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <select class="js-pil" id="daftarptkkorban" name="daftarptkkorban" style="width: 100%;">
+                                    <option value="000000">Pilih Pendidik</option>
+                                    <option value="000001">-- Input Manual --</option>
+                                    <?php foreach ($daf_pendidik as $key => $value) : ?>
+                                        <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <span class="info" id="infodaftarptkkorban"></span><br>
+                            </td>
+                        </tr>
+                        <tr id="daftarptk2Rowkorban" style="display: none;">
+                            <td>
+                                Nama Korban *
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <select class="js-pil" id="daftarptk2korban" name="daftarptk2korban" style="width: 100%;">
+                                    <option value="000000">Pilih TK</option>
+                                    <option value="000001">-- Input Manual --</option>
+                                    <?php foreach ($daf_tenagakependidikan as $key => $value) : ?>
+                                        <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <span class="info" id="infodaftarptk2korban"></span><br>
+                            </td>
+                        </tr>
+                        <tr id="daftarkepsekRowkorban" style="display: none;">
+                            <td>
+                                Nama Korban *
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <select class="js-pil" id="daftarkepsekkorban" name="daftarkepsekkorban" style="width: 100%;">
+                                    <?php foreach ($daf_kepsek as $key => $value) : ?>
+                                        <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <span class="info" id="infodaftarkepsekkorban"></span><br>
+                            </td>
+                        </tr>
+                    <?php } ?>
                     <tr id="nisnRowkorban" style="display: none;">
                         <td>
                             NISN / NUPTK Korban
@@ -711,7 +718,7 @@
                         </td>
                         <td>:</td>
                         <td>
-                            <input type="text" placeholder="" id="usiakorban" name="usiakorban">
+                            <input maxlength="3" type="text" placeholder="" id="usiakorban" name="usiakorban">
                             <span class="info" id="infousiakorban"></span>
                         </td><br>
                         <!-- <button onclick="cekusiakorban(0)" id="tbusiakorban" class="btn_ijo">OK</button> -->
@@ -877,78 +884,84 @@
                         </td>
                         <td>:</td>
                         <td><textarea <?= ($sebagai == "sekolah") ? "disabled" : "" ?> id="sekolahpelaku" name="sekolahpelaku"><?= ($sebagai == "sekolah") ? $sekolah_saya['nama'] : "" ?></textarea>
-                            <?php
-                            $xstatus = ($sekolah_saya['nama_sekolah'] == 1) ? "Negeri" : "Swasta";
-                            $kec = substr($sekolah_saya['kecamatan'], 5);
-                            $kota = (substr($sekolah_saya['kota'], 0, 3) == "Kab.") ? "Kab: " : "Kota: ";
-                            $kota = $kota . substr($sekolah_saya['kota'], 5);
-                            $provinsi = substr($sekolah_saya['provinsi'], 6);
-                            ?>
+                            <?php if ($sebagai == "sekolah") {
+                                $xstatus = ($sekolah_saya['nama_sekolah'] == 1) ? "Negeri" : "Swasta";
+                                $kec = substr($sekolah_saya['kecamatan'], 5);
+                                $kota = (substr($sekolah_saya['kota'], 0, 3) == "Kab.") ? "Kab: " : "Kota: ";
+                                $kota = $kota . substr($sekolah_saya['kota'], 5);
+                                $provinsi = substr($sekolah_saya['provinsi'], 6);
+                            } ?>
                             <span class="info" id="infosekolahpelaku">
-                                <div style='color:black; margin-left:10px'>Status: <?= $xstatus ?><br> Kec: <?= $kec ?><br> <?= $kota ?> <br> Provinsi: <?= $provinsi ?> </div>
+                                <?php if ($sebagai == "sekolah") { ?>
+                                    <div style='color:black; margin-left:10px'>Status: <?= $xstatus ?><br> Kec: <?= $kec ?><br> <?= $kota ?> <br> Provinsi: <?= $provinsi ?> </div>
+                                <?php } ?>
                             </span>
                             <button onclick="konfirmsekolahpelaku(0)" id="tbsekolahpelaku" class="btn_ijo">Konfirmasi</button>
                         </td>
                     </tr>
-                    <tr id="daftarpdRowpelaku" style="display: none;">
-                        <td class="kelaspelaku">
-                            Nama Pelaku *
-                        </td>
-                        <td>:</td>
-                        <td>
-                            <select class="js-pil" id="daftarpdpelaku" name="daftarpdpelaku" style="width: 100%;">
-                                <option value="000000">Pilih Siswa</option>
-                                <?php foreach ($daf_siswa as $key => $value) : ?>
-                                    <option value="<?= $value['nisn'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <span class="info" id="infodaftarpdpelaku"></span><br>
-                        </td>
-                    </tr>
-                    <tr id="daftarptkRowpelaku" style="display: none;">
-                        <td class="kelaspelaku">
-                            Nama Pelaku *
-                        </td>
-                        <td>:</td>
-                        <td>
-                            <select class="js-pil" id="daftarptkpelaku" name="daftarptkpelaku" style="width: 100%;">
-                                <option value="000000">Pilih Pendidik</option>
-                                <?php foreach ($daf_pendidik as $key => $value) : ?>
-                                    <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <span class="info" id="infodaftarptkpelaku"></span><br>
-                        </td>
-                    </tr>
-                    <tr id="daftarptk2Rowpelaku" style="display: none;">
-                        <td class="kelaspelaku">
-                            Nama Pelaku *
-                        </td>
-                        <td>:</td>
-                        <td>
-                            <select class="js-pil" id="daftarptk2pelaku" name="daftarptk2pelaku" style="width: 100%;">
-                                <option value="000000">Pilih TK</option>
-                                <?php foreach ($daf_tenagakependidikan as $key => $value) : ?>
-                                    <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <span class="info" id="infodaftarptk2pelaku"></span><br>
-                        </td>
-                    </tr>
-                    <tr id="daftarkepsekRowpelaku" style="display: none;">
-                        <td class="kelaspelaku">
-                            Nama Pelaku *
-                        </td>
-                        <td>:</td>
-                        <td>
-                            <select class="js-pil" id="daftarkepsekpelaku" name="daftarkepsekpelaku" style="width: 100%;">
-                                <?php foreach ($daf_kepsek as $key => $value) : ?>
-                                    <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <span class="info" id="infodaftarkepsekpelaku"></span><br>
-                        </td>
-                    </tr>
+                    <?php if ($sebagai == "sekolah") { ?>
+                        <tr id="daftarpdRowpelaku" style="display: none;">
+                            <td class="kelaspelaku">
+                                Nama Pelaku *
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <select class="js-pil" id="daftarpdpelaku" name="daftarpdpelaku" style="width: 100%;">
+                                    <option value="000000">Pilih Siswa</option>
+                                    <?php foreach ($daf_siswa as $key => $value) : ?>
+                                        <option value="<?= $value['nisn'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <span class="info" id="infodaftarpdpelaku"></span><br>
+                            </td>
+                        </tr>
+                        <tr id="daftarptkRowpelaku" style="display: none;">
+                            <td class="kelaspelaku">
+                                Nama Pelaku *
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <select class="js-pil" id="daftarptkpelaku" name="daftarptkpelaku" style="width: 100%;">
+                                    <option value="000000">Pilih Pendidik</option>
+                                    <option value="000001">-- Input Manual --</option>
+                                    <?php foreach ($daf_pendidik as $key => $value) : ?>
+                                        <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <span class="info" id="infodaftarptkpelaku"></span><br>
+                            </td>
+                        </tr>
+                        <tr id="daftarptk2Rowpelaku" style="display: none;">
+                            <td class="kelaspelaku">
+                                Nama Pelaku *
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <select class="js-pil" id="daftarptk2pelaku" name="daftarptk2pelaku" style="width: 100%;">
+                                    <option value="000000">Pilih TK</option>
+                                    <option value="000001">-- Input Manual --</option>
+                                    <?php foreach ($daf_tenagakependidikan as $key => $value) : ?>
+                                        <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <span class="info" id="infodaftarptk2pelaku"></span><br>
+                            </td>
+                        </tr>
+                        <tr id="daftarkepsekRowpelaku" style="display: none;">
+                            <td class="kelaspelaku">
+                                Nama Pelaku *
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <select class="js-pil" id="daftarkepsekpelaku" name="daftarkepsekpelaku" style="width: 100%;">
+                                    <?php foreach ($daf_kepsek as $key => $value) : ?>
+                                        <option value="<?= $value['nuptk'] ?>" data-induk="<?= $value['nik'] ?>"><?= $value['nama'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <span class="info" id="infodaftarkepsekpelaku"></span><br>
+                            </td>
+                        </tr>
+                    <?php } ?>
                     <tr id="nisnRowpelaku" style="display: none;">
                         <td class="kelaspelaku">
                             NISN / NUPTK Pelaku
@@ -1233,7 +1246,7 @@
 
             </div>
             <br>
-            <button class="btn_biru" onclick=kembali();>Kembali ke Daftar Laporan</button>
+            <button id="tbdaftar" class="btn_biru" onclick=kembali();>Kembali ke Daftar Laporan</button>
         </div>
 
     </div>
@@ -1376,7 +1389,7 @@
     var kode_wilayah = "000000";
     var nisn = "";
     var nama_sekolah = "";
-    var nama_sekolah_asal = "<?= $sekolah_saya['nama'] ?>";
+    var nama_sekolah_asal = "<?= ($sebagai == "sekolah") ? $sekolah_saya['nama'] : "" ?>";
     var disabilitas = "";
     var pildisabilitas = "";
     var disabilitasortu = "";
@@ -1385,6 +1398,13 @@
     var statussebelumnya = 0;
     var jenisnomor = "";
     var csrf = '<?= csrf_hash(); ?>';
+
+    var xhrGet;
+
+    var statuskorbanok = [];
+    var statuspelakuok = [];
+    var isikorbanmanual = [];
+    var isipelakumanual = [];
 
     let counterkorban = 0;
     let counterpelaku = 0;
@@ -1416,7 +1436,13 @@
     }
 
     function kembali() {
-        window.open("<?= base_url('daftar_laporan_kekerasan') ?>", "_self");
+        opsi = "";
+        if (sebagai == "dinas") {
+            opsi = "?laporan=dinas";
+            window.open("<?= base_url('status_laporan_kekerasan') ?>" + opsi, "_self");
+        } else {
+            window.open("<?= base_url('inputdata/daftar_laporan') ?>" + opsi, "_self");
+        }
     }
 
     function cekpilihjk(siapa, idx) {
@@ -1424,6 +1450,11 @@
     }
 
     function cekstatus(siapa, idx) {
+        if (siapa == "korban") {
+            statuskorbanok[idx] = 0;
+        } else {
+            statuspelakuok[idx] = 0;
+        }
         statussebelumnya = statusakhir;
         valid = true;
         if (statuskasus == 3) {
@@ -1438,6 +1469,10 @@
             } else {
                 document.getElementById('erroralasan').innerHTML = "";
             }
+        }
+
+        if (xhrGet && xhrGet.readyState != 4) {
+            xhrGet.abort(); // Menghentikan proses AJAX sebelumnya
         }
 
 
@@ -1489,14 +1524,16 @@
             const tbnpsn = document.getElementById('tbnpsn' + siapa + idx);
             const tbcarisekolah = document.getElementById('tbcarisekolah' + siapa + idx);
             const labelnpsn = npsnrow.getElementsByTagName('td');
-            const daftarpdrow = document.getElementById('daftarpdRow' + siapa + idx);
-            const daftarptkrow = document.getElementById('daftarptkRow' + siapa + idx);
-            const daftarptk2row = document.getElementById('daftarptk2Row' + siapa + idx);
-            const daftarkepsekrow = document.getElementById('daftarkepsekRow' + siapa + idx);
-            const infodaftarpd = document.getElementById('infodaftarpd' + siapa + idx);
-            const infodaftarptk = document.getElementById('infodaftarptk' + siapa + idx);
-            const infodaftarptk2 = document.getElementById('infodaftarptk2' + siapa + idx);
-            const infodaftarkepsek = document.getElementById('infodaftarkepsek' + siapa + idx);
+            if (sebagai == "sekolah") {
+                const daftarpdrow = document.getElementById('daftarpdRow' + siapa + idx);
+                const daftarptkrow = document.getElementById('daftarptkRow' + siapa + idx);
+                const daftarptk2row = document.getElementById('daftarptk2Row' + siapa + idx);
+                const infodaftarpd = document.getElementById('infodaftarpd' + siapa + idx);
+                const infodaftarptk = document.getElementById('infodaftarptk' + siapa + idx);
+                const infodaftarptk2 = document.getElementById('infodaftarptk2' + siapa + idx);
+                const daftarkepsekrow = document.getElementById('daftarkepsekRow' + siapa + idx);
+                const infodaftarkepsek = document.getElementById('infodaftarkepsek' + siapa + idx);
+            }
             const infousia = document.getElementById('infousia' + siapa + idx);
             const nisnrow = document.getElementById('nisnRow' + siapa + idx);
             const nisn = document.getElementById('nisn' + siapa + idx);
@@ -1555,6 +1592,7 @@
                 namaorturow.style.display = 'table-row';
             } else if (selectedValuestatus == 6) {
                 xsiapa2 = xsiapa;
+
             }
 
             labelnpsn[0].innerHTML = 'NPSN ' + xsiapa + ' <sup>*</sup>';
@@ -1562,15 +1600,38 @@
             labelnikpdptk[0].innerHTML = 'NIK ' + xsiapa + ' <sup>*</sup>';
             labelnik2[0].innerHTML = 'NIK ' + xsiapa2 + ' <sup>*</sup>';
             labelnama2[0].innerHTML = 'Nama ' + xsiapa2 + ' <sup>*</sup>';
+            labels[0].innerHTML = 'NUPTK ' + xsiapa;
+            labels2[0].innerHTML = 'Nama Sekolah ' + xsiapa + ' *';
 
             jenis_kelaminrow.style.display = 'none';
             disabilitasrow.style.display = 'none';
 
             if (selectedValuestatus >= 1 && selectedValuestatus <= 2) {
-                daftarpdrow.style.display = 'table-row';
-                daftarptkrow.style.display = 'none';
-                daftarptk2row.style.display = 'none';
-                daftarkepsekrow.style.display = 'none';
+                if (sebagai == "sekolah") {
+                    $('#daftarpd' + siapa + idx).val('000000').trigger('change.select2');
+                    $('#daftarptk' + siapa + idx).val('000000').trigger('change.select2');
+                    $('#daftarptk2' + siapa + idx).val('000000').trigger('change.select2');
+                    infodaftarpd.innerHTML = "";
+                    infodaftarptk.innerHTML = "";
+                    infodaftarptk2.innerHTML = "";
+                    daftarpdrow.style.display = 'table-row';
+                    daftarptkrow.style.display = 'none';
+                    daftarptk2row.style.display = 'none';
+                    infodaftarkepsek.innerHTML = "";
+                    daftarkepsekrow.style.display = 'none';
+
+                    var selectElement = document.getElementById('daftarpd' + siapa + idx);
+                    var selectedIndex = selectElement.selectedIndex;
+                    var selectedOption = selectElement.options[selectedIndex];
+                    var selectedVal = selectedOption.value;
+                }
+
+                nisn.value = "";
+                nisnrow.style.display = 'none';
+                nikpdptkrow.style.display = 'none';
+                jenis_kelaminrow.style.display = 'none';
+                disabilitasrow.style.display = 'none';
+
                 tglahirrow.style.display = 'none';
                 alamatrow.style.display = 'none';
                 nikrow.style.display = 'none';
@@ -1582,20 +1643,18 @@
 
                 if (sebagai == "sekolah") {
                     sekolahrow.style.display = 'table-row'
+                } else {
+                    tbsekolah.style.display = 'table-row';
+                    sekolahrow.style.display = 'none'
+                    tbnpsn.style.display = 'table-row';
                 }
-
-                var selectElement = document.getElementById('daftarpd' + siapa + idx);
-                var selectedIndex = selectElement.selectedIndex;
-                var selectedOption = selectElement.options[selectedIndex];
-                var selectedVal = selectedOption.value;
 
                 if (selectedValuestatus == 2 && selectedVal != "000000" && statussebelumnya == 1) {
-                    statusortu.style.display = 'table-row';
-                    nikrow.style.display = 'table-row';
+                    // statusortu.style.display = 'table-row';
+                    // nikrow.style.display = 'table-row';
                 }
-                labels[0].innerHTML = 'NISN ' + xsiapa;
+
                 nisn.maxLength = 10;
-                labels2[0].innerHTML = 'Nama Sekolah ' + xsiapa + ' <sup>*</sup>';
                 xinfonis = "NISN tidak ditemukan";
                 tbsekolah.innerText = "Konfirmasi";
                 if (nisn.value == "" && sebagai != "sekolah")
@@ -1630,29 +1689,46 @@
 
                 }
 
-                $('#daftarpd' + siapa + idx).val('000000').trigger('change.select2');
-                $('#daftarptk' + siapa + idx).val('000000').trigger('change.select2');
-                $('#daftarptk2' + siapa + idx).val('000000').trigger('change.select2');
-                infodaftarpd.innerHTML = "";
-                infodaftarptk.innerHTML = "";
-                infodaftarptk2.innerHTML = "";
-                infodaftarkepsek.innerHTML = "";
+                if (sebagai == "sekolah") {
+                    sekolahrow.style.display = 'table-row'
+                } else {
+                    tbsekolah.style.display = 'table-row';
+                    sekolahrow.style.display = 'none'
+                    npsnrow.style.display = 'table-row';
+                    tbnpsn.style.display = 'table-row';
+                    nisn.value = "";
+                    nisnrow.style.display = 'none';
+                    npsnrow.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+
+                if (sebagai == "sekolah") {
+                    $('#daftarpd' + siapa + idx).val('000000').trigger('change.select2');
+                    $('#daftarptk' + siapa + idx).val('000000').trigger('change.select2');
+                    $('#daftarptk2' + siapa + idx).val('000000').trigger('change.select2');
+                    infodaftarpd.innerHTML = "";
+                    infodaftarptk.innerHTML = "";
+                    infodaftarptk2.innerHTML = "";
+                    daftarpdrow.style.display = 'none';
+                    daftarptkrow.style.display = 'none';
+                    daftarptk2row.style.display = 'none';
+                    infodaftarkepsek.innerHTML = "";
+                    daftarkepsekrow.style.display = 'none';
+                    if (selectedValuestatus == 3)
+                        daftarptkrow.style.display = 'table-row';
+                    if (selectedValuestatus == 4)
+                        daftarptk2row.style.display = 'table-row';
+                    if (selectedValuestatus == 5)
+                        daftarkepsekrow.style.display = 'table-row';
+                }
 
                 nisnrow.style.display = 'none';
                 nikpdptkrow.style.display = 'none';
                 jenis_kelaminrow.style.display = 'none';
                 disabilitasrow.style.display = 'none';
 
-                daftarpdrow.style.display = 'none';
-                daftarptkrow.style.display = 'none';
-                daftarptk2row.style.display = 'none';
-                daftarkepsekrow.style.display = 'none';
-                if (selectedValuestatus == 3)
-                    daftarptkrow.style.display = 'table-row';
-                if (selectedValuestatus == 4)
-                    daftarptk2row.style.display = 'table-row';
-                if (selectedValuestatus == 5)
-                    daftarkepsekrow.style.display = 'table-row';
                 nikrow.style.display = 'none';
                 tglahirrow.style.display = 'none';
                 alamatrow.style.display = 'none';
@@ -1661,9 +1737,8 @@
                     behavior: 'smooth',
                     block: 'start'
                 });
-                labels[0].innerHTML = 'NUPTK ' + xsiapa;
+
                 nisn.maxLength = 16;
-                labels2[0].innerHTML = 'Nama Sekolah ' + xsiapa + ' *';
                 xinfonis = "NUPTK tidak tersedia";
                 tbsekolah.innerText = "Konfirmasi";
                 if (nisn.value == "")
@@ -1691,11 +1766,13 @@
                     disabilitasrow.style.display = 'none';
                 }
             } else {
-                $('#daftarpd' + siapa + idx).val('000000').trigger('change.select2');
-                $('#daftarptk' + siapa + idx).val('000000').trigger('change.select2');
-                infodaftarpd.innerHTML = "";
-                infodaftarptk.innerHTML = "";
-                infodaftarptk2.innerHTML = "";
+                if (sebagai == "sekolah") {
+                    $('#daftarpd' + siapa + idx).val('000000').trigger('change.select2');
+                    $('#daftarptk' + siapa + idx).val('000000').trigger('change.select2');
+                    infodaftarpd.innerHTML = "";
+                    infodaftarptk.innerHTML = "";
+                    infodaftarptk2.innerHTML = "";
+                }
                 npsnrow.style.display = 'none';
                 nikrow.style.display = 'table-row';
                 tbnik.style.display = 'none';
@@ -1755,16 +1832,19 @@
                 tbnik.style.display = 'table-row';
                 tbnik.innerHTML = "Cek";
                 infosekolah.style.display = "none";
-                daftarpdrow.style.display = "none";
-                daftarptkrow.style.display = "none";
-                daftarptk2row.style.display = "none";
-                daftarkepsekrow.style.display = "none";
+                if (sebagai == "sekolah") {
+                    daftarpdrow.style.display = "none";
+                    daftarptkrow.style.display = "none";
+                    daftarptk2row.style.display = "none";
+                    daftarkepsekrow.style.display = "none";
+                }
                 nikpdptkrow.style.display = "none";
                 sekolah.disabled = false;
                 sekolah.value = "";
                 isinik.value = "";
                 tbnikdarijk.style.display = 'table-row';
                 infousia.innerHTML = "";
+                nama.value = "";
             } else {
                 namarow.style.display = 'none';
                 infosekolah.style.display = "table-row";
@@ -1821,13 +1901,17 @@
 
             if (selectedValuestatus == 5) {
 
-                var selectElement = document.getElementById('daftarkepsek' + siapa + idx);
-                var selectedIndex = selectElement.selectedIndex;
-                var selectedOption = selectElement.options[selectedIndex];
-                var nik = selectedOption.getAttribute('data-induk');
-                var nuptk = selectedOption.value;
+                if (sebagai == "sekolah") {
+                    var selectElement = document.getElementById('daftarkepsek' + siapa + idx);
+                    var selectedIndex = selectElement.selectedIndex;
+                    var selectedOption = selectElement.options[selectedIndex];
+                    var nik = selectedOption.getAttribute('data-induk');
+                    var nuptk = selectedOption.value;
 
-                document.getElementById('infodaftarkepsek' + siapa + idx).innerHTML = "tunggu...";
+                    document.getElementById('infodaftarkepsek' + siapa + idx).innerHTML = "tunggu...";
+                    window['ceknisn' + siapa](idx);
+                }
+
                 document.getElementById('infonik' + siapa + idx).innerHTML = "tunggu...";
                 document.getElementById('infonamaortu' + siapa + idx).innerHTML = "tunggu...";
                 document.getElementById('infojenis_kelamin' + siapa + idx).innerHTML = "tunggu...";
@@ -1838,7 +1922,6 @@
                 document.getElementById('nisn' + siapa + idx).value = nuptk;
                 document.getElementById('statusortu' + siapa + idx).value = "ayah";
 
-                window['ceknisn' + siapa](idx);
             }
 
             if ((nisn.value.length < 16 && selectedValuestatus >= 3 && selectedValuestatus != 6) || (nisn.value.length == 16 && selectedValuestatus <= 2) || statussebelumnya == 5) {
@@ -1846,17 +1929,21 @@
                 nikpdptkrow.style.display = "none";
                 jenis_kelaminrow.style.display = "none";
                 disabilitasrow.style.display = "none";
-                document.getElementById('infodaftarpd' + siapa + idx).innerHTML = "";
-                document.getElementById('infodaftarptk' + siapa + idx).innerHTML = "";
-                document.getElementById('infodaftarptk2' + siapa + idx).innerHTML = "";
-                $('#daftarpd' + siapa + idx).val('000000').trigger('change.select2');
-                $('#daftarptk' + siapa + idx).val('000000').trigger('change.select2');
+                if (sebagai == "sekolah") {
+                    document.getElementById('infodaftarpd' + siapa + idx).innerHTML = "";
+                    document.getElementById('infodaftarptk' + siapa + idx).innerHTML = "";
+                    document.getElementById('infodaftarptk2' + siapa + idx).innerHTML = "";
+                    $('#daftarpd' + siapa + idx).val('000000').trigger('change.select2');
+                    $('#daftarptk' + siapa + idx).val('000000').trigger('change.select2');
+                }
             }
 
             if (selectedValuestatus == 6) {
                 jenis_kelaminrow.style.display = "table-row";
                 tbnik.style.display = 'none';
             }
+
+            ///////////////BUAT CEK----------------------
 
         }
     }
@@ -1869,6 +1956,88 @@
         $select.find('option').each(function(i) {
             $(this).attr('data-idx', index);
         });
+    }
+
+    //////////////////----------------------------------------------------
+
+    function onchangeptk_kepsek(jenisptk, siapa, ini) {
+        var selectedOption = ini.find(':selected');
+        var nik = selectedOption.data('induk');
+        var indeks = selectedOption.data('idx');
+        var nuptk = selectedOption.val();
+
+        window['isi' + siapa + 'manual'][indeks] = false;
+
+        if (nuptk == "000000") {
+            tbnik = document.getElementById('tbnikselect' + siapa + indeks);
+            document.getElementById('infodaftar' + jenisptk + siapa + indeks).innerHTML = "";
+            document.getElementById('infonik' + siapa + indeks).innerHTML = "";
+            document.getElementById('infonamaortu' + siapa + indeks).innerHTML = "";
+            document.getElementById('infojenis_kelamin' + siapa + indeks).innerHTML = "";
+            document.getElementById('namaRow' + siapa + indeks).style.display = "none";
+            document.getElementById('nama' + siapa + indeks).value = "";
+            document.getElementById('nisnRow' + siapa + indeks).style.display = "none";
+            document.getElementById('nik' + siapa + indeks).value = "";
+            document.getElementById('namaortu' + siapa + indeks).value = "";
+            document.getElementById('nikpdptkRow' + siapa + indeks).style.display = "none";
+            document.getElementById('jenis_kelaminRow' + siapa + indeks).style.display = "none";
+            document.getElementById('disabilitasRow' + siapa + indeks).style.display = "none";
+            document.getElementById('tbnisn' + siapa + indeks).style.display = "none";
+
+            document.getElementById('statusortu' + siapa + indeks).value = "ayah";
+
+            var radioButtons = document.getElementsByName('jenis_kelamin' + siapa + indeks);
+            radioButtons[0].checked = false;
+            radioButtons[1].checked = false;
+        } else if (nuptk == "000001") {
+            window['isi' + siapa + 'manual'][indeks] = true;
+            tbnik = document.getElementById('tbnikselect' + siapa + indeks);
+            document.getElementById('infodaftar' + jenisptk + siapa + indeks).innerHTML = "";
+            document.getElementById('infonik' + siapa + indeks).innerHTML = "";
+            document.getElementById('infonikpdptk' + siapa + indeks).innerHTML = "";
+            document.getElementById('infonamaortu' + siapa + indeks).innerHTML = "";
+            document.getElementById('infonama' + siapa + indeks).innerHTML = "";
+            document.getElementById('infojenis_kelamin' + siapa + indeks).innerHTML = "";
+            document.getElementById('namaRow' + siapa + indeks).style.display = "table-row";
+            document.getElementById('nama' + siapa + indeks).value = "";
+            document.getElementById('nisnRow' + siapa + indeks).style.display = "table-row";
+            document.getElementById('nik' + siapa + indeks).value = "";
+            document.getElementById('nisn' + siapa + indeks).value = "";
+            document.getElementById('namaortu' + siapa + indeks).value = "";
+            document.getElementById('nikpdptkRow' + siapa + indeks).style.display = "table-row";
+            document.getElementById('nikpdptk' + siapa + indeks).value = "";
+            document.getElementById('jenis_kelaminRow' + siapa + indeks).style.display = "none";
+            document.getElementById('disabilitasRow' + siapa + indeks).style.display = "none";
+            document.getElementById('tbnisn' + siapa + indeks).style.display = "none";
+            tbnik.style.display = "table-row";
+
+            tbnik.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+
+            document.getElementById('statusortu' + siapa + indeks).value = "ayah";
+
+            var radioButtons = document.getElementsByName('jenis_kelamin' + siapa + indeks);
+            radioButtons[0].checked = false;
+            radioButtons[1].checked = false;
+        } else {
+            document.getElementById('infodaftar' + jenisptk + siapa + indeks).innerHTML = "tunggu...";
+            document.getElementById('infonik' + siapa + indeks).innerHTML = "tunggu...";
+            document.getElementById('infonamaortu' + siapa + indeks).innerHTML = "tunggu...";
+            document.getElementById('infojenis_kelamin' + siapa + indeks).innerHTML = "tunggu...";
+            document.getElementById('nik' + siapa + indeks).value = "";
+            document.getElementById('namaortu' + siapa + indeks).value = "";
+            document.getElementById('namaRow' + siapa + indeks).style.display = "none";
+            document.getElementById('statusortu' + siapa + indeks).value = "ayah";
+
+            var radioButtons = document.getElementsByName('jenis_kelamin' + siapa + indeks);
+            radioButtons[0].checked = true;
+
+            document.getElementById('nisn' + siapa + indeks).value = nuptk;
+            document.getElementById('nikpdptk' + siapa + indeks).value = nik;
+            window['ceknisn' + siapa](indeks);
+        }
     }
 
     ////////////// KORBAN ////////////////////////////////////////////////
@@ -2160,22 +2329,33 @@
             var indeks = selectedOption.data('idx');
             var nisn = selectedOption.val();
 
-            document.getElementById('infodaftarpdkorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonikkorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonamaortukorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infojenis_kelaminkorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('nikkorban' + indeks).value = "";
-            document.getElementById('namaortukorban' + indeks).value = "";
+            if (nisn == "000000") {
+                document.getElementById('nisnRowkorban' + indeks).style.display = 'none';
+                document.getElementById('nikpdptkRowkorban' + indeks).style.display = 'none';
+                document.getElementById('jenis_kelaminRowkorban' + indeks).style.display = 'none';
+                document.getElementById('disabilitasRowkorban' + indeks).style.display = 'none';
+                document.getElementById('infodaftarpdkorban' + indeks).innerHTML = "";
+                document.getElementById('namaortuRowkorban' + indeks).style.display = 'none';
+                document.getElementById('nikRowkorban' + indeks).style.display = 'none';
+            } else {
 
-            document.getElementById('statusortukorban' + indeks).style.display = 'table-row';
-            document.getElementById('statusortukorban' + indeks).value = "ayah";
+                document.getElementById('infodaftarpdkorban' + indeks).innerHTML = "tunggu...";
+                document.getElementById('infonikkorban' + indeks).innerHTML = "tunggu...";
+                document.getElementById('infonamaortukorban' + indeks).innerHTML = "tunggu...";
+                document.getElementById('infojenis_kelaminkorban' + indeks).innerHTML = "tunggu...";
+                document.getElementById('nikkorban' + indeks).value = "";
+                document.getElementById('namaortukorban' + indeks).value = "";
 
-            var radioButtons = document.getElementsByName('jenis_kelaminkorban' + indeks);
-            radioButtons[0].checked = true;
+                document.getElementById('statusortukorban' + indeks).style.display = 'table-row';
+                document.getElementById('statusortukorban' + indeks).value = "ayah";
 
-            document.getElementById('nisnkorban' + indeks).value = nisn;
-            document.getElementById('nikpdptkkorban' + indeks).value = nik;
-            ceknisnkorban(indeks);
+                var radioButtons = document.getElementsByName('jenis_kelaminkorban' + indeks);
+                radioButtons[0].checked = true;
+
+                document.getElementById('nisnkorban' + indeks).value = nisn;
+                document.getElementById('nikpdptkkorban' + indeks).value = nik;
+                ceknisnkorban(indeks);
+            }
         });
 
         //// UNTUK DAFTAR PENDIDIK ////////////////////
@@ -2186,26 +2366,7 @@
             $(this).attr('data-idx', idx);
         });
         daftarptkElement.on('change', function() {
-            var selectedOption = $(this).find(':selected');
-            var nik = selectedOption.data('induk');
-            var indeks = selectedOption.data('idx');
-            var nuptk = selectedOption.val();
-
-            document.getElementById('infodaftarptkkorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonikkorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonamaortukorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infojenis_kelaminkorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('nikkorban' + indeks).value = "";
-            document.getElementById('namaortukorban' + indeks).value = "";
-
-            document.getElementById('statusortukorban' + indeks).value = "ayah";
-
-            var radioButtons = document.getElementsByName('jenis_kelaminkorban' + indeks);
-            radioButtons[0].checked = true;
-
-            document.getElementById('nisnkorban' + indeks).value = nuptk;
-            document.getElementById('nikpdptkkorban' + indeks).value = nik;
-            ceknisnkorban(indeks);
+            onchangeptk_kepsek('ptk', 'korban', $(this));
         });
 
         //// UNTUK DAFTAR TENAGAKEPENDIDIKAN ////////////////////
@@ -2216,26 +2377,7 @@
             $(this).attr('data-idx', idx);
         });
         daftarptk2Element.on('change', function() {
-            var selectedOption = $(this).find(':selected');
-            var nik = selectedOption.data('induk');
-            var indeks = selectedOption.data('idx');
-            var nuptk = selectedOption.val();
-
-            document.getElementById('infodaftarptk2korban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonikkorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonamaortukorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infojenis_kelaminkorban' + indeks).innerHTML = "tunggu...";
-            document.getElementById('nikkorban' + indeks).value = "";
-            document.getElementById('namaortukorban' + indeks).value = "";
-
-            document.getElementById('statusortukorban' + indeks).value = "ayah";
-
-            var radioButtons = document.getElementsByName('jenis_kelaminkorban' + indeks);
-            radioButtons[0].checked = true;
-
-            document.getElementById('nisnkorban' + indeks).value = nuptk;
-            document.getElementById('nikpdptkkorban' + indeks).value = nik;
-            ceknisnkorban(indeks);
+            onchangeptk_kepsek('ptk2', 'korban', $(this));
         });
 
         //// UNTUK DAFTAR Kepsek ////////////////////
@@ -2245,7 +2387,6 @@
         daftarkepsekOptions.each(function(index) {
             $(this).attr('data-idx', idx);
         });
-
 
         korbanDiv = document.getElementById('korban' + idx);
         korbanDiv.classList.add('fade-in');
@@ -2276,6 +2417,7 @@
             const clonedElement = document.getElementById('korban' + index);
             clonedElement.remove();
             counterkorban--;
+            statuskorbanok[index] = 0;
             if (index > 1) {
                 tbtambahkorbanprev = document.getElementById('tbtambahkorban' + (index - 1));
                 tbtambahkorbanprev.style.display = 'inline';
@@ -2608,26 +2750,7 @@
             $(this).attr('data-idx', idx);
         });
         daftarptkElement.on('change', function() {
-            var selectedOption = $(this).find(':selected');
-            var nik = selectedOption.data('induk');
-            var indeks = selectedOption.data('idx');
-            var nuptk = selectedOption.val();
-
-            document.getElementById('infodaftarptkpelaku' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonikpelaku' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonamaortupelaku' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infojenis_kelaminpelaku' + indeks).innerHTML = "tunggu...";
-            document.getElementById('nikpelaku' + indeks).value = "";
-            document.getElementById('namaortupelaku' + indeks).value = "";
-
-            document.getElementById('statusortupelaku' + indeks).value = "ayah";
-
-            var radioButtons = document.getElementsByName('jenis_kelaminpelaku' + indeks);
-            radioButtons[0].checked = true;
-
-            document.getElementById('nisnpelaku' + indeks).value = nuptk;
-            document.getElementById('nikpdptkpelaku' + indeks).value = nik;
-            ceknisnpelaku(indeks);
+            onchangeptk_kepsek('ptk', 'pelaku', $(this));
         });
 
         //// UNTUK DAFTAR TENAGAKEPENDIDIKAN ////////////////////
@@ -2638,26 +2761,7 @@
             $(this).attr('data-idx', idx);
         });
         daftarptk2Element.on('change', function() {
-            var selectedOption = $(this).find(':selected');
-            var nik = selectedOption.data('induk');
-            var indeks = selectedOption.data('idx');
-            var nuptk = selectedOption.val();
-
-            document.getElementById('infodaftarptk2pelaku' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonikpelaku' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infonamaortupelaku' + indeks).innerHTML = "tunggu...";
-            document.getElementById('infojenis_kelaminpelaku' + indeks).innerHTML = "tunggu...";
-            document.getElementById('nikpelaku' + indeks).value = "";
-            document.getElementById('namaortupelaku' + indeks).value = "";
-
-            document.getElementById('statusortupelaku' + indeks).value = "ayah";
-
-            var radioButtons = document.getElementsByName('jenis_kelaminpelaku' + indeks);
-            radioButtons[0].checked = true;
-
-            document.getElementById('nisnpelaku' + indeks).value = nuptk;
-            document.getElementById('nikpdptkpelaku' + indeks).value = nik;
-            ceknisnpelaku(indeks);
+            onchangeptk_kepsek('ptk2', 'pelaku', $(this));
         });
 
         //// UNTUK DAFTAR Kepsek ////////////////////
@@ -2768,6 +2872,7 @@
         var nisn = document.getElementById('nisn' + siapa + idx).value;
         var usiarow = document.getElementById('usiaRow' + siapa + idx);
         var desarow = document.getElementById('desaRow' + siapa + idx);
+        var namarow = document.getElementById('namaRow' + siapa + idx);
         var usianya = document.getElementById('usia' + siapa + idx);
         var desanya = document.getElementById('desa' + siapa + idx);
         var iinfonisn = document.getElementById('infonisn' + siapa + idx);
@@ -2778,8 +2883,10 @@
         const tbnikselect = document.getElementById('tbnikselect' + siapa + idx);
         const tbdisabilitas = document.getElementById('tbdisabilitas' + siapa + idx);
         const nik_ayah = document.getElementById('nik' + siapa + idx);
+        // const nama = document.getElementById('nama' + siapa + idx);
         const nama_ayah = document.getElementById('namaortu' + siapa + idx);
         const infonik = document.getElementById('infonik' + siapa + idx);
+        const infonikpdptk = document.getElementById('infonikpdptk' + siapa + idx);
         const infonamaortu = document.getElementById('infonamaortu' + siapa + idx);
         const statusortu = document.getElementById('statusortu' + siapa + idx);
 
@@ -2801,7 +2908,7 @@
             jenis: jenis
         };
 
-        $.ajax({
+        xhrGet = $.ajax({
             url: url,
             type: 'GET',
             data: data,
@@ -2819,9 +2926,14 @@
                 nisnrow.style.display = "table-row";
                 valnama = result.valnama_siswa;
                 nisn = result.nisn;
+                valnik = result.valnik;
 
-                if (sebagai != "sekolah")
+                if (sebagai != "sekolah") {
                     nik_pdptk = result.nik;
+                    namarow.style.display = "table-row";
+                    nama = result.nama_siswa;
+                }
+
                 if (statusakhir == 2) {
                     if (statusortu.value == "ayah")
                         jenis_kelamin = "L";
@@ -2846,6 +2958,9 @@
                     infonamaortu.innerHTML = "Nama " + siapa + " harus diisi";
                 else
                     infonamaortu.innerHTML = "";
+
+                infonikpdptk.innerHTML = "Dukcapil: " + valnik;
+
                 jenisnomor = result.nomor;
                 tbnikselect.style.display = 'none';
                 tbdisabilitas.style.display = 'block';
@@ -2861,6 +2976,10 @@
                     }
                 } else {
                     pildisabilitas = "0";
+                    document.getElementById('namaRow' + siapa + idx).style.display = "none";
+                    if (sebagai == "sekolah") {
+                        document.getElementById('infodaftarkepsek' + siapa + idx).innerHTML = "";
+                    }
                     if (statusakhir <= 2)
                         labelnnisn[0].innerText = result.nomor + " " + capitalizeFirstLetter(tekssiapa);
                     else if (statusakhir <= 5)
@@ -2960,11 +3079,14 @@
         var namarow = document.getElementById('namaRow' + siapa + idx);
         var inama = document.getElementById('nama' + siapa + idx);
         var iinfonama = document.getElementById('infonama' + siapa + idx);
-        var iinfodaftarpd = document.getElementById('infodaftarpd' + siapa + idx);
-        var iinfodaftarptk = document.getElementById('infodaftarptk' + siapa + idx);
-        var iinfodaftarptk2 = document.getElementById('infodaftarptk2' + siapa + idx);
-        var iinfodaftarkepsek = document.getElementById('infodaftarkepsek' + siapa + idx);
-
+        if (sebagai == "sekolah") {
+            var iinfodaftarpd = document.getElementById('infodaftarpd' + siapa + idx);
+            var iinfodaftarptk = document.getElementById('infodaftarptk' + siapa + idx);
+            var iinfodaftarptk2 = document.getElementById('infodaftarptk2' + siapa + idx);
+            var iinfodaftarkepsek = document.getElementById('infodaftarkepsek' + siapa + idx);
+        } else {
+            namarow.style.display = "table-row";
+        }
         var selectedValue;
         const radioButtons1 = document.querySelectorAll('input[name="status_' + siapa + idx + '"]');
         radioButtons1.forEach((radio) => {
@@ -2973,20 +3095,21 @@
             }
         });
         // var nikpdptk = document.getElementById('nikpdptk' + siapa + idx).value;
-
-        // namarow.style.display = "table-row";
         inama.value = nama;
         if (valnama == null)
             valnama = "Belum Valid";
         iinfonama.innerText = "Dukcapil: " + valnama;
-        if (selectedValue <= 2)
-            iinfodaftarpd.innerText = "Dukcapil: " + valnama;
-        else if (selectedValue == 3)
-            iinfodaftarptk.innerText = "Dukcapil: " + valnama;
-        else if (selectedValue == 4)
-            iinfodaftarptk2.innerText = "Dukcapil: " + valnama;
-        else if (selectedValue <= 5)
-            iinfodaftarkepsek.innerText = "Dukcapil: " + valnama;
+
+        if (sebagai == "sekolah") {
+            if (selectedValue <= 2)
+                iinfodaftarpd.innerText = "Dukcapil: " + valnama;
+            else if (selectedValue == 3 && window['isi' + siapa + 'manual'][idx] == false)
+                iinfodaftarptk.innerText = "Dukcapil: " + valnama;
+            else if (selectedValue == 4 && window['isi' + siapa + 'manual'][idx] == false)
+                iinfodaftarptk2.innerText = "Dukcapil: " + valnama;
+            else if (selectedValue == 5 && window['isi' + siapa + 'manual'][idx] == false)
+                iinfodaftarkepsek.innerText = "Dukcapil: " + valnama;
+        }
 
         if (selectedValue == 2 || selectedValue == 6) {
             tampilkannikpesertadidik(siapa, idx);
@@ -3063,12 +3186,18 @@
     }
 
     function get_data_masy(siapa, jenis, idx) {
-        var nik = document.getElementById('nik' + siapa + idx).value;
-        var tbnama = document.getElementById('tbnama' + siapa + idx);
+        // alert("AA01");
+        if (window['isi' + siapa + 'manual'][idx] == true && (statusakhir == 3 || statusakhir == 4)) {
+            var nik = document.getElementById('nikpdptk' + siapa + idx).value;
+            var iinfonik = document.getElementById('infonikpdptk' + siapa + idx);
+        } else {
+            var nik = document.getElementById('nik' + siapa + idx).value;
+            var iinfonik = document.getElementById('infonik' + siapa + idx);
+        }
+        // var tbnama = document.getElementById('tbnama' + siapa + idx);
         var iinfonama = document.getElementById('infonama' + siapa + idx);
         var namarow = document.getElementById('namaRow' + siapa + idx);
         var inama = document.getElementById('nama' + siapa + idx).value;
-        var iinfonik = document.getElementById('infonik' + siapa + idx);
 
         alamat = '<?= base_url() . "inputdata/get_data_m" ?>';
 
@@ -3093,7 +3222,7 @@
                     document.getElementById('tbnik' + siapa + idx).style.display = 'none';
                 }
                 valnama = result.valnama_siswa;
-                valnik = result.valnama_siswa;
+                valnik = result.valnik;
                 jenis_kelamin = result.jenis_kelamin;
                 valjenis_kelamin = result.valjenis_kelamin;
                 if (jenis == 1) {
@@ -3107,8 +3236,21 @@
                     pildisabilitas = "0";
                 }
 
-                tbnama.style.display = "none";
+                // tbnama.style.display = "none";
                 iinfonama.innerText = "Dukcapil: " + valnama;
+
+                if (window['isi' + siapa + 'manual'][idx] == true && (statusakhir == 3 || statusakhir == 4 || statusakhir == 5)) {
+                    const tbnik = document.getElementById('tbnikselect' + siapa + idx);
+                    tbnik.innerHTML = "Konfirmasi";
+                    tbnik.style.display = "none";
+                    const disabilitas = document.getElementById('disabilitasRow' + siapa + idx);
+                    disabilitas.style.display = "table-row";
+                    const tbdisabilitas = document.getElementById('tbdisabilitas' + siapa + idx);
+                    tbdisabilitas.style.display = "table-row";
+                }
+
+                iinfonik.innerText = "Dukcapil: " + valnik;
+
                 tampilkanJKMasy(siapa, idx);
 
                 namarow.style.display = "table-row";
@@ -3305,11 +3447,17 @@
 
     function showtbsubmit(siapa, idx) {
         const tbsubmit = document.getElementById('tbnpsn' + siapa + idx);
+        const tbsekolah = document.getElementById('tbsekolah' + siapa + idx);
+        const nisnrow = document.getElementById('nisnRow' + siapa + idx);
         const sekolahrow = document.getElementById('sekolahRow' + siapa + idx);
         const sekolah = document.getElementById('sekolah' + siapa + idx);
         tbsubmit.style.display = 'block';
         sekolahrow.style.display = 'none';
         sekolah.value = "";
+        if (sebagai != "sekolah") {
+            nisnrow.style.display = "none";
+            tbsekolah.style.display = "table-row";
+        }
         document.getElementById('infonpsn' + siapa + idx).innerHTML = "";
     }
 
@@ -3630,8 +3778,7 @@
             document.getElementById('nama' + siapa + idx).value = "";
             document.getElementById('infonisn' + siapa + idx).innerHTML = "";
             document.getElementById('infonama' + siapa + idx).innerHTML = "";
-            document.getElementById('infodaftarpd' + siapa + idx).innerHTML = "";
-            document.getElementById('nikpdptk' + siapa + idx).value = "";
+
             document.getElementById('jenis_kelaminRow' + siapa + idx).style.display = "none";
             document.getElementById('disabilitasRow' + siapa + idx).style.display = "none";
             document.getElementById('namaRow' + siapa + idx).style.display = "none";
@@ -3639,7 +3786,10 @@
             document.getElementById('tbnisn' + siapa + idx).style.display = "table-row";
             document.getElementById('tbnisn' + siapa + idx).innerText = "Cek";
             document.getElementById('tbnisn' + siapa + idx).disabled = false;
-            document.getElementById('nikRow' + siapa + idx).style.display = 'none';
+            // document.getElementById('nikRow' + siapa + idx).style.display = 'none';
+        } else {
+            document.getElementById('infodaftarpd' + siapa + idx).innerHTML = "";
+            document.getElementById('nikpdptk' + siapa + idx).value = "";
         }
     }
 
@@ -3690,10 +3840,16 @@
     }
 
     function changenikpdptk(siapa, idx) {
-        const tbnisn = document.getElementById('tbnikselect' + siapa + idx);
+        if (sebagai == "sekolah") {
+            const tbnisn = document.getElementById('tbnikselect' + siapa + idx);
+        } else {
+            const tbnisn = document.getElementById('tbnikpdptk' + siapa + idx);
+        }
+
         tbnisn.innerHTML = "Konfirmasi";
+        tbnisn.style.display = "block";
+
         document.getElementById('infonikpdptk' + siapa + idx).innerHTML = "";
-        document.getElementById('tbnikselect' + siapa + idx).style.display = "block";
         document.getElementById('tbdisabilitas' + siapa + idx).style.display = "none";
     }
 
@@ -3759,7 +3915,7 @@
 
         document.getElementById('infojenis_kelamin' + siapa + idx).innerHTML = "";
 
-        if (sebagai == "sekolah") {
+        if (sebagai == "sekolah" || sebagai != "sekolah") {
             get_ortu(jenisortu, niksiswa, siapa, idx);
         } else
             changenik("korban", idx);
@@ -3911,7 +4067,9 @@
             // document.getElementById('nisn' + siapa + idx).disabled = true;
             // document.getElementById('nama' + siapa + idx).disabled = true;
             document.getElementById('infonama' + siapa + idx).style.display = 'none';
-            document.getElementById('infodaftarpd' + siapa + idx).style.display = 'none';
+            if (sebagai == "sebagai") {
+                document.getElementById('infodaftarpd' + siapa + idx).style.display = 'none';
+            }
             document.getElementById('infonikpdptk' + siapa + idx).style.display = 'none';
             document.getElementById('infonisn' + siapa + idx).style.display = 'none';
             // document.getElementById('nikpdptk' + siapa + idx).disabled = true;
@@ -4039,6 +4197,12 @@
             JKl = "Laki-laki";
         document.getElementById('infojenis_kelamin' + siapa + idx).innerText = "Dukcapil: " + JKl;
 
+        if (document.getElementById('infonama' + siapa + idx).innerText == "Dukcapil: -") {
+            document.getElementById('infojenis_kelamin' + siapa + idx).innerText = "";
+            radios[0].checked = false;
+            radios[1].checked = false;
+        }
+
         JKrow.style.display = 'table-row';
         JKrow.scrollIntoView({
             behavior: 'smooth',
@@ -4058,24 +4222,53 @@
 
     function ceknikselectkorban(idx) {
         const nikkorban = document.getElementById('nikpdptkkorban' + idx);
+        const nama = document.getElementById('namakorban' + idx);
+        const infonama = document.getElementById('infonamakorban' + idx);
         const infonik = document.getElementById('infonikpdptkkorban' + idx);
         const tbnisn = document.getElementById('tbnikselectkorban' + idx);
+        var valid = true;
 
         if (nikkorban.value.length != 16) {
             infonik.innerHTML = "Harus 16 digit";
-        } else {
+            valid = false;
+        }
+
+        if (nama.value.length == 0 && ((window['isikorbanmanual'][idx] == false && (statusakhir == 3 || statusakhir == 4 || statusakhir == 5)))) {
+            infonama.innerHTML = "Nama harus diisi";
+            valid = false;
+        }
+
+        if (valid) {
             infonik.value = "";
             tbnisn.innerHTML = "tunggu...";
             ceknisn("korban", idx);
         }
 
-
     }
 
     function ceknikselectpelaku(idx) {
+        const nikpelaku = document.getElementById('nikpdptkpelaku' + idx);
+        const nama = document.getElementById('namapelaku' + idx);
+        const infonama = document.getElementById('infonamapelaku' + idx);
+        const infonik = document.getElementById('infonikpdptkpelaku' + idx);
         const tbnisn = document.getElementById('tbnikselectpelaku' + idx);
-        tbnisn.innerHTML = "tunggu...";
-        ceknisn("pelaku", idx);
+        var valid = true;
+
+        if (nikpelaku.value.length != 16) {
+            infonik.innerHTML = "Harus 16 digit";
+            valid = false;
+        }
+
+        if (nama.value.length == 0 && ((window['isipelakumanual'][idx] == false && (statusakhir == 3 || statusakhir == 4 || statusakhir == 5)))) {
+            infonama.innerHTML = "Nama harus diisi";
+            valid = false;
+        }
+
+        if (valid) {
+            infonik.value = "";
+            tbnisn.innerHTML = "tunggu...";
+            ceknisn("pelaku", idx);
+        }
     }
 
     function ceknisnkorban(idx) {
@@ -4141,37 +4334,74 @@
         } {
             if (sebagai != "sekolah") {
                 const tbnisn = document.getElementById('tbnisn' + siapa + idx);
+                const npsn = document.getElementById('npsn' + siapa + idx).value;
+                const nisn = document.getElementById('nisn' + siapa + idx).value;
+                const nikpdptk = document.getElementById('nikpdptk' + siapa + idx);
                 tbnisn.innerHTML = "tunggu...";
                 // tbnisn.disabled = true;
-            }
+                alamat = '<?= base_url() . "inputdata/nik_siswa" ?>';
 
-            if (selectedValue == 1 || selectedValue == 2) {
-                if (document.getElementById('nisn' + siapa + idx).value == "-") {
-                    if (selectedValue == 1) {
-                        // document.getElementById('nisnRow' + siapa + idx).style.display = "table-row";
-                        // document.getElementById('namaRow' + siapa + idx).style.display = "table-row";
-                        document.getElementById('nikpdptkRow' + siapa + idx).style.display = "table-row";
-                        document.getElementById('jenis_kelaminRow' + siapa + idx).style.display = "table-row";
-                        var disabilitasrow = document.getElementById('disabilitasRow' + siapa + idx);
-                        disabilitasrow.style.display = "table-row";
-                        tbnisn.style.display = 'none';
-                        disabilitasrow.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    } else {
-                        // document.getElementById('nisnRow' + siapa + idx).style.display = "table-row";
-                        // document.getElementById('namaRow' + siapa + idx).style.display = "table-row";
-                        document.getElementById('nikpdptkRow' + siapa + idx).style.display = "table-row";
-                        document.getElementById('tbnikpdptk' + siapa + idx).style.display = "table-row";
-                        tbnisn.style.display = 'none';
+                var url = alamat;
+                var data = {
+                    jenis: selectedValue,
+                    nisn: nisn,
+                    npsn: npsn,
+                    csrf_test_name: csrf,
+                };
+
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: data,
+                    dataType: 'json',
+                    cache: false,
+                    success: function(result) {
+                        nikpdptk.value = result.niksiswa;
+                        csrf = result.kodhes;
+
+                        return grabdatanya(selectedValue, siapa, idx);
+                    },
+                    error: function(xhr, status, error) {
+                        // Penanganan kesalahan koneksi ke server
+                        console.log('Terjadi kesalahan koneksi:', error);
                     }
+                });
+            } else
+                return grabdatanya(selectedValue, siapa, idx);
+
+        }
+    }
+
+    function grabdatanya(selectedValue, siapa, idx) {
+        if (selectedValue == 1 || selectedValue == 2) {
+            if (document.getElementById('nisn' + siapa + idx).value == "-") {
+                if (selectedValue == 1) {
+                    // document.getElementById('nisnRow' + siapa + idx).style.display = "table-row";
+                    // document.getElementById('namaRow' + siapa + idx).style.display = "table-row";
+                    document.getElementById('nikpdptkRow' + siapa + idx).style.display = "table-row";
+                    document.getElementById('jenis_kelaminRow' + siapa + idx).style.display = "table-row";
+                    var disabilitasrow = document.getElementById('disabilitasRow' + siapa + idx);
+                    disabilitasrow.style.display = "table-row";
+                    tbnisn.style.display = 'none';
+                    disabilitasrow.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 } else {
-                    return get_data(siapa, 1, idx);
+                    // document.getElementById('nisnRow' + siapa + idx).style.display = "table-row";
+                    // document.getElementById('namaRow' + siapa + idx).style.display = "table-row";
+                    document.getElementById('nikpdptkRow' + siapa + idx).style.display = "table-row";
+                    document.getElementById('tbnikpdptk' + siapa + idx).style.display = "table-row";
+                    tbnisn.style.display = 'none';
                 }
-            } else if (selectedValue >= 3 && selectedValue <= 5) {
-                return get_data(siapa, 2, idx);
+            } else {
+                return get_data(siapa, 1, idx);
             }
+        } else if (selectedValue >= 3 && selectedValue <= 5) {
+            if (window['isi' + siapa + 'manual'][idx] == true && (selectedValue == 3 || selectedValue == 4))
+                return get_data_masy(siapa, 2, idx);
+            else
+                return get_data(siapa, 2, idx);
         }
     }
 
@@ -4359,8 +4589,13 @@
                 var daftarptk2row = document.getElementById('daftarptk2Row' + siapa + idx);
                 var daftarkepsekrow = document.getElementById('daftarkepsekRow' + siapa + idx);
                 var nisnrow = document.getElementById('nisnRow' + siapa + idx);
+                var labelnisn = nisnrow.getElementsByTagName('td');
+                var tbnisn = document.getElementById('tbnisn' + siapa + idx);
+                var namarow = document.getElementById('namaRow' + siapa + idx);
+                var nikpdptkrow = document.getElementById('nikpdptkRow' + siapa + idx);
+                var tbnikpdptk = document.getElementById('tbnikpdptk' + siapa + idx);
                 document.getElementById('tbsekolah' + siapa + idx).style.display = 'none';
-                // document.getElementById('npsn' + siapa + idx).disabled = true;
+                var nisn = document.getElementById('nisn' + siapa + idx).value;
                 // document.getElementById('sekolah' + siapa + idx).disabled = true;
                 document.getElementById('tbcarisekolah' + siapa + idx).style.display = 'none';
                 if (sebagai == "sekolah") {
@@ -4391,7 +4626,22 @@
                     }
 
                 } else {
+                    // tbnisn.style.display = 'none';
+                    if (selectedValue == 1)
+                        labelnisn[0].innerText = 'NISN ' + siapa;
+                    else if (selectedValue == 2)
+                        labelnisn[0].innerText = 'NISN peserta didik';
+                    else if (selectedValue <= 5) {
+                        labelnisn[0].innerText = 'NUPTK ' + siapa;
+                        if (selectedValue == 5) {
+                            ambildatakepsek(siapa, idx);
+                        }
+                    }
+
                     nisnrow.style.display = 'table-row';
+                    // namarow.style.display = 'table-row';
+                    // nikpdptkrow.style.display = 'table-row';
+                    // tbnikpdptk.style.display = 'table-row';
                     nisnrow.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
@@ -4409,6 +4659,46 @@
                 });
             }
         }
+    }
+
+    function ambildatakepsek(siapa, idx) {
+        var npsnkepsek = (document.getElementById('npsn' + siapa + idx).value);
+        var nisn = (document.getElementById('nisn' + siapa + idx));
+        var tbnisn = (document.getElementById('tbnisn' + siapa + idx));
+        var nikrow = (document.getElementById('nikpdptkRow' + siapa + idx));
+        var namarow = (document.getElementById('namaRow' + siapa + idx));
+        var nik = (document.getElementById('nikpdptk' + siapa + idx));
+        var nama = (document.getElementById('nama' + siapa + idx));
+
+        var url = '<?= base_url() . "inputdata/get_kepsek" ?>';
+        var data = {
+            npsn: npsnkepsek,
+            csrf_test_name: csrf,
+        };
+
+        nisn.value = "";
+
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: data,
+            dataType: 'json',
+            cache: false,
+            success: function(result) {
+                nisn.value = result.nuptkkepsek;
+                tbnisn.style.display = 'none';
+                nik.value = result.nikkepsek;
+                nama.value = result.namakepsek;
+                nisn.style.display = 'table-row';
+                namarow.style.display = 'table-row';
+                nikrow.style.display = 'table-row';
+                csrf = result.kodhes;
+                ceknisn(siapa, idx);
+            },
+            error: function(xhr, status, error) {
+                console.log('Terjadi kesalahan koneksi:', error);
+            }
+        });
     }
 
     function konfirmdisabilitaskorban(idx) {
@@ -4438,7 +4728,8 @@
             document.getElementById('infonik' + siapa + idx).innerHTML = "NIK harus 16 digit";
             valid = false;
         } else {
-            document.getElementById('infonik' + siapa + idx).innerHTML = "";
+            document.getElementById('infonik' + siapa + idx).style.display = "none";
+            // document.getElementById('infonik' + siapa + idx).innerHTML = "";
         }
 
         if (document.getElementById('namaortu' + siapa + idx).value == "" && selectedValuestatus == 2) {
@@ -4446,7 +4737,8 @@
             document.getElementById('infonamaortu' + siapa + idx).innerHTML = "Nama " + siapa + " harus diisi";
             valid = false;
         } else {
-            document.getElementById('infonamaortu' + siapa + idx).innerHTML = "";
+            document.getElementById('infonamaortu' + siapa + idx).style.display = "none";
+            // document.getElementById('infonamaortu' + siapa + idx).innerHTML = "";
         }
 
         if (document.getElementById('nama' + siapa + idx).value == "" && sebagai != "sekolah") {
@@ -4504,7 +4796,8 @@
                 document.getElementById('infonik' + siapa + idx).innerHTML = "NIK harus 16 digit";
                 valid = false;
             } else {
-                document.getElementById('infonik' + siapa + idx).innerHTML = "";
+                // document.getElementById('infonik' + siapa + idx).innerHTML = "";
+                document.getElementById('infonik' + siapa + idx).style.display = "none";
             }
 
             provinsi = document.getElementById('provinsi' + siapa + idx).value;
@@ -4558,11 +4851,33 @@
                     }
                 }
             } else {
-                document.getElementById('infonikpdptk' + siapa + idx).innerHTML = "";
+                // document.getElementById('infonikpdptk' + siapa + idx).innerHTML = "";
+                document.getElementById('infonikpdptk' + siapa + idx).style.display = "none";
             }
         }
 
+        // if (sebagai == "sekolah") {
+        //     document.getElementById('infodaftarpd' + siapa + idx).innerHTML = "";
+        //     document.getElementById('infodaftarptk' + siapa + idx).innerHTML = "";
+        //     document.getElementById('infodaftarptk2' + siapa + idx).innerHTML = "";
+        //     document.getElementById('infodaftarkepsek' + siapa + idx).innerHTML = "";
+        // }
+        // document.getElementById('infonama' + siapa + idx).innerHTML = "";
+
+        if (sebagai == "sekolah") {
+            document.getElementById('infodaftarpd' + siapa + idx).style.display = "none";
+            document.getElementById('infodaftarptk' + siapa + idx).style.display = "none";
+            document.getElementById('infodaftarptk2' + siapa + idx).style.display = "none";
+            document.getElementById('infodaftarkepsek' + siapa + idx).style.display = "none";
+        }
+        document.getElementById('infonama' + siapa + idx).style.display = "none";
+
         if (valid) {
+            if (siapa == "korban") {
+                statuskorbanok[idx] = 1;
+            } else {
+                statuspelakuok[idx] = 1;
+            }
             if (statusakhir == 6) {
                 var radioButtons = document.querySelectorAll('input[name="status_' + siapa + idx + '"]');
                 radioButtons.forEach(function(radioButton) {
@@ -4580,7 +4895,8 @@
             // document.getElementById('statusortu' + siapa + idx).disabled = true;
             document.getElementById('tbdisabilitas' + siapa + idx).style.display = 'none';
             document.getElementById('infodisabilitas' + siapa + idx).innerHTML = "";
-            document.getElementById('infonik' + siapa + idx).innerHTML = "";
+            // document.getElementById('infonik' + siapa + idx).innerHTML = "";
+            document.getElementById('infonik' + siapa + idx).style.display = "none";
             dafkodeKB.forEach(function(element) {
                 // document.getElementById('checkbox' + element + siapa + idx).disabled = true;
             });
@@ -4732,10 +5048,7 @@
             document.getElementById('infobentukkekerasan').innerHTML = "Pilih minimal 1 bentuk kekerasan";
             valid = false;
         } else {
-            document.getElementById('infobentukkekerasan').innerHTML = "";
-            <?php foreach ($daf_bentuk_kekerasan as $bentuk) {
-                echo "$('input[name=\"k_" . $bentuk['bentuk_kekerasan_id'] . "\"]').prop('disabled', true);";
-            } ?>
+
         }
 
         var cakupan_kekerasan = "";
@@ -4752,10 +5065,7 @@
             document.getElementById('infocakupan').innerHTML = "Pilih cakupan kekerasan";
             valid = false;
         } else {
-            document.getElementById('infocakupan').innerHTML = "";
-            rbCakupan.forEach((radio) => {
-                radio.disabled = true;
-            });
+
         }
 
         var kronologi = $('#ikronologi').val();
@@ -4764,15 +5074,49 @@
             document.getElementById('infokronologi').innerHTML = "Tuliskan kronologi peristiwa";
             valid = false;
         } else {
-            document.getElementById('ikronologi').disabled = true;
-            document.getElementById('infokronologi').innerHTML = "";
+
         }
 
-        if (valid) {
+        valid2 = false;
 
+        if (valid) {
+            semuakorban = 0;
+            semuapelaku = 0;
+            for (var a = 1; a <= counterkorban; a++) {
+                semuakorban = semuakorban + statuskorbanok[a];
+            }
+            for (var a = 1; a <= counterpelaku; a++) {
+                semuapelaku = semuapelaku + statuspelakuok[a];
+            }
+            if (semuakorban == counterkorban && semuapelaku == counterpelaku) {
+                if (confirm("Silakan periksa kembali. Data yang sudah dimasukkan tidak dapat dihapus")) {
+                    valid2 = true;
+                }
+            } else {
+                alert("Ada korban / pelaku yang belum selesai pengisian datanya atau belum dikonfirmasi");
+            }
+        }
+
+
+        if (valid2) {
             {
+                //////////// KUNCI KRONOLOGI =============================
+                document.getElementById('infobentukkekerasan').innerHTML = "";
+                <?php foreach ($daf_bentuk_kekerasan as $bentuk) {
+                    echo "$('input[name=\"k_" . $bentuk['bentuk_kekerasan_id'] . "\"]').prop('disabled', true);";
+                } ?>
+
+                document.getElementById('infocakupan').innerHTML = "";
+                rbCakupan.forEach((radio) => {
+                    radio.disabled = true;
+                });
+
+                document.getElementById('ikronologi').disabled = true;
+                document.getElementById('infokronologi').innerHTML = "";
 
                 document.getElementById('tbsubmitkronologi').style.display = 'none';
+
+                ////////////////////////===================================
 
                 /////////////////// data korban dan pelaku ////////////
                 // var selectedValue = $('#daftarpd' + siapa + idx).val();
@@ -4788,19 +5132,66 @@
                     let npsn = $(`#npsnkorban${i}`).val();
                     let nisn = $(`#nisnkorban${i}`).val();
                     // let nama = $(`#namakorban${i}`).val();
-                    if (status == 1 || status == 2)
-                        namakorbannya = $(`#daftarpdkorban${i} option:selected`).text();
-                    else if (status == 3)
-                        namakorbannya = $(`#daftarptkkorban${i} option:selected`).text();
-                    else if (status == 4)
-                        namakorbannya = $(`#daftarptk2korban${i} option:selected`).text();
-                    else if (status == 5)
-                        namakorbannya = $(`#daftarkepsekkorban${i} option:selected`).text();
-                    else
-                        namakorbannya = $(`#namakorban${i}`).val();
+
+                    namaortunya = "";
+                    statusortunya = "";
+                    if (sebagai == "sekolah") {
+                        if (status == 1) {
+                            namakorbannya = $(`#daftarpdkorban${i} option:selected`).text();
+                            ver_nama = $(`#infodaftarpdkorban${i}`).html();
+                            ver_nik = $(`#infonikpdptkkorban${i}`).html();
+                        } else if (status == 2) {
+                            namakorbannya = $(`#daftarpdkorban${i} option:selected`).text();
+                            namaortunya = $(`#namaortukorban${i}`).val();
+                            statusortunya = $(`#statusortukorban${i}`).val();
+                            ver_nama = $(`#infonamaortukorban${i}`).html();
+                            ver_nik = $(`#infonikpdptkkorban${i}`).html();
+                        } else if (window['isikorbanmanual'][i] == true) {
+                            namakorbannya = $(`#namakorban${i}`).val();
+                            ver_nama = $(`#infonamakorban${i}`).html();
+                            ver_nik = $(`#infonikpdptkkorban${i}`).html();
+                        } else if (status == 3) {
+                            namakorbannya = $(`#daftarptkkorban${i} option:selected`).text();
+                            ver_nama = $(`#infodaftarptkkorban${i}`).html();
+                            ver_nik = $(`#infonikpdptkkorban${i}`).html();
+                        } else if (status == 4) {
+                            namakorbannya = $(`#daftarptk2korban${i} option:selected`).text();
+                            ver_nama = $(`#infodaftarptk2korban${i}`).html();
+                            ver_nik = $(`#infonikpdptkkorban${i}`).html();
+                        } else if (status == 5) {
+                            namakorbannya = $(`#daftarkepsekkorban${i} option:selected`).text();
+                            ver_nama = $(`#infodaftarkepsekkorban${i}`).html();
+                            ver_nik = $(`#infonikpdptkkorban${i}`).html();
+                        } else {
+                            namakorbannya = $(`#namakorban${i}`).val();
+                            ver_nama = $(`#infonamakorban${i}`).html();
+                            ver_nik = $(`#infonikkorban${i}`).html();
+                            npsn = "";
+                            nisn = "";
+                        }
+
+                        if (namakorbannya == "-- Input Manual --") {
+                            namakorbannya = $(`#namakorban${i}`).val();
+                            ver_nama = $(`#infonamakorban${i}`).html();
+                        }
+                    } else {
+                        if (status == 2) {
+                            namakorbannya = $(`#namakorban${i}`).val();
+                            namaortunya = $(`#namaortukorban${i}`).val();
+                            statusortunya = $(`#statusortukorban${i}`).val();
+                            ver_nama = $(`#infonamaortukorban${i}`).html();
+                            ver_nik = $(`#infonikkorban${i}`).html();
+                        } else {
+                            namakorbannya = $(`#namakorban${i}`).val();
+                            ver_nama = $(`#infonamakorban${i}`).html();
+                            ver_nik = $(`#infonikpdptkkorban${i}`).html();
+                        }
+                    }
+
                     let nama = namakorbannya;
-                    let nama2 = $(`#namaortukorban${i}`).val();
-                    let statusortu = $(`#statusortukorban${i}`).val();
+                    let nama2 = namaortunya;
+                    let statusortu = statusortunya;
+
                     let jenis_kelamin = $(`input[name='jenis_kelaminkorban${i}']:checked`).val();
                     let nama_sekolah = $(`#sekolahkorban${i}`).val();
                     let disabilitas = $(`input[name='disabilitaskorban${i}']:checked`).val();
@@ -4826,8 +5217,13 @@
                         kodewilayah = kecamatan;
                     }
 
+                    var urutan = i;
+
                     // Buat objek untuk setiap data korban
+                    // alert(nama + "," + status + ",");
+
                     let korbanData = {
+                        urutan: urutan,
                         status: status,
                         nikpdptk: nikpdptk,
                         nik: nik,
@@ -4835,6 +5231,8 @@
                         nisn: nisn,
                         nama: nama,
                         nama2: nama2,
+                        ver_nama: ver_nama,
+                        ver_nik: ver_nik,
                         statusortu: statusortu,
                         jenis_kelamin: jenis_kelamin,
                         nama_sekolah: nama_sekolah,
@@ -4859,19 +5257,65 @@
                     let npsn = $(`#npsnpelaku${i}`).val();
                     let nisn = $(`#nisnpelaku${i}`).val();
                     // let nama = $(`#namapelaku${i}`).val();
-                    if (status == 1 || status == 2)
-                        namapelakunya = $(`#daftarpdpelaku${i} option:selected`).text();
-                    else if (status == 3)
-                        namapelakunya = $(`#daftarptkpelaku${i} option:selected`).text();
-                    else if (status == 4)
-                        namapelakunya = $(`#daftarptk2pelaku${i} option:selected`).text();
-                    else if (status == 5)
-                        namapelakunya = $(`#daftarkepsekpelaku${i} option:selected`).text();
-                    else
-                        namapelakunya = $(`#namapelaku${i}`).val();
+                    namaortunya = "";
+                    statusortunya = "";
+                    if (sebagai == "sekolah") {
+                        if (status == 1) {
+                            namapelakunya = $(`#daftarpdpelaku${i} option:selected`).text();
+                            ver_nama = $(`#infodaftarpdpelaku${i}`).html();
+                            ver_nik = $(`#infonikpdptkpelaku${i}`).html();
+                        } else if (status == 2) {
+                            namapelakunya = $(`#daftarpdpelaku${i} option:selected`).text();
+                            namaortunya = $(`#namaortupelaku${i}`).val();
+                            statusortunya = $(`#statusortupelaku${i}`).val();
+                            ver_nama = $(`#infonamaortupelaku${i}`).html();
+                            ver_nik = $(`#infonikpdptkpelaku${i}`).html();
+                        } else if (window['isipelakumanual'][i] == true) {
+                            namapelakunya = $(`#namapelaku${i}`).val();
+                            ver_nama = $(`#infonamapelaku${i}`).html();
+                            ver_nik = $(`#infonikpdptkpelaku${i}`).html();
+                        } else if (status == 3) {
+                            namapelakunya = $(`#daftarptkpelaku${i} option:selected`).text();
+                            ver_nama = $(`#infodaftarptkpelaku${i}`).html();
+                            ver_nik = $(`#infonikpdptkpelaku${i}`).html();
+                        } else if (status == 4) {
+                            namapelakunya = $(`#daftarptk2pelaku${i} option:selected`).text();
+                            ver_nama = $(`#infodaftarptk2pelaku${i}`).html();
+                            ver_nik = $(`#infonikpdptkpelaku${i}`).html();
+                        } else if (status == 5) {
+                            namapelakunya = $(`#daftarkepsekpelaku${i} option:selected`).text();
+                            ver_nama = $(`#infodaftarkepsekpelaku${i}`).html();
+                            ver_nik = $(`#infonikpdptkpelaku${i}`).html();
+                        } else {
+                            namapelakunya = $(`#namapelaku${i}`).val();
+                            ver_nama = $(`#infonamapelaku${i}`).html();
+                            ver_nik = $(`#infonikpelaku${i}`).html();
+                            npsn = "";
+                            nisn = "";
+                        }
+
+                        if (namapelakunya == "-- Input Manual --") {
+                            namapelakunya = $(`#namapelaku${i}`).val();
+                            ver_nama = $(`#infonamapelaku${i}`).html();
+                        }
+                    } else {
+                        if (status == 2) {
+                            namapelakunya = $(`#namapelaku${i}`).val();
+                            namaortunya = $(`#namaortupelaku${i}`).val();
+                            statusortunya = $(`#statusortupelaku${i}`).val();
+                            ver_nama = $(`#infonamaortupelaku${i}`).html();
+                            ver_nik = $(`#infonikpelaku${i}`).html();
+                        } else {
+                            namapelakunya = $(`#namapelaku${i}`).val();
+                            ver_nama = $(`#infonamapelaku${i}`).html();
+                            ver_nik = $(`#infonikpdptkpelaku${i}`).html();
+                        }
+                    }
+
                     let nama = namapelakunya;
-                    let nama2 = $(`#namaortupelaku${i}`).val();
-                    let statusortu = $(`#statusortupelaku${i}`).val();
+                    let nama2 = namaortunya;
+                    let statusortu = statusortunya;
+
                     let jenis_kelamin = $(`input[name='jenis_kelaminpelaku${i}']:checked`).val();
                     let nama_sekolah = $(`#sekolahpelaku${i}`).val();
                     let disabilitas = $(`input[name='disabilitaspelaku${i}']:checked`).val();
@@ -4895,7 +5339,10 @@
                         kodewilayah = kecamatan;
                     }
 
+                    var urutan = i;
+
                     let pelakuData = {
+                        urutan: urutan,
                         status: status,
                         nikpdptk: nikpdptk,
                         nik: nik,
@@ -4903,6 +5350,8 @@
                         nisn: nisn,
                         nama: nama,
                         nama2: nama2,
+                        ver_nama: ver_nama,
+                        ver_nik: ver_nik,
                         statusortu: statusortu,
                         jenis_kelamin: jenis_kelamin,
                         nama_sekolah: nama_sekolah,
@@ -4936,7 +5385,7 @@
                         kronologi: kronologi,
                         datakorban: dataKorban,
                         datapelaku: dataPelaku,
-                        csrf_test_name: '<?= $csrfToken ?>',
+                        csrf_test_name: csrf,
                     },
                     success: function(response) {
                         document.getElementById('dif6').style.display = 'block';
@@ -4945,6 +5394,7 @@
                             behavior: 'smooth',
                             block: 'start'
                         });
+                        disabledall();
                     },
                     error: function() {
                         alert('Terjadi kesalahan saat mengirim data.');
@@ -4953,6 +5403,23 @@
             }
         }
     };
+
+    function disabledall() {
+        var inputs = document.querySelectorAll('input, textarea, select, button');
+        var tbdaftar = document.getElementById('tbdaftar');
+        var toggle = document.getElementById('toggle');
+        var tb1 = document.getElementById('tb1');
+        var tb2 = document.getElementById('tb2');
+        var tb3 = document.getElementById('tb3');
+        var tb4 = document.getElementById('tb4');
+        var tb5 = document.getElementById('tb5');
+
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i] !== tbdaftar && inputs[i] !== toggle && inputs[i] !== tb1 && inputs[i] !== tb2 && inputs[i] !== tb3 && inputs[i] !== tb4 && inputs[i] !== tb5) {
+                inputs[i].disabled = true;
+            }
+        }
+    }
 
     function validasiTanggal(idx) {
         var input = document.getElementById('datepicker' + idx).value;

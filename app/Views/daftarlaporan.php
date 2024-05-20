@@ -25,18 +25,18 @@
 <?= $this->section('konten') ?>
 
 <div class="content-wrap">
-    <div class="judul">DAFTAR LAPORAN KEKERASAN <?= strtoupper($wilayah2) ?></div>
-    <?php if ($kode_wilayah != '000000' && $area) {
-        if ($wilayah2 == "") { ?>
-            <a href="<?= base_url('status_laporan_kekerasan') ?>">Indonesia</a> >> <?= substr($wilayah1, 5) ?>
-        <?php } else { ?>
-            <a href="<?= base_url('status_laporan_kekerasan') ?>">Indonesia</a> >> <a href="<?= base_url('status_laporan_kekerasan?kode_wilayah=') . substr($kode_wilayah, 0, 2) . '0000' ?>"><?= substr($wilayah1, 5) ?></a> >> <?= substr($wilayah2, 5) ?>
-        <?php }
-        ?>
+    <div class="judul">DAFTAR LAPORAN KEKERASAN <?= ($laporan == 'dinas') ? '[DINAS]' : '[SATUAN PENDIDIKAN]' ?> <?= strtoupper($judul) ?></div>
+    <?php if ($kode_wilayah != '000000' && $area) { ?>
+        <?= $linkindonesia ?> >> <?= $linkprovinsi ?> <?= $linkkota ?> <?= $linkkecamatan ?>
     <?php } ?>
 
-    <div class="informasi" style="margin-top: 15px;">
-        <button class="btn_ijo" onclick="inputform();">INPUT LAPORAN</button>
+    <div style="margin-top: 15px;">
+        <?php if ($sebagai != "irjen") { ?>
+            <button class="btn_ijo" onclick="inputform();">INPUT LAPORAN</button>
+        <?php } ?>
+        <?php if ($instansiid == 2 || $instansiid == 3) { ?>
+            <button class="btn_ijo" onclick="laporan();">LAPORAN SATUAN PENDIDIKAN</button>
+        <?php } ?>
         <div class="informasi">
             <table class="table table-striped" id="example">
                 <thead>
@@ -95,6 +95,10 @@
 
         function inputform() {
             window.open("<?= base_url('inputdata/pelaporan') ?>", "_self");
+        }
+
+        function laporan() {
+            window.open("<?= base_url('status_laporan_kekerasan') ?>", "_self");
         }
     </script>
     <?= $this->endSection(); ?>

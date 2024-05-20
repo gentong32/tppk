@@ -63,10 +63,10 @@
 
         if (lebarLayar - tinggilayar >= 100) {
             // Layar lebar (desktop)
-            document.getElementById('gb').style.height = (tinggiLayar - tinggiMenuAtas - tinggiLogoAtas - 10) + 'px';
-            document.getElementById('gb').style.width = 'auto';
-            document.getElementById('gb').style.textAlign = 'center';
-        } else {
+            //     document.getElementById('gb').style.height = (tinggiLayar - tinggiMenuAtas - tinggiLogoAtas - 10) + 'px';
+            //     document.getElementById('gb').style.width = 'auto';
+            //     document.getElementById('gb').style.textAlign = 'center';
+            // } else {
             // Layar kecil (tablet/ponsel)
             // document.getElementById('gb').style.width = (lebarLayar - 200) + 'px';
             // document.getElementById('gb').style.height = 'auto';
