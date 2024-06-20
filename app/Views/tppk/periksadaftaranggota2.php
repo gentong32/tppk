@@ -160,7 +160,7 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
             <?php if ($filepdf == "-") { ?>
                 File tidak ditemukan
             <?php } else { ?>
-                <iframe src="<?= base_url() . 'public/uploads/' . $filepdf ?>" width="100%" height="500"></iframe>
+                <iframe src="<?= base_url() . 'public/' . $filepdf ?>" width="100%" height="500"></iframe>
             <?php } ?>
 
         </div>

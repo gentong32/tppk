@@ -347,10 +347,10 @@ class MemoryDrawing extends BaseDrawing
     {
         return md5(
             $this->renderingFunction .
-            $this->mimeType .
-            $this->uniqueName .
-            parent::getHashCode() .
-            __CLASS__
+                $this->mimeType .
+                $this->uniqueName .
+                parent::getHashCode() .
+                __CLASS__
         );
     }
 }

@@ -9,6 +9,12 @@ class Home extends BaseController
         return view('beranda');
     }
 
+    public function demo()
+    {
+        session()->set('demo', true);
+        return view('beranda_dummy');
+    }
+
     public function set_pilihan($pilihan = null)
     {
         session()->set('pilihan', $pilihan);

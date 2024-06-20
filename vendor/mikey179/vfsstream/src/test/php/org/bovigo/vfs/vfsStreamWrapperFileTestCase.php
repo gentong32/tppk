@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of vfsStream.
  *
@@ -7,7 +8,9 @@
  *
  * @package  org\bovigo\vfs
  */
+
 namespace org\bovigo\vfs;
+
 require_once __DIR__ . '/vfsStreamWrapperBaseTestCase.php';
 /**
  * Test for org\bovigo\vfs\vfsStreamWrapper.
@@ -67,7 +70,6 @@ class vfsStreamWrapperFileTestCase extends vfsStreamWrapperBaseTestCase
         vfsStream::newFile('new.txt')->at(vfsStreamWrapper::getRoot())->withContent('content');
         $this->assertEquals(15, @file_put_contents(vfsStream::url('root/new.txt'), 'This does work.'));
         $this->assertEquals('This does work.', file_get_contents(vfsStream::url('root/new.txt')));
-
     }
 
     /**
@@ -108,7 +110,6 @@ class vfsStreamWrapperFileTestCase extends vfsStreamWrapperBaseTestCase
         vfsStreamWrapper::setRoot(new vfsStreamDirectory('root', 0000));
         $this->assertFalse(@file_put_contents(vfsStream::url('root/new.txt'), 'This does not work.'));
         $this->assertFalse(file_exists(vfsStream::url('root/new.txt')));
-
     }
 
     /**

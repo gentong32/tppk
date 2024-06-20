@@ -2159,6 +2159,8 @@
     var pildisabilitasortu = "";
     var statusakhir = 0;
 
+    var csrf = '<?= csrf_hash(); ?>';
+
     let counterkorban = 0;
     let counterpelaku = 0;
     let counterterlapor = 0;
@@ -3204,17 +3206,19 @@
         var data = {
             npsn: npsn,
             nisn: nisn,
-            jenis: jenis
+            jenis: jenis,
+            csrf_test_name: csrf,
         };
 
         $.ajax({
             url: url,
-            type: 'GET',
+            type: 'POST',
             data: data,
             dataType: 'json',
             cache: false,
             success: function(result) {
                 // alert("kucil");
+                csrf = result.csrf;
                 nama = result.nama_siswa;
                 if (nama == "")
                     iinfonisn.innerText = xinfonis;
@@ -3331,12 +3335,13 @@
         var url = alamat;
         var data = {
             nik: nik,
-            nama: inama
+            nama: inama,
+            csrf_test_name: csrf,
         };
 
         $.ajax({
             url: url,
-            type: 'GET',
+            type: 'POST',
             data: data,
             dataType: 'json',
             cache: false,
@@ -3603,10 +3608,13 @@
                     niksiswa: niksiswa,
                     nikortu: nikortu,
                     statusortu: statusortu,
+                    csrf_test_name: csrf,
                 },
                 success: function(response) {
                     tbnik.style.display = 'none';
                     // var sekolahrow = document.getElementById('sekolahRow' + siapa + idx);
+
+                    csrf = response.csrf;
 
                     if (response != null) {
 
@@ -4159,7 +4167,7 @@
         const tgllahir = document.getElementById('tgl_lahir' + siapa + idx).value;
         $.ajax({
             url: '<?= base_url() ?>inputdata/ceknikmasy',
-            type: 'GET',
+            type: 'POST',
             data: {
                 nik_masy: nik_masy,
                 nama_masy: nama_masy,

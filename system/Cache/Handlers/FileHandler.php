@@ -48,17 +48,17 @@ class FileHandler extends BaseHandler
      */
     public function __construct(Cache $config)
     {
-        if (! property_exists($config, 'file')) {
+        if (!property_exists($config, 'file')) {
             $config->file = [
                 'storePath' => $config->storePath ?? WRITEPATH . 'cache',
                 'mode'      => 0640,
             ];
         }
 
-        $this->path = ! empty($config->file['storePath']) ? $config->file['storePath'] : WRITEPATH . 'cache';
+        $this->path = !empty($config->file['storePath']) ? $config->file['storePath'] : WRITEPATH . 'cache';
         $this->path = rtrim($this->path, '/') . '/';
 
-        if (! is_really_writable($this->path)) {
+        if (!is_really_writable($this->path)) {
             throw CacheException::forUnableToWrite($this->path);
         }
 
@@ -152,7 +152,7 @@ class FileHandler extends BaseHandler
                 'data' => 0,
                 'ttl'  => 60,
             ];
-        } elseif (! is_int($data['data'])) {
+        } elseif (!is_int($data['data'])) {
             return false;
         }
 
@@ -174,7 +174,7 @@ class FileHandler extends BaseHandler
                 'data' => 0,
                 'ttl'  => 60,
             ];
-        } elseif (! is_int($data['data'])) {
+        } elseif (!is_int($data['data'])) {
             return false;
         }
 
@@ -233,12 +233,12 @@ class FileHandler extends BaseHandler
      */
     protected function getItem(string $filename)
     {
-        if (! is_file($this->path . $filename)) {
+        if (!is_file($this->path . $filename)) {
             return false;
         }
 
         $data = @unserialize(file_get_contents($this->path . $filename));
-        if (! is_array($data) || ! isset($data['ttl'])) {
+        if (!is_array($data) || !isset($data['ttl'])) {
             return false;
         }
 
@@ -299,7 +299,7 @@ class FileHandler extends BaseHandler
         // Trim the trailing slash
         $path = rtrim($path, '/\\');
 
-        if (! $currentDir = @opendir($path)) {
+        if (!$currentDir = @opendir($path)) {
             return false;
         }
 
@@ -307,7 +307,7 @@ class FileHandler extends BaseHandler
             if ($filename !== '.' && $filename !== '..') {
                 if (is_dir($path . DIRECTORY_SEPARATOR . $filename) && $filename[0] !== '.') {
                     $this->deleteFiles($path . DIRECTORY_SEPARATOR . $filename, $delDir, $htdocs, $_level + 1);
-                } elseif ($htdocs !== true || ! preg_match('/^(\.htaccess|index\.(html|htm|php)|web\.config)$/i', $filename)) {
+                } elseif ($htdocs !== true || !preg_match('/^(\.htaccess|index\.(html|htm|php)|web\.config)$/i', $filename)) {
                     @unlink($path . DIRECTORY_SEPARATOR . $filename);
                 }
             }
@@ -373,7 +373,7 @@ class FileHandler extends BaseHandler
      */
     protected function getFileInfo(string $file, $returnedValues = ['name', 'server_path', 'size', 'date'])
     {
-        if (! is_file($file)) {
+        if (!is_file($file)) {
             return false;
         }
 

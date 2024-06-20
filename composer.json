@@ -10,7 +10,11 @@
         "ext-json": "*",
         "ext-mbstring": "*",
         "firebase/php-jwt": "^6.10",
+        "google/apiclient": "^2.16",
         "laminas/laminas-escaper": "^2.9",
+        "league/oauth2-client": "^2.7",
+        "league/oauth2-google": "^4.0",
+        "paragonie/constant_time_encoding": "^2.7",
         "phpoffice/phpexcel": "^1.8",
         "phpoffice/phpspreadsheet": "^1.29",
         "psr/log": "^1.1"

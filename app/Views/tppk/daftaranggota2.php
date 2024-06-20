@@ -1,4 +1,7 @@
 <?php
+
+use function PHPUnit\Framework\isNull;
+
 $penugasan = array("", "Ketua", "Anggota");
 $jabatan = array("Ketua", "Anggota 1", "Anggota 2", "Anggota 3", "Anggota 4", "Anggota 5", "Anggota 6", "Anggota 7", "Anggota 8");
 $instansiid = session()->get('jenis_instansi_id');
@@ -103,6 +106,7 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
             <?php if ($instansiid == 1) : ?>
                 <th>Telp</th>
             <?php endif ?>
+            <th>Admin Satgas</th>
         </thead>
 
         <tbody>
@@ -117,6 +121,7 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
                     <?php if ($instansiid == 1) : ?>
                         <td><?= $row['telepon'] ?></td>
                     <?php endif ?>
+                    <td style="text-align: center;"><?= ($row['anggotake'] == 0) ? "*" : (($row['operator_satgas'] == 1) ? "*" : "") ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
@@ -124,7 +129,7 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
     <div style="max-width:1000px;margin:auto;margin-top:20px;line-height:16px;">
         <table class="tabelinfo">
             <tr>
-                <td>Nomor SK</td>
+                <td style="width: 150px;">Nomor SK</td>
                 <td>:</td>
                 <td><?= $linknomorsk ?></< /td>
             </tr>
@@ -140,10 +145,9 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
                                                                             $tanggal_tambah = date("d-m-Y", strtotime($datask['tanggal_sk'] . " +4 years")) : "-" ?></td>
             </tr>
             <tr>
-                <td>Status SK</td>
-                <td>:</td>
-                <td><?= ($nomor > 1) ?
-                        $txtstatus[intval($datask['status_sk'])] : "-" ?></td>
+                <td style="vertical-align: top;">Status SK</td>
+                <td style="vertical-align: top;">:</td>
+                <td style="vertical-align: top;"><?= ($nomor > 1 && !isNull($datask)) ? $txtstatus[intval($datask['status_sk'])] : "-" ?><?= (!isNull($datask) && $datask['status_sk'] == 1 && $jenisinstansiid == 1) ? "<br><i>[" . $datask['catatan_sk'] . "]" : "" ?></i></td>
             </tr>
         </table>
         <br>

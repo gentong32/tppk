@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of vfsStream.
  *
@@ -7,13 +8,15 @@
  *
  * @package  org\bovigo\vfs
  */
+
 namespace org\bovigo\vfs;
+
 /**
  * Test for unlink() functionality.
  *
  * @group  unlink
  */
-class UnlinkTestCase extends \BC_PHPUnit_Framework_TestCase
+class unlinkTestCase extends \BC_PHPUnit_Framework_TestCase
 {
     /**
      * @test

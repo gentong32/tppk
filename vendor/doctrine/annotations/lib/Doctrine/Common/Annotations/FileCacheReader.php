@@ -64,7 +64,7 @@ class FileCacheReader implements Reader
      */
     public function __construct(Reader $reader, $cacheDir, $debug = false, $umask = 0002)
     {
-        if (! is_int($umask)) {
+        if (!is_int($umask)) {
             throw new InvalidArgumentException(sprintf(
                 'The parameter umask must be an integer, was: %s',
                 gettype($umask)
@@ -74,7 +74,7 @@ class FileCacheReader implements Reader
         $this->reader = $reader;
         $this->umask  = $umask;
 
-        if (! is_dir($cacheDir) && ! @mkdir($cacheDir, 0777 & (~$this->umask), true)) {
+        if (!is_dir($cacheDir) && !@mkdir($cacheDir, 0777 & (~$this->umask), true)) {
             throw new InvalidArgumentException(sprintf(
                 'The directory "%s" does not exist and could not be created.',
                 $cacheDir
@@ -90,7 +90,7 @@ class FileCacheReader implements Reader
      */
     public function getClassAnnotations(ReflectionClass $class)
     {
-        if (! isset($this->classNameHashes[$class->name])) {
+        if (!isset($this->classNameHashes[$class->name])) {
             $this->classNameHashes[$class->name] = sha1($class->name);
         }
 
@@ -101,7 +101,7 @@ class FileCacheReader implements Reader
         }
 
         $path = $this->dir . '/' . strtr($key, '\\', '-') . '.cache.php';
-        if (! is_file($path)) {
+        if (!is_file($path)) {
             $annot = $this->reader->getClassAnnotations($class);
             $this->saveCacheFile($path, $annot);
 
@@ -131,7 +131,7 @@ class FileCacheReader implements Reader
     public function getPropertyAnnotations(ReflectionProperty $property)
     {
         $class = $property->getDeclaringClass();
-        if (! isset($this->classNameHashes[$class->name])) {
+        if (!isset($this->classNameHashes[$class->name])) {
             $this->classNameHashes[$class->name] = sha1($class->name);
         }
 
@@ -142,7 +142,7 @@ class FileCacheReader implements Reader
         }
 
         $path = $this->dir . '/' . strtr($key, '\\', '-') . '.cache.php';
-        if (! is_file($path)) {
+        if (!is_file($path)) {
             $annot = $this->reader->getPropertyAnnotations($property);
             $this->saveCacheFile($path, $annot);
 
@@ -172,7 +172,7 @@ class FileCacheReader implements Reader
     public function getMethodAnnotations(ReflectionMethod $method)
     {
         $class = $method->getDeclaringClass();
-        if (! isset($this->classNameHashes[$class->name])) {
+        if (!isset($this->classNameHashes[$class->name])) {
             $this->classNameHashes[$class->name] = sha1($class->name);
         }
 
@@ -183,7 +183,7 @@ class FileCacheReader implements Reader
         }
 
         $path = $this->dir . '/' . strtr($key, '\\', '-') . '.cache.php';
-        if (! is_file($path)) {
+        if (!is_file($path)) {
             $annot = $this->reader->getMethodAnnotations($method);
             $this->saveCacheFile($path, $annot);
 
@@ -217,14 +217,13 @@ class FileCacheReader implements Reader
      */
     private function saveCacheFile($path, $data)
     {
-        if (! is_writable($this->dir)) {
+        if (!is_writable($this->dir)) {
             throw new InvalidArgumentException(sprintf(
                 <<<'EXCEPTION'
 The directory "%s" is not writable. Both the webserver and the console user need access.
 You can manage access rights for multiple users with "chmod +a".
 If your system does not support this, check out the acl package.,
-EXCEPTION
-                ,
+EXCEPTION,
                 $this->dir
             ));
         }

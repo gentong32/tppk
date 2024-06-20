@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of vfsStream.
  *
@@ -7,7 +8,9 @@
  *
  * @package  org\bovigo\vfs
  */
+
 namespace org\bovigo\vfs;
+
 /**
  * Test for org\bovigo\vfs\vfsStreamWrapper.
  *
@@ -40,9 +43,9 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function setUp()
     {
         vfsStream::setup()
-                 ->lastModified(50)
-                 ->lastAccessed(50)
-                 ->lastAttributeModified(50);
+            ->lastModified(50)
+            ->lastAccessed(50)
+            ->lastAttributeModified(50);
         $this->fooUrl = vfsStream::url('root/foo.txt');
         $this->barUrl = vfsStream::url('root/bar');
         $this->bazUrl = vfsStream::url('root/bar/baz.txt');
@@ -69,11 +72,11 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function openFileChangesAttributeTimeOnly()
     {
         $file = vfsStream::newFile('foo.txt')
-                         ->withContent('test')
-                         ->at(vfsStreamWrapper::getRoot())
-                         ->lastModified(100)
-                         ->lastAccessed(100)
-                         ->lastAttributeModified(100);
+            ->withContent('test')
+            ->at(vfsStreamWrapper::getRoot())
+            ->lastModified(100)
+            ->lastAccessed(100)
+            ->lastAttributeModified(100);
         fclose(fopen($this->fooUrl, 'rb'));
         $this->assertGreaterThan(time() - 2, fileatime($this->fooUrl));
         $this->assertLessThanOrEqual(time(), fileatime($this->fooUrl));
@@ -90,11 +93,11 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function fileGetContentsChangesAttributeTimeOnly()
     {
         $file = vfsStream::newFile('foo.txt')
-                         ->withContent('test')
-                         ->at(vfsStreamWrapper::getRoot())
-                         ->lastModified(100)
-                         ->lastAccessed(100)
-                         ->lastAttributeModified(100);
+            ->withContent('test')
+            ->at(vfsStreamWrapper::getRoot())
+            ->lastModified(100)
+            ->lastAccessed(100)
+            ->lastAttributeModified(100);
         file_get_contents($this->fooUrl);
         $this->assertGreaterThan(time() - 2, fileatime($this->fooUrl));
         $this->assertLessThanOrEqual(time(), fileatime($this->fooUrl));
@@ -111,11 +114,11 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function openFileWithTruncateChangesAttributeAndModificationTime()
     {
         $file = vfsStream::newFile('foo.txt')
-                         ->withContent('test')
-                         ->at(vfsStreamWrapper::getRoot())
-                         ->lastModified(100)
-                         ->lastAccessed(100)
-                         ->lastAttributeModified(100);
+            ->withContent('test')
+            ->at(vfsStreamWrapper::getRoot())
+            ->lastModified(100)
+            ->lastAccessed(100)
+            ->lastAttributeModified(100);
         fclose(fopen($this->fooUrl, 'wb'));
         $this->assertGreaterThan(time() - 2, filemtime($this->fooUrl));
         $this->assertGreaterThan(time() - 2, fileatime($this->fooUrl));
@@ -132,11 +135,11 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function readFileChangesAccessTime()
     {
         $file = vfsStream::newFile('foo.txt')
-                         ->withContent('test')
-                         ->at(vfsStreamWrapper::getRoot())
-                         ->lastModified(100)
-                         ->lastAccessed(100)
-                         ->lastAttributeModified(100);
+            ->withContent('test')
+            ->at(vfsStreamWrapper::getRoot())
+            ->lastModified(100)
+            ->lastAccessed(100)
+            ->lastAttributeModified(100);
         $fp = fopen($this->fooUrl, 'rb');
         $openTime = time();
         sleep(2);
@@ -155,10 +158,10 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function writeFileChangesModificationTime()
     {
         $file = vfsStream::newFile('foo.txt')
-                         ->at(vfsStreamWrapper::getRoot())
-                         ->lastModified(100)
-                         ->lastAccessed(100)
-                         ->lastAttributeModified(100);
+            ->at(vfsStreamWrapper::getRoot())
+            ->lastModified(100)
+            ->lastAccessed(100)
+            ->lastAttributeModified(100);
         $fp = fopen($this->fooUrl, 'wb');
         $openTime = time();
         sleep(2);
@@ -168,7 +171,6 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
         $this->assertLessThanOrEqual($openTime, fileatime($this->fooUrl));
         $this->assertEquals(100, filectime($this->fooUrl));
         $this->assertFileTimesEqualStreamTimes($this->fooUrl, $file);
-
     }
 
     /**
@@ -191,10 +193,10 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function createNewFileChangesAttributeAndModificationTimeOfContainingDirectory()
     {
         $dir = vfsStream::newDirectory('bar')
-                        ->at(vfsStreamWrapper::getRoot())
-                        ->lastModified(100)
-                        ->lastAccessed(100)
-                        ->lastAttributeModified(100);
+            ->at(vfsStreamWrapper::getRoot())
+            ->lastModified(100)
+            ->lastAccessed(100)
+            ->lastAttributeModified(100);
         file_put_contents($this->bazUrl, 'test');
         $this->assertLessThanOrEqual(time(), filemtime($this->barUrl));
         $this->assertLessThanOrEqual(time(), filectime($this->barUrl));
@@ -227,12 +229,12 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function removeFileChangesAttributeAndModificationTimeOfContainingDirectory()
     {
         $dir = vfsStream::newDirectory('bar')
-                        ->at(vfsStreamWrapper::getRoot());
+            ->at(vfsStreamWrapper::getRoot());
         $file = vfsStream::newFile('baz.txt')
-                         ->at($dir)
-                         ->lastModified(100)
-                         ->lastAccessed(100)
-                         ->lastAttributeModified(100);
+            ->at($dir)
+            ->lastModified(100)
+            ->lastAccessed(100)
+            ->lastAttributeModified(100);
         $dir->lastModified(100)
             ->lastAccessed(100)
             ->lastAttributeModified(100);
@@ -250,20 +252,20 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function renameFileChangesAttributeAndModificationTimeOfAffectedDirectories()
     {
         $target = vfsStream::newDirectory('target')
-                           ->at(vfsStreamWrapper::getRoot())
-                           ->lastModified(200)
-                           ->lastAccessed(200)
-                           ->lastAttributeModified(200);
+            ->at(vfsStreamWrapper::getRoot())
+            ->lastModified(200)
+            ->lastAccessed(200)
+            ->lastAttributeModified(200);
         $source = vfsStream::newDirectory('bar')
-                           ->at(vfsStreamWrapper::getRoot());
+            ->at(vfsStreamWrapper::getRoot());
         $file = vfsStream::newFile('baz.txt')
-                         ->at($source)
-                         ->lastModified(300)
-                         ->lastAccessed(300)
-                         ->lastAttributeModified(300);
+            ->at($source)
+            ->lastModified(300)
+            ->lastAccessed(300)
+            ->lastAttributeModified(300);
         $source->lastModified(100)
-               ->lastAccessed(100)
-               ->lastAttributeModified(100);
+            ->lastAccessed(100)
+            ->lastAttributeModified(100);
         rename($this->bazUrl, vfsStream::url('root/target/baz.txt'));
         $this->assertLessThanOrEqual(time(), filemtime($this->barUrl));
         $this->assertLessThanOrEqual(time(), filectime($this->barUrl));
@@ -282,20 +284,20 @@ class vfsStreamWrapperFileTimesTestCase extends \BC_PHPUnit_Framework_TestCase
     public function renameFileDoesNotChangeFileTimesOfFileItself()
     {
         $target = vfsStream::newDirectory('target')
-                           ->at(vfsStreamWrapper::getRoot())
-                           ->lastModified(200)
-                           ->lastAccessed(200)
-                           ->lastAttributeModified(200);
+            ->at(vfsStreamWrapper::getRoot())
+            ->lastModified(200)
+            ->lastAccessed(200)
+            ->lastAttributeModified(200);
         $source = vfsStream::newDirectory('bar')
-                           ->at(vfsStreamWrapper::getRoot());
+            ->at(vfsStreamWrapper::getRoot());
         $file = vfsStream::newFile('baz.txt')
-                         ->at($source)
-                         ->lastModified(300)
-                         ->lastAccessed(300)
-                         ->lastAttributeModified(300);
+            ->at($source)
+            ->lastModified(300)
+            ->lastAccessed(300)
+            ->lastAttributeModified(300);
         $source->lastModified(100)
-               ->lastAccessed(100)
-               ->lastAttributeModified(100);
+            ->lastAccessed(100)
+            ->lastAttributeModified(100);
         rename($this->bazUrl, vfsStream::url('root/target/baz.txt'));
         $this->assertEquals(300, filemtime(vfsStream::url('root/target/baz.txt')));
         $this->assertEquals(300, filectime(vfsStream::url('root/target/baz.txt')));

@@ -42,7 +42,7 @@ class ImageMagickHandler extends BaseHandler
     {
         parent::__construct($config);
 
-        if (! (extension_loaded('imagick') || class_exists(Imagick::class))) {
+        if (!(extension_loaded('imagick') || class_exists(Imagick::class))) {
             throw ImageException::forMissingExtension('IMAGICK'); // @codeCoverageIgnore
         }
     }
@@ -56,7 +56,7 @@ class ImageMagickHandler extends BaseHandler
      */
     public function _resize(bool $maintainRatio = false)
     {
-        $source      = ! empty($this->resource) ? $this->resource : $this->image()->getPathname();
+        $source      = !empty($this->resource) ? $this->resource : $this->image()->getPathname();
         $destination = $this->getResourcePath();
 
         $escape = '\\';
@@ -83,7 +83,7 @@ class ImageMagickHandler extends BaseHandler
      */
     public function _crop()
     {
-        $source      = ! empty($this->resource) ? $this->resource : $this->image()->getPathname();
+        $source      = !empty($this->resource) ? $this->resource : $this->image()->getPathname();
         $destination = $this->getResourcePath();
 
         $extent = ' ';
@@ -110,7 +110,7 @@ class ImageMagickHandler extends BaseHandler
     {
         $angle = '-rotate ' . $angle;
 
-        $source      = ! empty($this->resource) ? $this->resource : $this->image()->getPathname();
+        $source      = !empty($this->resource) ? $this->resource : $this->image()->getPathname();
         $destination = $this->getResourcePath();
 
         $action = ' ' . $angle . ' ' . escapeshellarg($source) . ' ' . escapeshellarg($destination);
@@ -131,7 +131,7 @@ class ImageMagickHandler extends BaseHandler
     {
         $flatten = "-background 'rgb({$red},{$green},{$blue})' -flatten";
 
-        $source      = ! empty($this->resource) ? $this->resource : $this->image()->getPathname();
+        $source      = !empty($this->resource) ? $this->resource : $this->image()->getPathname();
         $destination = $this->getResourcePath();
 
         $action = ' ' . $flatten . ' ' . escapeshellarg($source) . ' ' . escapeshellarg($destination);
@@ -152,7 +152,7 @@ class ImageMagickHandler extends BaseHandler
     {
         $angle = $direction === 'horizontal' ? '-flop' : '-flip';
 
-        $source      = ! empty($this->resource) ? $this->resource : $this->image()->getPathname();
+        $source      = !empty($this->resource) ? $this->resource : $this->image()->getPathname();
         $destination = $this->getResourcePath();
 
         $action = ' ' . $angle . ' ' . escapeshellarg($source) . ' ' . escapeshellarg($destination);
@@ -193,7 +193,7 @@ class ImageMagickHandler extends BaseHandler
             $this->supportedFormatCheck();
         }
 
-        if (! preg_match('/convert$/i', $this->config->libraryPath)) {
+        if (!preg_match('/convert$/i', $this->config->libraryPath)) {
             $this->config->libraryPath = rtrim($this->config->libraryPath, '/') . '/convert';
         }
 
@@ -308,7 +308,7 @@ class ImageMagickHandler extends BaseHandler
     {
         switch ($this->image()->imageType) {
             case IMAGETYPE_WEBP:
-                if (! in_array('WEBP', Imagick::queryFormats(), true)) {
+                if (!in_array('WEBP', Imagick::queryFormats(), true)) {
                     throw ImageException::forInvalidImageCreate(lang('images.webpNotSupported'));
                 }
                 break;
@@ -342,7 +342,7 @@ class ImageMagickHandler extends BaseHandler
         }
 
         // Font
-        if (! empty($options['fontPath'])) {
+        if (!empty($options['fontPath'])) {
             $cmd .= " -font '{$options['fontPath']}'";
         }
 
@@ -400,7 +400,7 @@ class ImageMagickHandler extends BaseHandler
         // Text
         $cmd .= " -annotate 0 '{$text}'";
 
-        $source      = ! empty($this->resource) ? $this->resource : $this->image()->getPathname();
+        $source      = !empty($this->resource) ? $this->resource : $this->image()->getPathname();
         $destination = $this->getResourcePath();
 
         $cmd = " '{$source}' {$cmd} '{$destination}'";

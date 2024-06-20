@@ -43,7 +43,7 @@ class PHPExcel_Shared_File
      */
     public static function setUseUploadTempDirectory($useUploadTempDir = false)
     {
-        self::$useUploadTempDirectory = (boolean) $useUploadTempDir;
+        self::$useUploadTempDirectory = (bool) $useUploadTempDir;
     }
 
 
@@ -59,11 +59,11 @@ class PHPExcel_Shared_File
 
 
     /**
-      * Verify if a file exists
-      *
-      * @param     string    $pFilename    Filename
-      * @return bool
-      */
+     * Verify if a file exists
+     *
+     * @param     string    $pFilename    Filename
+     * @return bool
+     */
     public static function file_exists($pFilename)
     {
         // Sick construction, but it seems that

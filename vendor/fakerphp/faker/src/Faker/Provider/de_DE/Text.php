@@ -4,35 +4,35 @@ namespace Faker\Provider\de_DE;
 
 class Text extends \Faker\Provider\Text
 {
-    /**
-     * The Project Gutenberg EBook of Die Leiden des jungen Werther--Buch 1, by
-     * Johann Wolfgang von Goethe
-     *
-     * This eBook is for the use of anyone anywhere at no cost and with
-     * almost no restrictions whatsoever.  You may copy it, give it away or
-     * re-use it under the terms of the Project Gutenberg License included
-     * with this eBook or online at www.gutenberg.org
-     *
-     * Title: Die Leiden des jungen Werther--Buch 1
-     *
-     * Author: Johann Wolfgang von Goethe
-     *
-     * Posting Date: June 28, 2011 [EBook #2407]
-     * Release Date: November, 2000
-     *
-     * Language: German
-     *
-     * *** START OF THIS PROJECT GUTENBERG EBOOK DIE LEIDEN DES JUNGEN WERTHER ***
-     *
-     * Produced by Michael Pullen, globaltraveler5565@yahoo.com
-     * with proofreading and correction by Dr. Mary Cicora,
-     * mcicora@yahoo.com.
-     *
-     * @see http://www.gutenberg.org/cache/epub/2407/pg2407.txt
-     *
-     * @var string
-     */
-    protected static $baseText = <<<'EOT'
+     /**
+      * The Project Gutenberg EBook of Die Leiden des jungen Werther--Buch 1, by
+      * Johann Wolfgang von Goethe
+      *
+      * This eBook is for the use of anyone anywhere at no cost and with
+      * almost no restrictions whatsoever.  You may copy it, give it away or
+      * re-use it under the terms of the Project Gutenberg License included
+      * with this eBook or online at www.gutenberg.org
+      *
+      * Title: Die Leiden des jungen Werther--Buch 1
+      *
+      * Author: Johann Wolfgang von Goethe
+      *
+      * Posting Date: June 28, 2011 [EBook #2407]
+      * Release Date: November, 2000
+      *
+      * Language: German
+      *
+      * *** START OF THIS PROJECT GUTENBERG EBOOK DIE LEIDEN DES JUNGEN WERTHER ***
+      *
+      * Produced by Michael Pullen, globaltraveler5565@yahoo.com
+      * with proofreading and correction by Dr. Mary Cicora,
+      * mcicora@yahoo.com.
+      *
+      * @see http://www.gutenberg.org/cache/epub/2407/pg2407.txt
+      *
+      * @var string
+      */
+     protected static $baseText = <<<'EOT'
 Am 4. Mai 1771
 
 Wie froh bin ich, daß ich weg bin! Bester Freund, was ist das Herz des
@@ -1677,7 +1677,7 @@ hervor und sah noch dort unten im Schatten der hohen Lindenbäume ihr weißes Kl
 nach der Gartentür schimmern, ich streckte meine Arme aus, und es verschwand.
 EOT;
 
-    /*
+     /*
     End of the Project Gutenberg EBook of Die Leiden des jungen Werther--Buch 1, by
     Johann Wolfgang von Goethe
 

@@ -385,7 +385,11 @@ class Spreadsheet implements JsonSerializable
     {
         $extension = pathinfo($path, PATHINFO_EXTENSION);
 
-        return substr(/** @scrutinizer ignore-type */$extension, 0);
+        return substr(
+            /** @scrutinizer ignore-type */
+            $extension,
+            0
+        );
     }
 
     /**

@@ -1525,14 +1525,15 @@
             const tbcarisekolah = document.getElementById('tbcarisekolah' + siapa + idx);
             const labelnpsn = npsnrow.getElementsByTagName('td');
             if (sebagai == "sekolah") {
-                const daftarpdrow = document.getElementById('daftarpdRow' + siapa + idx);
-                const daftarptkrow = document.getElementById('daftarptkRow' + siapa + idx);
-                const daftarptk2row = document.getElementById('daftarptk2Row' + siapa + idx);
-                const infodaftarpd = document.getElementById('infodaftarpd' + siapa + idx);
-                const infodaftarptk = document.getElementById('infodaftarptk' + siapa + idx);
-                const infodaftarptk2 = document.getElementById('infodaftarptk2' + siapa + idx);
-                const daftarkepsekrow = document.getElementById('daftarkepsekRow' + siapa + idx);
-                const infodaftarkepsek = document.getElementById('infodaftarkepsek' + siapa + idx);
+                // alert('infodaftarpd' + siapa + idx);
+                var daftarpdrow = document.getElementById('daftarpdRow' + siapa + idx);
+                var daftarptkrow = document.getElementById('daftarptkRow' + siapa + idx);
+                var daftarptk2row = document.getElementById('daftarptk2Row' + siapa + idx);
+                var infodaftarpd = document.getElementById('infodaftarpd' + siapa + idx);
+                var infodaftarptk = document.getElementById('infodaftarptk' + siapa + idx);
+                var infodaftarptk2 = document.getElementById('infodaftarptk2' + siapa + idx);
+                var daftarkepsekrow = document.getElementById('daftarkepsekRow' + siapa + idx);
+                var infodaftarkepsek = document.getElementById('infodaftarkepsek' + siapa + idx);
             }
             const infousia = document.getElementById('infousia' + siapa + idx);
             const nisnrow = document.getElementById('nisnRow' + siapa + idx);
@@ -2905,18 +2906,22 @@
         var data = {
             npsn: npsn,
             nik: nik,
-            jenis: jenis
+            jenis: jenis,
+            csrf_test_name: csrf,
         };
 
         xhrGet = $.ajax({
             url: url,
-            type: 'GET',
+            type: 'POST',
             data: data,
             dataType: 'json',
             cache: false,
             success: function(result) {
                 // alert("kucil");
                 // nisn = result.nama_siswa;
+
+                csrf = result.csrf;
+
                 if (nisn == "")
                     iinfonisn.innerText = xinfonis;
                 else {
@@ -3204,12 +3209,13 @@
         var url = alamat;
         var data = {
             nik: nik,
-            nama: inama
+            nama: inama,
+            csrf_test_name: csrf,
         };
 
         $.ajax({
             url: url,
-            type: 'GET',
+            type: 'POST',
             data: data,
             dataType: 'json',
             cache: false,
@@ -3221,6 +3227,9 @@
                     iinfonik.innerText = "";
                     document.getElementById('tbnik' + siapa + idx).style.display = 'none';
                 }
+
+                csrf = result.csrf;
+
                 valnama = result.valnama_siswa;
                 valnik = result.valnik;
                 jenis_kelamin = result.jenis_kelamin;
@@ -3502,56 +3511,111 @@
 
     function getnamasekolah(npsn, siapa, idx) {
         var tbnpsn = document.getElementById('tbnpsn' + siapa + idx);
-        $.ajax({
-            type: 'GET',
-            url: '<?= base_url() ?>inputdata/ceknpsnsekolah',
-            data: {
-                npsn: npsn,
-            },
-            success: function(response) {
-                var sekolahrow = document.getElementById('sekolahRow' + siapa + idx);
-                var sekolah = document.getElementById('sekolah' + siapa + idx);
-                var xstatus = "-";
-                var kec = "-"
-                var kota = "Kab./Kota: -";
-                var provinsi = "-";
+        if (npsn == "88010101" || npsn == "88010102" || npsn == "88020103" || npsn == "88020104" || npsn == "88030101") {
+            var sekolahrow = document.getElementById('sekolahRow' + siapa + idx);
+            var sekolah = document.getElementById('sekolah' + siapa + idx);
+            var xstatus = "-";
+            var kec = "-"
+            var kota = "Kab./Kota: -";
+            var provinsi = "-";
 
-                document.getElementById('infonpsn' + siapa + idx).innerHTML = "NPSN tidak valid!";
-
-                if (response != null) {
-                    kec = response.kecamatan.substring(5);
-                    sekolah.value = response.nama_sekolah;
-                    if (response.status_sekolah == 1)
-                        xstatus = "Negeri";
-                    else if (response.status_sekolah == 2)
-                        xstatus = "Swasta";
-
-                    if (response.kota.substring(0, 3) == "Kab.")
-                        kota = "Kab: " + response.kota.substring(5);
-                    else
-                        kota = "Kota: " + response.kota.substring(5);
-
-                    provinsi = response.provinsi.substring(6);
-                    document.getElementById('infonpsn' + siapa + idx).innerHTML = "";
-                }
-
-                tbnpsn.innerHTML = "Submit";
-                tbnpsn.style.display = 'none';
-
-                document.getElementById('infosekolah' + siapa + idx).innerHTML = "<div style='color:black; margin-left:10px'>Status: " + xstatus + "<br> Kec: " + kec + " <br> " + kota + " <br> Provinsi: " + provinsi + " </div>";
-
-                sekolahrow.style.display = 'table-row';
-
-                sekolahrow.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            },
-            error: function() {
-                document.getElementById('infonpsn' + siapa + idx).innerHTML = "NPSN tidak valid!<br>";
-                tbnpsn.innerHTML = "Submit";
+            document.getElementById('infonpsn' + siapa + idx).innerHTML = "NPSN tidak valid!";
+            if (npsn == "88010101") {
+                kec = "Baru";
+                sekolah.value = "Sekolah Satu";
+                xstatus = "Negeri";
+                kota = "Kota: BCD";
+                provinsi = "ABC";
+            } else if (npsn == "88010102") {
+                kec = "Baru";
+                sekolah.value = "Sekolah Dua";
+                xstatus = "Negeri";
+                kota = "Kota: BCD";
+                provinsi = "ABC";
+            } else if (npsn == "88020103") {
+                kec = "Lama";
+                sekolah.value = "Sekolah Tiga";
+                xstatus = "Negeri";
+                kota = "Kota: DEF";
+                provinsi = "ABC";
+            } else if (npsn == "88020104") {
+                kec = "Lama";
+                sekolah.value = "Sekolah Empat";
+                xstatus = "Negeri";
+                kota = "Kota: DEF";
+                provinsi = "ABC";
+            } else if (npsn == "88030101") {
+                kec = "Pagi";
+                sekolah.value = "Sekolah Ahad";
+                xstatus = "Negeri";
+                kota = "Kab.: CBA";
+                provinsi = "ABC";
             }
-        });
+
+            document.getElementById('infonpsn' + siapa + idx).innerHTML = "";
+            tbnpsn.innerHTML = "Submit";
+            tbnpsn.style.display = 'none';
+
+            document.getElementById('infosekolah' + siapa + idx).innerHTML = "<div style='color:black; margin-left:10px'>Status: " + xstatus + "<br> Kec: " + kec + " <br> " + kota + " <br> Provinsi: " + provinsi + " </div>";
+
+            sekolahrow.style.display = 'table-row';
+
+            sekolahrow.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        } else {
+            $.ajax({
+                type: 'GET',
+                url: '<?= base_url() ?>inputdata/ceknpsnsekolah',
+                data: {
+                    npsn: npsn,
+                },
+                success: function(response) {
+                    var sekolahrow = document.getElementById('sekolahRow' + siapa + idx);
+                    var sekolah = document.getElementById('sekolah' + siapa + idx);
+                    var xstatus = "-";
+                    var kec = "-"
+                    var kota = "Kab./Kota: -";
+                    var provinsi = "-";
+
+                    document.getElementById('infonpsn' + siapa + idx).innerHTML = "NPSN tidak valid!";
+
+                    if (response != null) {
+                        kec = response.kecamatan.substring(5);
+                        sekolah.value = response.nama_sekolah;
+                        if (response.status_sekolah == 1)
+                            xstatus = "Negeri";
+                        else if (response.status_sekolah == 2)
+                            xstatus = "Swasta";
+
+                        if (response.kota.substring(0, 3) == "Kab.")
+                            kota = "Kab: " + response.kota.substring(5);
+                        else
+                            kota = "Kota: " + response.kota.substring(5);
+
+                        provinsi = response.provinsi.substring(6);
+                        document.getElementById('infonpsn' + siapa + idx).innerHTML = "";
+                    }
+
+                    tbnpsn.innerHTML = "Submit";
+                    tbnpsn.style.display = 'none';
+
+                    document.getElementById('infosekolah' + siapa + idx).innerHTML = "<div style='color:black; margin-left:10px'>Status: " + xstatus + "<br> Kec: " + kec + " <br> " + kota + " <br> Provinsi: " + provinsi + " </div>";
+
+                    sekolahrow.style.display = 'table-row';
+
+                    sekolahrow.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                },
+                error: function() {
+                    document.getElementById('infonpsn' + siapa + idx).innerHTML = "NPSN tidak valid!<br>";
+                    tbnpsn.innerHTML = "Submit";
+                }
+            });
+        }
     }
 
     function ceknikkorban(idx) {
@@ -3705,15 +3769,18 @@
             tbnik.innerHTML = 'tunggu...';
             $.ajax({
                 url: '<?= base_url() ?>inputdata/ceknikortu',
-                type: 'GET',
+                type: 'POST',
                 data: {
                     niksiswa: niksiswa,
                     nikortu: nikortu,
                     statusortu: statusortu,
+                    csrf_test_name: csrf,
                 },
                 success: function(response) {
                     tbnik.style.display = 'none';
                     // var sekolahrow = document.getElementById('sekolahRow' + siapa + idx);
+
+                    csrf = response.csrf;
 
                     if (response != null) {
 
@@ -4496,12 +4563,13 @@
 
         $.ajax({
             url: '<?= base_url() ?>inputdata/ceknikmasy',
-            type: 'GET',
+            type: 'POST',
             data: {
                 nik_masy: nik_masy,
                 nama_masy: nama_masy,
                 jk_masy: jeniskel,
                 tgllahir: '2000/01/01',
+                csrf_test_name: csrf,
             },
             success: function(response) {
                 // tbnik.style.display = 'none';
@@ -4515,6 +4583,7 @@
                     infonama.innerHTML = "Dukcapil: " + response.valnama;
                     infonik.style.display = 'table-row';
                     infonik.innerHTML = "Dukcapil: " + response.valnik;
+                    csrf = response.csrf;
 
                     if ((jeniskel == "Laki-Laki" && response.valjenis_kelamin == "Sesuai") || (jeniskel == "Perempuan" && response.valjenis_kelamin == "Tidak Sesuai"))
                         infojenis_kelamin.innerHTML = "Dukcapil: Laki-laki";

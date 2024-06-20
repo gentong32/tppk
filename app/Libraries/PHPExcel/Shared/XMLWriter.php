@@ -82,7 +82,7 @@ class PHPExcel_Shared_XMLWriter extends XMLWriter
      */
     public function __destruct()
     {
-        // Unlink temporary files
+        // unlink temporary files
         if ($this->tempFileName != '') {
             @unlink($this->tempFileName);
         }

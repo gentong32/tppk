@@ -160,7 +160,9 @@ $jabatan = array("", "Wakil Kepala Bidang Kesiswaan", "Guru", "Guru Bimbingan Ko
                     <div>
                         <input name="npsn" id="npsn" type="hidden" value="<?= $namasekolah['npsn'] ?>">
                         <input name="sk_tugas" id="sk_tugas" type="hidden" value="<?= ($nomor > 1) ? $row['sk_tugas'] : ""; ?>">
-                        <input class="btn_ijo" onclick="return cekinput();" type="submit" value="Unggah">
+                        <!-- <input class="btn_ijo" onclick="return cekinput();" type="submit" value="Unggah"> -->
+                        <button class="btn_ijo">Unggah</button>
+                        <br>Mohon maaf. Karena sedang ada kendala teknis, untuk sementara waktu fungsi Upload dinonaktifkan.
                     </div>
                 </form>
             </table>

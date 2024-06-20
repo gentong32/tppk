@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of vfsStream.
  *
@@ -7,7 +8,9 @@
  *
  * @package  org\bovigo\vfs
  */
+
 namespace org\bovigo\vfs;
+
 /**
  * Stream wrapper to mock file system requests.
  *

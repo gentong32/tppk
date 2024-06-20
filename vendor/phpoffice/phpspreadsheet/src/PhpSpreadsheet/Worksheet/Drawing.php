@@ -169,8 +169,8 @@ class Drawing extends BaseDrawing
     {
         return md5(
             $this->path .
-            parent::getHashCode() .
-            __CLASS__
+                parent::getHashCode() .
+                __CLASS__
         );
     }
 

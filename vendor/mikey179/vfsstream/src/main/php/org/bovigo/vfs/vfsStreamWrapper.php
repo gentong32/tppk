@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of vfsStream.
  *
@@ -7,7 +8,9 @@
  *
  * @package  org\bovigo\vfs
  */
+
 namespace org\bovigo\vfs;
+
 /**
  * Stream wrapper to mock file system requests.
  */
@@ -246,9 +249,10 @@ class vfsStreamWrapper
             return array('dirname' => '', 'basename' => $path);
         }
 
-        return array('dirname'  => substr($path, 0, $lastSlashPos),
-                     'basename' => substr($path, $lastSlashPos + 1)
-               );
+        return array(
+            'dirname'  => substr($path, 0, $lastSlashPos),
+            'basename' => substr($path, $lastSlashPos + 1)
+        );
     }
 
     /**
@@ -524,7 +528,7 @@ class vfsStreamWrapper
 
                 $currentTime = time();
                 $content->lastModified(((isset($var[0])) ? ($var[0]) : ($currentTime)))
-                        ->lastAccessed(((isset($var[1])) ? ($var[1]) : ($currentTime)));
+                    ->lastAccessed(((isset($var[1])) ? ($var[1]) : ($currentTime)));
                 return true;
 
             case STREAM_META_OWNER_NAME:
@@ -535,12 +539,12 @@ class vfsStreamWrapper
                     return false;
                 }
 
-                return $this->doPermChange($path,
-                                           $content,
-                                           function() use ($content, $var)
-                                           {
-                                               $content->chown($var);
-                                           }
+                return $this->doPermChange(
+                    $path,
+                    $content,
+                    function () use ($content, $var) {
+                        $content->chown($var);
+                    }
                 );
 
             case STREAM_META_GROUP_NAME:
@@ -551,12 +555,12 @@ class vfsStreamWrapper
                     return false;
                 }
 
-                return $this->doPermChange($path,
-                                           $content,
-                                           function() use ($content, $var)
-                                           {
-                                               $content->chgrp($var);
-                                           }
+                return $this->doPermChange(
+                    $path,
+                    $content,
+                    function () use ($content, $var) {
+                        $content->chgrp($var);
+                    }
                 );
 
             case STREAM_META_ACCESS:
@@ -564,12 +568,12 @@ class vfsStreamWrapper
                     return false;
                 }
 
-                return $this->doPermChange($path,
-                                           $content,
-                                           function() use ($content, $var)
-                                           {
-                                               $content->chmod($var);
-                                           }
+                return $this->doPermChange(
+                    $path,
+                    $content,
+                    function () use ($content, $var) {
+                        $content->chmod($var);
+                    }
                 );
 
             default:
@@ -652,20 +656,21 @@ class vfsStreamWrapper
      */
     public function stream_stat()
     {
-        $fileStat = array('dev'     => 0,
-                          'ino'     => 0,
-                          'mode'    => $this->content->getType() | $this->content->getPermissions(),
-                          'nlink'   => 0,
-                          'uid'     => $this->content->getUser(),
-                          'gid'     => $this->content->getGroup(),
-                          'rdev'    => 0,
-                          'size'    => $this->content->size(),
-                          'atime'   => $this->content->fileatime(),
-                          'mtime'   => $this->content->filemtime(),
-                          'ctime'   => $this->content->filectime(),
-                          'blksize' => -1,
-                          'blocks'  => -1
-                    );
+        $fileStat = array(
+            'dev'     => 0,
+            'ino'     => 0,
+            'mode'    => $this->content->getType() | $this->content->getPermissions(),
+            'nlink'   => 0,
+            'uid'     => $this->content->getUser(),
+            'gid'     => $this->content->getGroup(),
+            'rdev'    => 0,
+            'size'    => $this->content->size(),
+            'atime'   => $this->content->fileatime(),
+            'mtime'   => $this->content->filemtime(),
+            'ctime'   => $this->content->filectime(),
+            'blksize' => -1,
+            'blocks'  => -1
+        );
         return array_merge(array_values($fileStat), $fileStat);
     }
 
@@ -754,7 +759,7 @@ class vfsStreamWrapper
             return false;
         }
 
-        return $this->doUnlink($realPath);
+        return $this->dounlink($realPath);
     }
 
     /**
@@ -763,7 +768,7 @@ class vfsStreamWrapper
      * @param   string  $path
      * @return  bool
      */
-    protected function doUnlink($path)
+    protected function dounlink($path)
     {
         if (self::$root->getName() === $path) {
             // delete root? very brave. :)
@@ -816,7 +821,7 @@ class vfsStreamWrapper
 
         // remove old source first, so we can rename later
         // (renaming first would lead to not being able to remove the old path)
-        if (!$this->doUnlink($srcRealPath)) {
+        if (!$this->dounlink($srcRealPath)) {
             return false;
         }
 
@@ -871,9 +876,11 @@ class vfsStreamWrapper
             $i++;
         }
 
-        if (null === $dir
-          || $dir->getType() !== vfsStreamContent::TYPE_DIR
-          || $dir->isWritable(vfsStream::getCurrentUser(), vfsStream::getCurrentGroup()) === false) {
+        if (
+            null === $dir
+            || $dir->getType() !== vfsStreamContent::TYPE_DIR
+            || $dir->isWritable(vfsStream::getCurrentUser(), vfsStream::getCurrentGroup()) === false
+        ) {
             return false;
         }
 
@@ -996,23 +1003,23 @@ class vfsStreamWrapper
             }
 
             return false;
-
         }
 
-        $fileStat = array('dev'     => 0,
-                          'ino'     => 0,
-                          'mode'    => $content->getType() | $content->getPermissions(),
-                          'nlink'   => 0,
-                          'uid'     => $content->getUser(),
-                          'gid'     => $content->getGroup(),
-                          'rdev'    => 0,
-                          'size'    => $content->size(),
-                          'atime'   => $content->fileatime(),
-                          'mtime'   => $content->filemtime(),
-                          'ctime'   => $content->filectime(),
-                          'blksize' => -1,
-                          'blocks'  => -1
-                    );
+        $fileStat = array(
+            'dev'     => 0,
+            'ino'     => 0,
+            'mode'    => $content->getType() | $content->getPermissions(),
+            'nlink'   => 0,
+            'uid'     => $content->getUser(),
+            'gid'     => $content->getGroup(),
+            'rdev'    => 0,
+            'size'    => $content->size(),
+            'atime'   => $content->fileatime(),
+            'mtime'   => $content->filemtime(),
+            'ctime'   => $content->filectime(),
+            'blksize' => -1,
+            'blocks'  => -1
+        );
         return array_merge(array_values($fileStat), $fileStat);
     }
 }

@@ -36,7 +36,7 @@ echo "Building phar file...\n";
 $phar = new Phar($pharName, null, 'Matrix');
 $phar->buildFromDirectory($sourceDir);
 $phar->setStub(
-<<<'EOT'
+    <<<'EOT'
 <?php
     spl_autoload_register(function ($className) {
         include 'phar://' . $className . '.php';

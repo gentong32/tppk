@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of vfsStream.
  *
@@ -7,7 +8,9 @@
  *
  * @package  org\bovigo\vfs
  */
+
 namespace org\bovigo\vfs;
+
 require_once __DIR__ . '/vfsStreamWrapperBaseTestCase.php';
 /**
  * Test for org\bovigo\vfs\vfsStreamWrapper around mkdir().
@@ -297,7 +300,7 @@ class vfsStreamWrapperMkDirTestCase extends vfsStreamWrapperBaseTestCase
      *
      * @test
      */
-    public function canNotUnlinkDirectoryWithoutRoot()
+    public function canNotunlinkDirectoryWithoutRoot()
     {
         vfsStreamWrapper::register();
         $this->assertFalse(@rmdir(vfsStream::url('foo')));
@@ -396,7 +399,7 @@ class vfsStreamWrapperMkDirTestCase extends vfsStreamWrapperBaseTestCase
         vfsStreamWrapper::register();
         vfsStreamWrapper::setRoot(new vfsStreamDirectory('root', 0770));
         vfsStreamWrapper::getRoot()->chgrp(vfsStream::GROUP_USER_1)
-                                   ->chown(vfsStream::OWNER_USER_1);
+            ->chown(vfsStream::OWNER_USER_1);
         $this->assertFalse(mkdir(vfsStream::url('root/doesNotWork')));
         $this->assertFalse(vfsStreamWrapper::getRoot()->hasChild('doesNotWork'));
     }
@@ -407,8 +410,9 @@ class vfsStreamWrapperMkDirTestCase extends vfsStreamWrapperBaseTestCase
      */
     public function accessWithDoubleDotReturnsCorrectContent()
     {
-        $this->assertEquals('baz2',
-                file_get_contents(vfsStream::url('foo/bar/../baz2'))
+        $this->assertEquals(
+            'baz2',
+            file_get_contents(vfsStream::url('foo/bar/../baz2'))
         );
     }
 
@@ -418,7 +422,8 @@ class vfsStreamWrapperMkDirTestCase extends vfsStreamWrapperBaseTestCase
      */
     public function accessWithExcessDoubleDotsReturnsCorrectContent()
     {
-        $this->assertEquals('baz2',
+        $this->assertEquals(
+            'baz2',
             file_get_contents(vfsStream::url('foo/../../../../bar/../baz2'))
         );
     }

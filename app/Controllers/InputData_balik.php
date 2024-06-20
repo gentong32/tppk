@@ -562,7 +562,7 @@ class InputData extends BaseController
             // Cek apakah file dengan nama yang sama sudah ada
             if (is_file($lokasiFile)) {
                 // Jika ada, hapus file lama
-                unlink($lokasiFile);
+                // unlink($lokasiFile);
             }
 
             $filesk->move('public/uploads/', $namafilebaru);

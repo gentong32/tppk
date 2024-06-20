@@ -1,0 +1,104 @@
+.register-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="tel"],
+.register-container textarea,
+.register-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #0056b3;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+}
+
+.captcha-container canvas {
+  margin-right: 10px;
+}
+
+#info_padandata {
+  border: 0.5px solid gray;
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 15px;
+  background-color: #ddf0d9;
+}
+
+.password-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+.password-container input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 0px !important;
+  height: 37px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.errorinfo {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+#passwordError {
+  display: none;
+}
+
+#nik_info {
+  display: none;
+}
+
+#email_info {
+  display: none;
+}

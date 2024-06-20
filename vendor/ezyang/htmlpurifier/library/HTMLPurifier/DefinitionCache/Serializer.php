@@ -293,14 +293,14 @@ class HTMLPurifier_DefinitionCache_Serializer extends HTMLPurifier_DefinitionCac
             }
             trigger_error(
                 'Directory ' . $dir . ' not writable, ' .
-                'please chmod to ' . decoct($chmod),
+                    'please chmod to ' . decoct($chmod),
                 E_USER_WARNING
             );
         } else {
             // generic error message
             trigger_error(
                 'Directory ' . $dir . ' not writable, ' .
-                'please alter file permissions',
+                    'please alter file permissions',
                 E_USER_WARNING
             );
         }

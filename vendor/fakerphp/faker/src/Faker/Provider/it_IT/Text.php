@@ -4,74 +4,74 @@ namespace Faker\Provider\it_IT;
 
 class Text extends \Faker\Provider\Text
 {
-    /**
-     * The Project Gutenberg EBook of Una notte bizzarra, by Anton Giulio Barrili
-     *
-     * This eBook is for the use of anyone anywhere at no cost and with
-     * almost no restrictions whatsoever.  You may copy it, give it away or
-     * re-use it under the terms of the Project Gutenberg License included
-     * with this eBook or online at www.gutenberg.org
-     *
-     * Title: Una notte bizzarra
-     * Author: Anton Giulio Barrili
-     * Release Date: August 8, 2009 [EBook #29636]
-     * Language: Italian
-     *
-     * *** START OF THIS PROJECT GUTENBERG EBOOK UNA NOTTE BIZZARRA ***
-     *
-     *
-     * Produced by Claudio Paganelli, Carlo Traverso and the
-     * Online Distributed Proofreading Team at http://www.pgdp.net
-     * (This file was produced from images generously made
-     * available by The Internet Archive/Canadian Libraries)
-     *
-     *
-     * CAPITAN DODERO
-     *
-     * UNA NOTTE BIZZARRA
-     *
-     * NOVELLE DI ANTON GIULIO BARRILI
-     *
-     * Settima edizione.
-     *
-     * MILANO
-     *
-     * FRATELLI TREVES, EDITORI 1881.
-     *
-     * PROPRIETÀ LETTERARIA
-     *
-     * Tip. Treves
-     *
-     * UNA NOTTE BIZZARRA
-     *
-     * A LUIGI MORANDI
-     *
-     *
-     * _La è proprio una inezia, frutto di tre giorni di lavoro, che intitolo
-     * a te, giovine amico e compagno d'armi; ma sappi che fu un gaio lavoro
-     * campestre, e lavoro gaio riesce facile, e val meglio assai che sudato,
-     * ma uggioso._
-     *
-     * _Nè paia fuor del naturale a te, nè ai lettori cortesi, che i
-     * personaggi della mia novella s'innamorino in una notte. Anco a non
-     * volerne cercar la ragione, la scusa, nella novità de' casi narrati, io
-     * so che la cosa non è poi tanto difficile, io che ti ho per la prima
-     * volta veduto, ed amato come fratello, in un giorno. Tu dirai che,
-     * anche là, era quistione d'urgenza, imperocchè chi poteva morire il
-     * giorno di poi non avea tempo da perdere. Or dunque, concediamo la
-     * parte loro agli eventi, e non se ne parli più, se non per ricordare
-     * che l'amicizia, nata e cresciuta in un giorno, ha da fortificarsi in
-     * tutti que' molti, o pochi, che ci comporranno la trama della vita._
-     *
-     * Di Genova, il 19 di Luglio del 1868.
-     *
-     * ANTON GIULIO BARRILI.
-     *
-     * @see https://gutenberg.org/cache/epub/29636/pg29636.txt
-     *
-     * @var string
-     */
-    protected static $baseText = <<<'EOT'
+  /**
+   * The Project Gutenberg EBook of Una notte bizzarra, by Anton Giulio Barrili
+   *
+   * This eBook is for the use of anyone anywhere at no cost and with
+   * almost no restrictions whatsoever.  You may copy it, give it away or
+   * re-use it under the terms of the Project Gutenberg License included
+   * with this eBook or online at www.gutenberg.org
+   *
+   * Title: Una notte bizzarra
+   * Author: Anton Giulio Barrili
+   * Release Date: August 8, 2009 [EBook #29636]
+   * Language: Italian
+   *
+   * *** START OF THIS PROJECT GUTENBERG EBOOK UNA NOTTE BIZZARRA ***
+   *
+   *
+   * Produced by Claudio Paganelli, Carlo Traverso and the
+   * Online Distributed Proofreading Team at http://www.pgdp.net
+   * (This file was produced from images generously made
+   * available by The Internet Archive/Canadian Libraries)
+   *
+   *
+   * CAPITAN DODERO
+   *
+   * UNA NOTTE BIZZARRA
+   *
+   * NOVELLE DI ANTON GIULIO BARRILI
+   *
+   * Settima edizione.
+   *
+   * MILANO
+   *
+   * FRATELLI TREVES, EDITORI 1881.
+   *
+   * PROPRIETÀ LETTERARIA
+   *
+   * Tip. Treves
+   *
+   * UNA NOTTE BIZZARRA
+   *
+   * A LUIGI MORANDI
+   *
+   *
+   * _La è proprio una inezia, frutto di tre giorni di lavoro, che intitolo
+   * a te, giovine amico e compagno d'armi; ma sappi che fu un gaio lavoro
+   * campestre, e lavoro gaio riesce facile, e val meglio assai che sudato,
+   * ma uggioso._
+   *
+   * _Nè paia fuor del naturale a te, nè ai lettori cortesi, che i
+   * personaggi della mia novella s'innamorino in una notte. Anco a non
+   * volerne cercar la ragione, la scusa, nella novità de' casi narrati, io
+   * so che la cosa non è poi tanto difficile, io che ti ho per la prima
+   * volta veduto, ed amato come fratello, in un giorno. Tu dirai che,
+   * anche là, era quistione d'urgenza, imperocchè chi poteva morire il
+   * giorno di poi non avea tempo da perdere. Or dunque, concediamo la
+   * parte loro agli eventi, e non se ne parli più, se non per ricordare
+   * che l'amicizia, nata e cresciuta in un giorno, ha da fortificarsi in
+   * tutti que' molti, o pochi, che ci comporranno la trama della vita._
+   *
+   * Di Genova, il 19 di Luglio del 1868.
+   *
+   * ANTON GIULIO BARRILI.
+   *
+   * @see https://gutenberg.org/cache/epub/29636/pg29636.txt
+   *
+   * @var string
+   */
+  protected static $baseText = <<<'EOT'
 I.
 
 
@@ -1718,7 +1718,7 @@ desiderare, nei suoi sogni di paternità, il vostro umilissimo servo.
 FINE.
 EOT;
 
-    /*
+  /*
     End of Project Gutenberg's Una notte bizzarra, by Anton Giulio Barrili
 
     *** END OF THIS PROJECT GUTENBERG EBOOK UNA NOTTE BIZZARRA ***

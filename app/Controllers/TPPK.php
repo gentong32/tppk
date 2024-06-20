@@ -413,6 +413,7 @@ class TPPK extends BaseController
 
     public function anggota2($kodewilayah)
     {
+        $dummy = false;
         $namakota = "";
         $namaprovinsi = "";
         if (intval(substr($kodewilayah, 2) == 0)) {
@@ -421,6 +422,7 @@ class TPPK extends BaseController
             if ($resultnamapropinsi) {
                 $namaprovinsi = $resultnamapropinsi->nama;
             }
+            $level = 1;
         } else {
             $getnamapropinsi = $this->model_tppk->getNamaPilihan(substr($kodewilayah, 0, 2) . "0000");
             $resultnamapropinsi = $getnamapropinsi->getRow();
@@ -431,6 +433,19 @@ class TPPK extends BaseController
             $gnamakota = $getnamakota->getRow();
             if ($gnamakota)
                 $namakota = $gnamakota->nama;
+            $level = 2;
+        }
+
+        if ($kodewilayah == "880000") {
+            $namaprovinsi = "Provinsi ABC";
+            $namakota = "";
+            $level = 1;
+            $dummy = true;
+        } else if ($kodewilayah == "880100") {
+            $namaprovinsi = "Provinsi ABC";
+            $namakota = "Kota BCD";
+            $level = 2;
+            $dummy = true;
         }
 
         if ($namaprovinsi == "") {
@@ -441,11 +456,6 @@ class TPPK extends BaseController
         $data['namaprovinsi'] = $namaprovinsi;
         $data['namakota'] = $namakota;
         $data['jumlah_kab'] = 4;
-        if (intval(substr($kodewilayah, 2) == 0))
-            $level = 1;
-        else
-            $level = 2;
-
         $data['level'] = $level;
 
         $getsk = $this->model_tppk->getSKProv($kodewilayah);
@@ -473,6 +483,9 @@ class TPPK extends BaseController
         }
         $data['daftaranggota'] = $dafanggota;
         $data['sudah_upload'] = false;
+
+        if ($dummy)
+            $data['sudah_upload'] = true;
         // echo $getsk['sk_id'];
         // echo var_dump($dafanggota);
 
@@ -507,8 +520,12 @@ class TPPK extends BaseController
         $data['linknomorsk'] = $linknomorsk;
         $data['kodewilayah'] = $kodewilayah;
         $data['adasatgas'] = $adasatgas;
+        $data['jenisinstansiid'] = session()->get('jenis_instansi_id');
 
-        return view('tppk/daftaranggota2', $data);
+        if (session()->get('sebagai') == "operatorsatgas" && session()->get('peran') == "ketua")
+            return view('tppk/daftaranggota2_opsatgas', $data);
+        else
+            return view('tppk/daftaranggota2', $data);
     }
 
     public function getBentukKementerian($jenjang = null, $opsi = null)

@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 /*
  * This file is part of PHPUnit.
  *
@@ -7,6 +9,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace PHPUnit\Runner;
 
 use const DEBUG_BACKTRACE_IGNORE_ARGS;
@@ -514,8 +517,10 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
             if (isset($sections[$section . '_EXTERNAL'])) {
                 $externalFilename = trim($sections[$section . '_EXTERNAL']);
 
-                if (!is_file($testDirectory . $externalFilename) ||
-                    !is_readable($testDirectory . $externalFilename)) {
+                if (
+                    !is_file($testDirectory . $externalFilename) ||
+                    !is_readable($testDirectory . $externalFilename)
+                ) {
                     throw new Exception(
                         sprintf(
                             'Could not load --%s-- %s for PHPT file',

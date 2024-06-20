@@ -330,7 +330,7 @@ class ZipStreamTest extends TestCase
     {
         $this->expectException(ResourceActionException::class);
 
-        [,$stream] = $this->getTmpFileStream();
+        [, $stream] = $this->getTmpFileStream();
 
         $zip = new ZipStream(
             outputStream: $stream,
@@ -377,7 +377,8 @@ class ZipStreamTest extends TestCase
             defaultCompressionMethod: CompressionMethod::STORE,
         );
 
-        $streamUnseekable = StreamWrapper::getResource(new class ('test') extends EndlessCycleStream {
+        $streamUnseekable = StreamWrapper::getResource(new class('test') extends EndlessCycleStream
+        {
             public function isSeekable(): bool
             {
                 return false;
@@ -1035,7 +1036,8 @@ class ZipStreamTest extends TestCase
                 outputStream: $stream,
             );
 
-            $zip->addFileFromPsr7Stream('sample.txt', new class () implements StreamInterface {
+            $zip->addFileFromPsr7Stream('sample.txt', new class() implements StreamInterface
+            {
                 public $pos = 0;
 
                 public function __toString(): string

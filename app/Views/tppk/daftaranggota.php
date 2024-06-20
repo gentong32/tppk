@@ -322,6 +322,7 @@ $npsnuser = session()->get('npsn_user');
             <?php if ($jenisinstansiid == 1) : ?>
                 <th>Telp</th>
             <?php endif ?>
+            <th>Admin TPPK</th>
         </thead>
 
         <tbody>
@@ -337,6 +338,7 @@ $npsnuser = session()->get('npsn_user');
                     <?php if ($jenisinstansiid == 1) : ?>
                         <td><?= $row['no_kontak'] ?></td>
                     <?php endif ?>
+                    <td style="text-align:center"><?= (($row['ptk_id'] == $row['ptk_id_ketua'] && $row['ptk_id_ketua'] != "" && $row['ptk_id_ketua'] != NULL) || ($row['ptk_id'] == $row['ptk_id_anggota_1'] && $row['ptk_id_anggota_1'] != "" && $row['ptk_id_anggota_1'] != NULL)) ? "*" : "" ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
@@ -401,7 +403,7 @@ $npsnuser = session()->get('npsn_user');
                 </div>
             </div>
             <div style="margin-top: 5px;">
-                <input class="btn_ijo" onclick="return cekinput();" type="submit" value="Unggah File SK">
+                <!-- <input class="btn_ijo" onclick="return cekinput();" type="submit" value="Unggah File SK"> -->
             </div>
 
         </form>

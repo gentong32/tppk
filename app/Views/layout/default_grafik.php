@@ -9,7 +9,8 @@
     <link rel="icon" type="image/png" href="<?= base_url() ?>gambar/logotut.png">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/my_style.css?v6.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <?= $this->renderSection('header') ?>
 
     <style>
@@ -165,12 +166,16 @@
 $userlogin = session()->get('loggedIn');
 $jenisinstansiid = session()->get('jenis_instansi_id');
 $npsn = session()->get('npsn_user');
+$wilayah = session()->get('wilayah_akses');
+$sebagai = session()->get('sebagai');
 $asallogin = session()->get('asallogin');
 $statustppk = session()->get('statustppk');
-
+$namastatus = "";
 if ($asallogin == "internal") {
     if ($jenisinstansiid == 5)
         $namastatus = "Akun Operator Sekolah";
+    else if ($sebagai == "operatorsatgas")
+        $namastatus = "Akun Anggota Satgas";
     else if ($jenisinstansiid == 2)
         $namastatus = "Akun Dinas Provinsi";
     else if ($jenisinstansiid == 4)
@@ -183,6 +188,14 @@ if ($asallogin == "internal") {
         $namastatus = "Akun Pusat";
     else if ($jenisinstansiid == 99)
         $namastatus = "User Umum";
+} else if ($asallogin == "op_satgas") {
+    $tingkat = "Provinsi";
+    $calon = "";
+    if (substr($wilayah, 2, 2) == "00")
+        $tingkat = "Kab./Kota";
+    if ($statustppk == 0)
+        $calon = "Calon";
+    $namastatus = $calon . " Op. Satgas " . $tingkat;
 } else {
     if ($statustppk == "ketua" || $statustppk == "koordinator")
         $namastatus = "Ketua TPPK";
@@ -199,7 +212,7 @@ if ($asallogin == "internal") {
             <ul>
                 <?php if (!$userlogin) : ?>
                     <li id="ilogin" class="dropdown">
-                        <a href="https://sso.data.kemdikbud.go.id/sys/login?appkey=<?= appid; ?>" class="dropbtn">Masuk</a>
+                        <a href="#" onclick="showmasuk();">Masuk</a>
                     </li>
                 <?php endif; ?>
                 <?php if ($userlogin) : ?>
@@ -210,43 +223,25 @@ if ($asallogin == "internal") {
     </nav>
     <nav class="navbar">
         <div class="navbar-nav">
-            <ul>
+            <ul style="list-style-type: none;">
                 <li><a href="<?php echo base_url(); ?>home">Beranda</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard">Dasbor</a></li>
-                <li><a href="<?php echo base_url(); ?>tppk/wilayah">TPPK dan Satuan Tugas</a></li>
+                <li><a href="<?php echo base_url(); ?>tppk/wilayah">TPPK dan Satgas</a></li>
                 <li><a href="<?php echo base_url(); ?>residu">Residu</a></li>
-                <?php if ($userlogin && $asallogin == "eksternal") { ?>
+                <?php if ($userlogin && ($statustppk == "ketua" || $statustppk == "anggota1")) { ?>
                     <li><a href="<?php echo base_url(); ?>inputdata/daftar_laporan">Pelaporan</a></li>
                 <?php } ?>
-                <?php if ($userlogin && ($jenisinstansiid == "99" || $jenisinstansiid == "1" || $jenisinstansiid == "2" || $jenisinstansiid == "3")) { ?>
+                <?php if ($userlogin && ($asallogin == "internal" && ($jenisinstansiid == "99" || $jenisinstansiid == "1" || $jenisinstansiid == "2" || $jenisinstansiid == "3") || ($sebagai == "operatorsatgas" && $statustppk == 2))) { ?>
                     <li><a href="<?php echo base_url(); ?>status_laporan_kekerasan">Pelaporan</a></li>
+                <?php } else if ($sebagai == "operatorsatgas" && $statustppk == 0) {
+                ?>
+                    <li><a href="<?php echo base_url(); ?>status_approval">Status Approval</a></li>
                 <?php } ?>
-                <li><a href="<?php echo base_url(); ?>informasi">Informasi</a>
-                </li>
+                <li><a href="<?php echo base_url(); ?>informasi">Informasi</a></li>
             </ul>
 
         </div>
     </nav>
-
-    <div class="navbar-kanan">
-        <button onclick="showmenu();" id="xmenu"><i data-feather="menu"></i></button>
-    </div>
-
-    <div class="submobile" id="imenu" style="display: none;">
-        <ul style="list-style-type: none;">
-            <li><a href="<?php echo base_url(); ?>home">Beranda</a></li>
-            <li><a href="<?php echo base_url(); ?>dashboard">Dasbor</a></li>
-            <li><a href="<?php echo base_url(); ?>tppk/wilayah">TPPK dan Satgas</a></li>
-            <li><a href="<?php echo base_url(); ?>residu">Residu</a></li>
-            <?php if ($userlogin && $asallogin == "eksternal") { ?>
-                <li><a href="<?php echo base_url(); ?>inputdata/daftar_laporan">Pelaporan</a></li>
-            <?php } ?>
-            <?php if ($userlogin && ($jenisinstansiid == "99" || $jenisinstansiid == "1" || $jenisinstansiid == "2" || $jenisinstansiid == "3")) { ?>
-                <li><a href="<?php echo base_url(); ?>status_laporan_kekerasan">Pelaporan</a></li>
-            <?php } ?>
-            <li><a href="<?php echo base_url(); ?>informasi">Informasi</a></li>
-        </ul>
-    </div>
 
     <div class="nav-search" id="tbsearch" onclick="tampilsearch()">
         <span>Cari Sekolah/NPSN <i class="fa fa-search"></i></span>
@@ -257,6 +252,29 @@ if ($asallogin == "internal") {
             <button onclick="yukcari()" class="search-ok">Cari</button>
         </label>
         <span onclick="tutupsearch()" class="search-close">&times;</span>
+    </div>
+
+    <div class="navbar-kanan">
+        <button onclick="showmenu()" id="xmenu">&#9776;</button>
+    </div>
+
+    <div class="submobile" id="imenu" style="display: none;">
+        <ul style="list-style-type: none;">
+            <li><a href="<?php echo base_url(); ?>home">Beranda</a></li>
+            <li><a href="<?php echo base_url(); ?>dashboard">Dasbor</a></li>
+            <li><a href="<?php echo base_url(); ?>tppk/wilayah">TPPK dan Satgas</a></li>
+            <li><a href="<?php echo base_url(); ?>residu">Residu</a></li>
+            <?php if ($userlogin && ($statustppk == "ketua" || $statustppk == "anggota1")) { ?>
+                <li><a href="<?php echo base_url(); ?>inputdata/daftar_laporan">Pelaporan</a></li>
+            <?php } ?>
+            <?php if ($userlogin && ($jenisinstansiid == "99" || $jenisinstansiid == "1" || $jenisinstansiid == "2" || $jenisinstansiid == "3" || ($sebagai == "operatorsatgas" && $statustppk == 2))) { ?>
+                <li><a href="<?php echo base_url(); ?>status_laporan_kekerasan">Pelaporan</a></li>
+            <?php } else if ($sebagai == "operatorsatgas" && $statustppk == 0) {
+            ?>
+                <li><a href="<?php echo base_url(); ?>status_approval">Status Approval</a></li>
+            <?php } ?>
+            <li><a href="<?php echo base_url(); ?>informasi">Informasi</a></li>
+        </ul>
     </div>
 
     <div class="submobile2" id="imenu2" style="display: none;">
@@ -271,7 +289,7 @@ if ($asallogin == "internal") {
             <?php if ($jenisinstansiid == 5) { ?>
                 <td><a href="<?php echo base_url() . 'tppk/anggota/' . $npsn ?>">Anggota</a></td>
             <?php } else { ?>
-                <?php if ($jenisinstansiid != 1 && $jenisinstansiid != 4 && $jenisinstansiid != 18 && $jenisinstansiid != 99) { ?>
+                <?php if ($jenisinstansiid != 1 && $jenisinstansiid != 4 && $jenisinstansiid != 18 && $jenisinstansiid != 99 && $sebagai != "operatorsatgas") { ?>
                     <td><a href="<?php echo base_url(); ?>inputdata">Input Anggota</a></td>
                 <?php } ?>
             <?php } ?>
@@ -282,18 +300,29 @@ if ($asallogin == "internal") {
                         <a href="<?php echo base_url(); ?>inputdata/daftar_skbaru">Approve SK</a>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <a href="<?php echo base_url(); ?>statistik_user">Statistik User</a>
+                    </td>
+                </tr>
             <?php } ?>
             <?php if ($statustppk == "ketua" || $statustppk == "koordinator") { ?>
                 <tr>
                     <td>
-                        <a href="<?php echo base_url(); ?>inputdata/daftar_anggota_tppk">Pilih Petugas Pelaporan</a>
+                        <a href="<?php echo base_url(); ?>inputdata/daftar_anggota_tppk">Pilih Admin TPPK</a>
                     </td>
                 </tr>
             <?php } ?>
-            <?php if ($statustppk == "ketua" || $statustppk == "koordinator" || $statustppk == "anggota1") { ?>
+            <?php if ($statustppk == "ketua" || $statustppk == "koordinator" || $statustppk == "anggota1" || $statustppk == "anggotalain") { ?>
                 <tr>
                     <td>
                         <a href="<?php echo base_url(); ?>tppk/anggota/<?= $npsn ?>?k=0">Lihat TPPK</a>
+                    </td>
+                </tr>
+            <?php } else if ($sebagai == "operatorsatgas") { ?>
+                <tr>
+                    <td>
+                        <a href="<?php echo base_url(); ?>tppk/anggota2/<?= trim($wilayah) ?>?k=0">Lihat Satgas</a>
                     </td>
                 </tr>
             <?php } ?>
@@ -331,7 +360,7 @@ if ($asallogin == "internal") {
     <?= $this->renderSection('konten') ?>
 
     <script>
-        feather.replace()
+        // feather.replace()
     </script>
 
 </body>

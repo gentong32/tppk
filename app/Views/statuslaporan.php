@@ -59,8 +59,8 @@
     </div>
 
     <div style="margin-top: 0px;">
-        <?php if ($level > 0 && ($sebagai == "dinasprov" || $sebagai == "dinaskota")) : ?>
-            <button class="btn_ijo" onclick="laporan();">LAPORAN DINAS <?= ($sebagai == "dinasprov") ? "PROVINSI" : "KAB/KOTA" ?></button>
+        <?php if ($level > 0 && ($sebagai == "pusat" || $sebagai == "dinasprovinsi" || $sebagai == "dinaskota" || $sebagai == "operatorsatgas")) : ?>
+            <button class="btn_ijo" onclick="laporan();">LAPORAN DINAS <?= ($sebagai == "pusat" || $sebagai == "dinasprovinsi" || ($sebagai == "operatorsatgas" && $indeks == 2)) ? "PROVINSI" : "KAB/KOTA" ?></button>
         <?php endif ?>
         <div class=" informasi" style="margin-top: 15px;">
             <table class="table table-striped" id="example">
@@ -281,7 +281,7 @@
     }
 
     function laporan() {
-        window.open("<?= base_url('status_laporan_kekerasan?laporan=dinas') ?>", "_self");
+        window.open("<?= base_url('status_laporan_kekerasan') ?>?kode_wilayah=" + kode_wilayah + "&laporan=dinas", "_self");
     }
 </script>
 <?= $this->endSection(); ?>

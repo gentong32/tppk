@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of vfsStream.
  *
@@ -7,7 +8,9 @@
  *
  * @package  org\bovigo\vfs
  */
+
 namespace org\bovigo\vfs;
+
 /**
  * Test for org\bovigo\vfs\vfsStreamWrapper.
  */
@@ -36,7 +39,7 @@ class vfsStreamWrapperWithoutRootTestCase extends \BC_PHPUnit_Framework_TestCase
      *
      * @test
      */
-    public function canNotUnlink()
+    public function canNotunlink()
     {
         $this->assertFalse(@unlink(vfsStream::url('foo')));
     }

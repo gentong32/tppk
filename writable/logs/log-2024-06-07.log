@@ -1,0 +1,198 @@
+INFO - 2024-06-07 07:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 09:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 10:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 15:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 18:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 18:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 18:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 19:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 19:00:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 19:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 19:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:34:03 --> CSRF token verified.
+CRITICAL - 2024-06-07 20:34:04 --> Attempt to read property "password" on null
+in APPPATH\Controllers\Login.php on line 87.
+ 1 APPPATH\Controllers\Login.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "password" on null', 'APPPATH\\Controllers\\Login.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:35:15 --> CSRF token verified.
+CRITICAL - 2024-06-07 20:35:17 --> Attempt to read property "password" on null
+in APPPATH\Controllers\Login.php on line 87.
+ 1 APPPATH\Controllers\Login.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "password" on null', 'APPPATH\\Controllers\\Login.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:36:33 --> CSRF token verified.
+ERROR - 2024-06-07 20:36:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting date and/or time from character string.
+CRITICAL - 2024-06-07 20:36:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting date and/or time from character string.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\M_tppk.php(3288): CodeIgniter\Database\BaseConnection->query('SELECT TOP (1000) [satgas_id]
+                    ,sw.[sk_id]
+                    ,kode_wilayah
+                    ,[jenis_instansi_id]
+                    ,[nama]
+                    ,[nik]
+                    ,tanggal_lahir
+                    ,anggotake
+                    ,soft_delete
+                    ,status_sk
+                    ,operator_satgas
+                FROM [TPPK].[dbo].[satgas_wilayah] sw
+                LEFT JOIN [TPPK].[dbo].[sk_satgas_provinsi] sp ON sw.sk_id=sp.sk_id 
+                WHERE jenis_instansi_id = 20 
+                AND (soft_delete IS NULL OR soft_delete=0)
+                AND status_sk=2
+                AND (anggotake=1 OR operator_satgas=1)
+                AND email=:email: AND nik=:nik: AND tanggal_lahir = :tanggal_lahir:', [...])
+ 2 APPPATH\Controllers\Login.php(125): App\Models\M_tppk->cekanggotasatgas('singah.katingan@gmail.com', '6206026404740001')
+ 3 APPPATH\Controllers\Login.php(112): App\Controllers\Login->cekloginbynik('singah.katingan@gmail.com', '6206026404740001')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:40:15 --> CSRF token verified.
+CRITICAL - 2024-06-07 20:40:16 --> Class "App\Models\DateTime" not found
+in APPPATH\Models\M_tppk.php on line 3265.
+ 1 APPPATH\Controllers\Login.php(125): App\Models\M_tppk->cekanggotasatgas('singah.katingan@gmail.com', '6206026404740001')
+ 2 APPPATH\Controllers\Login.php(112): App\Controllers\Login->cekloginbynik('singah.katingan@gmail.com', '6206026404740001')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:42:02 --> CSRF token verified.
+CRITICAL - 2024-06-07 20:42:03 --> Call to a member function format() on bool
+in APPPATH\Models\M_tppk.php on line 3266.
+ 1 APPPATH\Controllers\Login.php(125): App\Models\M_tppk->cekanggotasatgas('singah.katingan@gmail.com', '6206026404740001')
+ 2 APPPATH\Controllers\Login.php(112): App\Controllers\Login->cekloginbynik('singah.katingan@gmail.com', '6206026404740001')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:43:38 --> CSRF token verified.
+CRITICAL - 2024-06-07 20:43:38 --> Call to a member function format() on bool
+in APPPATH\Models\M_tppk.php on line 3274.
+ 1 APPPATH\Controllers\Login.php(125): App\Models\M_tppk->cekanggotasatgas('singah.katingan@gmail.com', '6206026404740001')
+ 2 APPPATH\Controllers\Login.php(112): App\Controllers\Login->cekloginbynik('singah.katingan@gmail.com', '6206026404740001')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:44:22 --> CSRF token verified.
+CRITICAL - 2024-06-07 20:44:23 --> Call to a member function format() on bool
+in APPPATH\Models\M_tppk.php on line 3276.
+ 1 APPPATH\Controllers\Login.php(125): App\Models\M_tppk->cekanggotasatgas('singah.katingan@gmail.com', '6206026404740001')
+ 2 APPPATH\Controllers\Login.php(112): App\Controllers\Login->cekloginbynik('singah.katingan@gmail.com', '6206026404740001')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:44:29 --> CSRF token verified.
+CRITICAL - 2024-06-07 20:44:30 --> Call to a member function format() on bool
+in APPPATH\Models\M_tppk.php on line 3276.
+ 1 APPPATH\Controllers\Login.php(125): App\Models\M_tppk->cekanggotasatgas('singah.katingan@gmail.com', '6206026404740001')
+ 2 APPPATH\Controllers\Login.php(112): App\Controllers\Login->cekloginbynik('singah.katingan@gmail.com', '6206026404740001')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:45:28 --> CSRF token verified.
+CRITICAL - 2024-06-07 20:45:29 --> Call to a member function format() on bool
+in APPPATH\Models\M_tppk.php on line 3276.
+ 1 APPPATH\Controllers\Login.php(125): App\Models\M_tppk->cekanggotasatgas('singah.katingan@gmail.com', '62060264047400011974-04-24')
+ 2 APPPATH\Controllers\Login.php(112): App\Controllers\Login->cekloginbynik('singah.katingan@gmail.com', '62060264047400011974-04-24')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:46:16 --> CSRF token verified.
+INFO - 2024-06-07 20:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:46:31 --> CSRF token verified.
+CRITICAL - 2024-06-07 20:46:32 --> Call to a member function format() on bool
+in APPPATH\Models\M_tppk.php on line 3276.
+ 1 APPPATH\Controllers\Login.php(125): App\Models\M_tppk->cekanggotasatgas('singah.katingan@gmail.com', '620602640474000135353')
+ 2 APPPATH\Controllers\Login.php(112): App\Controllers\Login->cekloginbynik('singah.katingan@gmail.com', '620602640474000135353')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 20:47:40 --> CSRF token verified.
+INFO - 2024-06-07 20:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:48:06 --> CSRF token verified.
+INFO - 2024-06-07 20:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:48:26 --> CSRF token verified.
+INFO - 2024-06-07 20:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:51:07 --> CSRF token verified.
+INFO - 2024-06-07 20:51:07 --> CSRF token verified.
+INFO - 2024-06-07 20:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:51:49 --> CSRF token verified.
+INFO - 2024-06-07 20:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:52:16 --> CSRF token verified.
+INFO - 2024-06-07 20:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 20:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:32:45 --> CSRF token verified.
+CRITICAL - 2024-06-07 21:32:45 --> Attempt to read property "anggotake" on array
+in APPPATH\Controllers\Login.php on line 126.
+ 1 APPPATH\Controllers\Login.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "anggotake" on array', 'APPPATH\\Controllers\\Login.php', 126)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->loginUser()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-07 21:34:41 --> CSRF token verified.
+INFO - 2024-06-07 21:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 21:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of vfsStream.
  *
@@ -7,7 +8,9 @@
  *
  * @package  org\bovigo\vfs
  */
+
 namespace org\bovigo\vfs;
+
 require_once __DIR__ . '/vfsStreamWrapperBaseTestCase.php';
 /**
  * Test for org\bovigo\vfs\vfsStreamWrapper.
@@ -501,8 +504,9 @@ class vfsStreamWrapperTestCase extends vfsStreamWrapperBaseTestCase
     public function statAndFstatReturnSameResult()
     {
         $fp = fopen($this->baz2URL, 'r');
-        $this->assertEquals(stat($this->baz2URL),
-                            fstat($fp)
+        $this->assertEquals(
+            stat($this->baz2URL),
+            fstat($fp)
         );
         fclose($fp);
     }
@@ -514,34 +518,36 @@ class vfsStreamWrapperTestCase extends vfsStreamWrapperBaseTestCase
      */
     public function statReturnsFullDataForFiles()
     {
-        $this->assertEquals(array(0         => 0,
-                                  1         => 0,
-                                  2         => 0100666,
-                                  3         => 0,
-                                  4         => vfsStream::getCurrentUser(),
-                                  5         => vfsStream::getCurrentGroup(),
-                                  6         => 0,
-                                  7         => 4,
-                                  8         => 400,
-                                  9         => 400,
-                                  10        => 400,
-                                  11        => -1,
-                                  12        => -1,
-                                  'dev'     => 0,
-                                  'ino'     => 0,
-                                  'mode'    => 0100666,
-                                  'nlink'   => 0,
-                                  'uid'     => vfsStream::getCurrentUser(),
-                                  'gid'     => vfsStream::getCurrentGroup(),
-                                  'rdev'    => 0,
-                                  'size'    => 4,
-                                  'atime'   => 400,
-                                  'mtime'   => 400,
-                                  'ctime'   => 400,
-                                  'blksize' => -1,
-                                  'blocks'  => -1
-                            ),
-                            stat($this->baz2URL)
+        $this->assertEquals(
+            array(
+                0         => 0,
+                1         => 0,
+                2         => 0100666,
+                3         => 0,
+                4         => vfsStream::getCurrentUser(),
+                5         => vfsStream::getCurrentGroup(),
+                6         => 0,
+                7         => 4,
+                8         => 400,
+                9         => 400,
+                10        => 400,
+                11        => -1,
+                12        => -1,
+                'dev'     => 0,
+                'ino'     => 0,
+                'mode'    => 0100666,
+                'nlink'   => 0,
+                'uid'     => vfsStream::getCurrentUser(),
+                'gid'     => vfsStream::getCurrentGroup(),
+                'rdev'    => 0,
+                'size'    => 4,
+                'atime'   => 400,
+                'mtime'   => 400,
+                'ctime'   => 400,
+                'blksize' => -1,
+                'blocks'  => -1
+            ),
+            stat($this->baz2URL)
         );
     }
 
@@ -550,34 +556,36 @@ class vfsStreamWrapperTestCase extends vfsStreamWrapperBaseTestCase
      */
     public function statReturnsFullDataForDirectories()
     {
-        $this->assertEquals(array(0         => 0,
-                                  1         => 0,
-                                  2         => 0040777,
-                                  3         => 0,
-                                  4         => vfsStream::getCurrentUser(),
-                                  5         => vfsStream::getCurrentGroup(),
-                                  6         => 0,
-                                  7         => 0,
-                                  8         => 100,
-                                  9         => 100,
-                                  10        => 100,
-                                  11        => -1,
-                                  12        => -1,
-                                  'dev'     => 0,
-                                  'ino'     => 0,
-                                  'mode'    => 0040777,
-                                  'nlink'   => 0,
-                                  'uid'     => vfsStream::getCurrentUser(),
-                                  'gid'     => vfsStream::getCurrentGroup(),
-                                  'rdev'    => 0,
-                                  'size'    => 0,
-                                  'atime'   => 100,
-                                  'mtime'   => 100,
-                                  'ctime'   => 100,
-                                  'blksize' => -1,
-                                  'blocks'  => -1
-                            ),
-                            stat($this->fooURL)
+        $this->assertEquals(
+            array(
+                0         => 0,
+                1         => 0,
+                2         => 0040777,
+                3         => 0,
+                4         => vfsStream::getCurrentUser(),
+                5         => vfsStream::getCurrentGroup(),
+                6         => 0,
+                7         => 0,
+                8         => 100,
+                9         => 100,
+                10        => 100,
+                11        => -1,
+                12        => -1,
+                'dev'     => 0,
+                'ino'     => 0,
+                'mode'    => 0040777,
+                'nlink'   => 0,
+                'uid'     => vfsStream::getCurrentUser(),
+                'gid'     => vfsStream::getCurrentGroup(),
+                'rdev'    => 0,
+                'size'    => 0,
+                'atime'   => 100,
+                'mtime'   => 100,
+                'ctime'   => 100,
+                'blksize' => -1,
+                'blocks'  => -1
+            ),
+            stat($this->fooURL)
         );
     }
 
@@ -586,34 +594,36 @@ class vfsStreamWrapperTestCase extends vfsStreamWrapperBaseTestCase
      */
     public function statReturnsFullDataForDirectoriesWithDot()
     {
-        $this->assertEquals(array(0         => 0,
-                                  1         => 0,
-                                  2         => 0040777,
-                                  3         => 0,
-                                  4         => vfsStream::getCurrentUser(),
-                                  5         => vfsStream::getCurrentGroup(),
-                                  6         => 0,
-                                  7         => 0,
-                                  8         => 100,
-                                  9         => 100,
-                                  10        => 100,
-                                  11        => -1,
-                                  12        => -1,
-                                  'dev'     => 0,
-                                  'ino'     => 0,
-                                  'mode'    => 0040777,
-                                  'nlink'   => 0,
-                                  'uid'     => vfsStream::getCurrentUser(),
-                                  'gid'     => vfsStream::getCurrentGroup(),
-                                  'rdev'    => 0,
-                                  'size'    => 0,
-                                  'atime'   => 100,
-                                  'mtime'   => 100,
-                                  'ctime'   => 100,
-                                  'blksize' => -1,
-                                  'blocks'  => -1
-                            ),
-                            stat($this->fooURL . '/.')
+        $this->assertEquals(
+            array(
+                0         => 0,
+                1         => 0,
+                2         => 0040777,
+                3         => 0,
+                4         => vfsStream::getCurrentUser(),
+                5         => vfsStream::getCurrentGroup(),
+                6         => 0,
+                7         => 0,
+                8         => 100,
+                9         => 100,
+                10        => 100,
+                11        => -1,
+                12        => -1,
+                'dev'     => 0,
+                'ino'     => 0,
+                'mode'    => 0040777,
+                'nlink'   => 0,
+                'uid'     => vfsStream::getCurrentUser(),
+                'gid'     => vfsStream::getCurrentGroup(),
+                'rdev'    => 0,
+                'size'    => 0,
+                'atime'   => 100,
+                'mtime'   => 100,
+                'ctime'   => 100,
+                'blksize' => -1,
+                'blocks'  => -1
+            ),
+            stat($this->fooURL . '/.')
         );
     }
 
@@ -661,8 +671,10 @@ class vfsStreamWrapperTestCase extends vfsStreamWrapperBaseTestCase
         $handle = fopen($this->baz1URL, "r+");
         $this->assertTrue(ftruncate($handle, 25));
         $this->assertEquals(25, filesize($this->baz1URL));
-        $this->assertEquals("baz 1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0",
-                            file_get_contents($this->baz1URL));
+        $this->assertEquals(
+            "baz 1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0",
+            file_get_contents($this->baz1URL)
+        );
         fclose($handle);
     }
 

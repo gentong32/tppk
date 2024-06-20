@@ -15,7 +15,7 @@
             $jml_satgas = 0;
             $jml_satgas_valid = 0;
             foreach ($datanas2 as $key => $value) :
-                if ($value['jml_satgas_kab_kota'] > 0) {
+                if ($value['jml_anggota_satgas'] > 0) {
                     $jml_satgas++;
                 }
                 if ($value['jml_kab_kota_valid'] != null) {
@@ -58,7 +58,7 @@
                             }
                         } ?>
                     </td>
-                    <td><?= ($value['jml_satgas_kab_kota'] == 0) ? '-' : '&check;' ?></td>
+                    <td><?= ($value['jml_anggota_satgas'] == 0) ? '-' : '&check;' ?></td>
                     <td align="center">
                         <div class="residu <?= ($value['jml_kab_kota_valid'] == null) ? 'merah' : 'hijau' ?>"><?= ($value['jml_kab_kota_valid'] == null) ? ' ' : '' ?></div>
                     </td>

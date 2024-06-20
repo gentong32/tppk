@@ -594,6 +594,7 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
 <?= $this->section('scriptfooter') ?>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script>
+    var csrfToken;
     var sekolahid;
     var jabatan = [];
     var counter = 5;
@@ -868,6 +869,8 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
         var datatglahir = document.getElementById('itglahir' + idx).value;
         var datasex = document.getElementById('isex' + idx).value;
         var sexnya = "Laki-Laki";
+        csrfToken = <?= csrf_hash() ?>;
+
         if (datasex == 2)
             sexnya = "Perempuan";
 
@@ -877,24 +880,29 @@ for ($a = $jmlanggota + 1; $a <= 28; $a++) {
         }
 
         $.ajax({
-            type: 'GET',
+            type: 'POST',
             data: {
                 nik: datanik,
                 nama: datanama,
                 tglahir: datatglahir,
-                sex: sexnya
+                sex: sexnya,
+                csrf_test_name: csrfToken,
             },
             dataType: 'json',
             cache: false,
             url: '<?php echo base_url() ?>inputdata/padankandata',
             success: function(result) {
-                var jsonData = JSON.parse(result);
+                // var jsonData = JSON.parse(result);
+                var jsonData = (result);
 
                 // Mengambil nilai NIK
                 var nikValue = jsonData.NIK;
                 var namaValue = jsonData.NAMA_LGKP;
                 var tglahirValue = jsonData.TGL_LHR;
                 var sexValue = jsonData.JENIS_KLMIN;
+
+                csrfToken = jsonData.csrf;
+
                 // alert("NIK:" + nikValue + ", NAMA:" + namaValue + ", TGL_LAHIR:" + tglahirValue + ", JNS KELAMIN:" + sexValue);
                 document.getElementById('idukcapil' + idx).value = "NIK:" + nikValue + ", NAMA:" + namaValue + ", TGL_LAHIR:" + tglahirValue + ", JNS_KELAMIN:" + sexValue;
                 return false;

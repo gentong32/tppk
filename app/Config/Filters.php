@@ -21,6 +21,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'rolefilter' => \App\Filters\RoleFilter::class,
         // 'auth'          => \App\Filters\AuthFilter::class,
     ];
 
@@ -32,6 +33,8 @@ class Filters extends BaseConfig
         'before' => [
             // 'honeypot',
             'csrf',
+            'rolefilter' => ['except' => ['ubah_password', 'add_operator_satgas_password', 'login/logout']]
+
             // 'invalidchars',
         ],
         'after' => [

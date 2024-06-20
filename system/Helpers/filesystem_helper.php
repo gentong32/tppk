@@ -11,7 +11,7 @@
 
 // CodeIgniter File System Helpers
 
-if (! function_exists('directory_map')) {
+if (!function_exists('directory_map')) {
     /**
      * Create a Directory Map
      *
@@ -59,7 +59,7 @@ if (! function_exists('directory_map')) {
     }
 }
 
-if (! function_exists('directory_mirror')) {
+if (!function_exists('directory_mirror')) {
     /**
      * Recursively copies the files and directories of the origin directory
      * into the target directory, i.e. "mirror" its contents.
@@ -70,11 +70,11 @@ if (! function_exists('directory_mirror')) {
      */
     function directory_mirror(string $originDir, string $targetDir, bool $overwrite = true): void
     {
-        if (! is_dir($originDir = rtrim($originDir, '\\/'))) {
+        if (!is_dir($originDir = rtrim($originDir, '\\/'))) {
             throw new InvalidArgumentException(sprintf('The origin directory "%s" was not found.', $originDir));
         }
 
-        if (! is_dir($targetDir = rtrim($targetDir, '\\/'))) {
+        if (!is_dir($targetDir = rtrim($targetDir, '\\/'))) {
             @mkdir($targetDir, 0755, true);
         }
 
@@ -91,17 +91,17 @@ if (! function_exists('directory_mirror')) {
             $target = $targetDir . substr($origin, $dirLen);
 
             if ($file->isDir()) {
-                if (! is_dir($target)) {
+                if (!is_dir($target)) {
                     mkdir($target, 0755);
                 }
-            } elseif (! is_file($target) || ($overwrite && is_file($target))) {
+            } elseif (!is_file($target) || ($overwrite && is_file($target))) {
                 copy($origin, $target);
             }
         }
     }
 }
 
-if (! function_exists('write_file')) {
+if (!function_exists('write_file')) {
     /**
      * Write File
      *
@@ -135,7 +135,7 @@ if (! function_exists('write_file')) {
     }
 }
 
-if (! function_exists('delete_files')) {
+if (!function_exists('delete_files')) {
     /**
      * Delete Files
      *
@@ -160,18 +160,18 @@ if (! function_exists('delete_files')) {
                 RecursiveIteratorIterator::CHILD_FIRST
             ) as $object) {
                 $filename = $object->getFilename();
-                if (! $hidden && $filename[0] === '.') {
+                if (!$hidden && $filename[0] === '.') {
                     continue;
                 }
 
-                if (! $htdocs || ! preg_match('/^(\.htaccess|index\.(html|htm|php)|web\.config)$/i', $filename)) {
+                if (!$htdocs || !preg_match('/^(\.htaccess|index\.(html|htm|php)|web\.config)$/i', $filename)) {
                     $isDir = $object->isDir();
                     if ($isDir && $delDir) {
                         rmdir($object->getPathname());
 
                         continue;
                     }
-                    if (! $isDir) {
+                    if (!$isDir) {
                         unlink($object->getPathname());
                     }
                 }
@@ -184,7 +184,7 @@ if (! function_exists('delete_files')) {
     }
 }
 
-if (! function_exists('get_filenames')) {
+if (!function_exists('get_filenames')) {
     /**
      * Get Filenames
      *
@@ -213,11 +213,11 @@ if (! function_exists('get_filenames')) {
                 RecursiveIteratorIterator::SELF_FIRST
             ) as $name => $object) {
                 $basename = pathinfo($name, PATHINFO_BASENAME);
-                if (! $hidden && $basename[0] === '.') {
+                if (!$hidden && $basename[0] === '.') {
                     continue;
                 }
 
-                if ($includeDir || ! $object->isDir()) {
+                if ($includeDir || !$object->isDir()) {
                     if ($includePath === false) {
                         $files[] = $basename;
                     } elseif ($includePath === null) {
@@ -237,7 +237,7 @@ if (! function_exists('get_filenames')) {
     }
 }
 
-if (! function_exists('get_dir_file_info')) {
+if (!function_exists('get_dir_file_info')) {
     /**
      * Get Directory File Information
      *
@@ -283,7 +283,7 @@ if (! function_exists('get_dir_file_info')) {
     }
 }
 
-if (! function_exists('get_file_info')) {
+if (!function_exists('get_file_info')) {
     /**
      * Get File Info
      *
@@ -299,7 +299,7 @@ if (! function_exists('get_file_info')) {
      */
     function get_file_info(string $file, $returnedValues = ['name', 'server_path', 'size', 'date'])
     {
-        if (! is_file($file)) {
+        if (!is_file($file)) {
             return null;
         }
 
@@ -349,7 +349,7 @@ if (! function_exists('get_file_info')) {
     }
 }
 
-if (! function_exists('symbolic_permissions')) {
+if (!function_exists('symbolic_permissions')) {
     /**
      * Symbolic Permissions
      *
@@ -380,24 +380,24 @@ if (! function_exists('symbolic_permissions')) {
 
         // Owner
         $symbolic .= (($perms & 0x0100) ? 'r' : '-')
-                . (($perms & 0x0080) ? 'w' : '-')
-                . (($perms & 0x0040) ? (($perms & 0x0800) ? 's' : 'x') : (($perms & 0x0800) ? 'S' : '-'));
+            . (($perms & 0x0080) ? 'w' : '-')
+            . (($perms & 0x0040) ? (($perms & 0x0800) ? 's' : 'x') : (($perms & 0x0800) ? 'S' : '-'));
 
         // Group
         $symbolic .= (($perms & 0x0020) ? 'r' : '-')
-                . (($perms & 0x0010) ? 'w' : '-')
-                . (($perms & 0x0008) ? (($perms & 0x0400) ? 's' : 'x') : (($perms & 0x0400) ? 'S' : '-'));
+            . (($perms & 0x0010) ? 'w' : '-')
+            . (($perms & 0x0008) ? (($perms & 0x0400) ? 's' : 'x') : (($perms & 0x0400) ? 'S' : '-'));
 
         // World
         $symbolic .= (($perms & 0x0004) ? 'r' : '-')
-                . (($perms & 0x0002) ? 'w' : '-')
-                . (($perms & 0x0001) ? (($perms & 0x0200) ? 't' : 'x') : (($perms & 0x0200) ? 'T' : '-'));
+            . (($perms & 0x0002) ? 'w' : '-')
+            . (($perms & 0x0001) ? (($perms & 0x0200) ? 't' : 'x') : (($perms & 0x0200) ? 'T' : '-'));
 
         return $symbolic;
     }
 }
 
-if (! function_exists('octal_permissions')) {
+if (!function_exists('octal_permissions')) {
     /**
      * Octal Permissions
      *
@@ -412,7 +412,7 @@ if (! function_exists('octal_permissions')) {
     }
 }
 
-if (! function_exists('same_file')) {
+if (!function_exists('same_file')) {
     /**
      * Checks if two files both exist and have identical hashes
      *
@@ -424,7 +424,7 @@ if (! function_exists('same_file')) {
     }
 }
 
-if (! function_exists('set_realpath')) {
+if (!function_exists('set_realpath')) {
     /**
      * Set Realpath
      *
@@ -440,7 +440,7 @@ if (! function_exists('set_realpath')) {
         // Resolve the path
         if (realpath($path) !== false) {
             $path = realpath($path);
-        } elseif ($checkExistence && ! is_dir($path) && ! is_file($path)) {
+        } elseif ($checkExistence && !is_dir($path) && !is_file($path)) {
             throw new InvalidArgumentException('Not a valid path: ' . $path);
         }
 

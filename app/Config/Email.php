@@ -6,8 +6,8 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
-    public string $fromEmail  = '';
-    public string $fromName   = '';
+    public string $fromEmail  = 'hardianto@kemdikbud.go.id';
+    public string $fromName   = 'hardianto@kemdikbud.go.id';
     public string $recipients = '';
 
     /**
@@ -18,32 +18,12 @@ class Email extends BaseConfig
     /**
      * The mail sending protocol: mail, sendmail, smtp
      */
-    public string $protocol = 'mail';
 
-    /**
-     * The server path to Sendmail.
-     */
-    public string $mailPath = '/usr/sbin/sendmail';
-
-    /**
-     * SMTP Server Address
-     */
-    public string $SMTPHost = '';
 
     /**
      * SMTP Username
      */
-    public string $SMTPUser = '';
 
-    /**
-     * SMTP Password
-     */
-    public string $SMTPPass = '';
-
-    /**
-     * SMTP Port
-     */
-    public int $SMTPPort = 25;
 
     /**
      * SMTP Timeout (in seconds)
@@ -55,30 +35,7 @@ class Email extends BaseConfig
      */
     public bool $SMTPKeepAlive = false;
 
-    /**
-     * SMTP Encryption. Either tls or ssl
-     */
-    public string $SMTPCrypto = 'tls';
-
-    /**
-     * Enable word-wrap
-     */
-    public bool $wordWrap = true;
-
-    /**
-     * Character count to wrap at
-     */
     public int $wrapChars = 76;
-
-    /**
-     * Type of mail, either 'text' or 'html'
-     */
-    public string $mailType = 'text';
-
-    /**
-     * Character set (utf-8, iso-8859-1, etc.)
-     */
-    public string $charset = 'UTF-8';
 
     /**
      * Whether to validate the email address
@@ -90,19 +47,6 @@ class Email extends BaseConfig
      */
     public int $priority = 3;
 
-    /**
-     * Newline character. (Use “\r\n” to comply with RFC 822)
-     */
-    public string $CRLF = "\r\n";
-
-    /**
-     * Newline character. (Use “\r\n” to comply with RFC 822)
-     */
-    public string $newline = "\r\n";
-
-    /**
-     * Enable BCC Batch Mode.
-     */
     public bool $BCCBatchMode = false;
 
     /**
@@ -113,5 +57,33 @@ class Email extends BaseConfig
     /**
      * Enable notify message from server
      */
-    public bool $DSN = false;
+    // public bool $DSN = true;
+    // public $SMTPHost = 'smtp.office365.com';
+    // public $SMTPUser = 'no-reply_tppk@outlook.co.id';
+    // public $SMTPPass = 'fD$xtYHktU4._xJ';
+    // public $SMTPPort = 587;
+    // public $SMTPCrypto = 'tls';
+    // public $protocol = 'smtp';
+    // public $mailPath = '/usr/sbin/sendmail';
+    // public $mailType = 'html';
+    // public $charset = 'utf-8';
+    // public $wordWrap = true;
+    // public $newline = "\r\n";
+    // public $CRLF = "\r\n";
+    // public $SMTPValidateCert = false;
+
+    public bool $DSN = true;
+    public $SMTPHost = 'mail.kemdikbud.go.id';
+    public $SMTPUser = 'hardianto@kemdikbud.go.id';
+    public $SMTPPass = 'lrzfolnif99';
+    public $SMTPPort = 465;
+    public $SMTPCrypto = 'ssl';
+    public $protocol = 'smtp';
+    public $mailPath = '/usr/sbin/sendmail';
+    public $mailType = 'html';
+    public $charset = 'utf-8';
+    public $wordWrap = true;
+    public $newline = "\r\n";
+    public $CRLF = "\r\n";
+    public $SMTPValidateCert = false;
 }

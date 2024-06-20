@@ -88,8 +88,8 @@ class XdebugHandler
         }
 
         self::$name = strtoupper($envPrefix);
-        $this->envAllowXdebug = self::$name.self::SUFFIX_ALLOW;
-        $this->envOriginalInis = self::$name.self::SUFFIX_INIS;
+        $this->envAllowXdebug = self::$name . self::SUFFIX_ALLOW;
+        $this->envOriginalInis = self::$name . self::SUFFIX_INIS;
 
         self::setXdebugDetails();
         self::$inRestart = false;
@@ -137,7 +137,7 @@ class XdebugHandler
      */
     public function check(): void
     {
-        $this->notify(Status::CHECK, self::$xdebugVersion.'|'.self::$xdebugMode);
+        $this->notify(Status::CHECK, self::$xdebugVersion . '|' . self::$xdebugMode);
         $envArgs = explode('|', (string) getenv($this->envAllowXdebug));
 
         if (!((bool) $envArgs[0]) && $this->requiresRestart(self::$xdebugActive)) {
@@ -190,7 +190,7 @@ class XdebugHandler
     public static function getAllIniFiles(): array
     {
         if (self::$name !== null) {
-            $env = getenv(self::$name.self::SUFFIX_INIS);
+            $env = getenv(self::$name . self::SUFFIX_INIS);
 
             if (false !== $env) {
                 return explode(PATH_SEPARATOR, $env);
@@ -219,8 +219,10 @@ class XdebugHandler
     {
         $envArgs = explode('|', (string) getenv(self::RESTART_SETTINGS));
 
-        if (count($envArgs) !== 6
-            || (!self::$inRestart && php_ini_loaded_file() !== $envArgs[0])) {
+        if (
+            count($envArgs) !== 6
+            || (!self::$inRestart && php_ini_loaded_file() !== $envArgs[0])
+        ) {
             return null;
         }
 
@@ -291,7 +293,7 @@ class XdebugHandler
             $cmd = Process::escapeShellCommand($command);
             if (defined('PHP_WINDOWS_VERSION_BUILD')) {
                 // Outer quotes required on cmd string below PHP 8
-                $cmd = '"'.$cmd.'"';
+                $cmd = '"' . $cmd . '"';
             }
         }
 
@@ -305,11 +307,11 @@ class XdebugHandler
             $this->notify(Status::ERROR, 'Unable to restart process');
             $exitCode = -1;
         } else {
-            $this->notify(Status::INFO, 'Restarted process exited '.$exitCode);
+            $this->notify(Status::INFO, 'Restarted process exited ' . $exitCode);
         }
 
         if ($this->debug === '2') {
-            $this->notify(Status::INFO, 'Temp ini saved: '.$this->tmpIni);
+            $this->notify(Status::INFO, 'Temp ini saved: ' . $this->tmpIni);
         } else {
             @unlink((string) $this->tmpIni);
         }
@@ -333,13 +335,13 @@ class XdebugHandler
         $tmpDir = sys_get_temp_dir();
 
         if (!$this->cli) {
-            $error = 'Unsupported SAPI: '.PHP_SAPI;
+            $error = 'Unsupported SAPI: ' . PHP_SAPI;
         } elseif (!$this->checkConfiguration($info)) {
             $error = $info;
         } elseif (!$this->checkMainScript()) {
-            $error = 'Unable to access main script: '.$this->script;
+            $error = 'Unable to access main script: ' . $this->script;
         } elseif (!$this->writeTmpIni($iniFiles, $tmpDir, $error)) {
-            $error = $error !== null ? $error : 'Unable to create temp ini file at: '.$tmpDir;
+            $error = $error !== null ? $error : 'Unable to create temp ini file at: ' . $tmpDir;
         } elseif (!$this->setEnvironment($scannedInis, $iniFiles)) {
             $error = 'Unable to set environment variables';
         }
@@ -376,14 +378,14 @@ class XdebugHandler
         foreach ($iniFiles as $file) {
             // Check for inaccessible ini files
             if (($data = @file_get_contents($file)) === false) {
-                $error = 'Unable to read ini: '.$file;
+                $error = 'Unable to read ini: ' . $file;
                 return false;
             }
             // Check and remove directives after HOST and PATH sections
             if (Preg::isMatchWithOffsets($sectionRegex, $data, $matches, PREG_OFFSET_CAPTURE)) {
                 $data = substr($data, 0, $matches[0][1]);
             }
-            $content .= Preg::replace($xdebugRegex, ';$1', $data).PHP_EOL;
+            $content .= Preg::replace($xdebugRegex, ';$1', $data) . PHP_EOL;
         }
 
         // Merge loaded settings into our ini content, if it is valid
@@ -398,7 +400,7 @@ class XdebugHandler
         $content .= $this->mergeLoadedConfig($loaded, $config);
 
         // Work-around for https://bugs.php.net/bug.php?id=75932
-        $content .= 'opcache.enable_cli=0'.PHP_EOL;
+        $content .= 'opcache.enable_cli=0' . PHP_EOL;
 
         return (bool) @file_put_contents($this->tmpIni, $content);
     }
@@ -434,13 +436,13 @@ class XdebugHandler
         $phprc = getenv('PHPRC');
 
         // Make original inis available to restarted process
-        if (!putenv($this->envOriginalInis.'='.implode(PATH_SEPARATOR, $iniFiles))) {
+        if (!putenv($this->envOriginalInis . '=' . implode(PATH_SEPARATOR, $iniFiles))) {
             return false;
         }
 
         if ($this->persistent) {
             // Use the environment to persist the settings
-            if (!putenv('PHP_INI_SCAN_DIR=') || !putenv('PHPRC='.$this->tmpIni)) {
+            if (!putenv('PHP_INI_SCAN_DIR=') || !putenv('PHPRC=' . $this->tmpIni)) {
                 return false;
             }
         }
@@ -454,7 +456,7 @@ class XdebugHandler
             false === $phprc ? '*' : $phprc,
         ];
 
-        return putenv($this->envAllowXdebug.'='.implode('|', $envArgs));
+        return putenv($this->envAllowXdebug . '=' . implode('|', $envArgs));
     }
 
     /**
@@ -478,15 +480,17 @@ class XdebugHandler
 
         foreach ($loadedConfig as $name => $value) {
             // Value will either be null, string or array (HHVM only)
-            if (!is_string($value)
+            if (
+                !is_string($value)
                 || strpos($name, 'xdebug') === 0
-                || $name === 'apc.mmap_file_mask') {
+                || $name === 'apc.mmap_file_mask'
+            ) {
                 continue;
             }
 
             if (!isset($iniConfig[$name]) || $iniConfig[$name] !== $value) {
                 // Double-quote escape each value
-                $content .= $name.'="'.addcslashes($value, '\\"').'"'.PHP_EOL;
+                $content .= $name . '="' . addcslashes($value, '\\"') . '"' . PHP_EOL;
             }
         }
 
@@ -583,7 +587,7 @@ class XdebugHandler
             }
 
             if (0 === strpos($workingDir, '\\\\')) {
-                $info = 'cmd.exe does not support UNC paths: '.$workingDir;
+                $info = 'cmd.exe does not support UNC paths: ' . $workingDir;
                 return false;
             }
         }
@@ -615,7 +619,8 @@ class XdebugHandler
             // Restarting, so set a handler to ignore CTRL events in the parent.
             // This ensures that CTRL+C events will be available in the child
             // process without having to enable them there, which is unreliable.
-            sapi_windows_set_ctrl_handler(function ($evt) {});
+            sapi_windows_set_ctrl_handler(function ($evt) {
+            });
         }
     }
 

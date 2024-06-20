@@ -71,7 +71,7 @@ final class ComposerScripts
 
         foreach (self::$dependencies as $key => $dependency) {
             // Kint may be removed.
-            if (! is_dir($dependency['from']) && strpos($key, 'kint') === 0) {
+            if (!is_dir($dependency['from']) && strpos($key, 'kint') === 0) {
                 continue;
             }
 
@@ -92,7 +92,7 @@ final class ComposerScripts
      */
     private static function recursiveDelete(string $directory): void
     {
-        if (! is_dir($directory)) {
+        if (!is_dir($directory)) {
             echo sprintf('Cannot recursively delete "%s" as it does not exist.', $directory) . PHP_EOL;
 
             return;
@@ -122,7 +122,7 @@ final class ComposerScripts
         $originDir = rtrim($originDir, '\\/');
         $targetDir = rtrim($targetDir, '\\/');
 
-        if (! is_dir($originDir)) {
+        if (!is_dir($originDir)) {
             echo sprintf('The origin directory "%s" was not found.', $originDir);
 
             exit(1);
@@ -134,7 +134,7 @@ final class ComposerScripts
             exit(1);
         }
 
-        if (! @mkdir($targetDir, 0755, true)) {
+        if (!@mkdir($targetDir, 0755, true)) {
             echo sprintf('Cannot create the target directory: "%s"', $targetDir) . PHP_EOL;
 
             exit(1);

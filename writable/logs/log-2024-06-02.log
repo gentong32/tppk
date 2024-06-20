@@ -1,0 +1,551 @@
+ERROR - 2024-06-02 07:49:11 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in D:\laragon\www\tppk\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 D:\laragon\www\tppk\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 D:\laragon\www\tppk\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\tppk\app\Models\M_tppk.php(2139): CodeIgniter\Database\BaseConnection->query('SELECT kode_wil...')
+#3 D:\laragon\www\tppk\app\Controllers\InputData.php(2639): App\Models\M_tppk->get_daf_provinsi()
+#4 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\InputData->daftarsekolahnontppk()
+#5 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-02 07:49:11 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\M_tppk.php(2139): CodeIgniter\Database\BaseConnection->query('SELECT kode_wilayah, nama 
+                FROM Referensi.ref.mst_wilayah
+                WHERE id_level_wilayah=1 
+                ORDER BY nama')
+ 3 APPPATH\Controllers\InputData.php(2639): App\Models\M_tppk->get_daf_provinsi()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftarsekolahnontppk()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 08:32:03 --> Class "App\Controllers\Google" not found
+in APPPATH\Controllers\Login.php on line 127.
+ 1 APPPATH\Controllers\Login.php(651): App\Controllers\Login->sendEmail('antok2000@gmail.com', 'Uji', 'Selamat siang, ini baru uji coba kirim email')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 08:32:15 --> Class "App\Controllers\Google" not found
+in APPPATH\Controllers\Login.php on line 127.
+ 1 APPPATH\Controllers\Login.php(651): App\Controllers\Login->sendEmail('antok2000@gmail.com', 'Uji', 'Selamat siang, ini baru uji coba kirim email')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 08:41:43 --> Class "App\Controllers\Google" not found
+in APPPATH\Controllers\Login.php on line 129.
+ 1 APPPATH\Controllers\Login.php(651): App\Controllers\Login->sendEmail('antok2000@gmail.com', 'Uji', 'Selamat siang, ini baru uji coba kirim email')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 08:50:03 --> Class "Google\Client" not found
+in APPPATH\Controllers\Login.php on line 128.
+ 1 APPPATH\Controllers\Login.php(650): App\Controllers\Login->sendEmail('antok2000@gmail.com', 'Uji', 'Selamat siang, ini baru uji coba kirim email')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-02 08:54:09 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 08:54:09 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 08:54:09 --> 
+ERROR - 2024-06-02 08:55:35 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 08:55:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 08:55:35 --> 
+ERROR - 2024-06-02 08:57:49 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 08:57:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 08:57:49 --> 
+ERROR - 2024-06-02 08:59:00 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 08:59:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 08:59:00 --> 
+ERROR - 2024-06-02 08:59:19 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 08:59:19 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 08:59:19 --> 
+ERROR - 2024-06-02 08:59:37 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 08:59:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 08:59:37 --> 
+ERROR - 2024-06-02 08:59:42 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 08:59:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 08:59:42 --> 
+ERROR - 2024-06-02 08:59:43 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 08:59:43 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 08:59:43 --> 
+ERROR - 2024-06-02 08:59:45 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 08:59:45 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 08:59:45 --> 
+ERROR - 2024-06-02 09:02:23 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 09:02:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 09:02:23 --> 
+ERROR - 2024-06-02 09:26:08 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 09:26:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 09:26:08 --> 
+ERROR - 2024-06-02 09:27:08 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 09:27:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 09:27:08 --> 
+ERROR - 2024-06-02 09:27:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 09:27:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 09:27:36 --> 
+ERROR - 2024-06-02 09:30:28 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 09:30:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 09:30:28 --> 
+ERROR - 2024-06-02 09:30:50 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1886
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\laragon\\www\\...', 1886)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1886): stream_socket_enable_crypto(Resource id #168, true, 57)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 09:30:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 09:30:50 --> 220 mta2.kemdikbud.go.id ESMTP Postfix
+
+hello: 250-mta2.kemdikbud.go.id
+250-PIPELINING
+250-SIZE 150000000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2024-06-02 09:31:17 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\laragon\\www\\...', 1868)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1868): fsockopen('tls://mail.kemd...', 465, NULL, NULL, 5)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 09:31:17 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 09:31:17 --> 
+ERROR - 2024-06-02 10:49:56 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1886
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\laragon\\www\\...', 1886)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1886): stream_socket_enable_crypto(Resource id #170, true, 57)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 10:49:56 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 10:49:56 --> 220 SI2PR01CA0053.outlook.office365.com Microsoft ESMTP MAIL Service ready at Sun, 2 Jun 2024 03:49:55 +0000
+
+hello: 250-SI2PR01CA0053.outlook.office365.com Hello [118.98.237.132]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+ERROR - 2024-06-02 10:50:45 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1886
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\laragon\\www\\...', 1886)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1886): stream_socket_enable_crypto(Resource id #168, true, 57)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 10:50:45 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 10:50:45 --> 220 SG3P274CA0002.outlook.office365.com Microsoft ESMTP MAIL Service ready at Sun, 2 Jun 2024 03:50:42 +0000
+
+hello: 250-SG3P274CA0002.outlook.office365.com Hello [118.98.237.132]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+ERROR - 2024-06-02 10:51:00 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1886
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\laragon\\www\\...', 1886)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1886): stream_socket_enable_crypto(Resource id #168, true, 57)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 10:51:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 10:51:00 --> 220 SG2P153CA0054.outlook.office365.com Microsoft ESMTP MAIL Service ready at Sun, 2 Jun 2024 03:51:00 +0000
+
+hello: 250-SG2P153CA0054.outlook.office365.com Hello [118.98.237.132]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+ERROR - 2024-06-02 14:54:23 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed in D:\laragon\www\tppk\system\Email\Email.php:1886
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\laragon\\www\\...', 1886)
+#1 D:\laragon\www\tppk\system\Email\Email.php(1886): stream_socket_enable_crypto(Resource id #170, true, 57)
+#2 D:\laragon\www\tppk\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\laragon\www\tppk\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\laragon\www\tppk\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\laragon\www\tppk\app\Controllers\Login.php(133): CodeIgniter\Email\Email->send()
+#6 D:\laragon\www\tppk\system\CodeIgniter.php(934): App\Controllers\Login->sendEmail()
+#7 D:\laragon\www\tppk\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\laragon\www\tppk\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\tppk\index.php(55): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-02 14:54:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-06-02 14:54:23 --> 220 SG2PR02CA0045.outlook.office365.com Microsoft ESMTP MAIL Service ready at Sun, 2 Jun 2024 07:54:23 +0000
+
+hello: 250-SG2PR02CA0045.outlook.office365.com Hello [118.98.237.132]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+CRITICAL - 2024-06-02 14:55:10 --> Undefined variable $judul
+in APPPATH\Views\daftarlaporan.php on line 28.
+ 1 APPPATH\Views\daftarlaporan.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $judul', 'APPPATH\\Views\\daftarlaporan.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1768): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-02 14:55:22 --> Undefined variable $judul
+in APPPATH\Views\daftarlaporan.php on line 28.
+ 1 APPPATH\Views\daftarlaporan.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $judul', 'APPPATH\\Views\\daftarlaporan.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1768): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-02 14:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-02 14:55:40 --> Undefined variable $judul
+in APPPATH\Views\daftarlaporan.php on line 28.
+ 1 APPPATH\Views\daftarlaporan.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $judul', 'APPPATH\\Views\\daftarlaporan.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\daftarlaporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('daftarlaporan', [], true)
+ 5 APPPATH\Controllers\InputData.php(1768): view('daftarlaporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InputData->daftar_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InputData))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-02 14:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 14:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 14:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 14:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 14:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 14:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 15:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 15:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 15:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 15:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 15:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 15:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 15:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 15:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 15:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:57:08 --> CSRF token verified.
+INFO - 2024-06-02 21:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 21:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:04:54 --> CSRF token verified.
+INFO - 2024-06-02 22:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:05:46 --> CSRF token verified.
+INFO - 2024-06-02 22:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:10 --> CSRF token verified.
+INFO - 2024-06-02 22:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:28 --> CSRF token verified.
+INFO - 2024-06-02 22:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:08:11 --> CSRF token verified.
+INFO - 2024-06-02 22:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:10:27 --> CSRF token verified.
+INFO - 2024-06-02 22:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-02 22:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

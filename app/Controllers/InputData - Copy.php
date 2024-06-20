@@ -574,13 +574,13 @@ class InputData extends BaseController
             // Cek apakah file dengan nama yang sama sudah ada
             if (is_file($lokasiFile)) {
                 // Jika ada, hapus file lama
-                unlink($lokasiFile);
+                // unlink($lokasiFile);
             }
 
             $files = glob('public/uploads/' . 'sk_' . $npsn . '_*');
 
             foreach ($files as $file) {
-                unlink($file);
+                // unlink($file);
             }
 
             if (session()->get('username') == "hardianto@kemdikbud.go.id") {

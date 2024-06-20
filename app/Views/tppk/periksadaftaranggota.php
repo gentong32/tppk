@@ -194,7 +194,9 @@ $npsnuser = session()->get('npsn_user');
                     </div>
                 </div>
                 <div style="margin-top: 5px;">
-                    <input class="btn_ijo" onclick="return cekinput();" type="submit" value="Unggah File SK">
+                    <!-- <input class="btn_ijo" onclick="return cekinput();" type="submit" value="Unggah File SK"> -->
+                    <button class="btn_ijo">Unggah</button>
+                    <br>Mohon maaf. Karena sedang ada kendala teknis, untuk sementara waktu fungsi Upload dinonaktifkan.
                 </div>
 
             </form>

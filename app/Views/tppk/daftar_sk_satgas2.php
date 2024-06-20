@@ -44,6 +44,28 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
         color: white;
     }
 
+    .tbatas {
+        color: #000000;
+        background-color: #8cd6e8;
+        font-size: 14px;
+        border: 1px solid #60b3be;
+        border-radius: 3px;
+        padding: 5px 8px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        cursor: pointer
+    }
+
+    .tbatas:hover {
+        color: #2d63c8;
+        background-color: #ffffff;
+    }
+
+    .aktif {
+        background-color: #60b3be !important;
+        color: #000000 !important;
+    }
+
     .tbijo {
         color: #000000;
         background-color: #8cd6e8;
@@ -57,6 +79,15 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
     .tbijo:hover {
         color: #2d63c8;
         background-color: #ffffff;
+    }
+
+    .tabel_container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .judulkiri {
+        margin-top: 30px;
     }
 </style>
 
@@ -74,33 +105,38 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
         } ?>
     </div>
 
-    <button onclick="satgasprov()">Satgas Provinsi</button>
-    <button onclick="satgaskota()">Satgas Kab/Kota</button>
+    <div class="button_container">
+        <button class="tbatas" onclick="satgasprov()">Satgas Provinsi</button>
+        <button class="tbatas aktif" onclick="satgaskota()">Satgas Kab/Kota</button>
+        <button class="tbatas" onclick="operatorprov()">Admin Provinsi</button>
+        <button class="tbatas" onclick="operatorkota()">Admin Kab/Kota</button>
+    </div>
 
-    <table class="table table-striped my-custom-table" id="example">
-        <thead>
-            <th>No</th>
-            <th>Nama Kab/Kota</th>
-            <th>Nomor SK</th>
-            <th>Status SK</th>
-            <th>Aksi</th>
-        </thead>
+    <div class="tabel_container">
+        <table class="table table-striped my-custom-table" id="example">
+            <thead>
+                <th>No</th>
+                <th>Nama Kab/Kota</th>
+                <th>Nomor SK</th>
+                <th>Status SK</th>
+                <th>Aksi</th>
+            </thead>
 
-        <tbody>
-            <?php
-            $nomor = 1;
-            foreach ($daftar_sksatgas as $row) : ?>
-                <tr>
-                    <td><?= $nomor++ ?></td>
-                    <td><?= $row['nama'] ?></td>
-                    <td><?= $row['nomor_sk'] ?></td>
-                    <td><?= $txtstatus[intval($row['status_sk'])] ?></td>
-                    <td><button onclick="return lihatsk('<?= $row['kode_wilayah'] ?>');" class="tbijo">Lihat</button></td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-
+            <tbody>
+                <?php
+                $nomor = 1;
+                foreach ($daftar_sksatgas as $row) : ?>
+                    <tr>
+                        <td><?= $nomor++ ?></td>
+                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['nomor_sk'] ?></td>
+                        <td><?= $txtstatus[intval($row['status_sk'])] ?></td>
+                        <td><button onclick="return lihatsk('<?= $row['kode_wilayah'] ?>');" class="tbijo">Lihat</button></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <?= $this->endSection(); ?>
@@ -134,6 +170,14 @@ $txtstatus = array("Belum di Approval", "<span style='color:red'>Tidak Sesuai</s
 
     function satgaskota() {
         window.open("<?= base_url() ?>inputdata/daftar_skbaru/kota", "_self");
+    }
+
+    function operatorprov() {
+        window.open("<?= base_url() ?>inputdata/daftar_skbaru/op_prov", "_self");
+    }
+
+    function operatorkota() {
+        window.open("<?= base_url() ?>inputdata/daftar_skbaru/op_kota", "_self");
     }
 
     function kembali() {

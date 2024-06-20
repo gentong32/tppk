@@ -134,7 +134,7 @@ class Publisher extends FileCollection
             // Try a few times in case of lingering locks
             $attempts = 10;
 
-            while ((bool) $attempts && ! delete_files($directory, true, false, true)) {
+            while ((bool) $attempts && !delete_files($directory, true, false, true)) {
                 // @codeCoverageIgnoreStart
                 $attempts--;
                 usleep(100000); // .1s
@@ -489,7 +489,7 @@ class Publisher extends FileCollection
         // Check for an existing file
         if (file_exists($to)) {
             // If not replacing or if files are identical then consider successful
-            if (! $replace || same_file($from, $to)) {
+            if (!$replace || same_file($from, $to)) {
                 return;
             }
 
@@ -503,7 +503,7 @@ class Publisher extends FileCollection
         }
 
         // Make sure the directory exists
-        if (! is_dir($directory = pathinfo($to, PATHINFO_DIRNAME))) {
+        if (!is_dir($directory = pathinfo($to, PATHINFO_DIRNAME))) {
             mkdir($directory, 0775, true);
         }
 

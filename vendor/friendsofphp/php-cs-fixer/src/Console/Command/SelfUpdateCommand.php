@@ -81,8 +81,7 @@ latest version released on:
 <info>$ php php-cs-fixer.phar %command.name%</info>
 
 EOT
-            )
-        ;
+            );
     }
 
     /**
@@ -151,7 +150,7 @@ EOT
             return 1;
         }
 
-        $tempFilename = \dirname($localFilename).'/'.basename($localFilename, '.phar').'-tmp.phar';
+        $tempFilename = \dirname($localFilename) . '/' . basename($localFilename, '.phar') . '-tmp.phar';
         $remoteFilename = $this->toolInfo->getPharDownloadUri($remoteTag);
 
         if (false === @copy($remoteFilename, $tempFilename)) {
